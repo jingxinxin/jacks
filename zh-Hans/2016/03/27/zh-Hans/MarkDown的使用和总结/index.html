@@ -1,0 +1,1080 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/jacks/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/jacks/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/jacks/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="MarkDown," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如简书和一些各种博客，国外可能过的比较多的，例如Github，主要是技术类的网站，甚至是可以编写wiki等的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown的使用和总结">
+<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/03/27/zh-Hans/MarkDown的使用和总结/index.html">
+<meta property="og:site_name" content="Jacks">
+<meta property="og:description" content="Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如简书和一些各种博客，国外可能过的比较多的，例如Github，主要是技术类的网站，甚至是可以编写wiki等的">
+<meta property="og:image" content="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg">
+<meta property="og:updated_time" content="2016-05-04T11:41:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarkDown的使用和总结">
+<meta name="twitter:description" content="Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如简书和一些各种博客，国外可能过的比较多的，例如Github，主要是技术类的网站，甚至是可以编写wiki等的">
+<meta name="twitter:image" content="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265421695675270000,
+      author: '地主╮(╯▽╰)╭'
+    }
+  };
+</script>
+
+  <title> MarkDown的使用和总结 | Jacks </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+    <!--- add Fork me on Github ------------>
+    <style>#forkongithub a{background:#b655;color:cornflowerblue;text-decoration:none;text-align:center;padding:5px 40px;font-size:0.5rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#522266;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:1px){#forkongithub{position:fixed;display:block;top:0;left:0;width:140px;overflow:hidden;height:130px;z-index:9999;}#forkongithub a{width:120px;position:absolute;top:28px;left:-50px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
+        <!-- <a href="https://github.com/jingxinxin"><img style="position: absolute; top: 500; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a> -->
+
+        <!--- add Fork me on Github ------------>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/jacks/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Jacks</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/jacks/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/jacks/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/jacks/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/jacks/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/jacks/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-new">
+          <a href="/jacks/new" rel="section">
+            
+              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
+            
+            更新
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '7iBnHApBLzLpVuwxogMU','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+
+  <!--
+  #render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数
+  -->
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                MarkDown的使用和总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-27T07:58:51+08:00" content="2016-03-27">
+              2016-03-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/jacks/categories/技巧修炼/" itemprop="url" rel="index">
+                    <span itemprop="name">技巧修炼</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/jacks/zh-Hans/2016/03/27/zh-Hans/MarkDown的使用和总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="MarkDown的使用和总结" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          <!--不蒜子计算器 每页计算-->
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
+          
+          <!--不蒜子计算器 每页计算-->
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg" rel="gallery_ciolncvoz000jdo267nafvijn"
+                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        <p>　　Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如<strong>简书</strong>和一些各种博客，国外可能过的比较多的，例如<strong>Github</strong>，主要是技术类的网站，甚至是可以编写wiki等的网页，都不同程度的支持和拥抱MarkDown。<br><a id="more"></a></p>
+<p><a id="head"></a></p>
+<h1 id="常基本见的用法"><a href="#常基本见的用法" class="headerlink" title="常基本见的用法"></a>常基本见的用法</h1><p><strong>举个栗子</strong></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br><span class="line">标题一</span><br><span class="line">==</span><br><span class="line">标题二</span><br><span class="line">--</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：</p>
+<h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><h5 id="h5"><a href="#h5" class="headerlink" title="h5"></a>h5</h5><h6 id="h6"><a href="#h6" class="headerlink" title="h6"></a>h6</h6></blockquote>
+<p>本主题NexT会自动去读取并标题生成目录导航，为了更友好的显示它，因此去掉了一些影响效果（移动端暂无次效果）</p>
+<h2 id="加粗、重点标注、删除线"><a href="#加粗、重点标注、删除线" class="headerlink" title="加粗、重点标注、删除线"></a>加粗、重点标注、删除线</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">** Ctrl+Alt+N **</span><br><span class="line">*** Ctrl+Alt+N ***</span><br><span class="line">`Ctrl+Alt+N`</span><br><span class="line">~~Jacks~~</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：<br><strong> Ctrl+Alt+N </strong><br><strong><em> Ctrl+Alt+N </em></strong><br><code>Ctrl+Alt+N</code><br><del>Jacks</del></p>
+</blockquote>
+<h2 id="表格绘制"><a href="#表格绘制" class="headerlink" title="表格绘制"></a>表格绘制</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 项目        | 价格   |  数量  | 备注|</span><br><span class="line">| --------   | -----:  | :----:  |:----|</span><br><span class="line">| 计算机     | $9999 |   10     |苹果类型|</span><br><span class="line">| 手机        |   $6000   |   5   ||</span><br><span class="line">| 衣服        |    $200    |  2000  ||</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">$9999</td>
+<td style="text-align:center">10</td>
+<td style="text-align:left">苹果类型</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">$6000</td>
+<td style="text-align:center">5</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td>衣服</td>
+<td style="text-align:right">$200</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:left">西服</td>
+</tr>
+</tbody>
+</table>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>用三个`<br>前后包起来即可，你甚至可以在后面写上用的哪种编程语言，可以更加友好的渲染上语法高亮<br>例如下面的JavaScript代码</p>
+<blockquote>
+<p>效果：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> $sidebar = $(<span class="string">'#sidebar'</span>);</span><br><span class="line">  <span class="keyword">var</span> headerHeight = $(<span class="string">'.header-inner'</span>).height();</span><br><span class="line">  <span class="keyword">var</span> footerOffset = <span class="built_in">parseInt</span>($(<span class="string">'.main'</span>).css(<span class="string">'padding-bottom'</span>), <span class="number">10</span>);</span><br><span class="line">  <span class="keyword">var</span> sidebarTop = headerHeight + <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  $sidebar</span><br><span class="line">    .css(&#123; <span class="string">'margin-top'</span>: sidebarTop &#125;)</span><br><span class="line">    .show();</span><br><span class="line"></span><br><span class="line">  NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'.page-post-detail .sidebar-inner'</span>).affix(&#123;</span><br><span class="line">    offset: &#123;</span><br><span class="line">      top: sidebarTop,</span><br><span class="line">      bottom: footerOffset</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;大家好我是博主Jacks</span><br><span class="line">&gt;你可以看到在本文的排版中，博主有多次用到</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：<br>大家好我是博主Jacks<br>你可以看到在前面的排版，博主有多次用到</p>
+</blockquote>
+<p>#列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">- 早上干了什么</span><br><span class="line"> + 起床</span><br><span class="line"> + 刷牙</span><br><span class="line"> + 洗脸</span><br><span class="line"> + 吃饭</span><br><span class="line">- 晚上干了什么</span><br><span class="line"> + 逛街</span><br><span class="line"> + 去商场</span><br><span class="line">  * 买衣服</span><br><span class="line">  * 买鞋子</span><br><span class="line">   1. 买篮球鞋</span><br><span class="line">   2. 买高跟鞋</span><br><span class="line">   3. 买拖鞋</span><br><span class="line">   4. 买棉鞋</span><br><span class="line">  * 买裤子</span><br><span class="line"> + 回家</span><br><span class="line">- 明天呢</span><br><span class="line"> + 吃饭</span><br><span class="line"> + 睡觉</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>效果：</p>
+<ul>
+<li>早上干了什么<ul>
+<li>起床</li>
+<li>刷牙</li>
+<li>洗脸</li>
+<li>吃饭</li>
+</ul>
+</li>
+<li>晚上干了什么<ul>
+<li>逛街</li>
+<li>去商场</li>
+</ul>
+<ul>
+<li>买衣服</li>
+<li>买鞋子<ol>
+<li>买篮球鞋</li>
+<li>买高跟鞋</li>
+<li>买拖鞋</li>
+<li>买棉鞋</li>
+</ol>
+</li>
+<li>买裤子</li>
+</ul>
+<ul>
+<li>回家</li>
+</ul>
+</li>
+<li>明天呢<ul>
+<li>吃饭</li>
+<li>睡觉</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">***</span><br><span class="line">---</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：</p>
+</blockquote>
+<hr>
+<hr>
+<h2 id="链接-图片和文档"><a href="#链接-图片和文档" class="headerlink" title="链接, 图片和文档"></a>链接, 图片和文档</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">知乎</span>](<span class="link">http://www.zhihu.com</span>)</span><br><span class="line">![<span class="string">MD</span>](<span class="link">http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2Fmarkdown.png</span>)</span><br><span class="line"></span><br><span class="line">链接和图片的插入方法还可以用先插入’[]’,再通过另一个’[]’索引数字,在文章的最后提供索引地址的方法</span><br><span class="line"></span><br><span class="line">[<span class="string">百度</span>][<span class="symbol">1</span>]</span><br><span class="line">![][2]</span><br><span class="line"></span><br><span class="line">在文章的最后的索引地址代码是</span><br><span class="line"></span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">http://www.baidu.com</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>效果：</p>
+</blockquote>
+<p><a href="http://www.zhihu.com" target="_blank" rel="external">知乎</a><br><img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2Fmarkdown.png" alt="MD"><br><a href="http://www.baidu.com" target="_blank" rel="external">百度</a><br><img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg" alt=""></p>
+<h2 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h2><p>锚点的用法和加超链接是一样的，只不过是当前页面的位置链接，由于MarkDown是支持HTML标签的，所有我们只需要<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">N</span>](<span class="link">#idName</span>)</span><br><span class="line"></span><br><span class="line">//下面是你要跳到的位置</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">'idName'</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>效果：<br><a href="#head">点我</a>会跳到开头</p>
+</blockquote>
+<h1 id="更多参考"><a href="#更多参考" class="headerlink" title="更多参考"></a>更多参考</h1><p><a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">http://wowubuntu.com/markdown/</a><br>[月光博客] <a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">http://www.williamlong.info/archives/4319.html</a><br>[少数派] <a href="http://sspai.com/25137" target="_blank" rel="external">http://sspai.com/25137</a></p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/jacks/tags/MarkDown/" rel="tag">#MarkDown</a>
+          
+        </div>
+      
+
+      <! -- 添加捐赠图标 -->
+          
+          
+          
+          
+
+          <div class ="post-donate">
+            <div id="donate_board" class="donate_bar center">
+              <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+              <span class="donate_txt">
+                 &uarr;<br>
+                 
+                  Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
+                 
+              </span>
+              <br>
+            </div>
+
+            <div id="donate_guide" class="donate_bar center hidden">
+              
+              <div style="display:inline-block">
+                <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
+                <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
+                <br>
+                <span>支付宝土豪打赏</span>
+                </a>
+              </div>
+              
+
+            
+            <div style="display:inline-block">
+             <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
+               <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
+               <br>
+               <span>微信土豪打赏</span>
+             </a>
+             </div>
+
+            
+
+            </div>
+
+            <script type="text/javascript">
+              document.getElementById('btn_donate').onclick = function(){
+                $('#donate_board').addClass('hidden');
+                $('#donate_guide').removeClass('hidden');
+              }
+            </script>
+          </div>
+
+          
+      
+      <! -- end 添加捐赠图标 -->
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/03/27/zh-Hans/最强大脑，探索思维的潜力/" rel="next" title="最强大脑，探索思维的潜力">
+                <i class="fa fa-chevron-left"></i> 最强大脑，探索思维的潜力
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/03/28/zh-Hans/人过半百，何去何从/" rel="prev" title="人过半百，何去何从">
+                人过半百，何去何从 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat"
+  data-thread-key="MarkDown的使用和总结"
+  data-title="MarkDown的使用和总结"
+  data-images="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FMarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93%2FMD.jpg"
+  data-content="<p>　　Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如<strong>简书</strong>和一些各种博客，国外可能过的比较多的，例如<strong>Github</strong>，主要是技术类的网站，甚至是可以编写wiki等的网页，都不同程度的支持和拥抱MarkDown。<br>"
+  data-url="http://51201314.me/jacks/zh-Hans/2016/03/27/zh-Hans/MarkDown的使用和总结/index.html">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more">
+        <a class="ds-more" href="javascript:void(0);">分享到：</a>
+      </li>
+      <li>
+        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
+      </li>
+      <li>
+        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
+      </li>
+      <li>
+        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
+      </li>
+      <li>
+        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
+      </li>
+
+    </ul>
+    <div class="ds-share-icons-more"></div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="MarkDown的使用和总结"
+           data-title="MarkDown的使用和总结" data-url="http://51201314.me/jacks/zh-Hans/2016/03/27/zh-Hans/MarkDown的使用和总结/index.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/jacks/images/avatar.png"
+               alt="Jacks" />
+          <p class="site-author-name" itemprop="name">Jacks</p>
+          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/jacks/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/jacks/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/jacks/tags">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jingxinxin" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/jxandcxy" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">友情链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://51201314.me/" target="_blank">博主</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://" target="_blank">暂缺</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常基本见的用法"><span class="nav-number">1.</span> <span class="nav-text">常基本见的用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.1.</span> <span class="nav-text">标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#h3"><span class="nav-number">1.1.1.</span> <span class="nav-text">h3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#h4"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">h4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#h5"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">h5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#h6"><span class="nav-number">1.1.1.1.1.1.</span> <span class="nav-text">h6</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加粗、重点标注、删除线"><span class="nav-number">1.2.</span> <span class="nav-text">加粗、重点标注、删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格绘制"><span class="nav-number">1.3.</span> <span class="nav-text">表格绘制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.4.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">1.5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分隔线"><span class="nav-number">1.6.</span> <span class="nav-text">分隔线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接-图片和文档"><span class="nav-number">1.7.</span> <span class="nav-text">链接, 图片和文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#锚点"><span class="nav-number">1.8.</span> <span class="nav-text">锚点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更多参考"><span class="nav-number">2.</span> <span class="nav-text">更多参考</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;
+  
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jacks</span>
+    <!--简体繁体转换-->
+  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题
+  -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<!--简体繁体转换-->
+<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
+  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
+  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
+  var translateButtonId = "translateLink"; //默认互换id
+  translateInitilization();
+</script>
+
+<!--不蒜子计算器-->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<br>
+本Blog总访问量
+<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
+&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
+<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/jacks/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"jacks"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/jacks/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/jacks/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

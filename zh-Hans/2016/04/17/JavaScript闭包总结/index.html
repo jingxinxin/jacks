@@ -1,0 +1,1035 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/jacks/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/jacks/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/jacks/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JavaScript,闭包," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚匿名函数和闭包这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript闭包总结">
+<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/04/17/JavaScript闭包总结/index.html">
+<meta property="og:site_name" content="Jacks">
+<meta property="og:description" content="闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚匿名函数和闭包这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。">
+<meta property="og:image" content="http://7xs9s7.com1.z0.glb.clouddn.com/image/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/closure.png">
+<meta property="og:updated_time" content="2016-04-17T05:14:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript闭包总结">
+<meta name="twitter:description" content="闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚匿名函数和闭包这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。">
+<meta name="twitter:image" content="http://7xs9s7.com1.z0.glb.clouddn.com/image/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/closure.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265421695675270000,
+      author: '地主╮(╯▽╰)╭'
+    }
+  };
+</script>
+
+  <title> JavaScript闭包总结 | Jacks </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+    <!--- add Fork me on Github ------------>
+    <style>#forkongithub a{background:#b655;color:cornflowerblue;text-decoration:none;text-align:center;padding:5px 40px;font-size:0.5rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#522266;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:1px){#forkongithub{position:fixed;display:block;top:0;left:0;width:140px;overflow:hidden;height:130px;z-index:9999;}#forkongithub a{width:120px;position:absolute;top:28px;left:-50px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
+        <!-- <a href="https://github.com/jingxinxin"><img style="position: absolute; top: 500; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a> -->
+
+        <!--- add Fork me on Github ------------>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/jacks/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Jacks</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/jacks/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/jacks/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/jacks/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/jacks/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/jacks/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-new">
+          <a href="/jacks/new" rel="section">
+            
+              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
+            
+            更新
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '7iBnHApBLzLpVuwxogMU','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+
+  <!--
+  #render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数
+  -->
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JavaScript闭包总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-17T00:22:21+08:00" content="2016-04-17">
+              2016-04-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
+                    <span itemprop="name">代码技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/jacks/zh-Hans/2016/04/17/JavaScript闭包总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="JavaScript闭包总结" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          <!--不蒜子计算器 每页计算-->
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
+          
+          <!--不蒜子计算器 每页计算-->
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="http://7xs9s7.com1.z0.glb.clouddn.com/image/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/closure.png" rel="gallery_ciolovr6t000dzo26gdu5m623"
+                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/closure.png" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        <p>　　闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚<strong>匿名函数</strong>和<strong>闭包</strong>这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。<br><a id="more"></a></p>
+<h1 id="闭包的概念"><a href="#闭包的概念" class="headerlink" title="闭包的概念"></a>闭包的概念</h1><p>　　<strong>闭包是指有权去访问另一个函数作用域中的变量的函数。</strong>这句话很好理解，首先它是一个函数，其次是有权访问另一个函数作用域中的变量。我们知道局部方法可以访问外部父类方法的属性。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstValue = <span class="string">'JX'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(firstValue);</span><br><span class="line">&#125;</span><br><span class="line">f1();</span><br></pre></td></tr></table></figure></p>
+<p><code>输出</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JX</span><br></pre></td></tr></table></figure></p>
+<p style="color:red">而从父类去获取子函数方法的属性的值是否也可以呢？</p>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> secondValue = <span class="string">'love'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(secondValue);</span><br></pre></td></tr></table></figure>
+<p><code>输出</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Uncaught ReferenceError: secondValue is not defined</span><br></pre></td></tr></table></figure></p>
+<p>结果显示参数获取不到的错误，secondValue未定义。也就是说函数外的区域是获取不到里面的变量的，这是函数作用域所决定的。</p>
+<p></p><p style="color:red">那如果我们需要在外部获取到这个变量应该怎么办呢？</p><br>我们可以利用函数可以获取外部变量这一个特性，再把这个函数做为返回值return出来，这一思路就可以轻松实现。<p></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f3</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> thirdValue = <span class="string">'you'</span>;</span><br><span class="line">    <span class="keyword">var</span> fourthValue = <span class="string">'!'</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f4</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> get_thirdValue = thirdValue;</span><br><span class="line">        <span class="keyword">var</span> get_fourthValue = fourthValue;</span><br><span class="line">        <span class="keyword">var</span> data = &#123;</span><br><span class="line">            thirdValue : get_thirdValue,</span><br><span class="line">            fourthValue : get_fourthValue</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> data;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f4;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> getMan = f3();</span><br><span class="line"><span class="built_in">console</span>.log(getMan().thirdValue);</span><br></pre></td></tr></table></figure>
+<p><code>输出</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you</span><br></pre></td></tr></table></figure></p>
+<p>  而我们返回的这个函数，即f4()就是一个闭包，是不是很简单。<br>在上面的代码中，函数f4就被包括在函数f3内部，这时f3内部的所有局部变量，对f4都是可见的。但是反过来就不行，f4内部的局部变量，对f3就是不可见的。这就是Javascript语言特有的<strong>“链式作用域”结构（chain scope）</strong>，子对象会一级一级地向上寻找所有父对象的变量。所以，父对象的所有变量，对子对象都是可见的，反之则不成立。</p>
+<h1 id="闭包的特性"><a href="#闭包的特性" class="headerlink" title="闭包的特性"></a>闭包的特性</h1><blockquote>
+<ol>
+<li>嵌套在函数里的函数</li>
+<li>有权访问函数外面的参数和变量</li>
+<li>参数和变量不会被垃圾回收机制回收</li>
+</ol>
+</blockquote>
+<p>看到这，前两个特性已经很清楚了，那么说说第三个。我们都知道JavaScript和大多数语言一样也有垃圾回收机制。在什么情况下会被回收呢？如下</p>
+<blockquote>
+<ul>
+<li>如果一个对象不再被引用，那么这个对象就会被<code>GC</code>回收；</li>
+<li>如果两个对象互相引用，而不再被第三者所引用，那么这两个互相引用的对象也会被回收。<br><strong><em>（垃圾回收不是本篇的重点，不做详细解读，更多可以传送到<code>JavaScript垃圾回收总结</code>）</em></strong></li>
+</ul>
+</blockquote>
+<p>看之前的代码<strong>f3是f4的父函数，而f4被赋给了一个全局变量，这导致f4始终在内存中，而f4的存在依赖于f3，因此f3也始终在内存中，不会在调用结束后，被垃圾回收机制（garbage collection）回收。</strong></p>
+<h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><blockquote>
+<ol>
+<li>希望一个变量长期驻扎在内存中</li>
+<li>避免全局变量的污染</li>
+<li>私有成员的存在</li>
+<li>使用闭包可以大大减少我们的代码量</li>
+</ol>
+</blockquote>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><blockquote>
+<ol>
+<li>变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除,把值置null。</li>
+<li>被保存在内存中的变量可以在函数外部改变。所以如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</li>
+</ol>
+</blockquote>
+<h1 id="闭包的使用"><a href="#闭包的使用" class="headerlink" title="闭包的使用"></a>闭包的使用</h1><p>说到它的使用就不得不提及到<strong>匿名函数</strong></p>
+<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><p>函数是JavaScript中最常见也最灵活的一种对象。顾名思义匿名函数就是没有函数名的函数。</p>
+<h3 id="匿名函数的定义"><a href="#匿名函数的定义" class="headerlink" title="匿名函数的定义"></a>匿名函数的定义</h3><p>JS中函数的常见定义大致有三种。其中<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> anonymousFun = <span class="function"><span class="keyword">function</span>(<span class="params">arg</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> arg++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>=号右边的函数就是一个匿名函数。<br>第二种方式，接触过jQuery的博友，就非常常见到。形如<code>()();</code>,第一个括号放匿名函数体，第二个括号放调用的参数,可为空。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">arg1,arg2</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(arg1+arg2);</span><br><span class="line">&#125;)(<span class="number">7</span>,<span class="number">7</span>);</span><br></pre></td></tr></table></figure></p>
+<p>匿名函数最多的用途是创建闭包，并且还可以构建命名空间，以减少全局变量的使用。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> namespace = &#123;&#125;;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> firstValue = <span class="string">'JX'</span>;</span><br><span class="line">    <span class="keyword">var</span> secondValue = <span class="string">'love'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> firstEvent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> firstValue+<span class="string">' '</span> +secondValue;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    namespace.firstEvent = firstEvent;</span><br><span class="line">&#125;)();</span><br><span class="line">namespace.firstEvent();</span><br></pre></td></tr></table></figure></p>
+<p><code>输出</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;JX love&quot;</span><br></pre></td></tr></table></figure></p>
+<h1 id="最后小测试"><a href="#最后小测试" class="headerlink" title="最后小测试"></a>最后小测试</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在页面上添加自定义的新节点</span></span><br><span class="line"><span class="keyword">var</span> htmlChild=<span class="string">"&lt;ul&gt;&lt;li&gt;L&lt;/li&gt;&lt;li&gt;O&lt;/li&gt;&lt;li&gt;V&lt;/li&gt;&lt;li&gt;E&lt;/li&gt;&lt;/ul&gt;"</span>;</span><br><span class="line"><span class="keyword">var</span> newNode = <span class="built_in">document</span>.createElement(<span class="string">"div"</span>);</span><br><span class="line">newNode.innerHTML =htmlChild;</span><br><span class="line"><span class="built_in">document</span>.body.appendChild(newNode);</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加js事件监听</span></span><br><span class="line"><span class="keyword">var</span> lists = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;lists.length;i++)&#123;</span><br><span class="line">    lists[i].onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>输出</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure></p>
+<p>你会发现当鼠标移过每一个li元素时，控制台总是显示4，而不是我们期待的元素下标。这是为什么呢？当mouseover事件调用监听函数时，首先在匿名函数（ function(){ console.log(i);}）内部查找是否定义了 i，结果是没有定义；因此它会向上查找，查找结果是已经定义了，并且i的值是4（循环后的i值）。所以最终每次显示的都是4。</p>
+<blockquote>
+<p>解决方法一：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lists = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;lists.length;i++)&#123;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params">index</span>)</span>&#123;</span><br><span class="line">        lists[ index ].onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(index);</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;)(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>i的值是4，index的值0-3保存在内存中了。</p>
+<blockquote>
+<p>解决方法二：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lists = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;lists.length;i++)&#123;</span><br><span class="line">    lists[ i ].$$index = i;</span><br><span class="line">    lists[ i ].onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.$$index);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>通过在Dom元素上绑定$$index属性记录下标</p>
+<blockquote>
+<p>解决方法三:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个闭包函数 index 会被保存在内存中</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">listenEvent</span>(<span class="params">list,index</span>)</span>&#123;</span><br><span class="line">    list.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(index);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> lists = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;lists.length;i++)&#123;</span><br><span class="line">    listenEvent(lists[ i ] , i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/jacks/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/jacks/tags/闭包/" rel="tag">#闭包</a>
+          
+        </div>
+      
+
+      <! -- 添加捐赠图标 -->
+          
+          
+          
+          
+
+          <div class ="post-donate">
+            <div id="donate_board" class="donate_bar center">
+              <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+              <span class="donate_txt">
+                 &uarr;<br>
+                 
+                  Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
+                 
+              </span>
+              <br>
+            </div>
+
+            <div id="donate_guide" class="donate_bar center hidden">
+              
+              <div style="display:inline-block">
+                <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
+                <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
+                <br>
+                <span>支付宝土豪打赏</span>
+                </a>
+              </div>
+              
+
+            
+            <div style="display:inline-block">
+             <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
+               <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
+               <br>
+               <span>微信土豪打赏</span>
+             </a>
+             </div>
+
+            
+
+            </div>
+
+            <script type="text/javascript">
+              document.getElementById('btn_donate').onclick = function(){
+                $('#donate_board').addClass('hidden');
+                $('#donate_guide').removeClass('hidden');
+              }
+            </script>
+          </div>
+
+          
+      
+      <! -- end 添加捐赠图标 -->
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/03/30/那些加班与不加班的年华/" rel="next" title="那些加班与不加班的年华">
+                <i class="fa fa-chevron-left"></i> 那些加班与不加班的年华
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/04/17/何为三原色/" rel="prev" title="何为三原色">
+                何为三原色 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat"
+  data-thread-key="JavaScript闭包总结"
+  data-title="JavaScript闭包总结"
+  data-images="http://7xs9s7.com1.z0.glb.clouddn.com/image/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/closure.png"
+  data-content="<p>　　闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚<strong>匿名函数</strong>和<strong>闭包</strong>这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。<br>"
+  data-url="http://51201314.me/jacks/zh-Hans/2016/04/17/JavaScript闭包总结/index.html">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more">
+        <a class="ds-more" href="javascript:void(0);">分享到：</a>
+      </li>
+      <li>
+        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
+      </li>
+      <li>
+        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
+      </li>
+      <li>
+        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
+      </li>
+      <li>
+        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
+      </li>
+
+    </ul>
+    <div class="ds-share-icons-more"></div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="JavaScript闭包总结"
+           data-title="JavaScript闭包总结" data-url="http://51201314.me/jacks/zh-Hans/2016/04/17/JavaScript闭包总结/index.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/jacks/images/avatar.png"
+               alt="Jacks" />
+          <p class="site-author-name" itemprop="name">Jacks</p>
+          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/jacks/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/jacks/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/jacks/tags">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jingxinxin" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/jxandcxy" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">友情链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://51201314.me/" target="_blank">博主</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://" target="_blank">暂缺</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包的概念"><span class="nav-number">1.</span> <span class="nav-text">闭包的概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包的特性"><span class="nav-number">2.</span> <span class="nav-text">闭包的特性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优缺点"><span class="nav-number">3.</span> <span class="nav-text">优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">3.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺点"><span class="nav-number">3.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包的使用"><span class="nav-number">4.</span> <span class="nav-text">闭包的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数"><span class="nav-number">4.1.</span> <span class="nav-text">匿名函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#匿名函数的定义"><span class="nav-number">4.1.1.</span> <span class="nav-text">匿名函数的定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后小测试"><span class="nav-number">5.</span> <span class="nav-text">最后小测试</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;
+  
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jacks</span>
+    <!--简体繁体转换-->
+  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题
+  -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<!--简体繁体转换-->
+<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
+  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
+  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
+  var translateButtonId = "translateLink"; //默认互换id
+  translateInitilization();
+</script>
+
+<!--不蒜子计算器-->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<br>
+本Blog总访问量
+<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
+&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
+<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/jacks/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"jacks"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/jacks/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/jacks/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
