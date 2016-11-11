@@ -1,0 +1,1134 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/jacks/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/jacks/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS,前端,基础,小技巧," />
+
+
+
+
+
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
+
+
+
+
+
+
+<meta name="description" content="【持续更新】总结css和css3的基础知识点和常见的用法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS常用的基础知识手册">
+<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/06/20/CSS常用的基础知识手册/index.html">
+<meta property="og:site_name" content="Jack·S">
+<meta property="og:description" content="【持续更新】总结css和css3的基础知识点和常见的用法">
+<meta property="og:updated_time" content="2016-08-18T06:32:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS常用的基础知识手册">
+<meta name="twitter:description" content="【持续更新】总结css和css3的基础知识点和常见的用法">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6265421695675270000,
+      author: '地主╮(╯▽╰)╭'
+    }
+  };
+</script>
+
+
+
+
+  <title> CSS常用的基础知识手册 | Jack·S </title>
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="container one-collumn sidebar-position-right page-post-detail ">
+  <div class="headband"></div>
+ 
+
+
+<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
+
+
+  
+
+
+  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/jacks/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Jack·S</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/jacks/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/jacks/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/jacks/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/jacks/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-study">
+          <a href="/jacks/study" rel="section">
+            
+              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
+            
+            读书
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/jacks/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-new">
+          <a href="/jacks/new" rel="section">
+            
+              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
+            
+            更新
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+  </header>
+
+  <main id="main" class="main">
+    <div class="main-inner">
+      <div class="content-wrap">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS常用的基础知识手册
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-20T21:11:26+08:00" content="2016-06-20">
+              2016-06-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
+                    <span itemprop="name">代码技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/jacks/zh-Hans/2016/06/20/CSS常用的基础知识手册/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="CSS常用的基础知识手册" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          <!--不蒜子计算器 每页计算-->
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
+          
+          <!--不蒜子计算器 每页计算-->
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <a id="more"></a>
+<h1 id="HTML&#x4E4B;&#x5224;&#x65AD;IE&#x5E94;&#x7528;&#x4E0D;&#x540C;css&#x7684;&#x7528;&#x6CD5;"><a href="#HTML&#x4E4B;&#x5224;&#x65AD;IE&#x5E94;&#x7528;&#x4E0D;&#x540C;css&#x7684;&#x7528;&#x6CD5;" class="headerlink" title="HTML&#x4E4B;&#x5224;&#x65AD;IE&#x5E94;&#x7528;&#x4E0D;&#x540C;css&#x7684;&#x7528;&#x6CD5;"></a>HTML&#x4E4B;&#x5224;&#x65AD;IE&#x5E94;&#x7528;&#x4E0D;&#x540C;css&#x7684;&#x7528;&#x6CD5;</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--[if IE]&gt;   </span></div><div class="line">&lt;link href=&quot;Style/IE.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt; </div><div class="line">&lt;![endif]--&gt;</div><div class="line"></div><div class="line">&#x8981;&#x907F;&#x6389;IE8&#x7684;&#x8BDD;&#x5C31;&#x5F97;&#xFF1A;</div><div class="line"></div><div class="line"><span class="comment">&lt;!--[if lt IE 8]&gt;   </span></div><div class="line">&lt;link href=&quot;Style/IE.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt; </div><div class="line">&lt;![endif]--&gt;</div><div class="line">lt&#x5728;&#x6B64;&#x4F5C;&#x5C0F;&#x4E8E;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4E8E;IE8&#x7684;&#x7248;&#x672C;&#x90FD;&#x80FD;&#x8BC6;&#x522B;&#x3002;</div><div class="line"></div><div class="line">&#x6216;&#x8005;&#xFF1A;</div><div class="line"></div><div class="line"><span class="comment">&lt;!--[if lte IE 7]&gt;   </span></div><div class="line">&lt;link href=&quot;Style/IE.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt; </div><div class="line">&lt;![endif]--&gt;</div><div class="line">lte&#x5728;&#x6B64;&#x4F5C;&#x5C0F;&#x4E8E;&#x53CA;&#x7B49;&#x4E8E;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C0F;&#x4E8E;&#x53CA;&#x7B49;&#x4E8E;IE7&#x7684;&#x7248;&#x672C;&#x80FD;&#x8BC6;&#x522B;&#x3002;</div><div class="line"></div><div class="line">&#x6216;&#x8005;&#xFF1A;</div><div class="line"></div><div class="line"><span class="comment">&lt;!--[if !(IE 8)]&gt;   </span></div><div class="line">&lt;link href=&quot;Style/IE.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt; </div><div class="line">&lt;![endif]--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">!&#x2013;[if</span> !(<span class="attr">IE</span> <span class="attr">8</span>)]&gt;</span><span class="tag">&lt;<span class="name">![endif]&#x2013;</span>&gt;</span>&#x5728;&#x6B64;&#x5355;&#x72EC;&#x907F;&#x6389;IE8&#x7248;&#x672C;&#x3002;</div><div class="line"></div><div class="line">&#x5728;&#x7F51;&#x4E0A;&#x627E;&#x4E86;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E86;&#x4E0B;&#x6709;&#x51E0;&#x4E2A;&#x4E0D;&#x7B26;&#x5408;&#xFF1A;</div><div class="line"></div><div class="line">1. <span class="comment">&lt;!--[if !IE]&gt;&lt;!--&gt;</span> &#x9664;IE&#x5916;&#x90FD;&#x53EF;&#x8BC6;&#x522B; <span class="comment">&lt;!--&lt;![endif]--&gt;</span> </div><div class="line">2.  <span class="comment">&lt;!--[if IE]&gt; &#x6240;&#x6709;&#x7684;IE&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">3. <span class="comment">&lt;!--[if IE 5.0]&gt;  &#x53EA;&#x6709;IE5.0&#x53EF;&#x4EE5;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">4. <span class="comment">&lt;!--[if IE 5]&gt; &#x4EC5;IE5.0&#x4E0E;IE5.5&#x53EF;&#x4EE5;&#x8BC6;&#x522B;  &lt;![endif]--&gt;</span> </div><div class="line">5. <span class="comment">&lt;!--[if gt IE 5.0]&gt; IE5.0&#x4EE5;&#x53CA;IE5.0&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x90FD;&#x53EF;&#x4EE5;&#x8BC6;&#x522B;  &lt;![endif]--&gt;</span> </div><div class="line">6. <span class="comment">&lt;!--[if IE 6]&gt; &#x4EC5;IE6&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">7. <span class="comment">&lt;!--[if lt IE 6]&gt; IE6&#x4EE5;&#x53CA;IE6&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">8. <span class="comment">&lt;!--[if gte IE 6]&gt; IE6&#x4EE5;&#x53CA;IE6&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">9. <span class="comment">&lt;!--[if  IE 7]&gt; &#x4EC5;IE7&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">10. <span class="comment">&lt;!--[if lt IE 7]&gt;  IE7&#x4EE5;&#x53CA;IE7&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span> </div><div class="line">11. <span class="comment">&lt;!--[if gte IE 7]&gt;  IE7&#x4EE5;&#x53CA;IE7&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span></div><div class="line">&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#x540E;&#xFF1A;</div><div class="line"></div><div class="line">5. <span class="comment">&lt;!--[if gt IE 5.0]&gt; IE5.0&#x4EE5;&#x53CA;IE5.0&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x90FD;&#x53EF;&#x4EE5;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span></div><div class="line">&#x8FD9;&#x4E2A;&#x53EA;&#x6709;IE6&#x4EE5;&#x4E0A;&#x7684;&#x7248;&#x672C;&#x624D;&#x53EF;&#x8BC6;&#x522B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x5305;&#x62EC;IE5.0</div><div class="line"></div><div class="line">7. <span class="comment">&lt;!--[if lt IE 6]&gt; IE6&#x4EE5;&#x53CA;IE6&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span></div><div class="line">&#x8FD9;&#x4E2A;&#x53EA;&#x6709;IE5&#x4EE5;&#x4E0B;&#x7684;&#x7248;&#x672C;&#x624D;&#x80FD;&#x8BC6;&#x522B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x5305;&#x62EC;IE6</div><div class="line"></div><div class="line">10. <span class="comment">&lt;!--[if lt IE 7]&gt; IE7&#x4EE5;&#x53CA;IE7&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x53EF;&#x8BC6;&#x522B; &lt;![endif]--&gt;</span></div><div class="line">&#x8FD9;&#x4E2A;&#x53EA;&#x6709;IE6&#x4EE5;&#x4E0B;&#x7684;&#x7248;&#x672C;&#x624D;&#x80FD;&#x8BC6;&#x522B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x5305;&#x62EC;IE7</div></pre></td></tr></table></figure>
+<p>&#x540E;&#x6765;&#x627E;&#x5230;&#xFF1A;</p>
+<p>gt = Great Then &#x5927;&#x4E8E; &gt; = &gt; &#x5927;&#x4E8E;&#x53F7; lt = Less Then  &#x5C0F;&#x4E8E; &lt; = &lt; &#x5C0F;&#x4E8E;&#x53F7; gte = Great Then or Equal &#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E; lte = Less Then  or Equal &#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;<br>&#x4E00;&#x4E0B;&#x5C31;&#x660E;&#x767D;&#x8FC7;&#x6765;&#x4E86;&#xFF0C;&#x8FD8;&#x8D39;&#x4E86;&#x90A3;&#x4E48;&#x5927;&#x52B2;&#x3002;</p>
+<h1 id="CSS3&#x4E4B;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;"><a href="#CSS3&#x4E4B;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;" class="headerlink" title="CSS3&#x4E4B;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;"></a>CSS3&#x4E4B;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;</h1><p>-moz -webkit -o -ms&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;<br>&#x73B0;&#x5728;CSS3&#x5DF2;&#x7ECF;&#x5927;&#x884C;&#x5176;&#x9053;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x4E00;&#x4E9B;CSS3&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>-moz-box-shadow: 0px 0px 8px #444;<br>-webkit-box-shadow: 0px 0px 8px #444;<br>&#x505A;&#x4E00;&#x4E2A;box&#x9634;&#x5F71;&#x6548;&#x679C;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5199;&#x4E24;&#x884C;&#x524D;&#x7F00;-moz -webkit&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x5462;&#xFF1F;</p>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x73B0;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6807;&#x51C6;&#x8FD8;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6BD4;&#x5982;-moz &#x662F;Firefox&#x80FD;&#x591F;&#x8BC6;&#x522B;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5176;&#x4ED6;&#x524D;&#x7F00;&#x542B;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>Firefox: -moz-box-shadow<br>Safari: -webkit-box-shadow<br>Opera: -o-box-shadow<br>IE: -ms-box-shadow</p>
+<p>&#x6211;&#x4EEC;&#x505A;&#x4E00;&#x4E2A;&#x6548;&#x679C;&#x5199;&#x591A;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;&#x4E0D;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x7F51;&#x9875;&#x5728;&#x5404;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x90FD;&#x80FD;&#x88AB;&#x8BC6;&#x522B;&#x3002;</p>
+<h1 id="&#x5355;&#x4F4D;px&#x548C;em-rem&#x7684;&#x533A;&#x522B;"><a href="#&#x5355;&#x4F4D;px&#x548C;em-rem&#x7684;&#x533A;&#x522B;" class="headerlink" title="&#x5355;&#x4F4D;px&#x548C;em,rem&#x7684;&#x533A;&#x522B;"></a>&#x5355;&#x4F4D;px&#x548C;em,rem&#x7684;&#x533A;&#x522B;</h1><p>&#x56FD;&#x5185;&#x7684;&#x8BBE;&#x8BA1;&#x5E08;&#x5927;&#x90FD;&#x559C;&#x6B22;&#x7528;px&#xFF0C;&#x800C;&#x56FD;&#x5916;&#x7684;&#x7F51;&#x7AD9;&#x5927;&#x90FD;&#x559C;&#x6B22;&#x7528;em&#x548C;rem&#xFF0C;&#x90A3;&#x4E48;&#x4E09;&#x8005;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF0C;&#x53C8;&#x5404;&#x81EA;&#x6709;&#x4EC0;&#x4E48;&#x4F18;&#x52A3;&#x5462;&#xFF1F;</p>
+<p>PX&#x7279;&#x70B9;</p>
+<ol>
+<li>IE&#x65E0;&#x6CD5;&#x8C03;&#x6574;&#x90A3;&#x4E9B;&#x4F7F;&#x7528;px&#x4F5C;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#xFF1B;</li>
+<li>&#x56FD;&#x5916;&#x7684;&#x5927;&#x90E8;&#x5206;&#x7F51;&#x7AD9;&#x80FD;&#x591F;&#x8C03;&#x6574;&#x7684;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#x5176;&#x4F7F;&#x7528;&#x4E86;em&#x6216;rem&#x4F5C;&#x4E3A;&#x5B57;&#x4F53;&#x5355;&#x4F4D;&#xFF1B;</li>
+<li>Firefox&#x80FD;&#x591F;&#x8C03;&#x6574;px&#x548C;em&#xFF0C;rem&#xFF0C;&#x4F46;&#x662F;96%&#x4EE5;&#x4E0A;&#x7684;&#x4E2D;&#x56FD;&#x7F51;&#x6C11;&#x4F7F;&#x7528;IE&#x6D4F;&#x89C8;&#x5668;(&#x6216;&#x5185;&#x6838;)&#x3002;<br>px&#x50CF;&#x7D20;&#xFF08;Pixel&#xFF09;&#x3002;&#x76F8;&#x5BF9;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#x3002;&#x50CF;&#x7D20;px&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x663E;&#x793A;&#x5668;&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;&#x800C;&#x8A00;&#x7684;&#x3002;(&#x5F15;&#x81EA;CSS2.0&#x624B;&#x518C;)<br>em&#x662F;&#x76F8;&#x5BF9;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#x3002;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x5185;&#x6587;&#x672C;&#x7684;&#x5B57;&#x4F53;&#x5C3A;&#x5BF8;&#x3002;&#x5982;&#x5F53;&#x524D;&#x5BF9;&#x884C;&#x5185;&#x6587;&#x672C;&#x7684;&#x5B57;&#x4F53;&#x5C3A;&#x5BF8;&#x672A;&#x88AB;&#x4EBA;&#x4E3A;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x76F8;&#x5BF9;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x5C3A;&#x5BF8;&#x3002;(&#x5F15;&#x81EA;CSS2.0&#x624B;&#x518C;)</li>
+</ol>
+<blockquote>
+<p>&#x4EFB;&#x610F;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x9AD8;&#x90FD;&#x662F;16px&#x3002;&#x6240;&#x6709;&#x672A;&#x7ECF;&#x8C03;&#x6574;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x7B26;&#x5408;: 1em=16px&#x3002;&#x90A3;&#x4E48;12px=0.75em,10px=0.625em&#x3002;&#x4E3A;&#x4E86;&#x7B80;&#x5316;font-size&#x7684;&#x6362;&#x7B97;&#xFF0C;&#x9700;&#x8981;&#x5728;css&#x4E2D;&#x7684;body&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x58F0;&#x660E;Font-size=62.5%&#xFF0C;&#x8FD9;&#x5C31;&#x4F7F;em&#x503C;&#x53D8;&#x4E3A; 16px*62.5%=10px, &#x8FD9;&#x6837;12px=1.2em, 10px=1em, &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x4F60;&#x7684;&#x539F;&#x6765;&#x7684;px&#x6570;&#x503C;&#x9664;&#x4EE5;10&#xFF0C;&#x7136;&#x540E;&#x6362;&#x4E0A;em&#x4F5C;&#x4E3A;&#x5355;&#x4F4D;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
+</blockquote>
+<h2 id="EM&#x7279;&#x70B9;"><a href="#EM&#x7279;&#x70B9;" class="headerlink" title="EM&#x7279;&#x70B9;"></a>EM&#x7279;&#x70B9;</h2><ol>
+<li>em&#x7684;&#x503C;&#x5E76;&#x4E0D;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF1B;</li>
+<li>em&#x4F1A;&#x7EE7;&#x627F;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;</li>
+</ol>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x5199;CSS&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E24;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>body&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x58F0;&#x660E;Font-size=62.5%&#xFF1B;</li>
+<li>&#x5C06;&#x4F60;&#x7684;&#x539F;&#x6765;&#x7684;px&#x6570;&#x503C;&#x9664;&#x4EE5;10&#xFF0C;&#x7136;&#x540E;&#x6362;&#x4E0A;em&#x4F5C;&#x4E3A;&#x5355;&#x4F4D;&#xFF1B;</li>
+<li>&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x90A3;&#x4E9B;&#x88AB;&#x653E;&#x5927;&#x7684;&#x5B57;&#x4F53;&#x7684;em&#x6570;&#x503C;&#x3002;&#x907F;&#x514D;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x7684;&#x91CD;&#x590D;&#x58F0;&#x660E;&#x3002;</li>
+</ol>
+<blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x907F;&#x514D;1.2 * 1.2= 1.44&#x7684;&#x73B0;&#x8C61;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x4F60;&#x5728;#content&#x4E2D;&#x58F0;&#x660E;&#x4E86;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E3A;1.2em&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x58F0;&#x660E;p&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x65F6;&#x5C31;&#x53EA;&#x80FD;&#x662F;1em&#xFF0C;&#x800C;&#x4E0D;&#x662F;1.2em, &#x56E0;&#x4E3A;&#x6B64;em&#x975E;&#x5F7C;em&#xFF0C;&#x5B83;&#x56E0;&#x7EE7;&#x627F;#content&#x7684;&#x5B57;&#x4F53;&#x9AD8;&#x800C;&#x53D8;&#x4E3A;&#x4E86;1em=12px&#x3002;</p>
+</blockquote>
+<h2 id="rem&#x7279;&#x70B9;"><a href="#rem&#x7279;&#x70B9;" class="headerlink" title="rem&#x7279;&#x70B9;"></a>rem&#x7279;&#x70B9;</h2><p>rem&#x662F;CSS3&#x65B0;&#x589E;&#x7684;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#xFF08;root em&#xFF0C;&#x6839;em&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x5355;&#x4F4D;&#x5F15;&#x8D77;&#x4E86;&#x5E7F;&#x6CDB;&#x5173;&#x6CE8;&#x3002;&#x8FD9;&#x4E2A;&#x5355;&#x4F4D;&#x4E0E;em&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x5462;&#xFF1F;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x4F7F;&#x7528;rem&#x4E3A;&#x5143;&#x7D20;&#x8BBE;&#x5B9A;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x65F6;&#xFF0C;&#x4ECD;&#x7136;&#x662F;&#x76F8;&#x5BF9;&#x5927;&#x5C0F;&#xFF0C;&#x4F46;&#x76F8;&#x5BF9;&#x7684;&#x53EA;&#x662F;HTML&#x6839;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E2A;&#x5355;&#x4F4D;&#x53EF;&#x8C13;&#x96C6;&#x76F8;&#x5BF9;&#x5927;&#x5C0F;&#x548C;&#x7EDD;&#x5BF9;&#x5927;&#x5C0F;&#x7684;&#x4F18;&#x70B9;&#x4E8E;&#x4E00;&#x8EAB;&#xFF0C;&#x901A;&#x8FC7;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x53EA;&#x4FEE;&#x6539;&#x6839;&#x5143;&#x7D20;&#x5C31;&#x6210;&#x6BD4;&#x4F8B;&#x5730;&#x8C03;&#x6574;&#x6240;&#x6709;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x9010;&#x5C42;&#x590D;&#x5408;&#x7684;&#x8FDE;&#x9501;&#x53CD;&#x5E94;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x9664;&#x4E86;IE8&#x53CA;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x5916;&#xFF0C;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x5747;&#x5DF2;&#x652F;&#x6301;rem&#x3002;&#x5BF9;&#x4E8E;&#x4E0D;&#x652F;&#x6301;&#x5B83;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5E94;&#x5BF9;&#x65B9;&#x6CD5;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x591A;&#x5199;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x5355;&#x4F4D;&#x7684;&#x58F0;&#x660E;&#x3002;&#x8FD9;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5FFD;&#x7565;&#x7528;rem&#x8BBE;&#x5B9A;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;&#x4E0B;&#x9762;&#x5C31;&#x662F;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<br>        &#x9009;&#x62E9;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x5B57;&#x4F53;&#x5355;&#x4F4D;&#x4E3B;&#x8981;&#x7531;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x6765;&#x51B3;&#x5B9A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x7528;&#x6237;&#x7FA4;&#x90FD;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7248;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x90A3;&#x63A8;&#x8350;&#x4F7F;&#x7528;rem&#xFF0C;&#x5982;&#x679C;&#x8981;&#x8003;&#x8651;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x90A3;&#x5C31;&#x4F7F;&#x7528;px,&#x6216;&#x8005;&#x4E24;&#x8005;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x3002;<br>&#x5728;&#x8FD9;&#x91CC;&#x4E3A;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;px,em,rem&#x5355;&#x4F4D;&#x8F6C;&#x6362;&#x5DE5;&#x5177;<br>&#x5730;&#x5740;&#xFF1A;<a href="http://pxtoem.com/" target="_blank" rel="external">http://pxtoem.com/</a></p>
+<h1 id="&#x5C0F;&#x6280;&#x5DE7;"><a href="#&#x5C0F;&#x6280;&#x5DE7;" class="headerlink" title="&#x5C0F;&#x6280;&#x5DE7;"></a>&#x5C0F;&#x6280;&#x5DE7;</h1><h2 id="&#x6839;&#x636E;&#x5BBD;&#x5EA6;&#x622A;&#x65AD;&#x5C3E;&#x5DF4;&#x7701;&#x7565;&#x6210;&#x2026;"><a href="#&#x6839;&#x636E;&#x5BBD;&#x5EA6;&#x622A;&#x65AD;&#x5C3E;&#x5DF4;&#x7701;&#x7565;&#x6210;&#x2026;" class="headerlink" title="&#x6839;&#x636E;&#x5BBD;&#x5EA6;&#x622A;&#x65AD;&#x5C3E;&#x5DF4;&#x7701;&#x7565;&#x6210;&#x2026;"></a>&#x6839;&#x636E;&#x5BBD;&#x5EA6;&#x622A;&#x65AD;&#x5C3E;&#x5DF4;&#x7701;&#x7565;&#x6210;&#x2026;</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">verflow</span>: <span class="selector-tag">hidden</span>;</div><div class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</div><div class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</div><div class="line"><span class="selector-tag">width</span>: 210<span class="selector-tag">px</span>;</div></pre></td></tr></table></figure>
+<h2 id="&#x753B;&#x56FE;"><a href="#&#x753B;&#x56FE;" class="headerlink" title="&#x753B;&#x56FE;"></a>&#x753B;&#x56FE;</h2><h3 id="&#x753B;&#xD7;&#x53F7;"><a href="#&#x753B;&#xD7;&#x53F7;" class="headerlink" title="&#x753B;&#xD7;&#x53F7;"></a>&#x753B;&#xD7;&#x53F7;</h3> <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"> <span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>css3&#x753B; &#x53C9; &#x53F7;<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line"><span class="selector-tag">b</span> {<span class="attribute">display</span>:inline-block; <span class="attribute">width</span>:<span class="number">12px</span>; <span class="attribute">height</span>:<span class="number">2px</span>; <span class="attribute">background</span>:<span class="number">#f00</span>; <span class="attribute">font-size</span>:<span class="number">0</span>; <span class="attribute">line-height</span>:<span class="number">0</span>;<span class="attribute">vertical-align</span>:middle;<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(45deg);}</div><div class="line"><span class="selector-tag">b</span><span class="selector-pseudo">:after</span> { <span class="attribute">content</span>:<span class="string">&apos;.&apos;</span>; <span class="attribute">display</span>:block; <span class="attribute">width</span>:<span class="number">12px</span>; <span class="attribute">height</span>:<span class="number">2px</span>; <span class="attribute">background</span>:<span class="number">#f00</span>;<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-90deg);}</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;<br>p {font-size:14px; font-size:.875rem;}<br>&#x7F3A;&#x70B9;&#xFF1A;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x4E00;&#x884C;</p>
+<pre><code>&#x8C22;&#x8C22;&#x60A8;&#x767E;&#x5FD9;&#x4E2D;&#xFF0C;&#x9605;&#x8BFB;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#xFF1B;&#x82E5;&#x89C9;&#x5F97;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x5206;&#x4EAB;&#x7ED9;&#x66F4;&#x591A;&#x7684;&#x670B;&#x53CB;
+&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x81EA;&#x7531;&#x8F6C;&#x8F7D;-&#x975E;&#x5546;&#x7528;-&#x975E;&#x884D;&#x751F;-&#x4FDD;&#x6301;&#x7F72;&#x540D;
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/jacks/tags/CSS/" rel="tag">#CSS</a>
+          
+            <a href="/jacks/tags/前端/" rel="tag">#前端</a>
+          
+            <a href="/jacks/tags/基础/" rel="tag">#基础</a>
+          
+            <a href="/jacks/tags/小技巧/" rel="tag">#小技巧</a>
+          
+        </div>
+      
+
+      <! -- 添加捐赠图标 -->
+      
+
+  
+    
+    
+
+    <div class ="post-donate">
+      <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+        <span class="donate_txt">
+                 &uarr;<br>
+          
+            Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
+          
+              </span>
+        <br>
+      </div>
+
+      <div id="donate_guide" class="donate_bar center hidden">
+        
+          <div style="display:inline-block">
+            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
+              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
+              <br>
+              <span>支付宝土豪打赏</span>
+            </a>
+          </div>
+        
+
+        
+          <div style="display:inline-block">
+            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
+              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
+              <br>
+              <span>微信土豪打赏</span>
+            </a>
+          </div>
+
+        
+
+      </div>
+
+      <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+          $('#donate_board').addClass('hidden');
+          $('#donate_guide').removeClass('hidden');
+        }
+      </script>
+    </div>
+
+  
+
+
+      <! -- end 添加捐赠图标 -->
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/06/17/Linux命令使用手册/" rel="next" title="Linux命令使用手册">
+                <i class="fa fa-chevron-left"></i> Linux命令使用手册
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jacks/zh-Hans/2016/06/24/NPM常用命令使用手册/" rel="prev" title="NPM常用命令使用手册">
+                NPM常用命令使用手册 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat"
+  data-thread-key="CSS常用的基础知识手册"
+  data-title="CSS常用的基础知识手册"
+  data-images=""
+  data-content=""
+  data-url="http://51201314.me/jacks/zh-Hans/2016/06/20/CSS常用的基础知识手册/index.html">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more">
+        <a class="ds-more" href="javascript:void(0);">分享到：</a>
+      </li>
+      <li>
+        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
+      </li>
+      <li>
+        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
+      </li>
+      <li>
+        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
+      </li>
+      <li>
+        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
+      </li>
+
+    </ul>
+    <div class="ds-share-icons-more"></div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+
+        </div>
+        
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="monthly" data-num-items="4"></div>
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="CSS常用的基础知识手册"
+           data-title="CSS常用的基础知识手册" data-url="http://51201314.me/jacks/zh-Hans/2016/06/20/CSS常用的基础知识手册/index.html">
+      </div>
+    
+  </div>
+
+
+      </div>
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/jacks/images/avatar.png"
+               alt="Jack·S" />
+          <p class="site-author-name" itemprop="name">Jack·S</p>
+          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/jacks/archives">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/jacks/categories">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/jacks/tags">
+                <span class="site-state-item-count">65</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/jacks/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jingxinxin" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/jxandcxy" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">友情链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://51201314.me/" target="_blank">博主</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://" target="_blank">暂缺</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML之判断IE应用不同css的用法"><span class="nav-number">1.</span> <span class="nav-text">HTML之判断IE应用不同css的用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS3之浏览器前缀"><span class="nav-number">2.</span> <span class="nav-text">CSS3之浏览器前缀</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单位px和em-rem的区别"><span class="nav-number">3.</span> <span class="nav-text">单位px和em,rem的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EM特点"><span class="nav-number">3.1.</span> <span class="nav-text">EM特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rem特点"><span class="nav-number">3.2.</span> <span class="nav-text">rem特点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小技巧"><span class="nav-number">4.</span> <span class="nav-text">小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#根据宽度截断尾巴省略成…"><span class="nav-number">4.1.</span> <span class="nav-text">根据宽度截断尾巴省略成…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#画图"><span class="nav-number">4.2.</span> <span class="nav-text">画图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#画×号"><span class="nav-number">4.2.1.</span> <span class="nav-text">画×号</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </div>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-inner">
+      <div class="copyright">
+  
+  &copy;
+  
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jack·S</span>
+    <!--简体繁体转换-->
+  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题
+  -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<!--简体繁体转换-->
+<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
+  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
+  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
+  var translateButtonId = "translateLink"; //默认互换id
+  translateInitilization();
+</script>
+
+<!--不蒜子计算器-->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<br>
+本Blog总访问量
+<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
+&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
+<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
+
+
+
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/jacks/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/jacks/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+
+
+
+  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
+
+  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
+
+
+
+
+
+
+
+  
+<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.1"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+
+
+
+  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
+
+
+
+
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"Jacks"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/jacks/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/jacks/js/src/hook-duoshuo.js"></script>
+    
+      <script src="/jacks/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/jacks/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/jacks/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+
+
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>
