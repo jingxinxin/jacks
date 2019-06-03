@@ -149,6 +149,13 @@
     </url>
 
     <url>
+        <loc>http://51201314.me/jacks/tags/Hexo/</loc>
+        <lastmod>2016-10-13T04:07:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://51201314.me/jacks/tags/NodeJs/</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -163,7 +170,14 @@
     </url>
 
     <url>
-        <loc>http://51201314.me/jacks/tags/Hexo/</loc>
+        <loc>http://51201314.me/jacks/tags/%E7%94%B5%E5%BD%B1/</loc>
+        <lastmod>2016-10-13T04:07:12.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://51201314.me/jacks/tags/%E8%A7%82%E5%90%8E%E6%84%9F/</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -185,20 +199,6 @@
 
     <url>
         <loc>http://51201314.me/jacks/tags/%E4%BA%BA%E7%94%9F/</loc>
-        <lastmod>2016-10-13T04:07:12.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://51201314.me/jacks/tags/%E7%94%B5%E5%BD%B1/</loc>
-        <lastmod>2016-10-13T04:07:12.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://51201314.me/jacks/tags/%E8%A7%82%E5%90%8E%E6%84%9F/</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -275,14 +275,14 @@
     </url>
 
     <url>
-        <loc>http://51201314.me/jacks/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/</loc>
+        <loc>http://51201314.me/jacks/tags/%E5%9C%86%E5%91%A8%E7%8E%87/</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://51201314.me/jacks/tags/%E5%9C%86%E5%91%A8%E7%8E%87/</loc>
+        <loc>http://51201314.me/jacks/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

@@ -7,14 +7,14 @@
     </url>
     
     <url>
-        <loc>http://51201314.me/jacks/404.html</loc>
+        <loc>http://51201314.me/jacks/README.html</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://51201314.me/jacks/README.html</loc>
+        <loc>http://51201314.me/jacks/404.html</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -28,7 +28,7 @@
     </url>
     
     <url>
-        <loc>http://51201314.me/jacks/tags/index.html</loc>
+        <loc>http://51201314.me/jacks/study/index.html</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -42,7 +42,7 @@
     </url>
     
     <url>
-        <loc>http://51201314.me/jacks/study/index.html</loc>
+        <loc>http://51201314.me/jacks/tags/index.html</loc>
         <lastmod>2016-10-13T04:07:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
