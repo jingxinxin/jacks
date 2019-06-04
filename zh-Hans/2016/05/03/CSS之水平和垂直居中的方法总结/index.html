@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,241 +32,407 @@
 
 
 
-  <link href="/jacks/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="CSS,前端," />
-
-
-
-
-
-  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
 
 
 
 
 
 
-<meta name="description" content="&amp;#x505A;&amp;#x4E3A;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E13;&amp;#x4E1A;&amp;#x7684;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x51B3;&amp;#x5B9A;&amp;#x4F60;&amp;#x6253;&amp;#x9020;&amp;#x81EA;&amp;#x5DF1;">
-<meta name="keywords" content="CSS,前端">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS之水平和垂直居中的方法总结">
-<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/index.html">
-<meta property="og:site_name" content="Jack·S">
-<meta property="og:description" content="&amp;#x505A;&amp;#x4E3A;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E13;&amp;#x4E1A;&amp;#x7684;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x51B3;&amp;#x5B9A;&amp;#x4F60;&amp;#x6253;&amp;#x9020;&amp;#x81EA;&amp;#x5DF1;">
-<meta property="og:updated_time" content="2016-08-03T06:45:06.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS之水平和垂直居中的方法总结">
-<meta name="twitter:description" content="&amp;#x505A;&amp;#x4E3A;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E13;&amp;#x4E1A;&amp;#x7684;&amp;#x524D;&amp;#x7AEF;&amp;#xFF0C;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x51B3;&amp;#x5B9A;&amp;#x4F60;&amp;#x6253;&amp;#x9020;&amp;#x81EA;&amp;#x5DF1;">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+
+
+<link rel="stylesheet" href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/jacks/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/jacks/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6265421695675270000,
-      author: '地主╮(╯▽╰)╭'
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
-
-
-
-  <title> CSS之水平和垂直居中的方法总结 | Jack·S </title>
   
+
+
+
+
+  <meta name="description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+<meta name="keywords" content="CSS,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS之水平和垂直居中的方法总结">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
+<meta property="og:description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2016-08-03T06:45:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS之水平和垂直居中的方法总结">
+<meta name="twitter:description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+
+
+
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>CSS之水平和垂直居中的方法总结 | Jack·S Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
 
-<div class="container one-collumn sidebar-position-right page-post-detail ">
-  <div class="headband"></div>
- 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-
-<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
-
-
-  
-
-
-  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/jacks/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Jack·S</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jacks/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/jacks/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/jacks/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/jacks/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-study">
-          <a href="/jacks/study" rel="section">
-            
-              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
-            
-            读书
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/jacks/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-new">
-          <a href="/jacks/new" rel="section">
-            
-              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
-            
-            更新
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">71</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">40</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+    
+
+  
+
+  
 </nav>
 
- </div>
-  </header>
 
-  <main id="main" class="main">
-    <div class="main-inner">
-      <div class="content-wrap">
-        <div id="content" class="content">
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
           
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
-    
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                CSS之水平和垂直居中的方法总结
+          <h1 class="post-title" itemprop="name headline">CSS之水平和垂直居中的方法总结
+
               
             
           </h1>
@@ -269,262 +440,246 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-03T17:41:06+08:00" content="2016-05-03">
-              2016-05-03
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-05-03 17:41:06" itemprop="dateCreated datePublished" datetime="2016-05-03T17:41:06+08:00">2016-05-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-08-03 14:45:06" itemprop="dateModified" datetime="2016-08-03T14:45:06+08:00">2016-08-03</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="CSS之水平和垂直居中的方法总结" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <span>&nbsp; | &nbsp;
-          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
           
-          <!--不蒜子计算器 每页计算-->
 
           
 
           
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>&#x505A;&#x4E3A;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#xFF0C;&#x4E00;&#x4E2A;&#x4E13;&#x4E1A;&#x7684;&#x524D;&#x7AEF;&#xFF0C;&#x57FA;&#x7840;&#x662F;&#x51B3;&#x5B9A;&#x4F60;&#x6253;&#x9020;&#x81EA;&#x5DF1;&#x5E1D;&#x56FD;&#x5927;&#x53A6;&#x7684;&#x6839;&#x57FA;&#x3002;&#x672C;&#x7BC7;&#x7CFB;&#x7EDF;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;CSS&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x9875;&#x9762;&#x6837;&#x5F0F;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x7ECF;&#x5E38;&#x9047;&#x5230;&#x3002;<br><a id="more"></a><br>&#x4F60;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;<code>&#x5757;&#x7EA7;&#x5143;&#x7D20;</code>&#xFF08;block element&#xFF09;&#x548C;<code>&#x5185;&#x8054;&#x5143;&#x7D20;</code>&#xFF08;inline element&#xFF09;&#x3002;<a href="../../05/CSS&#x4E4B;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x548C;&#x5185;&#x8054;&#x5143;&#x7D20;&#x603B;&#x7ED3;/">&#x4F20;&#x9001;&#x95E8;</a></p>
-<h1 id="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;"><a href="#&#x6C34;&#x5E73;&#x5C45;&#x4E2D;" class="headerlink" title="&#x6C34;&#x5E73;&#x5C45;&#x4E2D;"></a>&#x6C34;&#x5E73;&#x5C45;&#x4E2D;</h1><p>&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x5927;&#x7EA6;&#x6709;&#x4EE5;&#x4E0B;4&#x79CD;</p>
-<h2 id="&#x4F7F;&#x7528;-text-aligh-center"><a href="#&#x4F7F;&#x7528;-text-aligh-center" class="headerlink" title="&#x4F7F;&#x7528; text-aligh:center"></a>&#x4F7F;&#x7528; text-aligh:center</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;text-align: center&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> &gt;</span></div><div class="line">		gg</div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></div><div class="line">	    fsdf</div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+        <p>做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。<br><a id="more"></a><br>你可以首先了解一下<code>块级元素</code>（block element）和<code>内联元素</code>（inline element）。<a href="../../05/CSS之块级元素和内联元素总结/">传送门</a></p>
+<h1 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h1><p>常用的方法大约有以下4种</p>
+<h2 id="使用-text-aligh-center"><a href="#使用-text-aligh-center" class="headerlink" title="使用 text-aligh:center"></a>使用 text-aligh:center</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"text-align: center"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> &gt;</span></span><br><span class="line">		gg</span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">	    fsdf</span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x4E0D;&#x7BA1;&#x662F;<code>&#x5757;&#x7EA7;&#x5143;&#x7D20;</code>&#xFF08;block element&#xFF09;&#x8FD8;&#x662F;<code>&#x5185;&#x8054;&#x5143;&#x7D20;</code>&#xFF08;inline element&#xFF09;&#xFF0C;&#x53EA;&#x8981;&#x7236;&#x6807;&#x7B7E;&#x6709;<code>text-align: center</code>&#x6837;&#x5F0F;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5C45;&#x4E2D;&#x3002;</p>
+<p>不管是<code>块级元素</code>（block element）还是<code>内联元素</code>（inline element），只要父标签有<code>text-align: center</code>样式，会自动居中。</p>
 </blockquote>
-<h2 id="&#x4F7F;&#x7528;-margin-0-auto-&#x4E0E;-width-0px"><a href="#&#x4F7F;&#x7528;-margin-0-auto-&#x4E0E;-width-0px" class="headerlink" title="&#x4F7F;&#x7528; margin: 0 auto &#x4E0E; width: 0px"></a>&#x4F7F;&#x7528; margin: 0 auto &#x4E0E; width: 0px</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;margin: 0 auto;width: 1px&quot;</span>&gt;</span></div><div class="line">    		JX</div><div class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;margin: 0 auto;width: 70px;display: block&quot;</span>&gt;</span></div><div class="line">    		JX</div><div class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="使用-margin-0-auto-与-width-0px"><a href="#使用-margin-0-auto-与-width-0px" class="headerlink" title="使用 margin: 0 auto 与 width: 0px"></a>使用 margin: 0 auto 与 width: 0px</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin: 0 auto;width: 1px"</span>&gt;</span></span><br><span class="line">    		JX</span><br><span class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"margin: 0 auto;width: 70px;display: block"</span>&gt;</span></span><br><span class="line">    		JX</span><br><span class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x6211;&#x5206;&#x522B;&#x5728;<code>&#x5757;&#x7EA7;&#x5143;&#x7D20;</code>&#x548C;<code>&#x5185;&#x8054;&#x5143;&#x7D20;</code>&#x4E0A;&#x90FD;&#x52A0;&#x4E86;&#x8FD9;&#x6837;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x5185;&#x8054;&#x5143;&#x7D20;&#x4E0A;&#x52A0;&#x4E0A;display:block,&#x5C31;&#x548C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x662F;&#x7B49;&#x540C;&#x7684;&#x6548;&#x679C;&#x3002;&#x6211;&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E86;<code>&#x4E0D;&#x540C;&#x7684;&#x5BBD;&#x5EA6;</code>&#xFF0C;&#x770B;&#x6709;&#x4EC0;&#x4E48;&#x5F71;&#x54CD;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;div&#x5BBD;&#x5EA6;&#x53EA;&#x6709;1px&#xFF0C;&#x90A3;&#x4E48;&#x5728;div&#x91CC;&#x9762;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x6362;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;<code>&#x540C;&#x5757;&#x7EA7;&#x5C45;&#x4E2D;&#x5185;&#x8054;&#x5143;&#x7D20;&#x6362;&#x884C;</code>&#xFF1B;&#x7B2C;&#x4E8C;&#x79CD;&#x53EA;&#x8981;span&#x5BBD;&#x5EA6;&#x8DB3;&#x591F;&#x5BBD;&#xFF0C;&#x91CC;&#x9762;&#x7684;<code>&#x5185;&#x8054;&#x5143;&#x7D20;</code>&#x5185;&#x5BB9;&#x4E0D;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x5BBD;&#x5EA6;&#xFF0C;&#x5C31;&#x6309;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x4E0D;&#x4F1A;&#x6362;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;<code>&#x540C;&#x5757;&#x7EA7;&#x5C45;&#x4E2D;&#x5185;&#x8054;&#x5143;&#x7D20;&#x4E0D;&#x6362;&#x884C;</code>&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x633A;&#x597D;&#x73A9;&#x7684;&#x3002;</p>
+<p>我分别在<code>块级元素</code>和<code>内联元素</code>上都加了这样的样式，只要在内联元素上加上display:block,就和块级元素是等同的效果。我这里设置了<code>不同的宽度</code>，看有什么影响。第一个div宽度只有1px，那么在div里面不同的元素内容超过这个，就会自动换行，可以实现<code>同块级居中内联元素换行</code>；第二种只要span宽度足够宽，里面的<code>内联元素</code>内容不超过这个宽度，就按顺序排列不会换行，可以实现<code>同块级居中内联元素不换行</code>，是不是挺好玩的。</p>
 </blockquote>
-<p><strong>&#x4E0A;&#x9762;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x770B;&#x4F3C;&#x6548;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x5176;&#x5B9E;&#x5DEE;&#x522B;&#x662F;&#x5F88;&#x5927;&#x7684;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD; <code>text-aligh:center</code>&#x662F;div&#x5360;&#x636E;&#x4E00;&#x884C;&#x7684;&#x7A7A;&#x95F4;&#x662F;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#xFF0C;&#x800C;&#x662F;<code>&#x5185;&#x5BB9;&#x5C45;&#x4E2D;</code>&#x4E86;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x70B9;&#x7C7B;&#x4F3C;&#x4E8E;padding&#xFF1A;50%&#xFF1B;&#x7B2C;&#x4E8C;&#x79CD;&#x662F;div&#x5BBD;&#x5EA6;&#x53D8;&#x6210;&#x4E86;1px&#xFF0C;&#x4E24;&#x5916;&#x8FB9;<code>&#x8FB9;&#x7F18;&#x8DDD;&#x79BB;</code>&#xFF08;margin&#xFF09;&#x81EA;&#x9002;&#x5E94;&#x4E86;&#xFF0C;<code>&#x6807;&#x7B7E;&#x5C45;&#x4E2D;</code>&#x4E86;&#xFF0C;&#x5185;&#x5BB9;&#x6309;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;&#x6240;&#x4EE5;&#x4F60;&#x662F;&#x60F3;&#x6807;&#x7B7E;&#x5C45;&#x4E2D;&#xFF0C;&#x8FD8;&#x662F;&#x6807;&#x7B7E;&#x7684;&#x5185;&#x5BB9;&#x5C45;&#x4E2D;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x505A;&#x51FA;&#x4E0D;&#x540C;&#x9009;&#x62E9;&#x7684;&#x3002;</strong></p>
-<h2 id="&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x4E0E;&#x8FB9;&#x8DDD;&#x8C03;&#x6574;"><a href="#&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x4E0E;&#x8FB9;&#x8DDD;&#x8C03;&#x6574;" class="headerlink" title="&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x4E0E;&#x8FB9;&#x8DDD;&#x8C03;&#x6574;"></a>&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x4E0E;&#x8FB9;&#x8DDD;&#x8C03;&#x6574;</h2><p>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x822C;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x5458;&#x4E8B;&#x5148;&#x505A;&#x597D;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x8BA1;&#x7B97;&#xFF0C;&#x8FDB;&#x884C;&#x7EC6;&#x5FAE;&#x8C03;&#x6574;&#x5373;&#x53EF;&#x3002;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>position:absolute;</code>&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#xFF0C;&#x5B83;&#x662F;&#x76F8;&#x5BF9;&#x9875;&#x9762;&#x7A97;&#x53E3;&#xFF0C;&#x76F8;&#x5BF9;&#x6765;&#x591A;&#x6BD4;&#x8F83;&#x6B7B;&#x677F;&#xFF0C;&#x4E0D;&#x591F;&#x7075;&#x6D3B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x7684;&#x6548;&#x679C;&#x5C31;&#x662F;&#x5B9A;&#x6B7B;&#x5728;&#x7A97;&#x53E3;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;&#x4E3A;&#x4E86;&#x66F4;&#x7075;&#x6D3B;&#x6EE1;&#x8DB3;&#x9875;&#x9762;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x6765;&#x5B9E;&#x73B0;&#x3002;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;position: relative;left: 50%&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;position: relative;right: 50%&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><strong>上面两种方法看似效果一样，其实差别是很大的，第一种 <code>text-aligh:center</code>是div占据一行的空间是不会改变的，而是<code>内容居中</code>了，可能有点类似于padding：50%；第二种是div宽度变成了1px，两外边<code>边缘距离</code>（margin）自适应了，<code>标签居中</code>了，内容按顺序排列。所以你是想标签居中，还是标签的内容居中，是可以做出不同选择的。</strong></p>
+<h2 id="使用相对定位与边距调整"><a href="#使用相对定位与边距调整" class="headerlink" title="使用相对定位与边距调整"></a>使用相对定位与边距调整</h2><p>这种方法，一般需要程序员事先做好相对位置计算，进行细微调整即可。当然你也可以使用<code>position:absolute;</code>绝对定位，它是相对页面窗口，相对来多比较死板，不够灵活，如果你需要的效果就是定死在窗口某个地方，也可以使用该属性，为了更灵活满足页面的交互性，推荐使用相对定位来实现。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position: relative;left: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position: relative;right: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>left:&#x767E;&#x5206;&#x6BD4;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x53C2;&#x7167;&#x7269;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6548;&#x679C;&#xFF0C;&#x6240;&#x4EE5;&#x7ED9;div&#x4E00;&#x4E2A;<code>position: relative;</code>&#x7684;&#x5C5E;&#x6027;&#x3002;&#x53C2;&#x7167;&#x7269;&#x662F;&#x7236;&#x5143;&#x7D20;&#x3002;&#x6709;&#x4EBA;&#x8BF4;&#x7528;left&#xFF1A;50%;&#x662F;&#x4E0D;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;right&#xFF1A;50%&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5143;&#x7D20;&#x7684;&#x6B63;&#x5E38;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x662F;&#x5728;&#x6700;&#x53F3;&#x8FB9;&#xFF0C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;&#x600E;&#x4E48;&#x89E3;&#x91CA;&#x5462;&#xFF1F;<br><code>position: relative;</code>&#x4E5F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x76EE;&#x524D;&#x5143;&#x7D20;<code>&#x4E0D;&#x52A0;&#x4EFB;&#x4F55;&#x6837;&#x5F0F;&#x521D;&#x59CB;&#x4F4D;&#x7F6E;</code>&#x505A;&#x51FA;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x6539;&#x53D8;,&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x9875;&#x9762;&#x6392;&#x7248;&#x90FD;&#x662F;&#x4ECE;&#x6700;&#x5DE6;&#x8FB9;&#x4F9D;&#x6B21;&#x5411;&#x53F3;&#x8FB9;&#x6392;&#x5217;&#xFF0C;&#x4ECE;&#x4E0A;&#x5916;&#x4E0B;&#x6362;&#x884C;&#xFF1B;&#x90A3;&#x4E48;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x7F51;&#x9875;&#x6700;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x7684;right&#xFF1A;50%&#x5C31;&#x5230;&#x5C4F;&#x5E55;&#x7684;&#x5DE6;&#x5916;&#x9762;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x770B;&#x4E0D;&#x5230;&#x4E86;&#xFF1B;&#x5F53;&#x7136;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x4F1A;&#x53D7;&#x5230;<code>&#x7236;&#x5143;&#x7D20;&#x6837;&#x5F0F;</code>&#x5F71;&#x54CD;&#x8C03;&#x6574;&#xFF0C;&#x6240;&#x4EE5;&#x4E3A;&#x4EC0;&#x4E48;&#x53C8;&#x8BF4;&#x662F;&#x76F8;&#x5BF9;&#x7236;&#x5143;&#x7D20;&#x3002;&#x88AB;&#x7236;&#x5143;&#x7D20;&#x8C03;&#x6574;&#x5230;&#x53F3;&#x4E0A;&#x89D2;&#xFF0C;right&#xFF1A;50%&#x5C31;&#x5BF9;&#x4E86;&#x3002;&#x53E6;&#x5916;&#x8865;&#x5145;&#x4E00;&#x53E5;&#xFF0C;left&#x548C;right&#x7684;&#x79FB;&#x52A8;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x50CF;&#x524D;&#x9762;&#x7684;<code>&#x8C03;&#x6574;&#x5185;&#x5BB9;&#x4F4D;&#x7F6E;</code>&#x548C;<code>&#x586B;&#x5145;&#x5185;&#x5916;&#x8FB9;&#x8DDD;</code>&#xFF0C;&#x800C;&#x662F;&#x79FB;&#x52A8;&#x4E86;&#x2018;&#x753B;&#x5E03;&#x2019;&#x4F4D;&#x7F6E;&#x3002;&#x5177;&#x4F53;&#x8BB2;&#x89E3;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://www.cnblogs.com/lxblog/p/3152897.html" target="_blank" rel="external">CSS&#x4E4B;position&#x4F4D;&#x7F6E;&#x603B;&#x7ED3;</a></p>
+<p>left:百分比需要一个相对参照物，直接使用，没有任何效果，所以给div一个<code>position: relative;</code>的属性。参照物是父元素。有人说用left：50%;是不是也可以用right：50%。如果你的元素的正常起始位置是在最右边，就是可以的。怎么解释呢？<br><code>position: relative;</code>也可以理解为目前元素<code>不加任何样式初始位置</code>做出相对位置改变,我们知道页面排版都是从最左边依次向右边排列，从上外下换行；那么第一个元素就是网页最左上角，相对位置的right：50%就到屏幕的左外面去了，就看不到了；当然一个元素的位置会受到<code>父元素样式</code>影响调整，所以为什么又说是相对父元素。被父元素调整到右上角，right：50%就对了。另外补充一句，left和right的移动，并不是像前面的<code>调整内容位置</code>和<code>填充内外边距</code>，而是移动了‘画布’位置。具体讲解可以参考<a href="http://www.cnblogs.com/lxblog/p/3152897.html" target="_blank" rel="noopener">CSS之position位置总结</a></p>
 </blockquote>
-<p><strong>&#x4EE5;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x4E86;&#xFF0C;&#x4E5F;&#x4E0D;&#x5B58;&#x5728;CSS hack&#x95EE;&#x9898;&#x3002;</strong>&#xFF08;<a href="http://www.kwstu.com/Admin/ViewArticle/201409011604277330" target="_blank" rel="external">&#x4F20;&#x9001;&#x95E8;</a>&#xFF09;</p>
-<h2 id="&#x81EA;&#x9002;&#x5E94;&#x5C45;&#x4E2D;"><a href="#&#x81EA;&#x9002;&#x5E94;&#x5C45;&#x4E2D;" class="headerlink" title="&#x81EA;&#x9002;&#x5E94;&#x5C45;&#x4E2D;"></a>&#x81EA;&#x9002;&#x5E94;&#x5C45;&#x4E2D;</h2><p>&#x8FD9;&#x91CC;&#x53EA;&#x8BB2;&#x5230;&#x5C45;&#x4E2D;&#x81EA;&#x9002;&#x5E94;&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x53EA;&#x662F;&#x5C45;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x5C4F;&#x5E55;&#xFF0C;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x6392;&#x7248;&#x8FD9;&#x91CC;&#x4E0D;&#x505A;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x3002;<br>&#x601D;&#x8DEF;&#x662F;&#x505A;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x5E03;&#x5C40;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5904;&#x4E8E;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x4E2D;&#x65F6;&#x6211;&#x4EEC;&#x53EA;&#x60F3;&#x8BA9;&#x5B83;&#x5C45;&#x4E2D;&#x5E76;&#x4E0D;&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5BBD;&#x5EA6;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BBE;&#x8BA1;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5C5E;&#x6027;margin&#x6765;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E2D;&#x662F;&#x6539;&#x53D8;&#x4E86;&#x7236;&#x5143;&#x7D20;&#x5185;&#x7684;&#x5BB9;&#x5668;&#x5927;&#x5C0F;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x7A7A;&#x95F4;&#x88AB;&#x538B;&#x7F29;&#x4E86;&#xFF08;&#x5916;&#x8FB9;&#x8DDD;&#xFF09;&#xFF1B;padding&#x5C5E;&#x6027;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E2D;&#x662F;&#x6539;&#x53D8;&#x4E86;&#x5BB9;&#x5668;&#x5185;&#x5143;&#x7D20;&#x8DDD;&#x79BB;&#x7236;&#x5143;&#x7D20;&#x8DDD;&#x79BB;&#xFF08;&#x5185;&#x8FB9;&#x8DDD;&#xFF09;&#xFF0C;&#x76F8;&#x5F53;&#x4E0E;&#x628A;&#x5143;&#x7D20;&#x6392;&#x65A5;&#xFF08;&#x6216;&#x8005;&#x63A8;&#x5411;&#xFF09;&#x9760;&#x5185;&#x3002;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;padding: 0px 10%;text-align: center&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><strong>以上的方法已经完全可以兼容所有浏览器了，也不存在CSS hack问题。</strong>（<a href="http://www.kwstu.com/Admin/ViewArticle/201409011604277330" target="_blank" rel="noopener">传送门</a>）</p>
+<h2 id="自适应居中"><a href="#自适应居中" class="headerlink" title="自适应居中"></a>自适应居中</h2><p>这里只讲到居中自适应，因为自适应的内容不只是居中，对不同大小的屏幕，自适应的排版这里不做详细说明。<br>思路是做一个弹性布局，当一个元素处于一个容器中时我们只想让它居中并不设定一个具体的宽度。这样的设计可以使用元素属性margin来设置的，实际中是改变了父元素内的容器大小，相当于空间被压缩了（外边距）；padding属性也是可以实现的，实际中是改变了容器内元素距离父元素距离（内边距），相当与把元素排斥（或者推向）靠内。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"padding: 0px 10%;text-align: center"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>&#x6211;&#x4EEC;&#x53EA;&#x8981;<code>padding&#xFF1A;0px 50%</code>&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x5BB9;&#x5668;&#x5185;&#x5143;&#x7D20;&#x5DE6;&#x53F3;&#x6392;&#x65A5;&#x5230;&#x4E2D;&#x95F4;&#xFF0C;&#x6709;&#x8DA3;&#x7684;&#x662F;&#x8D85;&#x8FC7;50%&#x4F1A;&#x628A;&#x5BB9;&#x5668;&#x6491;&#x5927;&#xFF0C;&#x80FD;&#x60F3;&#x50CF;&#x5230;&#x5427;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5B9E;&#x9645;&#x6392;&#x7248;&#x65F6;&#x5019;&#xFF0C;&#x5BB9;&#x5668;&#x5305;&#x88F9;&#x7740;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5185;&#x5BB9;&#x5C45;&#x4E2D;&#x5373;&#x53EF;&#xFF0C;&#x5F53;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x53D8;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BB9;&#x5668;&#x5927;&#x5C0F;&#x4F1A;&#x6309;&#x6BD4;&#x4F8B;&#x81EA;&#x9002;&#x5E94;&#xFF0C;&#x7136;&#x540E;&#x5185;&#x5BB9;&#x518D;&#x5C45;&#x4E2D;&#x5728;&#x53D8;&#x5316;&#x540E;&#x7684;&#x5BB9;&#x5668;&#x4E2D;&#x95F4;&#x3002;</p>
+<p>我们只要<code>padding：0px 50%</code>就可以把容器内元素左右排斥到中间，有趣的是超过50%会把容器撑大，能想像到吧。但是在实际排版时候，容器包裹着内容，我们把内容居中即可，当窗口大小变动的时候，容器大小会按比例自适应，然后内容再居中在变化后的容器中间。</p>
 </blockquote>
-<p><strong>&#x6CE8;&#x610F;&#x7406;&#x89E3;<code>&#x5185;&#x5BB9;&#x5C45;&#x4E2D;</code>&#x548C;<code>&#x6807;&#x7B7E;&#x5BB9;&#x5668;&#x5C45;&#x4E2D;</code>&#x7684;&#x6982;&#x5FF5;</strong></p>
-<h1 id="&#x5782;&#x76F4;&#x5C45;&#x4E2D;"><a href="#&#x5782;&#x76F4;&#x5C45;&#x4E2D;" class="headerlink" title="&#x5782;&#x76F4;&#x5C45;&#x4E2D;"></a>&#x5782;&#x76F4;&#x5C45;&#x4E2D;</h1><p>&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x51FA;6&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x7B5B;&#x9009;</p>
-<h2 id="&#x4F7F;&#x7528;line-height"><a href="#&#x4F7F;&#x7528;line-height" class="headerlink" title="&#x4F7F;&#x7528;line-height"></a>&#x4F7F;&#x7528;line-height</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;line-height: 100px&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>&#x6211;&#x4F1A;&#x53D7;&#x5F71;&#x54CD;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>注意理解<code>内容居中</code>和<code>标签容器居中</code>的概念</strong></p>
+<h1 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h1><p>这里总结出6种方法，根据实际情况筛选</p>
+<h2 id="使用line-height"><a href="#使用line-height" class="headerlink" title="使用line-height"></a>使用line-height</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"line-height: 100px"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>我会受影响<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>body&#x4E2D;&#x6BCF;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x90FD;&#x4F1A;&#x83B7;&#x53D6;&#x4E0A;&#x4E0B;&#x9AD8;&#x5EA6;&#x4E3A;100px&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5185;&#x5BB9;&#x518D;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#xFF0C;&#x8FD9;&#x91CC;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>span&#x662F;&#x5185;&#x8054;&#x5143;&#x7D20;&#xFF0C;&#x957F;&#x5BBD;&#x53EA;&#x4F1A;&#x53D7;&#x5230;&#x5185;&#x5BB9;&#x591A;&#x5C11;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x88AB;width&#x6216;&#x8005;height&#x5C5E;&#x6027;&#x5F71;&#x54CD;</code>&#x3002;&#x6700;&#x540E;&#x5EFA;&#x8BAE;&#x52A0;&#x4E0A;<code>overflow: hidden;</code>&#x5C5E;&#x6027;</p>
+<p>body中每个子节点，都会获取上下高度为100px的属性，内容再垂直居中，这里注意的是<code>span是内联元素，长宽只会受到内容多少的影响，并不会被width或者height属性影响</code>。最后建议加上<code>overflow: hidden;</code>属性</p>
 </blockquote>
-<p>&#x4F18;&#x70B9;&#x662F;&#xFF1A;</p>
+<p>优点是：</p>
 <ol>
-<li>&#x5BF9;&#x5185;&#x8054;&#x5143;&#x7D20;&#x548C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x90FD;&#x9002;&#x7528;</li>
-<li>&#x517C;&#x5BB9;&#x6240;&#x6709;&#x7B2C;&#x4E94;&#x4EE3;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x517C;&#x5BB9;&#x9AD8;</li>
+<li>对内联元素和块级元素都适用</li>
+<li>兼容所有第五代的浏览器，兼容高</li>
 </ol>
-<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>缺点：</p>
 <ol>
-<li>&#x4F1A;&#x5F71;&#x54CD;&#x6240;&#x6709;&#x5355;&#x72EC;&#x4E00;&#x884C;&#x7684;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF08;&#x4ECE;&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF09;</li>
-<li>&#x5185;&#x5BB9;&#x6709;&#x9650;&#x53EA;&#x80FD;&#x4E00;&#x884C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</li>
-<li>&#x5BF9;&#x975E;&#x6587;&#x5B57;&#xFF0C;&#x4F8B;&#x5982;&#x56FE;&#x7247;&#x548C;&#x5BF9;&#x8C61;&#xFF0C;&#x652F;&#x6301;&#x592A;&#x4E0D;&#x53CB;&#x597D;</li>
+<li>会影响所有单独一行的块级元素（从上面例子可以看出）</li>
+<li>内容有限只能一行垂直居中</li>
+<li>对非文字，例如图片和对象，支持太不友好</li>
 </ol>
-<h2 id="&#x4F7F;&#x7528;padding-24px-0"><a href="#&#x4F7F;&#x7528;padding-24px-0" class="headerlink" title="&#x4F7F;&#x7528;padding: 24px 0"></a>&#x4F7F;&#x7528;padding: 24px 0</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;padding: 24px 0&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="使用padding-24px-0"><a href="#使用padding-24px-0" class="headerlink" title="使用padding: 24px 0"></a>使用padding: 24px 0</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"padding: 24px 0"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x6709;&#x4E00;&#x5B9A;&#x57FA;&#x7840;&#x7684;&#x4EBA;&#x4F1A;&#x77E5;&#x9053;<code>padding&#xFF1A;24px 0</code>&#x5176;&#x5B9E;&#x662F;&#x548C;<code>padding&#xFF1A;24px 0 24px 0</code>&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x4E0A;&#x4E0B;&#x4E24;&#x4E2A;&#x5185;&#x8FB9;&#x8DDD;&#x79BB;24px&#x3002;&#x72B9;&#x8C6B;&#x662F;&#x8C03;&#x6574;&#x7684;&#x5BB9;&#x5668;&#x8FB9;&#x8DDD;&#x53BB;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#xFF0C;&#x5185;&#x5BB9;&#x53EA;&#x9650;&#x5236;&#x4E00;&#x884C;&#x8FD9;&#x79CD;&#x5C40;&#x9650;&#x4E86;&#x3002;</p>
+<p>有一定基础的人会知道<code>padding：24px 0</code>其实是和<code>padding：24px 0 24px 0</code>等价的，就是上下两个内边距离24px。犹豫是调整的容器边距去垂直居中，就不会存在，内容只限制一行这种局限了。</p>
 </blockquote>
-<p>&#x4F18;&#x70B9;&#x662F;&#xFF1A;</p>
+<p>优点是：</p>
 <ol>
-<li>&#x5BF9;&#x5185;&#x8054;&#x5143;&#x7D20;&#x548C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x90FD;&#x9002;&#x7528;</li>
-<li>&#x517C;&#x5BB9;&#x6240;&#x6709;&#x7B2C;&#x4E94;&#x4EE3;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x517C;&#x5BB9;&#x9AD8;</li>
-<li>&#x5BF9;&#x591A;&#x884C;&#x5185;&#x5BB9;&#x53CB;&#x597D;&#x652F;&#x6301;&#xFF0C;&#x4F8B;&#x5982;&#x56FE;&#x7247;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</li>
+<li>对内联元素和块级元素都适用</li>
+<li>兼容所有第五代的浏览器，兼容高</li>
+<li>对多行内容友好支持，例如图片垂直居中</li>
 </ol>
-<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>缺点：</p>
 <ol>
-<li>&#x5F53;&#x8BBE;&#x7F6E;&#x9AD8;&#x5EA6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5BB9;&#x5668;&#x662F;&#x5C45;&#x4E2D;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4F9D;&#x7136;&#x4F1A;&#x5728;&#x5728;&#x5BB9;&#x5668;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x53BB;&#x6389;&#x8FD9;&#x4E2A;&#x9AD8;&#x5EA6;&#xFF0C;&#x8BA9;&#x5176;&#x81EA;&#x9002;&#x5E94;&#x5185;&#x5BB9;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</li>
+<li>当设置高度的时候，容器是居中了，但是容器中的内容依然会在在容器的左上角，所以可能需要去掉这个高度，让其自适应内容的高度。</li>
 </ol>
-<h2 id="&#x6A21;&#x62DF;&#x8868;&#x5E03;&#x5C40;&#x5BB9;&#x5668;&#x56FA;&#x5B9A;&#x9AD8;&#x5EA6;"><a href="#&#x6A21;&#x62DF;&#x8868;&#x5E03;&#x5C40;&#x5BB9;&#x5668;&#x56FA;&#x5B9A;&#x9AD8;&#x5EA6;" class="headerlink" title="&#x6A21;&#x62DF;&#x8868;&#x5E03;&#x5C40;&#x5BB9;&#x5668;&#x56FA;&#x5B9A;&#x9AD8;&#x5EA6;"></a>&#x6A21;&#x62DF;&#x8868;&#x5E03;&#x5C40;&#x5BB9;&#x5668;&#x56FA;&#x5B9A;&#x9AD8;&#x5EA6;</h2><p>&#x6709;&#x4E09;&#x4E2A;&#x6838;&#x5FC3;&#x5C5E;&#x6027;&#x4EE3;&#x7801;<code>display: table-cell;vertical-align: middle;height:  num px</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;display: table-cell;vertical-align: middle;height: 100px&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="模拟表布局容器固定高度"><a href="#模拟表布局容器固定高度" class="headerlink" title="模拟表布局容器固定高度"></a>模拟表布局容器固定高度</h2><p>有三个核心属性代码<code>display: table-cell;vertical-align: middle;height:  num px</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"display: table-cell;vertical-align: middle;height: 100px"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p><strong>&#x5BB9;&#x5668;&#x9AD8;&#x5EA6;&#x9700;&#x8981;&#x8D85;&#x8FC7;&#x5185;&#x5BB9;&#x9AD8;&#x5EA6;&#xFF0C;&#x8D85;&#x8FC7;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5373;&#x4E3A;&#x4E0A;&#x4E0B;&#x504F;&#x79BB;&#x5C45;&#x4E2D;&#x7684;&#x8DDD;&#x79BB;&#x3002;</strong></p>
+<p><strong>容器高度需要超过内容高度，超过的部分，即为上下偏离居中的距离。</strong></p>
 </blockquote>
-<p>&#x4F18;&#x70B9;&#x662F;&#xFF1A;</p>
+<p>优点是：</p>
 <ol>
-<li>&#x80FD;&#x5F88;&#x5B8C;&#x7F8E;&#x7684;&#x5448;&#x73B0;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</li>
+<li>能很完美的呈现垂直居中</li>
 </ol>
-<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>缺点：</p>
 <ol>
-<li>&#x5B83;&#x53EA;&#x9002;&#x7528;&#x4E8E;ie7&#x4EE5;&#x4E0A;&#xFF08;&#x4E0D;&#x5305;&#x62EC;ie7&#xFF09;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;,&#x5982;Mozilla&#xFF0C;Firefox&#xFF0C;Netscape 8&#xFF0C;Opera&#x548C;Safari&#x548C;Chrome</li>
+<li>它只适用于ie7以上（不包括ie7）浏览器的最新版本,如Mozilla，Firefox，Netscape 8，Opera和Safari和Chrome</li>
 </ol>
-<h1 id="&#x5229;&#x7528;vertical-align-middle"><a href="#&#x5229;&#x7528;vertical-align-middle" class="headerlink" title="&#x5229;&#x7528;vertical-align:middle"></a>&#x5229;&#x7528;vertical-align:middle</h1><p>&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x884C;&#x591A;&#x5217;&#xFF0C;&#x4E0D;&#x540C;&#x9AD8;&#x5EA6;&#x5143;&#x7D20;&#x81EA;&#x52A8;&#x5C45;&#x4E2D;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">    ul{</div><div class="line">            display:table;</div><div class="line">            margin:0;</div><div class="line">            padding:0;</div><div class="line">            list-style-type:none;</div><div class="line">            height:100px;</div><div class="line">            border:1px solid;</div><div class="line">        }</div><div class="line">    li{</div><div class="line">            display:table-cell;</div><div class="line">            vertical-align:middle;</div><div class="line">        }</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;a&quot;</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;</span></span></div><div class="line">                width:20px;</div><div class="line">                height:20px;</div><div class="line">                -webkit-border-radius: 50px;</div><div class="line">                -moz-border-radius: 50px;</div><div class="line">                border-radius: 50px;</div><div class="line">                background-color: #3d98e9;&quot;&gt;</div><div class="line">            <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>        </div><div class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;</span></span></div><div class="line">                width:20px;</div><div class="line">                height:20px;</div><div class="line">                -webkit-border-radius: 50px;</div><div class="line">                -moz-border-radius: 50px;</div><div class="line">                border-radius: 50px;</div><div class="line">                background-color: #3d98e9;&quot;&gt;</div><div class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>121<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>1212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<p>&#x4EE5;&#x4E0A;&#x8FD8;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x591A;&#x4E2A;ul&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x884C;&#x591A;&#x5217;</p>
-<h2 id="&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;"><a href="#&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;" class="headerlink" title="&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;"></a>&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;position:relative;top: 50%&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;position:relative;top: 50%;display: block&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="利用vertical-align-middle"><a href="#利用vertical-align-middle" class="headerlink" title="利用vertical-align:middle"></a>利用vertical-align:middle</h1><p>可以实现一行多列，不同高度元素自动居中<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    ul&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">display</span><span class="selector-pseudo">:table</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">padding</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">list-style-type</span><span class="selector-pseudo">:none</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    li&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">display</span><span class="selector-pseudo">:table-cell</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">vertical-align</span><span class="selector-pseudo">:middle</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"a"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"</span></span></span><br><span class="line"><span class="tag"><span class="string">                width:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                height:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -webkit-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -moz-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                background-color: #3d98e9;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>        </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"</span></span></span><br><span class="line"><span class="tag"><span class="string">                width:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                height:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -webkit-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -moz-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                background-color: #3d98e9;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>121<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>1212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>以上还可以利用多个ul可以实现多行多列</p>
+<h2 id="使用相对定位"><a href="#使用相对定位" class="headerlink" title="使用相对定位"></a>使用相对定位</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;top: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:relative;top: 50%;display: block"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BB2;&#x8FC7;&#x7684;&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x7684;&#x539F;&#x7406;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;<strong>&#x540C;&#x6837;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x3002;&#x540C;&#x6837;&#x8BB0;&#x4F4F;&#x5185;&#x8054;&#x5143;&#x7D20;&#x9700;&#x8981;&#x8F6C;&#x5757;&#x7EA7;&#x5143;&#x7D20;</strong></p>
+<p>使用相对位置，和我们之前讲过的水平居中的原理是一样的，<strong>同样不推荐使用绝对定位。同样记住内联元素需要转块级元素</strong></p>
 </blockquote>
-<h2 id="&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;"><a href="#&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;" class="headerlink" title="&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;"></a>&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;position:relative;left:50%&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;position:absolute;top: 50%&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;position:absolute;top: 50%;display: block&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="使用绝对定位"><a href="#使用绝对定位" class="headerlink" title="使用绝对定位"></a>使用绝对定位</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"position:relative;left:50%"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 50%;display: block"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>&#x5982;&#x679C;&#x786C;&#x8981;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#xFF0C;&#x4E3A;&#x4E86;&#x5C3D;&#x53EF;&#x80FD;&#x907F;&#x514D;&#x5E03;&#x5C40;&#x6DF7;&#x4E71;&#xFF0C;&#x5728;&#x5176;&#x7236;&#x5143;&#x7D20;&#x4E0A;&#x52A0;&#x4E0A;<code>position:relative;</code>,&#x8FD9;&#x662F;&#x56E0;&#x4E3A;<strong>&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x4F1A;&#x53BB;&#x5BFB;&#x627E;&#x7236;&#x5143;&#x7D20;&#x662F;&#x5426;&#x4E3A;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#xFF0C;&#x82E5;&#x662F;&#x90A3;&#x4E48;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x662F;&#x4F1A;&#x8DDF;&#x968F;&#x5176;&#x7236;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x7684;</strong>&#x3002;&#x5982;&#x4E0A;&#xFF0C;&#x5F88;&#x7B80;&#x5355;&#x5C31;&#x540C;&#x65F6;&#x5B9E;&#x73B0;&#x4E86;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x3002;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;<strong>&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x4F1A;&#x8986;&#x76D6;</strong>&#xFF0C;&#x6240;&#x4EE5;div&#x548C;span &#x5185;&#x5BB9;&#x91CD;&#x5408;&#x4E86;&#x3002;</p>
+<p>如果硬要使用绝对定位，为了尽可能避免布局混乱，在其父元素上加上<code>position:relative;</code>,这是因为<strong>绝对定位会去寻找父元素是否为相对定位，若是那么绝对定位是会跟随其父元素的位置的</strong>。如上，很简单就同时实现了水平和垂直居中。值得注意的是<strong>绝对定位会覆盖</strong>，所以div和span 内容重合了。</p>
 </blockquote>
-<p>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x7686;&#x6709;&#x4EE5;&#x4E0B;&#x4F18;&#x7F3A;&#x70B9;&#x3002;<br>&#x4F18;&#x70B9;&#x662F;&#xFF1A;</p>
+<p>以上两种皆有以下优缺点。<br>优点是：</p>
 <ol>
-<li>&#x7075;&#x6D3B;&#x6613;&#x7528;</li>
+<li>灵活易用</li>
 </ol>
-<p>&#x7F3A;&#x70B9;&#x662F;&#xFF1A;</p>
+<p>缺点是：</p>
 <ol>
-<li>&#x5728;ie&#x73AF;&#x5883;&#x4E0B;&#x6709;&#x517C;&#x5BB9;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x80FD;&#x5355;&#x72EC;&#x4F9D;&#x9760;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x6709;&#x4E9B;ie&#x7248;&#x672C;&#x53EF;&#x4EE5;&#xFF0C;&#x6709;&#x4E9B;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x8FD8;&#x6709;&#x4E9B;&#x53EA;&#x652F;&#x6301;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;&#x5FAE;&#x8F6F;&#x90FD;&#x653E;&#x5F03;ie&#x4E86;</li>
+<li>在ie环境下有兼容问题，不能单独依靠相对位置来实现，有些ie版本可以，有些不支持，还有些只支持一部分，不多说了微软都放弃ie了</li>
 </ol>
-<h2 id="&#x6D6E;&#x52A8;&#x201C;&#x5E7D;&#x7075;&#x201D;&#x586B;&#x5145;&#x6CD5;"><a href="#&#x6D6E;&#x52A8;&#x201C;&#x5E7D;&#x7075;&#x201D;&#x586B;&#x5145;&#x6CD5;" class="headerlink" title="&#x6D6E;&#x52A8;&#x201C;&#x5E7D;&#x7075;&#x201D;&#x586B;&#x5145;&#x6CD5;"></a>&#x6D6E;&#x52A8;&#x201C;&#x5E7D;&#x7075;&#x201D;&#x586B;&#x5145;&#x6CD5;</h2><p><strong>&#x591A;&#x4E00;&#x4E2A;div&#x586B;&#x5145;&#x7269;&#xFF0C;&#x6765;&#x628A;&#x4F60;&#x9700;&#x8981;&#x7684;&#x5185;&#x5BB9;&#x63A8;&#x5012;&#x5C45;&#x4E2D;&#x4F4D;&#x7F6E;</strong>&#xFF0C;&#x4E5F;&#x9002;&#x7528;&#x4E0E;&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#xFF08;&#x4E0D;&#x89C9;&#x5F97;&#x592A;&#x9EBB;&#x70E6;&#x548C;&#x591A;&#x4F59;&#x5417;&#xFF09;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x4F1A;&#x591A;&#x7528;&#x4E00;&#x4E2A;div&#xFF0C;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x900F;&#x660E;&#x586B;&#x5145;&#x7269;&#xFF0C;&#x6570;&#x91CF;&#x591A;&#x4E86;&#x540E;&#xFF0C;&#x4F1A;&#x591A;&#x591A;&#x5C11;&#x5C11;&#x5F71;&#x54CD;&#x6211;&#x7684;&#x6574;&#x4F53;&#x5E03;&#x5C40;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x4F1A;&#x89C9;&#x5F97;&#x6CA1;&#x6709;&#x7ED3;&#x6784;&#x5316;&#xFF0C;&#x800C;&#x4E14;&#x9700;&#x8981;&#x4F60;&#x53BB;&#x8BA1;&#x7B97;&#x5185;&#x5BB9;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x64CD;&#x4F5C;&#x4E0D;&#x5F53;&#xFF0C;&#x751A;&#x81F3;&#x4F1A;&#x6BC1;&#x4E86;&#x4F60;&#x7684;&#x539F;&#x6709;&#x5E03;&#x5C40;&#xFF0C;&#x6BD5;&#x7ADF;&#x5B83;&#x662F;&#x6D6E;&#x52A8;&#x7684;&#x201C;&#x5E7D;&#x7075;&#x201D;&#x3002;&#x5EFA;&#x8BAE;&#x5C11;&#x7528;&#x3002;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> &gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;float: left;height: 50%;width: 100%;margin-bottom: -40px;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;clear: both;&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;clear: both;&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="浮动“幽灵”填充法"><a href="#浮动“幽灵”填充法" class="headerlink" title="浮动“幽灵”填充法"></a>浮动“幽灵”填充法</h2><p><strong>多一个div填充物，来把你需要的内容推倒居中位置</strong>，也适用与水平居中（不觉得太麻烦和多余吗），这种做会多用一个div，无意义的透明填充物，数量多了后，会多多少少影响我的整体布局，你甚至会觉得没有结构化，而且需要你去计算内容的高度，操作不当，甚至会毁了你的原有布局，毕竟它是浮动的“幽灵”。建议少用。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> &gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left;height: 50%;width: 100%;margin-bottom: -40px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"clear: both;"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"clear: both;"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p><strong>&#x5173;&#x952E;&#x6709;&#x4E24;&#x70B9;&#xFF0C;&#x7B2C;&#x4E00;&#x70B9;&#x662F;</strong>&#x6D6E;&#x52A8;&#x586B;&#x5145;<strong>&#xFF0C;&#x7B2C;&#x4E8C;&#x70B9;&#x662F;</strong>margin-bottom: -Num px;<strong>&#xFF0C;&#x5F53;&#x900F;&#x660E;&#x586B;&#x5145;&#x7269;&#xFF0C;&#x4E0B;&#x8FB9;&#x754C;&#x5728;&#x5C45;&#x4E2D;&#x4F4D;&#x7F6E;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x628A;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x7F29;&#x8FDB;&#x6D6E;&#x52A8;&#x5757;&#x8FB9;&#x7F18;&#x4E0A;&#x5C31;&#x5C45;&#x4E2D;&#x4E86;&#x3002;</strong></p>
+<p><strong>关键有两点，第一点是</strong>浮动填充<strong>，第二点是</strong>margin-bottom: -Num px;<strong>，当透明填充物，下边界在居中位置时候，我们只需要把后面的内容缩进浮动块边缘上就居中了。</strong></p>
 </blockquote>
-<p>&#x4F18;&#x70B9;&#x662F;</p>
+<p>优点是</p>
 <ol>
-<li>&#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x8C03;&#x6574;</li>
+<li>非常灵活，你可以随意调整</li>
 </ol>
-<p>&#x7F3A;&#x70B9;&#x662F;</p>
+<p>缺点是</p>
 <ol>
-<li>&#x9700;&#x8981;&#x8BA1;&#x6570;&#x5185;&#x5BB9;&#x9AD8;&#x5EA6;</li>
-<li>&#x6D6E;&#x52A8;&#x5E03;&#x5C40;&#xFF0C;&#x5BB9;&#x6613;&#x5F71;&#x54CD;&#x9875;&#x9762;</li>
+<li>需要计数内容高度</li>
+<li>浮动布局，容易影响页面</li>
 </ol>
-<h2 id="&#x81EA;&#x9002;&#x5E94;&#x538B;&#x7F29;&#x6CD5;"><a href="#&#x81EA;&#x9002;&#x5E94;&#x538B;&#x7F29;&#x6CD5;" class="headerlink" title="&#x81EA;&#x9002;&#x5E94;&#x538B;&#x7F29;&#x6CD5;"></a>&#x81EA;&#x9002;&#x5E94;&#x538B;&#x7F29;&#x6CD5;</h2><p>&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x5F88;&#x7ECF;&#x5178;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5229;&#x7528;&#x4E86;<code>margin&#xFF1A;auto</code>&#x5C5E;&#x6027;&#x7684;&#x7279;&#x70B9;&#xFF0C;<code>&#x5185;&#x8054;&#x5143;&#x7D20;</code>&#x548C;<code>&#x5757;&#x7EA7;&#x5143;&#x7D20;</code>&#x90FD;&#x9002;&#x7528;&#x3002;&#x5F88;&#x9002;&#x5408;&#x7528;&#x6765;&#x505A;&#x5E7F;&#x544A;&#xFF0C;&#x6D3B;&#x52A8;&#xFF0C;&#x751A;&#x81F3;&#x56FE;&#x7247;&#x7B49;&#xFF0C;&#x663E;&#x793A;&#x5728;<strong>&#x5C4F;&#x5E55;&#x6B63;&#x4E2D;&#x95F4;&#x7684;&#x5F39;&#x51FA;&#x5C42;</strong>&#x3002;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;position:relative;&quot;</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto&quot;</span>&gt;</span></div><div class="line">		JX</div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="自适应压缩法"><a href="#自适应压缩法" class="headerlink" title="自适应压缩法"></a>自适应压缩法</h2><p>这是一种很经典的方法，利用了<code>margin：auto</code>属性的特点，<code>内联元素</code>和<code>块级元素</code>都适用。很适合用来做广告，活动，甚至图片等，显示在<strong>屏幕正中间的弹出层</strong>。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"position:relative;"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>&#x4ECE;&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;<strong>&#x5C4F;&#x5E55;&#x8FB9;&#x754C;&#x5BB9;&#x79EF;</strong>&#xFF0C;<strong>&#x5B83;&#x4F1A;&#x6839;&#x636E;<code>width</code>&#x548C;<code>height</code>&#x7684;&#x5927;&#x5C0F;&#x6765;&#x81EA;&#x52A8;&#x538B;&#x7F29;&#x5BB9;&#x5668;&#x5927;&#x5C0F;&#x3002;&#x5F53;&#x7136;&#x4E3A;0&#xFF0C;&#x5185;&#x5BB9;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5C31;&#x662F;&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E2D;&#x95F4;&#x3002;&#x5982;&#x6709;&#x957F;&#x5BBD;&#xFF0C;&#x5C31;&#x662F;&#x5C45;&#x4E2D;&#x5BB9;&#x5668;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x3002;</strong>&#x8FD9;&#x4E00;&#x70B9;&#x6587;&#x4E2D;&#x6709;&#x591A;&#x6B21;&#xFF0C;&#x5F3A;&#x8C03;&#x5230;&#x3002;</p>
+<p>从代码中我们可以看到，我们设定了一个<strong>屏幕边界容积</strong>，<strong>它会根据<code>width</code>和<code>height</code>的大小来自动压缩容器大小。当然为0，内容起始位置就是屏幕的正中间。如有长宽，就是居中容器的左上角。</strong>这一点文中有多次，强调到。</p>
 </blockquote>
-<p>&#x5F53;&#x4F60;&#x770B;&#x5B8C;&#x8FD9;&#x91CC;&#xFF0C;&#x518D;&#x52A0;&#x4EE5;&#x878D;&#x6C47;&#x8D2F;&#x901A;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x53EF;&#x4EE5;&#x5E94;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x5C45;&#x4E2D;&#x60C5;&#x51B5;&#x4E86;&#x3002;</p>
-<pre><code>&#x8C22;&#x8C22;&#x60A8;&#x767E;&#x5FD9;&#x4E2D;&#xFF0C;&#x9605;&#x8BFB;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#xFF1B;&#x82E5;&#x89C9;&#x5F97;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x5206;&#x4EAB;&#x7ED9;&#x66F4;&#x591A;&#x7684;&#x670B;&#x53CB;
-&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x81EA;&#x7531;&#x8F6C;&#x8F7D;-&#x975E;&#x5546;&#x7528;-&#x975E;&#x884D;&#x751F;-&#x4FDD;&#x6301;&#x7F72;&#x540D;
+<p>当你看完这里，再加以融汇贯通，基本上可以应对所有的居中情况了。</p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
 </code></pre>
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-        
-      
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/jacks/tags/CSS/" rel="tag">#CSS</a>
+            <a href="/jacks/tags/CSS/" rel="tag"># CSS</a>
           
-            <a href="/jacks/tags/前端/" rel="tag">#前端</a>
+            <a href="/jacks/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-    
-    
-
-    <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-                 &uarr;<br>
-          
-            Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
-          
-              </span>
-        <br>
-      </div>
-
-      <div id="donate_guide" class="donate_bar center hidden">
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
-              <br>
-              <span>支付宝土豪打赏</span>
-            </a>
-          </div>
-        
-
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
-              <br>
-              <span>微信土豪打赏</span>
-            </a>
-          </div>
-
-        
-
-      </div>
-
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-
-  
-
-
-      <! -- end 添加捐赠图标 -->
+      
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/05/05/CSS之块级元素和内联元素总结/" rel="next" title="CSS之块级元素和内联元素总结">
-                <i class="fa fa-chevron-left"></i> CSS之块级元素和内联元素总结
+              <a href="/jacks/zh-Hans/2016/04/30/我的圆周率故事/" rel="next" title="我的圆周率故事">
+                <i class="fa fa-chevron-left"></i> 我的圆周率故事
               </a>
             
           </div>
 
+          <span class="post-nav-divider"></span>
+
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/04/30/我的圆周率故事/" rel="prev" title="我的圆周率故事">
-                我的圆周率故事 <i class="fa fa-chevron-right"></i>
+              <a href="/jacks/zh-Hans/2016/05/05/CSS之块级元素和内联元素总结/" rel="prev" title="CSS之块级元素和内联元素总结">
+                CSS之块级元素和内联元素总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -534,67 +689,26 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat"
-  data-thread-key="CSS之水平和垂直居中的方法总结"
-  data-title="CSS之水平和垂直居中的方法总结"
-  data-images=""
-  data-content="<p>&#x505A;&#x4E3A;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#xFF0C;&#x4E00;&#x4E2A;&#x4E13;&#x4E1A;&#x7684;&#x524D;&#x7AEF;&#xFF0C;&#x57FA;&#x7840;&#x662F;&#x51B3;&#x5B9A;&#x4F60;&#x6253;&#x9020;&#x81EA;&#x5DF1;&#x5E1D;&#x56FD;&#x5927;&#x53A6;&#x7684;&#x6839;&#x57FA;&#x3002;&#x672C;&#x7BC7;&#x7CFB;&#x7EDF;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;CSS&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x9875;&#x9762;&#x6837;&#x5F0F;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x7ECF;&#x5E38;&#x9047;&#x5230;&#x3002;<br></p>"
-  data-url="http://51201314.me/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/index.html">
-  <div class="ds-share-inline">
-    <ul class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more">
-        <a class="ds-more" href="javascript:void(0);">分享到：</a>
-      </li>
-      <li>
-        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
-      </li>
-      <li>
-        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
-      </li>
-      <li>
-        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
-      </li>
-      <li>
-        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
-      </li>
-
-    </ul>
-    <div class="ds-share-icons-more"></div>
   </div>
-</div>
 
-      
-    </div>
-  </div>
+
+          </div>
+          
+
+  
+
 
 
         </div>
         
-
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="monthly" data-num-items="4"></div>
-
-
-        
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="CSS之水平和垂直居中的方法总结"
-           data-title="CSS之水平和垂直居中的方法总结" data-url="http://51201314.me/jacks/zh-Hans/2016/05/03/CSS之水平和垂直居中的方法总结/index.html">
-      </div>
-    
-  </div>
-
-
-      </div>
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -611,234 +725,370 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
             站点概览
           </li>
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/jacks/images/avatar.png"
-               alt="Jack·S" />
-          <p class="site-author-name" itemprop="name">Jack·S</p>
-          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/jacks/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/jacks/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/jacks/tags">
-                <span class="site-state-item-count">71</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
+
           
 
-        </nav>
+          
 
-        
-          <div class="feed-link motion-element">
-            <a href="/jacks/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+          
+          
 
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jingxinxin" target="_blank">
-                  
-                    <i class="fa fa-github"></i> GitHub
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/jxandcxy" target="_blank">
-                  
-                    <i class="fa fa-weibo"></i> Weibo
-                  
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        <div class="links-of-blogroll motion-element">
-          
-            <div class="links-of-blogroll-title">友情链接</div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://51201314.me/" target="_blank">博主</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://" target="_blank">暂缺</a>
-                </li>
-              
-            </ul>
-          
-        </div>
-
-      </section>
+      </div>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
-              
             
+            
+            
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#水平居中"><span class="nav-number">1.</span> <span class="nav-text">水平居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-text-aligh-center"><span class="nav-number">1.1.</span> <span class="nav-text">使用 text-aligh:center</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-margin-0-auto-与-width-0px"><span class="nav-number">1.2.</span> <span class="nav-text">使用 margin: 0 auto 与 width: 0px</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用相对定位与边距调整"><span class="nav-number">1.3.</span> <span class="nav-text">使用相对定位与边距调整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自适应居中"><span class="nav-number">1.4.</span> <span class="nav-text">自适应居中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#垂直居中"><span class="nav-number">2.</span> <span class="nav-text">垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用line-height"><span class="nav-number">2.1.</span> <span class="nav-text">使用line-height</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用padding-24px-0"><span class="nav-number">2.2.</span> <span class="nav-text">使用padding: 24px 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模拟表布局容器固定高度"><span class="nav-number">2.3.</span> <span class="nav-text">模拟表布局容器固定高度</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#利用vertical-align-middle"><span class="nav-number">3.</span> <span class="nav-text">利用vertical-align:middle</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用相对定位"><span class="nav-number">3.1.</span> <span class="nav-text">使用相对定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用绝对定位"><span class="nav-number">3.2.</span> <span class="nav-text">使用绝对定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动“幽灵”填充法"><span class="nav-number">3.3.</span> <span class="nav-text">浮动“幽灵”填充法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自适应压缩法"><span class="nav-number">3.4.</span> <span class="nav-text">自适应压缩法</span></a></li></ol></li></ol></div>
             
+
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
-        </section>
+        </div>
+      <!--/noindex-->
+      
+
       
 
     </div>
   </aside>
-
-
-      
-    </div>
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="copyright">
   
-  &copy;
-  
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jack·S</span>
-    <!--简体繁体转换-->
-  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题
-  -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-<!--简体繁体转换-->
-<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
-<script type="text/javascript">
-  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
-  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
-  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
-  var translateButtonId = "translateLink"; //默认互换id
-  translateInitilization();
-</script>
-
-<!--不蒜子计算器-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<br>
-本Blog总访问量
-<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
-&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
-<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
-
-
-
-    </div>
-  </footer>
-
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-</div>
-
-
-
-
 
   
 
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-<script type="text/javascript">
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
 </script>
 
 
-  <script type="text/javascript" src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/jacks/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
 
 
 
-  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
 
-  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -847,348 +1097,89 @@
 
 
   
-<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.1"></script>
+  <script src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
+  
+  <script src="/jacks/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  
+  <script src="/jacks/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
+  
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
 
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
 
 
 
+  
+  
 
 
-
-  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
-
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
 
 
 
 
   
-    
-  
+  <script src="/jacks/js/scrollspy.js?v=7.1.2"></script>
+<script src="/jacks/js/post-details.js?v=7.1.2"></script>
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"Jacks"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
-  
-    
-    <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
-      <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js"></script>
-      <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
+
   
 
 
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
 
 
 
 
+  
 
+  
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/jacks/" + search_path;
-    // monitor main search box;
+  
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
+  
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+  
 
-    });
+  
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
+  
 
 </body>
 </html>

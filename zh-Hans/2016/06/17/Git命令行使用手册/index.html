@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,45 +32,78 @@
 
 
 
-  <link href="/jacks/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Git,命令,代码管理," />
-
-
-
-
-
-  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
 
 
 
 
 
 
-<meta name="description" content="最符合编程人员的操作是Only keyboard，一行代码就可以完成改变世界，再加上上百种快捷键组合，你就才是真正的进入了高手的世界，为了让你看起来像一个真正牛逼的程序猿，就丢掉鼠标，敲打命令行吧">
-<meta name="keywords" content="Git,命令,代码管理">
+
+
+
+
+
+
+<link rel="stylesheet" href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/jacks/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/jacks/',
+    scheme: 'Mist',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="最符合编程人员的操作是Only keyboard，一行代码就可以完成改变世界，再加上上百种快捷键组合，你就才是真正的进入了高手的世界，为了让你看起来像一个真正牛逼的程序猿，就丢掉鼠标，敲打命令行吧">
+<meta name="keywords" content="命令,Git,代码管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git命令行使用手册">
-<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/06/17/Git命令行使用手册/index.html">
-<meta property="og:site_name" content="Jack·S">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-Hans/2016/06/17/Git命令行使用手册/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
 <meta property="og:description" content="最符合编程人员的操作是Only keyboard，一行代码就可以完成改变世界，再加上上百种快捷键组合，你就才是真正的进入了高手的世界，为了让你看起来像一个真正牛逼的程序猿，就丢掉鼠标，敲打命令行吧">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://segmentfault.com/img/bVkJAj/view">
 <meta property="og:updated_time" content="2016-10-24T07:00:00.000Z">
 <meta name="twitter:card" content="summary">
@@ -75,195 +113,328 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6265421695675270000,
-      author: '地主╮(╯▽╰)╭'
-    }
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/zh-Hans/2016/06/17/Git命令行使用手册/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
   };
 </script>
 
-
-
-
-
-  <title> Git命令行使用手册 | Jack·S </title>
+  <title>Git命令行使用手册 | Jack·S Blog</title>
   
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
 
-<div class="container one-collumn sidebar-position-right page-post-detail ">
-  <div class="headband"></div>
- 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-
-<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
-
-
-  
-
-
-  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/jacks/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Jack·S</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jacks/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/jacks/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/jacks/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/jacks/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-study">
-          <a href="/jacks/study" rel="section">
-            
-              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
-            
-            读书
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/jacks/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-new">
-          <a href="/jacks/new" rel="section">
-            
-              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
-            
-            更新
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">71</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">40</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+    
+
+  
+
+  
 </nav>
 
- </div>
-  </header>
 
-  <main id="main" class="main">
-    <div class="main-inner">
-      <div class="content-wrap">
-        <div id="content" class="content">
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
           
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
-    
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/06/17/Git命令行使用手册/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                Git命令行使用手册
+          <h1 class="post-title" itemprop="name headline">Git命令行使用手册
+
               
             
           </h1>
@@ -271,64 +442,88 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-17T13:46:36+08:00" content="2016-06-17">
-              2016-06-17
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-06-17 13:46:36" itemprop="dateCreated datePublished" datetime="2016-06-17T13:46:36+08:00">2016-06-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-10-24 15:00:00" itemprop="dateModified" datetime="2016-10-24T15:00:00+08:00">2016-10-24</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/06/17/Git命令行使用手册/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="Git命令行使用手册" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <span>&nbsp; | &nbsp;
-          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
           
-          <!--不蒜子计算器 每页计算-->
+
+          
 
           
 
           
+            <div class="post-description">最符合编程人员的操作是Only keyboard，一行代码就可以完成改变世界，再加上上百种快捷键组合，你就才是真正的进入了高手的世界，为了让你看起来像一个真正牛逼的程序猿，就丢掉鼠标，敲打命令行吧</div>
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -336,185 +531,147 @@
 
       
         <a id="more"></a>
-<h1 id="&#x57FA;&#x672C;&#x547D;&#x4EE4;&#x548C;&#x7406;&#x89E3;"><a href="#&#x57FA;&#x672C;&#x547D;&#x4EE4;&#x548C;&#x7406;&#x89E3;" class="headerlink" title="&#x57FA;&#x672C;&#x547D;&#x4EE4;&#x548C;&#x7406;&#x89E3;"></a>&#x57FA;&#x672C;&#x547D;&#x4EE4;&#x548C;&#x7406;&#x89E3;</h1><h2 id="git-help"><a href="#git-help" class="headerlink" title="git --help"></a><code>git --help</code></h2><p>&#x4E0D;&#x591A;&#x8BF4;&#xFF0C;&#x4F1A;&#x7ED9;&#x4F60;&#x547D;&#x4EE4;&#x63D0;&#x793A;</p>
-<h2 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a><code>git init</code></h2><p>&#x521D;&#x59CB;&#x5316;&#x7248;&#x672C;&#x5E93;<br><code>git init --bare</code><br>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x88F8;&#x4F53;&#x4ED3;&#x5E93;&#xFF0C;&#x5B83;&#x53EA;&#x5305;&#x542B;.git &#x91CC;&#x9762;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5305;&#x542B;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x53EA;&#x4FDD;&#x5B58;git&#x5386;&#x53F2;&#x63D0;&#x4EA4;&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x4E0D;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x4E0A;&#x9762;&#x8FDB;&#x884C;&#x5404;&#x79CD;git&#x64CD;&#x4F5C;&#xFF0C;&#x7528;&#x6765;&#x5F53;&#x4F5C;&#x8FDC;&#x7AEF;&#x2018;&#x6839;&#x6E90;&#x5E93;&#x2019;&#xFF0C;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x4ED3;&#x5E93;&#x7684;git&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x4E86;&#x5B83;&#x624D;&#x80FD;&#x6709;push&#x7684;&#x64CD;&#x4F5C;&#x3002;<br>&#x5982;&#x4F55;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x88F8;&#x4F53;&#x4ED3;&#x5E93;&#xFF0C;&#x521B;&#x5EFA;&#x672C;&#x5730;&#x5E93;&#x5462;&#xFF1F;</p>
+<h1 id="基本命令和理解"><a href="#基本命令和理解" class="headerlink" title="基本命令和理解"></a>基本命令和理解</h1><h2 id="git-help"><a href="#git-help" class="headerlink" title="git --help"></a><code>git --help</code></h2><p>不多说，会给你命令提示</p>
+<h2 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a><code>git init</code></h2><p>初始化版本库<br><code>git init --bare</code><br>创建一个裸体仓库，它只包含.git 里面的文件，不会包含工作目录的文件，这个仓库只保存git历史提交的版本信息，而不允许用户在上面进行各种git操作，用来当作远端‘根源库’，用来记录所有仓库的git操作，有了它才能有push的操作。<br>如何基于这个裸体仓库，创建本地库呢？</p>
 <ol>
-<li>&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;,&#x521D;&#x59CB;&#x5316;&#x7248;&#x672C;&#x5E93;&#x548C;&#x6DFB;&#x52A0;&#x6307;&#x5B9A;&#x5230;&#x8FD9;&#x4E2A;&#x6839;&#x6E90;&#x5E93;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x6709;&#x4E2A;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E86;<br><code>git init &amp; git remote add &lt;&#x6839;&#x6E90;&#x5E93;&gt;</code></li>
-<li>&#x514B;&#x9686;<br><code>git clone &lt;&#x6839;&#x6E90;&#x5E93;&#x5730;&#x5740;&gt; &lt;&#x672C;&#x5730;&#x5E93;&#x540D;&gt;</code><br>&#x53C2;&#x6570;-o, &#x2013;origin <name><br>use <name> instead of &#x2018;origin&#x2019; to track upstream</name></name></li>
+<li>新建文件夹,初始化版本库和添加指定到这个根源库，就可以在这个文件夹下有个本地仓库了<br><code>git init &amp; git remote add &lt;根源库&gt;</code></li>
+<li>克隆<br><code>git clone &lt;根源库地址&gt; &lt;本地库名&gt;</code><br>参数-o, –origin <name><br>use <name> instead of ‘origin’ to track upstream</name></name></li>
 </ol>
-<h2 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a><code>git pull</code></h2><p><code>git pull</code><br>&#x662F;git fetch+git merge FETCH_HEAD&#x7684;&#x7F29;&#x5199;.</p>
-<p>&#x5B8C;&#x6574;&#x683C;&#x5F0F;&#x662F;<br><code>git pull &lt;&#x8FDC;&#x7A0B;&#x5E93;&#x540D;&gt; &lt;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x540D;&gt;:&lt;&#x672C;&#x5730;&#x5206;&#x652F;&#x540D;&gt;</code></p>
-<p>&#x5982;&#x53D6;&#x56DE;&#x8FDC;&#x7A0B;&#x5E93;&#x4E2D;&#x7684;develop&#x5206;&#x652F;&#xFF0C;&#x4E0E;&#x672C;&#x5730;&#x7684;develop&#x5206;&#x652F;&#x8FDB;&#x884C;merge&#xFF0C;&#x8981;&#x5199;&#x6210;<br><code>git pull origin develop:develop</code><br>&#x5982;&#x679C;&#x662F;&#x8981;&#x4E0E;&#x672C;&#x5730;&#x5F53;&#x524D;&#x5206;&#x652F;merge&#xFF0C;&#x5219;&#x5192;&#x53F7;&#x540E;&#x9762;&#x7684;&lt;&#x672C;&#x5730;&#x5206;&#x652F;&#x540D;&gt;&#x53EF;&#x4EE5;&#x4E0D;&#x5199;&#x3002;<br><code>git pull origin develop</code></p>
-<p>&#x5982;&#x679C;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x5220;&#x9664;&#x4E86;&#x67D0;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;git pull &#x4E0D;&#x4F1A;&#x5728;&#x62C9;&#x53D6;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5220;&#x9664;&#x5BF9;&#x5E94;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x4ED6;&#x4EBA;&#x64CD;&#x4F5C;&#x4E86;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#xFF0C;&#x5BFC;&#x81F4;git pull&#x4E0D;&#x77E5;&#x4E0D;&#x89C9;&#x5220;&#x9664;&#x4E86;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;<br>&#x4F46;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x8FD9;&#x4E2A;&#x884C;&#x4E3A;&#xFF0C;&#x52A0;&#x4E0A;&#x53C2;&#x6570; -p &#x5C31;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x7684;&#x5206;&#x652F;&#x3002;<br><code>git pull -p</code><br>&#x7B49;&#x540C;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;<br><code>git fetch --prune origin</code><br><code>git fetch -p</code></p>
-<h2 id="git-stash-&#x8D2E;&#x85CF;"><a href="#git-stash-&#x8D2E;&#x85CF;" class="headerlink" title="git stash (&#x8D2E;&#x85CF;)"></a><code>git stash (&#x8D2E;&#x85CF;)</code></h2><p>&#x5F53;&#x672C;&#x5730;&#x6709;&#x6587;&#x4EF6;&#x6539;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;commit&#x540E;&#x624D;&#x80FD;pull&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4E0D;&#x60F3;commit&#x4E5F;&#x80FD;pull&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7528;stash</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git stash save <span class="string">&quot;XXXX&quot;</span></div><div class="line">$ git pull --rebase</div><div class="line">$ git stash pop  //&#x6216;&#x8005;git stash apply</div></pre></td></tr></table></figure>
-<p>pop&#x4F1A;apply&#x540E;&#x5220;&#x9664;&#x8FD9;&#x6761;&#x8D2E;&#x85CF;&#x4FE1;&#x606F;&#xFF0C;apply&#x7740;&#x4E0D;&#x4F1A;&#x5220;&#x9664;</p>
-<h2 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a><code>git log</code></h2><p><code>git log</code><br>&#x67E5;&#x770B;commit&#x7684;&#x5386;&#x53F2;</p>
-<p><code>git show &lt;commit-hash-id&gt;</code><br>&#x67E5;&#x770B;&#x67D0;&#x6B21;commit&#x7684;&#x4FEE;&#x6539;&#x5185;&#x5BB9;</p>
-<p><code>git log -p &lt;commit-hash-id&gt;</code><br>&#x7B49;&#x6548;&#x4E0A;&#x9762;</p>
-<p><code>git log -p &lt;filename&gt;</code><br>&#x8BE6;&#x7EC6;&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x5386;&#x53F2;</p>
-<p><code>git log -p -2</code><br>&#x67E5;&#x770B;&#x6700;&#x8FD1;2&#x6B21;&#x7684;&#x66F4;&#x65B0;&#x5185;&#x5BB9;<br>&#x7136;&#x540E;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; less &#x4E2D;&#x5E38;&#x7528;&#x7684;&#x68C0;&#x7D22;&#x547D;&#x4EE4;&#x5373;&#x201C;&#x659C;&#x6760;&#x201D;&#x540E;&#x9762;&#x52A0;&#x68C0;&#x7D22;&#x8BCD;/&#xFF09;&#xFF0C;&#x5728;&#x53D8;&#x66F4;&#x5185;&#x5BB9;&#x65E5;&#x5FD7;&#x4E2D;&#x68C0;&#x7D22;&#x6307;&#x5B9A;&#x7684;&#x5173;&#x952E;&#x8BCD;&#xFF08;&#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x7684;n&#x8DF3;&#x5230;&#x4E0B;&#x4E00;&#x6761;&#x68C0;&#x7D22;&#x7ED3;&#x679C;&#xFF0C;&#x5927;&#x5199;&#x7684;N&#x8DF3;&#x5230;&#x4E0A;&#x4E00;&#x6761;&#x68C0;&#x7D22;&#x7ED3;&#x679C;&#xFF09;</p>
-<p><code>git log -L 1,1:some-file.txt</code><br>&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x53D8;&#x66F4;<br>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5; <code>git blame filename</code> &#x8FFD;&#x67E5;&#x51FA;&#x6587;&#x4EF6;&#x4E2D;&#x6BCF;&#x4E00;&#x884C;&#x662F;&#x7531;&#x8C01;&#x53D8;&#x66F4;&#x7684;&#x3002;</p>
-<p><code>git log --since=7.days --author=Jacks --grep=init -2</code><br>7.days&#x6307;&#x6700;&#x8FD1;7&#x5929;&#xFF0C;&#x4F5C;&#x8005;&#x4E3A;&#x201C;Jacks&#x201D;&#x7684;&#xFF0C;&#x63D0;&#x4EA4;&#x542B;&#x6709;&#x5173;&#x952E;&#x5B57;&#x2019;init&#x2019;&#x7684;&#xFF0C;-2&#x6307;&#x83B7;&#x53D6;&#x524D;&#x6700;&#x8FD1;&#x524D;2&#x6761;&#x8BB0;&#x5F55;&#x3002;</p>
-<p><code>git log --committer=Jack</code><br>&#x5982;&#x6307;&#x5B9A;&#x63D0;&#x4EA4;&#x8005;&#x4E3A;&#x201D;Jack&#x201D;&#x7684;&#x6240;&#x6709;&#x63D0;&#x4EA4;,&#x6CE8;&#x610F;&#x7684;&#x662F;&#x4F5C;&#x8005;&#x540D;&#x5B57;&#x662F;&#x6709;&#x5927;&#x5C0F;&#x5199;&#x4E4B;&#x5206;&#x7684;</p>
-<p>&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x67E5;&#x770B; Git &#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;2008 &#x5E74; 10 &#x6708;&#x671F;&#x95F4;&#xFF0C;Jacks &#x63D0;&#x4EA4;&#x7684;&#x4F46;&#x672A;&#x5408;&#x5E76;&#x7684;&#x6D4B;&#x8BD5;&#x811A;&#x672C;&#xFF08;&#x4F4D;&#x4E8E;&#x9879;&#x76EE;&#x7684; t/ &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x67E5;&#x8BE2;&#x547D;&#x4EE4;&#xFF1A;<br><code>git log --pretty=&quot;%h - %s&quot; --author=Jacks --since=&quot;2008-10-01&quot;  --before=&quot;2008-11-01&quot; --no-merges -- t/</code></p>
+<h2 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a><code>git pull</code></h2><p><code>git pull</code><br>是git fetch+git merge FETCH_HEAD的缩写.</p>
+<p>完整格式是<br><code>git pull &lt;远程库名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></p>
+<p>如取回远程库中的develop分支，与本地的develop分支进行merge，要写成<br><code>git pull origin develop:develop</code><br>如果是要与本地当前分支merge，则冒号后面的&lt;本地分支名&gt;可以不写。<br><code>git pull origin develop</code></p>
+<p>如果远程主机删除了某个分支，默认情况下，git pull 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git pull不知不觉删除了本地分支。<br>但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。<br><code>git pull -p</code><br>等同于下面的命令<br><code>git fetch --prune origin</code><br><code>git fetch -p</code></p>
+<h2 id="git-stash-贮藏"><a href="#git-stash-贮藏" class="headerlink" title="git stash (贮藏)"></a><code>git stash (贮藏)</code></h2><p>当本地有文件改动的时候，需要commit后才能pull，如果我不想commit也能pull的时候，就可以用stash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git stash save <span class="string">"XXXX"</span></span><br><span class="line">$ git pull --rebase</span><br><span class="line">$ git stash pop  //或者git stash apply</span><br></pre></td></tr></table></figure>
+<p>pop会apply后删除这条贮藏信息，apply着不会删除</p>
+<h2 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a><code>git log</code></h2><p><code>git log</code><br>查看commit的历史</p>
+<p><code>git show &lt;commit-hash-id&gt;</code><br>查看某次commit的修改内容</p>
+<p><code>git log -p &lt;commit-hash-id&gt;</code><br>等效上面</p>
+<p><code>git log -p &lt;filename&gt;</code><br>详细查看某个文件的修改历史</p>
+<p><code>git log -p -2</code><br>查看最近2次的更新内容<br>然后你就可以使用 less 中常用的检索命令即“斜杠”后面加检索词/），在变更内容日志中检索指定的关键词（使用小写的n跳到下一条检索结果，大写的N跳到上一条检索结果）</p>
+<p><code>git log -L 1,1:some-file.txt</code><br>查看文件中指定位置的变更<br>你还可以 <code>git blame filename</code> 追查出文件中每一行是由谁变更的。</p>
+<p><code>git log --since=7.days --author=Jacks --grep=init -2</code><br>7.days指最近7天，作者为“Jacks”的，提交含有关键字’init’的，-2指获取前最近前2条记录。</p>
+<p><code>git log --committer=Jack</code><br>如指定提交者为”Jack”的所有提交,注意的是作者名字是有大小写之分的</p>
+<p>来看一个实际的例子，如果要查看 Git 仓库中，2008 年 10 月期间，Jacks 提交的但未合并的测试脚本（位于项目的 t/ 目录下的文件），可以用下面的查询命令：<br><code>git log --pretty=&quot;%h - %s&quot; --author=Jacks --since=&quot;2008-10-01&quot;  --before=&quot;2008-11-01&quot; --no-merges -- t/</code></p>
 <h2 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a><code>git branch</code></h2><ol>
-<li>&#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F; <code>git branch -a</code></li>
-<li>&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F; <code>git branch</code></li>
-<li>&#x521B;&#x5EFA;&#x5206;&#x652F; <code>git branch test</code></li>
-<li>&#x5207;&#x6362;&#x5206;&#x652F; <code>git checkout test</code> (&#x4F1A;&#x53BB;&#x8FDC;&#x7AEF;&#x5339;&#x914D;&#x540D;&#x5B57;&#x4E3A;test&#x7684;&#x5206;&#x5B50;&#xFF0C;&#x5B58;&#x5728;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x672C;&#x5730;&#x5206;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x8FDC;&#x7AEF;&#x672C;&#x5730;&#x90FD;&#x6CA1;&#x6709;&#x5219;&#x4F1A;&#x5931;&#x8D25;)</li>
-<li>&#x5207;&#x6362;&#x5230;&#x8FDC;&#x7AEF;&#x5206;&#x652F; <code>git checkout remotes/origin/test</code></li>
-<li>&#x6839;&#x636E;&#x5F53;&#x524D;&#x5206;&#x652F;&#x521B;&#x5EFA;+&#x5207;&#x6362;&#x4E00;&#x4E2A;&#x65B0;&#x5206;&#x652F; <code>git checkout -b branch-name</code></li>
-<li>&#x5220;&#x9664;&#x672C;&#x5730;&#x5206;&#x652F; <code>git branch -d branch-name</code></li>
-<li>&#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x5206;&#x652F; <code>git push origin :branch-name</code> &#xFF08;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;&#x7A7A;&#x5206;&#x652F;&#x8986;&#x76D6;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#xFF09;&#x6216;&#x8005; <code>git push origin --delete branch-name</code></li>
-<li>&#x5220;&#x9664;&#x672C;&#x5730;&#x5BF9;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x7684;&#x94FE;&#x63A5; <code>git branch -r -d origin/branch-name</code>  &#xFF08;&#x672C;&#x5730;&#x6CA1;&#x4E86;&#xFF0C;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FD8;&#x5728;&#xFF09;</li>
+<li>查看所有分支 <code>git branch -a</code></li>
+<li>查看本地分支 <code>git branch</code></li>
+<li>创建分支 <code>git branch test</code></li>
+<li>切换分支 <code>git checkout test</code> (会去远端匹配名字为test的分子，存在会在本地创建一个对应的本地分子，如果远端本地都没有则会失败)</li>
+<li>切换到远端分支 <code>git checkout remotes/origin/test</code></li>
+<li>根据当前分支创建+切换一个新分支 <code>git checkout -b branch-name</code></li>
+<li>删除本地分支 <code>git branch -d branch-name</code></li>
+<li>删除远端分支 <code>git push origin :branch-name</code> （提交一个空分支覆盖远端分支）或者 <code>git push origin --delete branch-name</code></li>
+<li>删除本地对远端分支的链接 <code>git branch -r -d origin/branch-name</code>  （本地没了，远端服务器上还在）</li>
 </ol>
-<h2 id="git-remote"><a href="#git-remote" class="headerlink" title="git remote"></a><code>git remote</code></h2><p>&#x4E0D;&#x5E26;&#x9009;&#x9879;&#x7684;&#x65F6;&#x5019;&#xFF0C;git remote&#x547D;&#x4EE4;&#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git remote</div><div class="line">origin</div></pre></td></tr></table></figure></p>
-<p>&#x4F7F;&#x7528;-v&#x9009;&#x9879;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x770B;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x7684;&#x7F51;&#x5740;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote -v</div><div class="line">origin  git@github.com:jquery/jquery.git (fetch)</div><div class="line">origin  git@github.com:jquery/jquery.git (push)</div></pre></td></tr></table></figure></p>
-<p>&#x514B;&#x9686;&#x7248;&#x672C;&#x5E93;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x81EA;&#x52A8;&#x88AB;Git&#x547D;&#x540D;&#x4E3A;origin&#x3002;&#x5982;&#x679C;&#x60F3;&#x7528;&#x5176;&#x4ED6;&#x7684;&#x4E3B;&#x673A;&#x540D;&#xFF0C;&#x9700;&#x8981;&#x7528;git clone&#x547D;&#x4EE4;&#x7684;-o&#x9009;&#x9879;&#x6307;&#x5B9A;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> -o jQuery https://github.com/jquery/jquery.git</div><div class="line">$ git remote</div><div class="line">jQuery</div></pre></td></tr></table></figure></p>
-<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x8868;&#x793A;&#xFF0C;&#x514B;&#x9686;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6307;&#x5B9A;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x53EB;&#x505A;jQuery&#x3002;</p>
+<h2 id="git-remote"><a href="#git-remote" class="headerlink" title="git remote"></a><code>git remote</code></h2><p>不带选项的时候，git remote命令列出所有远程主机。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote</span><br><span class="line">origin</span><br></pre></td></tr></table></figure></p>
+<p>使用-v选项，可以参看远程主机的网址。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br><span class="line">origin  git@github.com:jquery/jquery.git (fetch)</span><br><span class="line">origin  git@github.com:jquery/jquery.git (push)</span><br></pre></td></tr></table></figure></p>
+<p>克隆版本库的时候，所使用的远程主机自动被Git命名为origin。如果想用其他的主机名，需要用git clone命令的-o选项指定。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -o jQuery https://github.com/jquery/jquery.git</span><br><span class="line">$ git remote</span><br><span class="line">jQuery</span><br></pre></td></tr></table></figure></p>
+<p>上面命令表示，克隆的时候，指定远程主机叫做jQuery。</p>
 <ol>
-<li>&#x67E5;&#x770B;&#x8BE5;&#x4E3B;&#x673A;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;<br><code>git remote show &lt;&#x4E3B;&#x673A;&#x540D;&gt;</code></li>
-<li>&#x6DFB;&#x52A0;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;<br><code>git remote add &lt;&#x4E3B;&#x673A;&#x540D;&gt; &lt;&#x7F51;&#x5740;&gt;</code></li>
-<li>&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;<br><code>git remote rm &lt;&#x4E3B;&#x673A;&#x540D;&gt;</code></li>
-<li>&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x7684;&#x6539;&#x540D;<br><code>git remote rename &lt;&#x539F;&#x4E3B;&#x673A;&#x540D;&gt; &lt;&#x65B0;&#x4E3B;&#x673A;&#x540D;&gt;</code></li>
+<li>查看该主机的详细信息<br><code>git remote show &lt;主机名&gt;</code></li>
+<li>添加远程主机<br><code>git remote add &lt;主机名&gt; &lt;网址&gt;</code></li>
+<li>删除远程主机<br><code>git remote rm &lt;主机名&gt;</code></li>
+<li>远程主机的改名<br><code>git remote rename &lt;原主机名&gt; &lt;新主机名&gt;</code></li>
 </ol>
 <h2 id="git-tag"><a href="#git-tag" class="headerlink" title="git tag"></a><code>git tag</code></h2><ol>
-<li><p>&#x5F00;&#x59CB;&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#xFF0C;&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git tag <span class="_">-a</span> v0.1.0 -m <span class="string">&quot;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&quot;</span>  //&#x521B;&#x5EFA;&#x6807;&#x7B7E;&#xFF0C; <span class="_">-a</span> &#x52A0;&#x6807;&#x7B7E;&#xFF0C;-m  &#x52A0;&#x6807;&#x7B7E;&#x6CE8;&#x91CA;&#x3002;</div><div class="line">$ git tag v0.1.0                    //&#x521B;&#x5EFA;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x7528;<span class="_">-a</span>&#xFF0C;-m&#x7B49;&#x53C2;&#x6570;</div></pre></td></tr></table></figure>
+<li><p>开始创建标签，创建标签的两种方式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a v0.1.0 -m <span class="string">"第一个版本"</span>  //创建标签， -a 加标签，-m  加标签注释。</span><br><span class="line">$ git tag v0.1.0                    //创建轻量级标签，不用-a，-m等参数</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>&#x67E5;&#x770B;&#x521B;&#x5EFA;&#x7684;&#x6807;&#x7B7E;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git tag            //&#x5217;&#x51FA;git&#x4E2D;&#x73B0;&#x6709;&#x7684;&#x6240;&#x6709;&#x6807;&#x7B7E;</div><div class="line">$ git show v0.1.0    //git show &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x76F8;&#x5E94;&#x6807;&#x7B7E;&#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x8FDE;&#x540C;&#x663E;&#x793A;&#x6253;&#x6807;&#x7B7E;&#x65F6;&#x7684;&#x63D0;&#x4EA4;&#x5BF9;&#x8C61;</div></pre></td></tr></table></figure>
+<li><p>查看创建的标签</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git tag            //列出git中现有的所有标签</span><br><span class="line">$ git show v0.1.0    //git show 命令查看相应标签的版本信息，并连同显示打标签时的提交对象</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>&#x52A0;&#x4E0A;-f &#x8986;&#x76D6;&#x539F;&#x6709;&#x7684;tag<br><code>git tag -f v0.1.0</code></p>
+<li><p>加上-f 覆盖原有的tag<br><code>git tag -f v0.1.0</code></p>
 </li>
-<li><p>&#x5982;&#x679C;&#x8981;&#x4E00;&#x6B21;&#x63A8;&#x9001;&#x6240;&#x6709;&#x672C;&#x5730;&#x65B0;&#x589E;&#x7684;&#x6807;&#x7B7E;&#x4E0A;&#x53BB;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; &#x2013;tags<br><code>git push origin --tags</code><br>&#x6CE8;&#xFF1A;&#x666E;&#x901A;&#x7684;git push origin master&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x63A8;&#x9001;&#x6807;&#x7B7E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x3002;</p>
+<li><p>如果要一次推送所有本地新增的标签上去，可以使用 –tags<br><code>git push origin --tags</code><br>注：普通的git push origin master操作不会推送标签到服务器端。</p>
 </li>
-<li><p>&#x63A8;&#x9001;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x7B7E;&#xB1;<br><code>git push origin v0.1.0</code></p>
+<li><p>推送指定的标签±<br><code>git push origin v0.1.0</code></p>
 </li>
-<li><p>&#x5220;&#x9664;&#x672C;&#x5730;&#x6807;&#x7B7E;<br><code>git tag -d v0.1.0</code></p>
+<li><p>删除本地标签<br><code>git tag -d v0.1.0</code></p>
 </li>
-<li>&#x5220;&#x9664;&#x670D;&#x52A1;&#x5668;&#x6807;&#x7B7E;<br><code>git push origin :refs/tags/v0.1.0</code></li>
+<li>删除服务器标签<br><code>git push origin :refs/tags/v0.1.0</code></li>
 </ol>
-<h2 id="git-merge"><a href="#git-merge" class="headerlink" title="git merge"></a><code>git merge</code></h2><p><code>--no-ff</code><br>&#x6307;&#x7684;&#x662F;&#x5F3A;&#x884C;&#x5173;&#x95ED;fast-forward&#x65B9;&#x5F0F;&#x3002;</p>
-<p><code>fast-forward</code><br>&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5F53;&#x6761;&#x4EF6;&#x5141;&#x8BB8;&#x7684;&#x65F6;&#x5019;&#xFF0C;git&#x76F4;&#x63A5;&#x628A;HEAD&#x6307;&#x9488;&#x6307;&#x5411;&#x5408;&#x5E76;&#x5206;&#x652F;&#x7684;&#x5934;&#xFF0C;&#x5B8C;&#x6210;&#x5408;&#x5E76;&#x3002;&#x5C5E;&#x4E8E;&#x201C;&#x5FEB;&#x8FDB;&#x65B9;&#x5F0F;&#x201D;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5982;&#x679C;&#x5220;&#x9664;&#x5206;&#x652F;&#xFF0C;&#x5219;&#x4F1A;&#x4E22;&#x5931;&#x5206;&#x652F;&#x4FE1;&#x606F;&#x3002;&#x56E0;&#x4E3A;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x6CA1;&#x6709;&#x521B;&#x5EFA;commit</p>
-<p><code>git merge --squash</code><br>&#x662F;&#x7528;&#x6765;&#x628A;&#x4E00;&#x4E9B;&#x4E0D;&#x5FC5;&#x8981;commit&#x8FDB;&#x884C;&#x538B;&#x7F29;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x4F60;&#x7684;feature&#x5728;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x5199;&#x7684;commit&#x5F88;&#x4E71;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5408;&#x5E76;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x5E0C;&#x671B;&#x628A;&#x8FD9;&#x4E9B;&#x5386;&#x53F2;commit&#x5E26;&#x8FC7;&#x6765;&#xFF0C;&#x4E8E;&#x662F;&#x4F7F;&#x7528;&#x2013;squash&#x8FDB;&#x884C;&#x5408;&#x5E76;&#xFF0C;&#x6B64;&#x65F6;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x540C;&#x5408;&#x5E76;&#x540E;&#x4E00;&#x6837;&#x4E86;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x52A8;HEAD&#xFF0C;&#x4E0D;&#x63D0;&#x4EA4;&#x3002;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x989D;&#x5916;&#x7684;commit&#x6765;&#x201C;&#x603B;&#x7ED3;&#x201D;&#x4E00;&#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x5B8C;&#x6210;&#x6700;&#x7EC8;&#x7684;&#x5408;&#x5E76;&#x3002;</p>
-<p>&#x603B;&#x7ED3;&#xFF1A;<br><code>--no-ff</code><br>&#x4E0D;&#x4F7F;&#x7528;fast-forward&#x65B9;&#x5F0F;&#x5408;&#x5E76;&#xFF0C;&#x4FDD;&#x7559;&#x5206;&#x652F;&#x7684;commit&#x5386;&#x53F2;<br><code>--squash</code><br>&#x4F7F;&#x7528;squash&#x65B9;&#x5F0F;&#x5408;&#x5E76;&#xFF0C;&#x628A;&#x591A;&#x6B21;&#x5206;&#x652F;commit&#x5386;&#x53F2;&#x538B;&#x7F29;&#x4E3A;&#x4E00;&#x6B21;<br><img src="https://segmentfault.com/img/bVkJAj/view" alt=""></p>
-<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a><code>git reset</code></h2><p>&#x5728;git&#x4E2D;&#xFF0C;&#x6709;3&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x91CD;&#x7F6E;&#x662F;&#x8BA9;&#x6587;&#x4EF6;&#x56DE;&#x5230;git&#x5386;&#x53F2;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x3002;<br><code>git reset &#x2013;hard NaN</code><br>&#x56DE;&#x9000;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#x3002;&#x4E22;&#x5F03;&#x8FD9;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x53D8;&#x66F4;&#x3002;<br><code>git reset NaN</code><br>&#x56DE;&#x6EDA;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#x3002;&#x5C06;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x53D8;&#x66F4;&#x79FB;&#x52A8;&#x5230;&#x201C;&#x672A;&#x6682;&#x5B58;&#x201D;&#x7684;&#x9636;&#x6BB5;&#x3002;&#x8FD9;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x4F60;&#x9700;&#x8981;&#x8FD0;&#x884C; git add . &#x548C; git commit &#x624D;&#x80FD;&#x628A;&#x8FD9;&#x4E9B;&#x53D8;&#x66F4;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;.<br><code>git reset &#x2013;soft NaN</code><br>&#x56DE;&#x6EDA;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#x3002;&#x5C06;&#x8FD9;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x540E;&#x6240;&#x6709;&#x7684;&#x53D8;&#x66F4;&#x79FB;&#x52A8;&#x5230;&#x6682;&#x5B58;&#x5E76;&#x51C6;&#x5907;&#x63D0;&#x4EA4;&#x9636;&#x6BB5;&#x3002;&#x610F;&#x5473;&#x7740;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x8FD0;&#x884C; git commit &#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E9B;&#x53D8;&#x66F4;&#x63D0;&#x4EA4;&#x5230;&#x4ED3;&#x5E93;&#x3002;</p>
-<h2 id="git-clean"><a href="#git-clean" class="headerlink" title="git clean"></a><code>git clean</code></h2><p>&#x4ECE;&#x5DE5;&#x4F5C;&#x6811;&#x4E2D;&#x79FB;&#x9664;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x9879;&#x76EE;&#x4E2D;&#x65B0;&#x5EFA;&#x6216;&#x8005;&#x590D;&#x5236;&#xFF0C;&#x62D6;&#x5165;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD8;&#x6CA1;&#x8FDB;&#x884C;<code>git add</code>&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x7A81;&#x7136;&#x4E0D;&#x60F3;&#x8981;&#x4E86;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4EEC;&#x6E05;&#x7406;&#x6389;,&#x5982;&#x679C;&#x662F;&#x6587;&#x4EF6;&#x5939;,&#x52A0;&#x4E0A;&#x53C2;&#x6570;-d&#x5373;&#x53EF;</p>
-<h1 id="&#x9AD8;&#x9636;&#x73A9;&#x6CD5;"><a href="#&#x9AD8;&#x9636;&#x73A9;&#x6CD5;" class="headerlink" title="&#x9AD8;&#x9636;&#x73A9;&#x6CD5;"></a>&#x9AD8;&#x9636;&#x73A9;&#x6CD5;</h1><h2 id="git-pull-rebase"><a href="#git-pull-rebase" class="headerlink" title="git pull --rebase"></a><code>git pull --rebase</code></h2><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;,git pull&#x5C31;&#x662F;&#x5148;fetch&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;merge &#x64CD;&#x4F5C;,&#x5982;&#x679C;&#x52A0;&#x2013;rebase &#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x4F7F;&#x7528;git rebase&#x4EE3;&#x66FF;git merge.</p>
-<h3 id="&#x4FEE;&#x6539;git-pull&#x9ED8;&#x8BA4;merge&#x64CD;&#x4F5C;&#x4E3A;rebase"><a href="#&#x4FEE;&#x6539;git-pull&#x9ED8;&#x8BA4;merge&#x64CD;&#x4F5C;&#x4E3A;rebase" class="headerlink" title="&#x4FEE;&#x6539;git pull&#x9ED8;&#x8BA4;merge&#x64CD;&#x4F5C;&#x4E3A;rebase"></a>&#x4FEE;&#x6539;git pull&#x9ED8;&#x8BA4;merge&#x64CD;&#x4F5C;&#x4E3A;rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global pull.rebase <span class="literal">true</span></div></pre></td></tr></table></figure>
-<p>&#x6BCF;&#x6B21; git pull&#x5C31;&#x53D8;&#x6210;fetch+rebase&#xFF0C;&#x7B49;&#x6548;&#x4E8E;git pull &#x2013;rebase</p>
-<h2 id="git-rebase-i"><a href="#git-rebase-i" class="headerlink" title="git rebase -i"></a><code>git rebase -i</code></h2><p>Git&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#x5386;&#x53F2;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;rebase&#x5DE5;&#x5177;&#x6765;&#x884D;&#x5408;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x63D0;&#x4EA4;&#x5230;&#x5B83;&#x4EEC;&#x539F;&#x6765;&#x6240;&#x5728;&#x7684;HEAD&#x4E0A;&#x800C;&#x4E0D;&#x662F;&#x79FB;&#x5230;&#x65B0;&#x7684;&#x4E0A;&#x3002;&#x4F9D;&#x9760;&#x8FD9;&#x4E2A;&#x4EA4;&#x4E92;&#x5F0F;&#x7684;rebase&#x5DE5;&#x5177;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x505C;&#x7559;&#x5728;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x6216;&#x6539;&#x53D8;&#x8BF4;&#x660E;&#x3001;&#x589E;&#x52A0;&#x6587;&#x4EF6;&#x6216;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x4E8B;&#x60C5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED9;<code>git rebase</code>&#x589E;&#x52A0;-i&#x9009;&#x9879;&#x6765;&#x4EE5;&#x4EA4;&#x4E92;&#x65B9;&#x5F0F;&#x5730;&#x8FD0;&#x884C;rebase&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x544A;&#x8BC9;&#x547D;&#x4EE4;&#x884D;&#x5408;&#x5230;&#x54EA;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x6765;&#x6307;&#x660E;&#x4F60;&#x9700;&#x8981;&#x91CD;&#x5199;&#x7684;&#x63D0;&#x4EA4;&#x7684;&#x56DE;&#x6EAF;&#x6DF1;&#x5EA6;&#x3002;<br>&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x6700;&#x8FD1;&#x4E09;&#x6B21;&#x7684;&#x63D0;&#x4EA4;&#x8BF4;&#x660E;&#xFF0C;&#x6216;&#x8005;&#x5176;&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x6B21;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x7ED9;<code>git rebase -i</code>&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x660E;&#x4F60;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x63D0;&#x4EA4;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#xFF0C;&#x4F8B;&#x5982;HEAD~2&#x6216;&#x8005;HEAD~3&#x3002;&#x53EF;&#x80FD;&#x8BB0;&#x4F4F;~3&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x6700;&#x8FD1;&#x4E09;&#x6B21;&#x63D0;&#x4EA4;&#xFF1B;&#x4F46;&#x662F;&#x8BF7;&#x8BB0;&#x4F4F;&#x4F60;&#x4E8B;&#x5B9E;&#x4E0A;&#x6240;&#x6307;&#x7684;&#x662F;&#x56DB;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x524D;&#xFF0C;&#x5373;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x7684;&#x63D0;&#x4EA4;&#x7684;&#x7236;&#x63D0;&#x4EA4;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git rebase -i HEAD~3</div></pre></td></tr></table></figure></p>
-<h3 id="&#x4FEE;&#x6539;commit&#x4FE1;&#x606F;"><a href="#&#x4FEE;&#x6539;commit&#x4FE1;&#x606F;" class="headerlink" title="&#x4FEE;&#x6539;commit&#x4FE1;&#x606F;"></a>&#x4FEE;&#x6539;commit&#x4FE1;&#x606F;</h3><p>HEAD~3&#x8303;&#x56F4;&#x5185;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x90FD;&#x4F1A;&#x88AB;&#x91CD;&#x5199;&#xFF0C;&#x65E0;&#x8BBA;&#x4F60;&#x662F;&#x5426;&#x4FEE;&#x6539;&#x8BF4;&#x660E;&#x3002;<br><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0D;&#x8981;&#x6DB5;&#x76D6;&#x4F60;&#x5DF2;&#x7ECF;&#x63A8;&#x9001;&#x5230;&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x5668;&#x7684;&#x63D0;&#x4EA4;&#x2014;&#x2014;&#x4F1A;&#x4F7F;&#x5176;&#x4ED6;&#x5F00;&#x53D1;&#x8005;&#x4EA7;&#x751F;&#x6DF7;&#x4E71;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x63D0;&#x4F9B;&#x4E86;&#x540C;&#x6837;&#x53D8;&#x66F4;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x3002;<br>&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x8BF4;&#x660E;&#xFF0C;&#x9000;&#x51FA;&#x7F16;&#x8F91;&#x5668;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x8FD0;&#x884C;&#x5728;&#x8F93;&#x5165;&#x4E0A;&#x8FB9;&#x547D;&#x4EE4;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x4E2D;&#xFF0C;&#x5C06;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x524D;&#x9762;&#x7684;<code>pick</code>&#x6539;&#x4E3A;<code>edit</code>,&#x4FDD;&#x5B58;&#x9000;&#x51FA;<br>&#x6839;&#x636E;&#x63D0;&#x793A;&#xFF0C;&#x8FD0;&#x884C;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit --amend</div></pre></td></tr></table></figure></p>
-<p>&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x8BF4;&#x660E;&#xFF0C;&#x9000;&#x51FA;&#x7F16;&#x8F91;&#x5668;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x8FD0;&#x884C;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git rebase --continue</div></pre></td></tr></table></figure></p>
-<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x81EA;&#x52A8;&#x5E94;&#x7528;&#x5176;&#x4ED6;&#x4E24;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x4F60;&#x5C31;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#x4E86;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x66F4;&#x591A;&#x884C;&#x7684;<code>pick</code> &#x6539;&#x4E3A;<br>`edit&#x4F60;&#x5C31;&#x80FD;&#x5BF9;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x7684;&#x63D0;&#x4EA4;&#x91CD;&#x590D;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#x3002;Git&#x6BCF;&#x6B21;&#x90FD;&#x4F1A;&#x505C;&#x4E0B;&#xFF0C;&#x8BA9;&#x4F60;&#x4FEE;&#x6B63;&#x63D0;&#x4EA4;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;&#x3002;</p>
-<h3 id="&#x5408;&#x5E76;&#x591A;&#x6B21;commit&#x4FE1;&#x606F;"><a href="#&#x5408;&#x5E76;&#x591A;&#x6B21;commit&#x4FE1;&#x606F;" class="headerlink" title="&#x5408;&#x5E76;&#x591A;&#x6B21;commit&#x4FE1;&#x606F;"></a>&#x5408;&#x5E76;&#x591A;&#x6B21;commit&#x4FE1;&#x606F;</h3><p>&#x901A;&#x8FC7;<code>git rebase -i HEAD~~~</code>&#x8FDB;&#x5165;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;squash&#x547D;&#x4EE4;&#xFF08;&#x672C;&#x6587;&#x4F7F;&#x7528;&#x7B80;&#x5199;&#x201D;s&#x201C;&#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5408;&#x5E76;&#x591A;&#x6B21;&#x63D0;&#x4EA4;&#xFF09;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#xFF1B;<br>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;</p>
+<h2 id="git-merge"><a href="#git-merge" class="headerlink" title="git merge"></a><code>git merge</code></h2><p><code>--no-ff</code><br>指的是强行关闭fast-forward方式。</p>
+<p><code>fast-forward</code><br>方式就是当条件允许的时候，git直接把HEAD指针指向合并分支的头，完成合并。属于“快进方式”，不过这种情况如果删除分支，则会丢失分支信息。因为在这个过程中没有创建commit</p>
+<p><code>git merge --squash</code><br>是用来把一些不必要commit进行压缩，比如说，你的feature在开发的时候写的commit很乱，那么我们合并的时候不希望把这些历史commit带过来，于是使用–squash进行合并，此时文件已经同合并后一样了，但不移动HEAD，不提交。需要进行一次额外的commit来“总结”一下，然后完成最终的合并。</p>
+<p>总结：<br><code>--no-ff</code><br>不使用fast-forward方式合并，保留分支的commit历史<br><code>--squash</code><br>使用squash方式合并，把多次分支commit历史压缩为一次<br><img src="https://segmentfault.com/img/bVkJAj/view" alt></p>
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a><code>git reset</code></h2><p>在git中，有3种类型的重置文件。重置是让文件回到git历史中的一个特定版本。<br><code>git reset –hard NaN</code><br>回退到一个特定的历史版本。丢弃这次提交之后的所有变更。<br><code>git reset NaN</code><br>回滚到一个特定的历史版本。将这个版本之后的所有变更移动到“未暂存”的阶段。这也就意味着你需要运行 git add . 和 git commit 才能把这些变更提交到仓库.<br><code>git reset –soft NaN</code><br>回滚到一个特定的历史版本。将这次提交之后所有的变更移动到暂存并准备提交阶段。意味着你只需要运行 git commit 就可以把这些变更提交到仓库。</p>
+<h2 id="git-clean"><a href="#git-clean" class="headerlink" title="git clean"></a><code>git clean</code></h2><p>从工作树中移除未跟踪的文件，比如项目中新建或者复制，拖入的文件，还没进行<code>git add</code>的文件，我们突然不想要了，就可以把它们清理掉,如果是文件夹,加上参数-d即可</p>
+<h1 id="高阶玩法"><a href="#高阶玩法" class="headerlink" title="高阶玩法"></a>高阶玩法</h1><h2 id="git-pull-rebase"><a href="#git-pull-rebase" class="headerlink" title="git pull --rebase"></a><code>git pull --rebase</code></h2><p>默认情况下,git pull就是先fetch，然后执行merge 操作,如果加–rebase 参数，就是使用git rebase代替git merge.</p>
+<h3 id="修改git-pull默认merge操作为rebase"><a href="#修改git-pull默认merge操作为rebase" class="headerlink" title="修改git pull默认merge操作为rebase"></a>修改git pull默认merge操作为rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global pull.rebase <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>每次 git pull就变成fetch+rebase，等效于git pull –rebase</p>
+<h2 id="git-rebase-i"><a href="#git-rebase-i" class="headerlink" title="git rebase -i"></a><code>git rebase -i</code></h2><p>Git没有一个修改历史的工具，但是你可以使用rebase工具来衍合一系列的提交到它们原来所在的HEAD上而不是移到新的上。依靠这个交互式的rebase工具，你就可以停留在每一次提交后，如果你想修改或改变说明、增加文件或任何其他事情。你可以通过给<code>git rebase</code>增加-i选项来以交互方式地运行rebase。你必须通过告诉命令衍合到哪次提交，来指明你需要重写的提交的回溯深度。<br>例如，你想修改最近三次的提交说明，或者其中任意一次，你必须给<code>git rebase -i</code>提供一个参数，指明你想要修改的提交的父提交，例如HEAD~2或者HEAD~3。可能记住~3更加容易，因为你想修改最近三次提交；但是请记住你事实上所指的是四次提交之前，即你想修改的提交的父提交。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase -i HEAD~3</span><br></pre></td></tr></table></figure></p>
+<h3 id="修改commit信息"><a href="#修改commit信息" class="headerlink" title="修改commit信息"></a>修改commit信息</h3><p>HEAD~3范围内的每一次提交都会被重写，无论你是否修改说明。<br><strong>注意</strong>：不要涵盖你已经推送到中心服务器的提交——会使其他开发者产生混乱，因为你提供了同样变更的不同版本。<br>修改提交说明，退出编辑器。然后，运行在输入上边命令后的结果中，将你想修改的每一次提交前面的<code>pick</code>改为<code>edit</code>,保存退出<br>根据提示，运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend</span><br></pre></td></tr></table></figure></p>
+<p>修改提交说明，退出编辑器。然后，运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure></p>
+<p>这个命令会自动应用其他两次提交，你就完成任务了。如果你将更多行的<code>pick</code> 改为<br>`edit你就能对你想修改的提交重复这些步骤。Git每次都会停下，让你修正提交，完成后继续运行。</p>
+<h3 id="合并多次commit信息"><a href="#合并多次commit信息" class="headerlink" title="合并多次commit信息"></a>合并多次commit信息</h3><p>通过<code>git rebase -i HEAD~~~</code>进入编辑模式，使用squash命令（本文使用简写”s“，该命令用于合并多次提交），并保存退出；<br>这里需要注意的是</p>
 <ol>
-<li>&#x4FE1;&#x606F;&#x4F1A;&#x5012;&#x5E8F;&#x6392;&#x5217;</li>
-<li>&#x9700;&#x8981;&#x4FDD;&#x7559;&#x4E00;&#x4E2A;pick&#xFF0C;&#x4F5C;&#x4E3A;squash&#x538B;&#x7F29;&#x540E;&#x7684;&#x70B9;&#xFF08;&#x4FDD;&#x7559;&#x54EA;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x70B9;&#xFF0C;&#x6839;&#x636E;&#x4F60;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x54EA;&#x4E2A;&#x70B9;&#x7684;&#x4FE1;&#x606F;&#xFF09;<br>&#x7136;&#x540E;&#x5C06;&#x4E09;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit&#x4FE1;&#x606F;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit&#x4FE1;&#x606F;&#x3002;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x3002;<br>&#x6211;&#x4EEC;&#x518D;&#x6B21;&#x901A;&#x8FC7;git log&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#xFF0C;&#x6B64;&#x65F6;&#x53EA;&#x6709;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit&#x4FE1;&#x606F;&#x3002;<br>&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x5355;&#x5355;&#x4FEE;&#x6539;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;commit&#x4FE1;&#x606F;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x524D;&#x9762;&#x7684;<code>pick</code>&#x6539;&#x4E3A;<code>r</code>,&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x3002;<br>&#x4EE5;&#x4E0A;&#x53C2;&#x6570;git&#x5747;&#x6709;&#x82F1;&#x6587;&#x63D0;&#x793A;&#x3002;<br><strong>&#x6CE8;&#x610F;</strong><br>&#x679C;&#x6709;&#x591A;&#x6B21;commit&#xFF0C;&#x53EF;&#x4EE5;&#x7528;HEAD~&#x9009;&#x53D6;&#x54EA;&#x51E0;&#x6B21;&#xFF0C;&#x4E0D;&#x5E26;HEAD&#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x5168;&#x90E8;&#x7684;commit&#x3002;</li>
+<li>信息会倒序排列</li>
+<li>需要保留一个pick，作为squash压缩后的点（保留哪一个提交点，根据你需要保留哪个点的信息）<br>然后将三次提交的commit信息合并为一次提交的commit信息。保存退出。<br>我们再次通过git log查看提交信息，此时只有一次提交的commit信息。<br>这里也可以单单修改的每一次提交的commit信息，只需要前面的<code>pick</code>改为<code>r</code>,保存退出。<br>以上参数git均有英文提示。<br><strong>注意</strong><br>果有多次commit，可以用HEAD~选取哪几次，不带HEAD参数，就是全部的commit。</li>
 </ol>
-<h2 id="&#x4FEE;&#x6539;&#x8FDC;&#x7AEF;log&#x63D0;&#x4EA4;&#x7684;&#x67D0;&#x6761;&#x65E5;&#x5FD7;"><a href="#&#x4FEE;&#x6539;&#x8FDC;&#x7AEF;log&#x63D0;&#x4EA4;&#x7684;&#x67D0;&#x6761;&#x65E5;&#x5FD7;" class="headerlink" title="&#x4FEE;&#x6539;&#x8FDC;&#x7AEF;log&#x63D0;&#x4EA4;&#x7684;&#x67D0;&#x6761;&#x65E5;&#x5FD7;"></a>&#x4FEE;&#x6539;&#x8FDC;&#x7AEF;log&#x63D0;&#x4EA4;&#x7684;&#x67D0;&#x6761;&#x65E5;&#x5FD7;</h2><p>&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//&#x627E;&#x5230;&#x4F60;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x90A3;&#x6761;<span class="built_in">log</span>&#x7684;id</div><div class="line">$ git <span class="built_in">log</span></div><div class="line">//&#x5047;&#x8BBE;id&#x662F;0b58225,&#x627E;&#x5230;&#x4F60;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x90A3;&#x4E00;&#x6761;,&#x628A;&#x524D;&#x9762;&#x7684;pick&#x6539;&#x6210;r,&#x4FDD;&#x5B58;&#x9000;&#x51FA;</div><div class="line">$ git rebase -i 0b58225~1</div><div class="line">//&#x4FEE;&#x6539;&#x597D;commit&#x540E;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#xFF0C;&#x5F3A;&#x5236;push&#x8FDC;&#x7AEF;&#xFF08;&#x4F1A;&#x5B8C;&#x5168;&#x8986;&#x76D6;&#xFF0C;&#x8C28;&#x614E;&#x64CD;&#x4F5C;&#xFF0C;&#x786E;&#x4FDD;&#x4F60;&#x5F53;&#x524D;&#x548C;&#x8FDC;&#x7AEF;&#x662F;&#x6700;&#x65B0;&#x7684;&#xFF0C;&#x4E0D;&#x7136;&#x4F1A;&#x62B9;&#x70B9;&#x8FDC;&#x7AEF;&#x522B;&#x4EBA;&#x63D0;&#x4EA4;&#x7684;&#xFF09;</div><div class="line">$ git push <span class="_">-f</span> (&#x5EFA;&#x8BAE;push&#x6307;&#x5B9A;&#x5206;&#x652F;&#xFF0C;&#x4EE5;&#x514D;&#x5F71;&#x54CD;&#x5176;&#x4ED6;&#x5206;&#x652F;)</div></pre></td></tr></table></figure></p>
-<h2 id="&#x5220;&#x9664;&#x672C;&#x5730;&#x5E93;&#x4E2D;&#x4E0E;&#x8FDC;&#x7AEF;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8DDF;&#x8E2A;&#x5206;&#x652F;&#xFF08;tracking-branches&#xFF09;"><a href="#&#x5220;&#x9664;&#x672C;&#x5730;&#x5E93;&#x4E2D;&#x4E0E;&#x8FDC;&#x7AEF;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8DDF;&#x8E2A;&#x5206;&#x652F;&#xFF08;tracking-branches&#xFF09;" class="headerlink" title="&#x5220;&#x9664;&#x672C;&#x5730;&#x5E93;&#x4E2D;&#x4E0E;&#x8FDC;&#x7AEF;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8DDF;&#x8E2A;&#x5206;&#x652F;&#xFF08;tracking branches&#xFF09;"></a>&#x5220;&#x9664;&#x672C;&#x5730;&#x5E93;&#x4E2D;&#x4E0E;&#x8FDC;&#x7AEF;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8DDF;&#x8E2A;&#x5206;&#x652F;&#xFF08;tracking branches&#xFF09;</h2><p>&#x5F53;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x88AB;&#x5F3A;&#x5236;&#x5220;&#x9664;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x5E93;&#x4E2D;&#x5BF9;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x8BB0;&#x5F55;&#x5E76;&#x4E0D;&#x4F1A;&#x540C;&#x6B65;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x5F53;&#x6211;&#x4EEC;<code>git branch -a</code>&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x53D1;&#x73B0;&#x5F88;&#x591A;&#x591A;&#x4F59;&#x7684;remote/origin/xxxx&#x5206;&#x652F;&#xFF08;tracking branches&#xFF09;&#x5B9E;&#x9645;&#x4E0A;&#x8FDC;&#x7AEF;&#x5DF2;&#x7ECF;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x3002;<br>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//&#x65B9;&#x6CD5;&#x4E00;</div><div class="line">$ git fetch [origin] -p //[origin]&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;,&#x4E3A;&#x7A7A;&#x4E3A;&#x9ED8;&#x8BA4;&#x6E90;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x53C2;&#x6570;p&#x7B49;&#x540C;prune&#xFF0C;&#x610F;&#x601D;&#x662F;&#x9664;&#x53BB;&#x6240;&#x6709;&#x7684;&#x8FDC;&#x7AEF;&#x5904;&#x4E0D;&#x518D;&#x5B58;&#x5728;&#x7684;&#x4EFB;&#x4F55;&#x8FDC;&#x7AEF;&#x8DDF;&#x8E2A;&#x5206;&#x652F;</div><div class="line">//&#x65B9;&#x6CD5;&#x4E8C;</div><div class="line">$ git remote prune [origin] //git remote &#x6211;&#x4EEC;&#x77E5;&#x9053;&#x662F;&#x7BA1;&#x7406;&#x5DF2;&#x7ECF;&#x8DDF;&#x8E2A;&#x7684;&#x5E93;&#xFF0C;&#x529F;&#x80FD;&#x540C;&#x4E0A;</div></pre></td></tr></table></figure></p>
-<h2 id="&#x7F8E;&#x5316;Git&#x663E;&#x793A;&#x6F02;&#x4EAE;&#x65E5;&#x5FD7;&#x7684;&#x5C0F;&#x6280;&#x5DE7;"><a href="#&#x7F8E;&#x5316;Git&#x663E;&#x793A;&#x6F02;&#x4EAE;&#x65E5;&#x5FD7;&#x7684;&#x5C0F;&#x6280;&#x5DE7;" class="headerlink" title="&#x7F8E;&#x5316;Git&#x663E;&#x793A;&#x6F02;&#x4EAE;&#x65E5;&#x5FD7;&#x7684;&#x5C0F;&#x6280;&#x5DE7;"></a>&#x7F8E;&#x5316;Git&#x663E;&#x793A;&#x6F02;&#x4EAE;&#x65E5;&#x5FD7;&#x7684;&#x5C0F;&#x6280;&#x5DE7;</h2><p>&#x547D;&#x4EE4;&#x884C;&#x5982;&#x4E0B;&#xFF1A;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span> --graph --pretty=format:<span class="string">&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos;</span> --abbrev-commit --</div><div class="line"></div><div class="line">&#x8FD9;&#x6837;&#x6709;&#x70B9;&#x957F;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#xFF1A;</div><div class="line"></div><div class="line">$ git config --global alias.lg <span class="string">&quot;log --color --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit --&quot;</span></div><div class="line"></div><div class="line">&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x77ED;&#x547D;&#x4EE4;&#x4E86;&#xFF1A;</div><div class="line">$ git lg</div></pre></td></tr></table></figure></p>
-<h2 id="&#x91CD;&#x65B0;&#x97AD;&#x7B56;&#x4F60;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x627E;&#x56DE;&#x4E22;&#x5931;&#x7684;commit&#xFF09;"><a href="#&#x91CD;&#x65B0;&#x97AD;&#x7B56;&#x4F60;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x627E;&#x56DE;&#x4E22;&#x5931;&#x7684;commit&#xFF09;" class="headerlink" title="&#x91CD;&#x65B0;&#x97AD;&#x7B56;&#x4F60;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x627E;&#x56DE;&#x4E22;&#x5931;&#x7684;commit&#xFF09;"></a>&#x91CD;&#x65B0;&#x97AD;&#x7B56;&#x4F60;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x627E;&#x56DE;&#x4E22;&#x5931;&#x7684;commit&#xFF09;</h2><p><code>Git reflog</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;,&#x5305;&#x62EC;&#x5DF2;&#x7ECF;&#x88AB;&#x5220;&#x9664;&#x7684;commit&#x8BB0;&#x5F55;&#xFF0C;git log&#x5219;&#x4E0D;&#x80FD;&#x5BDF;&#x770B;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x4E86;&#x7684;commit&#x8BB0;&#x5F55;<br>&#x5177;&#x4F53;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x4E09;&#x4E2A;commit<br>commit3: add test3.c<br>commit2: add test2.c<br>commit1: add test1.c<br>&#x5982;&#x679C;&#x6267;&#x884C;git reset &#x2013;hard HEAD~1&#x5219; &#x5220;&#x9664;&#x4E86;commit3&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x5220;&#x9664;&#x9519;&#x8BEF;&#x4E86;&#xFF0C;&#x9700;&#x8981;&#x6062;&#x590D;commit3&#xFF0C;&#x6216;&#x8005;rebase&#x9047;&#x5230;&#x51B2;&#x7A81;&#x8BEF;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;,&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;git reflog&#x627E;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;<br> HEAD@{0}: HEAD~1: updating HEAD<br> 5201314 HEAD@{1}: commit: test3:q<br> &#x7EA2;&#x8272;&#x52A0;&#x7C97;&#x7684;&#x5373;&#x662F;&#x88AB;&#x5220;&#x9664;&#x4E86;&#x7684; commit3&#xFF0C;&#x8FD0;&#x884C;git log&#x5219;&#x6CA1;&#x6709;&#x8FD9;&#x4E00;&#x884C;&#x8BB0;&#x5F55;<br> &#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git reset --hard 5201314</code>&#x5C06;&#x7EA2;&#x8272;&#x8BB0;&#x5F55;&#x5220;&#x9664;&#xFF0C;&#x5219;&#x6062;&#x590D;&#x4E86;cmmit3&#xFF0C;&#x8FD0;&#x884C;git log&#x540E;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;<br> commit3: add test3.c<br> commit2: add test2.c<br> commit1: add test1.c<br> &#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#xFF1A;git cherry-pick 5201314</p>
-<h1 id="&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x56ED;&#x533A;"><a href="#&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x56ED;&#x533A;" class="headerlink" title="&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x56ED;&#x533A;"></a>&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x56ED;&#x533A;</h1><p><a href="http://gitbook.liuhui998.com/index.html" target="_blank" rel="external">Git Community Book &#x4E2D;&#x6587;&#x7248;</a></p>
-<p><a href="http://www.oschina.net/translate/useful-linux-commands-for-newbies" target="_blank" rel="external">&#x5BF9; Linux &#x65B0;&#x624B;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684; 20 &#x4E2A;&#x547D;&#x4EE4;</a></p>
-<pre><code>&#x8C22;&#x8C22;&#x60A8;&#x767E;&#x5FD9;&#x4E2D;&#xFF0C;&#x9605;&#x8BFB;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#xFF1B;&#x82E5;&#x89C9;&#x5F97;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x5206;&#x4EAB;&#x7ED9;&#x66F4;&#x591A;&#x7684;&#x670B;&#x53CB;
-&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x81EA;&#x7531;&#x8F6C;&#x8F7D;-&#x975E;&#x5546;&#x7528;-&#x975E;&#x884D;&#x751F;-&#x4FDD;&#x6301;&#x7F72;&#x540D;
+<h2 id="修改远端log提交的某条日志"><a href="#修改远端log提交的某条日志" class="headerlink" title="修改远端log提交的某条日志"></a>修改远端log提交的某条日志</h2><p>命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//找到你要修改的那条<span class="built_in">log</span>的id</span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">//假设id是0b58225,找到你要修改的那一条,把前面的pick改成r,保存退出</span><br><span class="line">$ git rebase -i 0b58225~1</span><br><span class="line">//修改好commit后，执行下面命令，强制push远端（会完全覆盖，谨慎操作，确保你当前和远端是最新的，不然会抹点远端别人提交的）</span><br><span class="line">$ git push -f (建议push指定分支，以免影响其他分支)</span><br></pre></td></tr></table></figure></p>
+<h2 id="删除本地库中与远端不存在的跟踪分支（tracking-branches）"><a href="#删除本地库中与远端不存在的跟踪分支（tracking-branches）" class="headerlink" title="删除本地库中与远端不存在的跟踪分支（tracking branches）"></a>删除本地库中与远端不存在的跟踪分支（tracking branches）</h2><p>当远端分支被强制删除后，本地库中对远程分支的记录并不会同步更新，所以当我们<code>git branch -a</code>的时候会发现很多多余的remote/origin/xxxx分支（tracking branches）实际上远端已经不存在了。<br>我们可以用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//方法一</span><br><span class="line">$ git fetch [origin] -p //[origin]可以为空,为空为默认源的名字，参数p等同prune，意思是除去所有的远端处不再存在的任何远端跟踪分支</span><br><span class="line">//方法二</span><br><span class="line">$ git remote prune [origin] //git remote 我们知道是管理已经跟踪的库，功能同上</span><br></pre></td></tr></table></figure></p>
+<h2 id="美化Git显示漂亮日志的小技巧"><a href="#美化Git显示漂亮日志的小技巧" class="headerlink" title="美化Git显示漂亮日志的小技巧"></a>美化Git显示漂亮日志的小技巧</h2><p>命令行如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --graph --pretty=format:<span class="string">'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> --abbrev-commit --</span><br><span class="line"></span><br><span class="line">这样有点长了，我们可以这样：</span><br><span class="line"></span><br><span class="line">$ git config --global alias.lg <span class="string">"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --"</span></span><br><span class="line"></span><br><span class="line">然后，我们就可以使用这样的短命令了：</span><br><span class="line">$ git lg</span><br></pre></td></tr></table></figure></p>
+<h2 id="重新鞭策你的记录（找回丢失的commit）"><a href="#重新鞭策你的记录（找回丢失的commit）" class="headerlink" title="重新鞭策你的记录（找回丢失的commit）"></a>重新鞭策你的记录（找回丢失的commit）</h2><p><code>Git reflog</code> 可以查看所有分支的所有操作记录,包括已经被删除的commit记录，git log则不能察看已经删除了的commit记录<br>具体一个例子，假设有三个commit<br>commit3: add test3.c<br>commit2: add test2.c<br>commit1: add test1.c<br>如果执行git reset –hard HEAD~1则 删除了commit3，如果发现删除错误了，需要恢复commit3，或者rebase遇到冲突误操作的时候,就可以使用git reflog找到之前的操作记录<br> HEAD@{0}: HEAD~1: updating HEAD<br> 5201314 HEAD@{1}: commit: test3:q<br> 红色加粗的即是被删除了的 commit3，运行git log则没有这一行记录<br> 可以使用<code>git reset --hard 5201314</code>将红色记录删除，则恢复了cmmit3，运行git log后可以看到：<br> commit3: add test3.c<br> commit2: add test2.c<br> commit1: add test1.c<br> 这里也可以使用另外一种方法来实现：git cherry-pick 5201314</p>
+<h1 id="其实学习园区"><a href="#其实学习园区" class="headerlink" title="其实学习园区"></a>其实学习园区</h1><p><a href="http://gitbook.liuhui998.com/index.html" target="_blank" rel="noopener">Git Community Book 中文版</a></p>
+<p><a href="http://www.oschina.net/translate/useful-linux-commands-for-newbies" target="_blank" rel="noopener">对 Linux 新手非常有用的 20 个命令</a></p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
 </code></pre>
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-        
-      
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/jacks/tags/Git/" rel="tag">#Git</a>
+            <a href="/jacks/tags/命令/" rel="tag"># 命令</a>
           
-            <a href="/jacks/tags/命令/" rel="tag">#命令</a>
+            <a href="/jacks/tags/Git/" rel="tag"># Git</a>
           
-            <a href="/jacks/tags/代码管理/" rel="tag">#代码管理</a>
+            <a href="/jacks/tags/代码管理/" rel="tag"># 代码管理</a>
           
         </div>
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-    
-    
-
-    <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-                 &uarr;<br>
-          
-            Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
-          
-              </span>
-        <br>
-      </div>
-
-      <div id="donate_guide" class="donate_bar center hidden">
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
-              <br>
-              <span>支付宝土豪打赏</span>
-            </a>
-          </div>
-        
-
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
-              <br>
-              <span>微信土豪打赏</span>
-            </a>
-          </div>
-
-        
-
-      </div>
-
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-
-  
-
-
-      <! -- end 添加捐赠图标 -->
+      
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/06/17/Linux命令使用手册/" rel="next" title="Linux命令使用手册">
-                <i class="fa fa-chevron-left"></i> Linux命令使用手册
+              <a href="/jacks/zh-Hans/2016/06/16/前端基础优化记录手册/" rel="next" title="前端基础优化记录手册">
+                <i class="fa fa-chevron-left"></i> 前端基础优化记录手册
               </a>
             
           </div>
 
+          <span class="post-nav-divider"></span>
+
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/06/16/前端基础优化记录手册/" rel="prev" title="前端基础优化记录手册">
-                前端基础优化记录手册 <i class="fa fa-chevron-right"></i>
+              <a href="/jacks/zh-Hans/2016/06/17/Linux命令使用手册/" rel="prev" title="Linux命令使用手册">
+                Linux命令使用手册 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -524,67 +681,26 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat"
-  data-thread-key="Git命令行使用手册"
-  data-title="Git命令行使用手册"
-  data-images=""
-  data-content=""
-  data-url="http://51201314.me/jacks/zh-Hans/2016/06/17/Git命令行使用手册/index.html">
-  <div class="ds-share-inline">
-    <ul class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more">
-        <a class="ds-more" href="javascript:void(0);">分享到：</a>
-      </li>
-      <li>
-        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
-      </li>
-      <li>
-        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
-      </li>
-      <li>
-        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
-      </li>
-      <li>
-        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
-      </li>
-
-    </ul>
-    <div class="ds-share-icons-more"></div>
   </div>
-</div>
 
-      
-    </div>
-  </div>
+
+          </div>
+          
+
+  
+
 
 
         </div>
         
-
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="monthly" data-num-items="4"></div>
-
-
-        
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="Git命令行使用手册"
-           data-title="Git命令行使用手册" data-url="http://51201314.me/jacks/zh-Hans/2016/06/17/Git命令行使用手册/index.html">
-      </div>
-    
-  </div>
-
-
-      </div>
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -601,234 +717,370 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
             站点概览
           </li>
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/jacks/images/avatar.png"
-               alt="Jack·S" />
-          <p class="site-author-name" itemprop="name">Jack·S</p>
-          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/jacks/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/jacks/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/jacks/tags">
-                <span class="site-state-item-count">71</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
+
           
 
-        </nav>
+          
 
-        
-          <div class="feed-link motion-element">
-            <a href="/jacks/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+          
+          
 
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jingxinxin" target="_blank">
-                  
-                    <i class="fa fa-github"></i> GitHub
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/jxandcxy" target="_blank">
-                  
-                    <i class="fa fa-weibo"></i> Weibo
-                  
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        <div class="links-of-blogroll motion-element">
-          
-            <div class="links-of-blogroll-title">友情链接</div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://51201314.me/" target="_blank">博主</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://" target="_blank">暂缺</a>
-                </li>
-              
-            </ul>
-          
-        </div>
-
-      </section>
+      </div>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
-              
             
+            
+            
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本命令和理解"><span class="nav-number">1.</span> <span class="nav-text">基本命令和理解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-help"><span class="nav-number">1.1.</span> <span class="nav-text">git --help</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-init"><span class="nav-number">1.2.</span> <span class="nav-text">git init</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-pull"><span class="nav-number">1.3.</span> <span class="nav-text">git pull</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-stash-贮藏"><span class="nav-number">1.4.</span> <span class="nav-text">git stash (贮藏)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-log"><span class="nav-number">1.5.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-branch"><span class="nav-number">1.6.</span> <span class="nav-text">git branch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-remote"><span class="nav-number">1.7.</span> <span class="nav-text">git remote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-tag"><span class="nav-number">1.8.</span> <span class="nav-text">git tag</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-merge"><span class="nav-number">1.9.</span> <span class="nav-text">git merge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">1.10.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-clean"><span class="nav-number">1.11.</span> <span class="nav-text">git clean</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高阶玩法"><span class="nav-number">2.</span> <span class="nav-text">高阶玩法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-pull-rebase"><span class="nav-number">2.1.</span> <span class="nav-text">git pull --rebase</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改git-pull默认merge操作为rebase"><span class="nav-number">2.1.1.</span> <span class="nav-text">修改git pull默认merge操作为rebase</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rebase-i"><span class="nav-number">2.2.</span> <span class="nav-text">git rebase -i</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改commit信息"><span class="nav-number">2.2.1.</span> <span class="nav-text">修改commit信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并多次commit信息"><span class="nav-number">2.2.2.</span> <span class="nav-text">合并多次commit信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改远端log提交的某条日志"><span class="nav-number">2.3.</span> <span class="nav-text">修改远端log提交的某条日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除本地库中与远端不存在的跟踪分支（tracking-branches）"><span class="nav-number">2.4.</span> <span class="nav-text">删除本地库中与远端不存在的跟踪分支（tracking branches）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化Git显示漂亮日志的小技巧"><span class="nav-number">2.5.</span> <span class="nav-text">美化Git显示漂亮日志的小技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新鞭策你的记录（找回丢失的commit）"><span class="nav-number">2.6.</span> <span class="nav-text">重新鞭策你的记录（找回丢失的commit）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其实学习园区"><span class="nav-number">3.</span> <span class="nav-text">其实学习园区</span></a></li></ol></div>
             
+
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
-        </section>
+        </div>
+      <!--/noindex-->
+      
+
       
 
     </div>
   </aside>
-
-
-      
-    </div>
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="copyright">
   
-  &copy;
-  
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jack·S</span>
-    <!--简体繁体转换-->
-  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题
-  -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-<!--简体繁体转换-->
-<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
-<script type="text/javascript">
-  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
-  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
-  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
-  var translateButtonId = "translateLink"; //默认互换id
-  translateInitilization();
-</script>
-
-<!--不蒜子计算器-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<br>
-本Blog总访问量
-<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
-&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
-<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
-
-
-
-    </div>
-  </footer>
-
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-</div>
-
-
-
-
 
   
 
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-<script type="text/javascript">
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
 </script>
 
 
-  <script type="text/javascript" src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/jacks/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
 
 
 
-  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
 
-  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -837,348 +1089,89 @@
 
 
   
-<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.1"></script>
+  <script src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
+  
+  <script src="/jacks/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  
+  <script src="/jacks/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
+  
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
 
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
 
 
 
+  
+  
 
 
-
-  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
-
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
 
 
 
 
   
-    
-  
+  <script src="/jacks/js/scrollspy.js?v=7.1.2"></script>
+<script src="/jacks/js/post-details.js?v=7.1.2"></script>
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"Jacks"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
-  
-    
-    <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
-      <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js"></script>
-      <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
+
   
 
 
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
 
 
 
 
+  
 
+  
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/jacks/" + search_path;
-    // monitor main search box;
+  
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
+  
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+  
 
-    });
+  
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
+  
 
 </body>
 </html>

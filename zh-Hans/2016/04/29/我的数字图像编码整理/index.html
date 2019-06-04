@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,241 +32,407 @@
 
 
 
-  <link href="/jacks/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="记忆力,数字图像编码," />
-
-
-
-
-
-  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
 
 
 
 
 
 
-<meta name="description" content="&amp;#x8054;&amp;#x60F3;&amp;#x7684;&amp;#x56FE;&amp;#x50CF;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x540D;&amp;#x8BCD;&amp;#xFF08;&amp;#x907F;&amp;#x514D;&amp;#x592A;&amp;#x62BD;&amp;#x8C61;&amp;#x7684;&amp;#x540D;&amp;#x8BCD;&amp;#xFF09;&amp;#xFF0C;&amp;#x94FE;&amp;#x63A5;&amp;#x7684;&amp;#x5173;">
-<meta name="keywords" content="记忆力,数字图像编码">
-<meta property="og:type" content="article">
-<meta property="og:title" content="我的数字图像编码整理">
-<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/index.html">
-<meta property="og:site_name" content="Jack·S">
-<meta property="og:description" content="&amp;#x8054;&amp;#x60F3;&amp;#x7684;&amp;#x56FE;&amp;#x50CF;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x540D;&amp;#x8BCD;&amp;#xFF08;&amp;#x907F;&amp;#x514D;&amp;#x592A;&amp;#x62BD;&amp;#x8C61;&amp;#x7684;&amp;#x540D;&amp;#x8BCD;&amp;#xFF09;&amp;#xFF0C;&amp;#x94FE;&amp;#x63A5;&amp;#x7684;&amp;#x5173;">
-<meta property="og:updated_time" content="2016-04-30T17:15:00.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的数字图像编码整理">
-<meta name="twitter:description" content="&amp;#x8054;&amp;#x60F3;&amp;#x7684;&amp;#x56FE;&amp;#x50CF;&amp;#x57FA;&amp;#x7840;&amp;#x662F;&amp;#x540D;&amp;#x8BCD;&amp;#xFF08;&amp;#x907F;&amp;#x514D;&amp;#x592A;&amp;#x62BD;&amp;#x8C61;&amp;#x7684;&amp;#x540D;&amp;#x8BCD;&amp;#xFF09;&amp;#xFF0C;&amp;#x94FE;&amp;#x63A5;&amp;#x7684;&amp;#x5173;">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+
+
+<link rel="stylesheet" href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/jacks/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/jacks/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6265421695675270000,
-      author: '地主╮(╯▽╰)╭'
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
-
-
-
-  <title> 我的数字图像编码整理 | Jack·S </title>
   
+
+
+
+
+  <meta name="description" content="联想的图像基础是名词（避免太抽象的名词），链接的关系是动词在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象">
+<meta name="keywords" content="记忆力,数字图像编码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的数字图像编码整理">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
+<meta property="og:description" content="联想的图像基础是名词（避免太抽象的名词），链接的关系是动词在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2016-04-30T17:15:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的数字图像编码整理">
+<meta name="twitter:description" content="联想的图像基础是名词（避免太抽象的名词），链接的关系是动词在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象">
+
+
+
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>我的数字图像编码整理 | Jack·S Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
 
-<div class="container one-collumn sidebar-position-right page-post-detail ">
-  <div class="headband"></div>
- 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-
-<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
-
-
-  
-
-
-  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/jacks/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Jack·S</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jacks/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/jacks/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/jacks/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/jacks/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-study">
-          <a href="/jacks/study" rel="section">
-            
-              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
-            
-            读书
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/jacks/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-new">
-          <a href="/jacks/new" rel="section">
-            
-              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
-            
-            更新
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">71</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">40</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+    
+
+  
+
+  
 </nav>
 
- </div>
-  </header>
 
-  <main id="main" class="main">
-    <div class="main-inner">
-      <div class="content-wrap">
-        <div id="content" class="content">
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
           
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
-    
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                我的数字图像编码整理
+          <h1 class="post-title" itemprop="name headline">我的数字图像编码整理
+
               
             
           </h1>
@@ -269,166 +440,150 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-29T22:38:20+08:00" content="2016-04-29">
-              2016-04-29
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-04-29 22:38:20" itemprop="dateCreated datePublished" datetime="2016-04-29T22:38:20+08:00">2016-04-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-05-01 01:15:00" itemprop="dateModified" datetime="2016-05-01T01:15:00+08:00">2016-05-01</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/技巧修炼/" itemprop="url" rel="index">
-                    <span itemprop="name">技巧修炼</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/技巧修炼/" itemprop="url" rel="index"><span itemprop="name">技巧修炼</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="我的数字图像编码整理" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <span>&nbsp; | &nbsp;
-          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
           
-          <!--不蒜子计算器 每页计算-->
 
           
 
           
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>&#x8054;&#x60F3;&#x7684;&#x56FE;&#x50CF;&#x57FA;&#x7840;&#x662F;&#x540D;&#x8BCD;&#xFF08;&#x907F;&#x514D;&#x592A;&#x62BD;&#x8C61;&#x7684;&#x540D;&#x8BCD;&#xFF09;&#xFF0C;&#x94FE;&#x63A5;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x52A8;&#x8BCD;<br>&#x5728;&#x8054;&#x7CFB;&#x5F62;&#x5BB9;&#x8BCD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C3D;&#x91CF;&#x5938;&#x5F20;&#xFF0C;&#x5F02;&#x4E0E;&#x5E38;&#x6001;&#x53BB;&#x60F3;&#x50CF;&#xFF0C;&#x4FBF;&#x4E8E;&#x533A;&#x522B;&#x548C;&#x52A0;&#x6DF1;&#x5370;&#x8C61;<br><a id="more"></a><br>&#x3010;&#x3011;&#x5185;&#x4E3A;&#x5907;&#x9009;<br>00&#xFF1A;&#x53CC;&#x7B52;&#x671B;&#x8FDC;&#x955C;<br>01&#xFF1A;&#x4E00;&#x5708;&#x571F;&#x5730;&#x4E0A;&#x957F;&#x4E86;&#x4E00;&#x9897;&#x6811;&#x3010;&#x7075;&#x836F;&#x3011;<br>02&#xFF1A;&#x94C3;&#x513F;<br>03&#xFF1A;&#x7075;&#x5C71;<br>04&#xFF1A;&#x96F6;&#x98DF;<br>05&#xFF1A;&#x7075;&#x864E;<br>06&#xFF1A;&#x7075;&#x725B;<br>07&#xFF1A;&#x7075;&#x9E21;<br>08&#xFF1A;&#x7075;&#x86D9;<br>09&#xFF1A;&#x7075;&#x72D7;<br>10&#xFF1A;&#x8863;&#x9886;&#x3010;&#x68D2;&#x5B50;&#x548C;&#x7403;&#x3001;&#xFF08;&#x8521;&#xFF09;&#x4F9D;&#x6797;&#x3011;<br>11&#xFF1A;&#x5149;&#x68CD;&#x3010;&#x5341;&#x4EBF;&#x3001;&#x7B77;&#x5B50;&#x3011;<br>12&#xFF1A;&#x5A74;&#x513F;<br>13&#xFF1A;&#x533B;&#x751F;&#x3010;&#x836F;&#x5C71;&#x3011;<br>14&#xFF1A;&#x533B;&#x5E08;&#x3010;&#x94A5;&#x5319;&#x3011;<br>15&#xFF1A;&#x9E66;&#x9E49;&#x3010;&#x5996;&#x864E;&#x3001;&#x836F;&#x7269;&#x3011;<br>16&#xFF1A;&#x8863;&#x94AE;<br>17&#xFF1A;&#x4EEA;&#x5668;&#x3010;&#x6709;&#x5996;&#x6C14;&#xFF08;&#x6F2B;&#x753B;&#xFF09;&#x3011;<br>18&#xFF1A;&#x5C3E;&#x5DF4;&#x3010;&#x7BF1;&#x7B06;&#x3011;<br>19&#xFF1A;&#x6CE5;&#x9CC5;&#x3010;&#x836F;&#x9152;&#x3001;&#x996E;&#x9152;&#x3011;<br>20&#xFF1A;&#x9E45;&#x9CDE;&#xFF08;&#x6BDB;&#xFF09;&#x3010;&#x9E45;&#x86CB;&#x3001;&#x6295;&#x964D;&#xFF08;&#x82F1;&#x96C4;&#x8054;&#x76DF;&#xFF09;&#x3011;<br>21&#xFF1A;&#x9CC4;&#x9C7C;<br>22&#xFF1A;&#x4E24;&#x53EA;&#x60C5;&#x4FA3;&#x9E45;<br>23&#xFF1A;&#x5CE8;&#xFF08;&#x7709;&#xFF09;&#x5C71;<br>24&#xFF1A;&#x8033;&#x5C4E;&#x3010;&#x8033;&#x9970;&#x3011;<br>25&#xFF1A;&#x997F;&#x864E;&#x3010;&#x4E8C;&#x80E1;&#x3011;<br>26&#xFF1A;&#x997F;&#x725B;<br>27&#xFF1A;&#x997F;&#x9E21;&#x3010;&#x8033;&#x673A;&#x3011;<br>28&#xFF1A;&#x997F;&#x86D9;&#x3010;&#x6076;&#x9738;&#x3011;<br>29&#xFF1A;&#x997F;&#x72D7;&#x3010;&#x6076;&#x72D7;&#x3011;<br>30&#xFF1A;&#x68EE;&#x6797;&#x3010;&#x5C71;&#x6797;&#x3001;&#x4E09;&#x83F1;&#xFF08;&#x7535;&#x68AF;&#xFF09;&#x3011;<br>31&#xFF1A;&#x9CA8;&#x9C7C;<br>32&#xFF1A;&#x6247;&#x513F;&#x3010;&#x50BB;&#x9E45;&#x3001;&#x6C99;&#x4FC4;&#x3011;<br>33&#xFF1A;&#x4ED9;&#x5C71;<br>34&#xFF1A;&#x7EC5;&#x58EB;<br>35&#xFF1A;&#x5C71;&#x864E;&#x3010;&#x73CA;&#x745A;&#x3011;<br>36&#xFF1A;&#x5C71;&#x725B;&#x3010;&#x5C71;&#x8DEF;&#xFF0C;&#x4E09;&#x9E7F;&#xFF08;&#x5976;&#x7C89;&#xFF09;&#x3011;<br>37&#xFF1A;&#x5C71;&#x9E21;&#x3010;&#x4E09;&#x4E03;&#xFF08;&#x4E2D;&#x8349;&#x836F;&#xFF09;&#x3011;<br>38&#xFF1A;&#x4E09;&#x516B;&#xFF08;&#x5987;&#x5973;&#xFF09;&#x3010;&#x4E09;&#x7238;&#x3011;<br>39&#xFF1A;999&#xFF08;&#x611F;&#x5192;&#x836F;&#xFF09;<br>40&#xFF1A;&#x53F8;&#x4EE4;<br>41&#xFF1A;&#x53F8;&#x4EEA;<br>42&#xFF1A;&#x6B7B;&#x9E45;&#xFF08;&#x67FF;&#x513F;&#x3001;&#x98DF;&#x9975;&#xFF09;<br>43&#xFF1A;&#x6B7B;&#x795E;<br>44&#xFF1A;&#x77F3;&#x72EE;&#x3010;&#x6B7B;&#x58EB;&#x3011;<br>45&#xFF1A;&#x77F3;&#x864E;<br>46&#xFF1A;&#x77F3;&#x725B;&#x3010;&#x77F3;&#x69B4;&#x3011;<br>47&#xFF1A;&#x77F3;&#x9E21;&#x3010;&#x53F8;&#x673A;&#x3011;<br>48&#xFF1A;&#x77F3;&#x86D9;&#x3010;&#x4E1D;&#x74DC;&#x3001;&#x6B7B;&#x86D9;&#x3011;<br>49&#xFF1A;&#x77F3;&#x72D7;&#x3010;&#x72EE;&#x9E6B;&#x3011;<br>50&#xFF1A;&#x5434;&#xFF08;&#x9E4F;&#xFF09;&#x7433;&#x3010;&#x4E94;&#x7075;&#xFF08;&#x91D1;&#x6728;&#x6C34;&#x706B;&#x571F;&#xFF09;&#x3011;      &#x6CE8;&#xFF1A;&#x6B66;&#x6797;&#x592A;&#x62BD;&#x8C61;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<br>51&#xFF1A;&#x72D0;&#x72F8;&#x3010;&#x52B3;&#x52A8;&#x4EBA;&#x6C11;&#x3011;<br>52&#xFF1A;&#x6728;&#x8033;&#x3010;&#x543E;&#x513F;&#x3011;<br>53&#xFF1A;&#x864E;&#x5C71;&#x3010;&#x4E94;&#xFF08;&#x6307;&#xFF09;&#x5C71;&#x3011;<br>54&#xFF1A;&#x6B66;&#x58EB;&#x3010;&#x5DEB;&#x5E08;&#x3001;&#x62A4;&#x58EB;&#x3011;<br>55&#xFF1A;&#x6728;&#x5C4B;&#x3010;&#x6C61;&#x7269;&#xFF08;&#x81EA;&#x884C;&#x8111;&#x8865;&#xFF09;&#x3001;&#x53E4;&#x5893;&#x3011;<br>56&#xFF1A;&#x8717;&#x725B;&#x3010;56&#x4E2A;&#x540D;&#x65CF;&#x3011;<br>57&#xFF1A;&#x6BCD;&#x9E21;&#x3010;&#x4E4C;&#x9E21;&#x3011;<br>58&#xFF1A;&#x82E6;&#x74DC;&#x3010;&#x543E;&#x7238;&#x3001;&#x53E4;&#x5DF4;&#x3011;<br>59&#xFF1A;&#x82E6;&#x9152;&#x3010;&#x543E;&#x72D7;&#x3011;<br>60&#xFF1A;&#x786B;&#x78F7;<br>61&#xFF1A;&#xFF08;&#x516D;&#x4E00;&#xFF09;&#x513F;&#x7AE5;&#xFF08;&#x8282;&#xFF09;<br>62&#xFF1A;&#x725B;&#x8033;<br>63&#xFF1A;&#x5218;&#x7985;<br>64&#xFF1A;&#x725B;&#x5C4E;<br>65&#xFF1A;&#x8DEF;&#x864E;&#xFF08;&#x6C7D;&#x8F66;&#xFF09;<br>66&#xFF1A;&#x6E9C;&#x6E9C;&#xFF08;&#x7403;&#xFF09;<br>67&#xFF1A;&#x697C;&#x68AF;<br>68&#xFF1A;&#x725B;&#x86D9;<br>69&#xFF1A;&#x725B;&#x89D2;&#x3010;69&#x5F0F;&#x3011;<br>70&#xFF1A;&#x9E92;&#x9E9F;<br>71&#xFF1A;&#x9E21;&#x7FFC;&#xFF08;&#x9E21;&#x7FC5;&#x8180;&#xFF09;&#x3010;&#x673A;&#x7FFC;&#x3001;&#x8725;&#x8734;&#x3011;<br>72&#xFF1A;&#x4F01;&#x9E45;&#x3010;&#x59BB;&#x513F;&#x3011;<br>73&#xFF1A;&#x9E21;&#x4F1E;&#xFF08;&#x5370;&#x6EE1;&#x9E21;&#x56FE;&#x6848;&#x7684;&#x4F1E;&#xFF09;<br>74&#xFF1A;&#x9A91;&#x58EB;<br>75&#xFF1A;&#x5947;&#x864E;&#xFF08;360&#xFF09;&#x3010;&#x79EF;&#x6728;&#x3011;<br>76&#xFF1A;&#x7280;&#x725B;&#x3010;&#x4E03;&#x725B;&#xFF08;&#x4E91;&#x5B58;&#x50A8;&#xFF09;&#x3011;<br>77&#xFF1A;&#x4E03;&#x559C;&#xFF08;&#x996E;&#x6599;&#xFF09;&#x3010;&#x4E03;&#x5915;&#xFF08;7&#x6708;7&#xFF09;&#x3001;&#x7329;&#x7329;&#x3011;<br>78&#xFF1A;&#x897F;&#x74DC;&#x3010;jiba&#x3011;<br>79&#xFF1A;&#x6C14;&#x7403;<br>80&#xFF1A;&#x767E;&#x7075;<br>81&#xFF1A;&#x767D;&#x8681;&#x3010;&#x8682;&#x8681;&#x3001;&#x534E;&#x88D4;&#x3011;<br>82&#xFF1A;&#x82B1;&#x513F;<br>83&#xFF1A;&#x82B1;&#x5C71;&#x3010;&#x82B1;&#x751F;&#x3001;&#x534E;&#x751F;&#x3001;&#x534E;&#x5C71;&#x3011;<br>84&#xFF1A;&#x5DF4;&#x58EB;<br>85&#xFF1A;&#x767D;&#x864E;<br>86&#xFF1A;&#x5427;&#x53CB;<br>87&#xFF1A;&#x767D;&#x68CB;&#x3010;&#x767D;&#x65D7;&#x3011;<br>88&#xFF1A;&#xFF08;&#x963F;&#x91CC;&#xFF09;&#x5DF4;&#x5DF4;<br>89&#xFF1A;&#x767D;&#x9152;<br>90&#xFF1A;90&#x540E;<br>91&#xFF1A;&#x7403;&#x8863;&#x3010;&#x56DA;&#x8863;&#x3011;<br>92&#xFF1A;&#x7403;&#x513F;<br>93&#xFF1A;&#x7403;&#x4F1E;&#x3010;&#x5370;&#x6EE1;&#x7403;&#x7684;&#x4F1E;&#x3011;<br>94&#xFF1A;&#x6559;&#x5E08;&#x3010;&#x6559;&#x5BA4;&#x3011;<br>95&#xFF1A;&#x9152;&#x58F6;&#x3010;&#x6551;&#x62A4;&#xFF08;&#x8F66;&#xFF09;&#x3011;<br>96&#xFF1A;&#x9152;&#x697C;<br>97&#xFF1A;&#x67B8;&#x675E;&#x3010;&#x9152;&#x5E2D;&#x3011;<br>98&#xFF1A;&#x9152;&#x5427;<br>99&#xFF1A;&#x8205;&#x8205;</p>
-<p>0&#xFF1A;&#x68D2;&#x7403;<br>1&#xFF1A;&#x68D2;<br>2&#xFF1A;&#x9E45;<br>3&#xFF1A;&#x4F1E;<br>4&#xFF1A;&#x5C4E;<br>5&#xFF1A;&#x864E;<br>6&#xFF1A;&#x725B;<br>7&#xFF1A;&#x9E21;<br>8&#xFF1A;&#x86D9;<br>9&#xFF1A;&#x72D7;&#x3010;&#x9152;&#x3011;</p>
-<p>&#x4EE5;&#x4E0A;&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x5957;&#x56FE;&#x50CF;&#x8BB0;&#x5FC6;&#x7F16;&#x7801;&#xFF0C;&#x8FD9;&#x4E9B;&#x662F;&#x8BB0;&#x5FC6;&#x7F16;&#x7801;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<br><strong>&#x8054;&#x60F3;&#x6545;&#x4E8B;&#x4E32;&#x63A5;&#x65B9;&#x6CD5;<br>&#x8BB0;&#x5FC6;&#x5BAB;&#x6BBF;&#x6CD5;<br>&#x7B2C;&#x4E00;&#x4EBA;&#x79F0;&#x68A6;&#x5883;&#x6CD5;</strong>&#xFF08;&#x6BD4;&#x5982;&#xFF1A;96970254 &#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F;&#xFF0C;&#x6211;&#x53BB;&#x4E86;&#x4E00;&#x5BB6;<strong>&#x9152;&#x697C;</strong>&#xFF0C;&#x6211;&#x53C2;&#x52A0;&#x4E86;<strong>&#x9152;&#x5E2D;</strong>&#xFF0C;&#x6211;&#x78B0;&#x4E86;&#x4E00;&#x4E0B;&#x5EA7;&#x4F4D;&#x8FB9;&#x7684;<strong>&#x94C3;&#x513F;</strong>&#x54CD;&#x8D77;&#xFF0C;&#x6211;&#x5C31;&#x770B;&#x89C1;&#x4E00;&#x7FA4;<strong>&#x6B66;&#x58EB;</strong>&#x5C31;&#x628A;&#x8FD9;&#x91CC;&#x5305;&#x56F4;&#x4E86;&#x8D77;&#x6765;&#x3002;&#x6240;&#x6709;&#x7684;&#x52A8;&#x4F5C;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x7684;&#x4E94;&#x611F;&#x53BB;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x6709;&#x522B;&#x4E0E;&#x8054;&#x60F3;&#x6CD5;&#x3002;&#xFF09;<br>&#x53EF;&#x4EE5;&#x53BB;&#x8BB0;&#x5FC6;&#x5706;&#x5468;&#x7387;&#xFF08;<a href="../../30/&#x6211;&#x7684;&#x5706;&#x5468;&#x7387;&#x6545;&#x4E8B;/">&#x4F20;&#x9001;&#x95E8;</a>&#xFF09;&#xFF0C;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#xFF0C;&#x8D22;&#x52A1;&#x62A5;&#x8868;&#xFF0C;&#x6251;&#x514B;&#x724C;&#xFF0C;&#x9EBB;&#x5C06;&#xFF0C;&#x9AB0;&#x5B50;&#x7B49;&#x7B49;&#x4E0E;&#x6570;&#x5B57;&#x76F8;&#x5173;&#x7684;&#x4E8B;&#x7269;<br>&#x6301;&#x7EED;&#x6574;&#x7406;</p>
-<pre><code>&#x8C22;&#x8C22;&#x60A8;&#x767E;&#x5FD9;&#x4E2D;&#xFF0C;&#x9605;&#x8BFB;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#xFF1B;&#x82E5;&#x89C9;&#x5F97;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x5206;&#x4EAB;&#x7ED9;&#x66F4;&#x591A;&#x7684;&#x670B;&#x53CB;
-&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x81EA;&#x7531;&#x8F6C;&#x8F7D;-&#x975E;&#x5546;&#x7528;-&#x975E;&#x884D;&#x751F;-&#x4FDD;&#x6301;&#x7F72;&#x540D;
+        <p>联想的图像基础是名词（避免太抽象的名词），链接的关系是动词<br>在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象<br><a id="more"></a><br>【】内为备选<br>00：双筒望远镜<br>01：一圈土地上长了一颗树【灵药】<br>02：铃儿<br>03：灵山<br>04：零食<br>05：灵虎<br>06：灵牛<br>07：灵鸡<br>08：灵蛙<br>09：灵狗<br>10：衣领【棒子和球、（蔡）依林】<br>11：光棍【十亿、筷子】<br>12：婴儿<br>13：医生【药山】<br>14：医师【钥匙】<br>15：鹦鹉【妖虎、药物】<br>16：衣钮<br>17：仪器【有妖气（漫画）】<br>18：尾巴【篱笆】<br>19：泥鳅【药酒、饮酒】<br>20：鹅鳞（毛）【鹅蛋、投降（英雄联盟）】<br>21：鳄鱼<br>22：两只情侣鹅<br>23：峨（眉）山<br>24：耳屎【耳饰】<br>25：饿虎【二胡】<br>26：饿牛<br>27：饿鸡【耳机】<br>28：饿蛙【恶霸】<br>29：饿狗【恶狗】<br>30：森林【山林、三菱（电梯）】<br>31：鲨鱼<br>32：扇儿【傻鹅、沙俄】<br>33：仙山<br>34：绅士<br>35：山虎【珊瑚】<br>36：山牛【山路，三鹿（奶粉）】<br>37：山鸡【三七（中草药）】<br>38：三八（妇女）【三爸】<br>39：999（感冒药）<br>40：司令<br>41：司仪<br>42：死鹅（柿儿、食饵）<br>43：死神<br>44：石狮【死士】<br>45：石虎<br>46：石牛【石榴】<br>47：石鸡【司机】<br>48：石蛙【丝瓜、死蛙】<br>49：石狗【狮鹫】<br>50：吴（鹏）琳【五灵（金木水火土）】      注：武林太抽象，不建议使用<br>51：狐狸【劳动人民】<br>52：木耳【吾儿】<br>53：虎山【五（指）山】<br>54：武士【巫师、护士】<br>55：木屋【污物（自行脑补）、古墓】<br>56：蜗牛【56个名族】<br>57：母鸡【乌鸡】<br>58：苦瓜【吾爸、古巴】<br>59：苦酒【吾狗】<br>60：硫磷<br>61：（六一）儿童（节）<br>62：牛耳<br>63：刘禅<br>64：牛屎<br>65：路虎（汽车）<br>66：溜溜（球）<br>67：楼梯<br>68：牛蛙<br>69：牛角【69式】<br>70：麒麟<br>71：鸡翼（鸡翅膀）【机翼、蜥蜴】<br>72：企鹅【妻儿】<br>73：鸡伞（印满鸡图案的伞）<br>74：骑士<br>75：奇虎（360）【积木】<br>76：犀牛【七牛（云存储）】<br>77：七喜（饮料）【七夕（7月7）、猩猩】<br>78：西瓜【jiba】<br>79：气球<br>80：百灵<br>81：白蚁【蚂蚁、华裔】<br>82：花儿<br>83：花山【花生、华生、华山】<br>84：巴士<br>85：白虎<br>86：吧友<br>87：白棋【白旗】<br>88：（阿里）巴巴<br>89：白酒<br>90：90后<br>91：球衣【囚衣】<br>92：球儿<br>93：球伞【印满球的伞】<br>94：教师【教室】<br>95：酒壶【救护（车）】<br>96：酒楼<br>97：枸杞【酒席】<br>98：酒吧<br>99：舅舅</p>
+<p>0：棒球<br>1：棒<br>2：鹅<br>3：伞<br>4：屎<br>5：虎<br>6：牛<br>7：鸡<br>8：蛙<br>9：狗【酒】</p>
+<p>以上是我自己的一套图像记忆编码，这些是记忆编码的基础，可以用<br><strong>联想故事串接方法<br>记忆宫殿法<br>第一人称梦境法</strong>（比如：96970254 翻译过来就是，我去了一家<strong>酒楼</strong>，我参加了<strong>酒席</strong>，我碰了一下座位边的<strong>铃儿</strong>响起，我就看见一群<strong>武士</strong>就把这里包围了起来。所有的动作都是一个人的五感去完成的，有别与联想法。）<br>可以去记忆圆周率（<a href="../../30/我的圆周率故事/">传送门</a>），电话号码，财务报表，扑克牌，麻将，骰子等等与数字相关的事物<br>持续整理</p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
 </code></pre>
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-        
-      
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/jacks/tags/记忆力/" rel="tag">#记忆力</a>
+            <a href="/jacks/tags/记忆力/" rel="tag"># 记忆力</a>
           
-            <a href="/jacks/tags/数字图像编码/" rel="tag">#数字图像编码</a>
+            <a href="/jacks/tags/数字图像编码/" rel="tag"># 数字图像编码</a>
           
         </div>
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-    
-    
-
-    <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-                 &uarr;<br>
-          
-            Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
-          
-              </span>
-        <br>
-      </div>
-
-      <div id="donate_guide" class="donate_bar center hidden">
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
-              <br>
-              <span>支付宝土豪打赏</span>
-            </a>
-          </div>
-        
-
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
-              <br>
-              <span>微信土豪打赏</span>
-            </a>
-          </div>
-
-        
-
-      </div>
-
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-
-  
-
-
-      <! -- end 添加捐赠图标 -->
+      
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/04/30/我的圆周率故事/" rel="next" title="我的圆周率故事">
-                <i class="fa fa-chevron-left"></i> 我的圆周率故事
+              <a href="/jacks/zh-Hans/2016/04/19/《奇幻森林》观后感/" rel="next" title="《奇幻森林》观后感">
+                <i class="fa fa-chevron-left"></i> 《奇幻森林》观后感
               </a>
             
           </div>
 
+          <span class="post-nav-divider"></span>
+
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/04/19/《奇幻森林》观后感/" rel="prev" title="《奇幻森林》观后感">
-                《奇幻森林》观后感 <i class="fa fa-chevron-right"></i>
+              <a href="/jacks/zh-Hans/2016/04/30/我的圆周率故事/" rel="prev" title="我的圆周率故事">
+                我的圆周率故事 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -438,67 +593,26 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat"
-  data-thread-key="我的数字图像编码整理"
-  data-title="我的数字图像编码整理"
-  data-images=""
-  data-content="<p>&#x8054;&#x60F3;&#x7684;&#x56FE;&#x50CF;&#x57FA;&#x7840;&#x662F;&#x540D;&#x8BCD;&#xFF08;&#x907F;&#x514D;&#x592A;&#x62BD;&#x8C61;&#x7684;&#x540D;&#x8BCD;&#xFF09;&#xFF0C;&#x94FE;&#x63A5;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x52A8;&#x8BCD;<br>&#x5728;&#x8054;&#x7CFB;&#x5F62;&#x5BB9;&#x8BCD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C3D;&#x91CF;&#x5938;&#x5F20;&#xFF0C;&#x5F02;&#x4E0E;&#x5E38;&#x6001;&#x53BB;&#x60F3;&#x50CF;&#xFF0C;&#x4FBF;&#x4E8E;&#x533A;&#x522B;&#x548C;&#x52A0;&#x6DF1;&#x5370;&#x8C61;<br></p>"
-  data-url="http://51201314.me/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/index.html">
-  <div class="ds-share-inline">
-    <ul class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more">
-        <a class="ds-more" href="javascript:void(0);">分享到：</a>
-      </li>
-      <li>
-        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
-      </li>
-      <li>
-        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
-      </li>
-      <li>
-        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
-      </li>
-      <li>
-        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
-      </li>
-
-    </ul>
-    <div class="ds-share-icons-more"></div>
   </div>
-</div>
 
-      
-    </div>
-  </div>
+
+          </div>
+          
+
+  
+
 
 
         </div>
         
-
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="monthly" data-num-items="4"></div>
-
-
-        
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="我的数字图像编码整理"
-           data-title="我的数字图像编码整理" data-url="http://51201314.me/jacks/zh-Hans/2016/04/29/我的数字图像编码整理/index.html">
-      </div>
-    
-  </div>
-
-
-      </div>
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -514,235 +628,345 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/jacks/images/avatar.png"
-               alt="Jack·S" />
-          <p class="site-author-name" itemprop="name">Jack·S</p>
-          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/jacks/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/jacks/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/jacks/tags">
-                <span class="site-state-item-count">71</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
+
           
 
-        </nav>
+          
 
-        
-          <div class="feed-link motion-element">
-            <a href="/jacks/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+          
+          
 
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jingxinxin" target="_blank">
-                  
-                    <i class="fa fa-github"></i> GitHub
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/jxandcxy" target="_blank">
-                  
-                    <i class="fa fa-weibo"></i> Weibo
-                  
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        <div class="links-of-blogroll motion-element">
-          
-            <div class="links-of-blogroll-title">友情链接</div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://51201314.me/" target="_blank">博主</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://" target="_blank">暂缺</a>
-                </li>
-              
-            </ul>
-          
-        </div>
-
-      </section>
+      </div>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">此文章未包含目录</p>
-            
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
-        </section>
+
       
 
     </div>
   </aside>
-
-
-      
-    </div>
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="copyright">
   
-  &copy;
-  
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jack·S</span>
-    <!--简体繁体转换-->
-  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题
-  -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-<!--简体繁体转换-->
-<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
-<script type="text/javascript">
-  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
-  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
-  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
-  var translateButtonId = "translateLink"; //默认互换id
-  translateInitilization();
-</script>
-
-<!--不蒜子计算器-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<br>
-本Blog总访问量
-<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
-&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
-<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
-
-
-
-    </div>
-  </footer>
-
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-</div>
-
-
-
-
 
   
 
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-<script type="text/javascript">
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
 </script>
 
 
-  <script type="text/javascript" src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/jacks/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
 
 
 
-  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
 
-  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -751,348 +975,89 @@
 
 
   
-<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.1"></script>
+  <script src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
+  
+  <script src="/jacks/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  
+  <script src="/jacks/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
+  
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
 
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
 
 
 
+  
+  
 
 
-
-  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
-
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
 
 
 
 
   
-    
-  
+  <script src="/jacks/js/scrollspy.js?v=7.1.2"></script>
+<script src="/jacks/js/post-details.js?v=7.1.2"></script>
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"Jacks"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
-  
-    
-    <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
-      <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js"></script>
-      <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
+
   
 
 
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
 
 
 
 
+  
 
+  
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/jacks/" + search_path;
-    // monitor main search box;
+  
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
+  
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+  
 
-    });
+  
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
+  
 
 </body>
 </html>

@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,230 +32,398 @@
 
 
 
-  <link href="/jacks/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
 
 
 
 
 
 
-<meta name="description" content="任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jack·S">
-<meta property="og:url" content="http://51201314.me/jacks/index.html">
-<meta property="og:site_name" content="Jack·S">
-<meta property="og:description" content="任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jack·S">
-<meta name="twitter:description" content="任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+
+
+<link rel="stylesheet" href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/jacks/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/jacks/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6265421695675270000,
-      author: '地主╮(╯▽╰)╭'
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
-
-
-
-  <title> Jack·S </title>
   
+
+
+
+
+  <meta name="description" content="记录Jack生活成长的博客网站">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jack·S Blog">
+<meta property="og:url" content="https://www.51201314.me/jacks/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
+<meta property="og:description" content="记录Jack生活成长的博客网站">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jack·S Blog">
+<meta name="twitter:description" content="记录Jack生活成长的博客网站">
+
+
+
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Jack·S Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-
-
-
-
-
-
-
-
-
-
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
-
-
-<div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
-  <div class="headband"></div>
- 
-
-
-<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
-
-
+  
+    
   
 
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
 
-  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="header-inner"><div class="site-meta ">
-  
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/jacks/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Jack·S</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jacks/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/jacks/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/jacks/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/jacks/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-study">
-          <a href="/jacks/study" rel="section">
-            
-              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
-            
-            读书
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/jacks/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-new">
-          <a href="/jacks/new" rel="section">
-            
-              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
-            
-            更新
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">71</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">40</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+    
+
+  
+
+  
 </nav>
 
- </div>
-  </header>
 
-  <main id="main" class="main">
-    <div class="main-inner">
-      <div class="content-wrap">
-        <div id="content" class="content">
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
           
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
-      
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2017/01/17/维度的演变/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
@@ -258,13 +431,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/jacks/zh-Hans/2017/01/17/维度的演变/" itemprop="url">
-                  维度的演变
-                </a>
+                
+                <a href="/jacks/zh-Hans/2017/01/17/维度的演变/" class="post-title-link" itemprop="url">维度的演变</a>
               
             
           </h1>
@@ -272,61 +441,74 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T09:50:28+08:00" content="2017-01-17">
-              2017-01-17
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-01-17 09:50:28 / 修改时间：19:55:33" itemprop="dateCreated datePublished" datetime="2017-01-17T09:50:28+08:00">2017-01-17</time>
+            
+
+            
+              
+
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/让科技流行起来/" itemprop="url" rel="index">
-                    <span itemprop="name">让科技流行起来</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/让科技流行起来/" itemprop="url" rel="index"><span itemprop="name">让科技流行起来</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2017/01/17/维度的演变/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="维度的演变" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <!--不蒜子计算器 每页计算-->
-
           
 
           
+
+          
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -334,31 +516,39 @@
 
       
         
-          <p>&#x5728;&#x7F51;&#x4E0A;&#x770B;&#x8FC7;&#x5F88;&#x591A;&#x5173;&#x4E8E;&#x7EF4;&#x5EA6;&#x7684;&#x89E3;&#x91CA;&#x548C;&#x6F14;&#x793A;&#xFF0C;&#x4E5F;&#x770B;&#x8FC7;&#x5F88;&#x591A;&#x4E66;&#x7C4D;&#xFF0C;&#x7535;&#x89C6;&#x7EAA;&#x5F55;&#x7247;&#x7B49;&#xFF0C;&#x4ECE;&#x4E00;&#x7EF4;&#x5230;&#x4E09;&#x7EF4;&#x56FA;&#x7136;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x5230;&#x4E86;&#x66F4;&#x9AD8;&#x7684;&#x7EF4;&#x5EA6;&#x5C31;&#x8BA9;&#x4EBA;&#x5F88;&#x96BE;&#x53BB;&#x7406;&#x89E3;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x6162;&#x6162;&#x5BF9;&#x4E00;&#x4E9B;&#x5B9A;&#x7406;&#x6982;&#x5FF5;&#xFF0C;&#x53D1;&#x751F;&#x66F4;&#x9AD8;&#x66F4;&#x5BA2;&#x89C2;&#x7684;&#x8BA4;&#x8BC6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x53D1;&#x73B0;&#x5F88;&#x591A;&#x4E8B;&#x5C31;&#x53D8;&#x5F97;&#x66F4;&#x597D;&#x7406;&#x89E3;&#x3002;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x6240;&#x8BA4;&#x4E3A;&#x4E0D;&#x53EF;&#x7406;&#x89E3;&#x7684;&#x4E8B;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x90FD;&#x662F;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x6240;&#x5949;&#x627F;&#x7684;&#x7406;&#x8BBA;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x968F;&#x7740;&#x7269;&#x8D28;&#x7684;&#x6F14;&#x7ECE;&#x63A8;&#x8FDB;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5F97;&#x4E0D;&#x6539;&#x53D8;&#x6216;&#x8005;&#x8FDB;&#x5316;&#x4E4B;&#x524D;&#x7684;&#x8BA4;&#x77E5;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x601D;&#x7EF4;&#x8FDB;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x4EBA;&#x7684;&#x8089;&#x4F53;&#x53EF;&#x80FD;&#x76EE;&#x524D;&#x53EA;&#x80FD;&#x5C40;&#x9650;&#x4E8E;&#x4E09;&#x7EF4;&#x4E4B;&#x4E2D;&#xFF0C;&#x4F46;&#x601D;&#x7EF4;&#x4E5F;&#x8BB8;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x548C;&#x8FDB;&#x5316;&#x5230;&#x66F4;&#x9AD8;&#x7684;&#x5C42;&#x6B21;&#x3002;<br></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/jacks/zh-Hans/2017/01/17/维度的演变/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <p>在网上看过很多关于维度的解释和演示，也看过很多书籍，电视纪录片等，从一维到三维固然好理解，但是到了更高的维度就让人很难去理解，当我们慢慢对一些定理概念，发生更高更客观的认识的时候，才发现很多事就变得更好理解。很多时候我们所认为不可理解的事，大多数情况可能都是我们之前所奉承的理论出了问题，随着物质的演绎推进，我们不得不改变或者进化之前的认知，这是一种思维进化的过程。人的肉体可能目前只能局限于三维之中，但思维也许可以理解和进化到更高的层次。<br></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2017/01/17/维度的演变/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-  
-
-
-      <! -- end 添加捐赠图标 -->
 
       
 
@@ -367,21 +557,40 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
-      
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
@@ -389,13 +598,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/" itemprop="url">
-                  理解总结Redux
-                </a>
+                
+                <a href="/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/" class="post-title-link" itemprop="url">理解总结Redux</a>
               
             
           </h1>
@@ -403,61 +608,86 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-05T11:51:42+08:00" content="2016-12-05">
-              2016-12-05
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-12-05 11:51:42" itemprop="dateCreated datePublished" datetime="2016-12-05T11:51:42+08:00">2016-12-05</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-01-03 00:00:00" itemprop="dateModified" datetime="2017-01-03T00:00:00+08:00">2017-01-03</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="理解总结Redux" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <!--不蒜子计算器 每页计算-->
-
           
 
           
+
+          
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -465,31 +695,39 @@
 
       
         
-          <p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x77E5;&#x9053;Redux&#x548C;React&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x8840;&#x7F18;&#x5173;&#x7CFB;&#x3002;&#x4E0D;&#x7136;&#x4F60;&#x4F1A;&#x95EE;&#x4ED6;&#x4EEC;&#x7684;&#x7ED3;&#x5408;&#x5C82;&#x4E0D;&#x662F;&#x6210;&#x4E86;&#x4E71;*&#x3002;Redux &#x8FD8;&#x652F;&#x6301; Vue&#x3001;Angular&#x3001;Ember&#x3001;jQuery &#x751A;&#x81F3;&#x7EAF; JavaScript&#x3002;&#x5F53;&#x4F60;&#x5728;&#x7528;React&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8981;&#x660E;&#x767D;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;redux&#xFF0C;&#x4E0D;&#x660E;&#x767D;&#x5C31;&#x6CA1;&#x6709;&#x7528;&#x7684;&#x610F;&#x4E49;&#x3002;&#x7531;&#x4E8E;React&#x53EA;&#x505A;&#x4E3A;view&#x89C6;&#x56FE;&#x5C42;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x5B8C;&#x6210;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x5C31;&#x9700;&#x62FC;&#x88C5;&#x8BB8;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x5305;&#xFF0C;redux&#x5C31;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x4E3A;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x6D41;&#x800C;&#x751F;&#x7684;&#x5305;&#x3002;&#x9664;Redux&#xFF0C;&#x5176;&#x5B9E;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x7B80;&#x6D01;&#x7684;&#x5E93;&#xFF0C;&#x53EB;mobX&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;GitHub&#x3002;<br></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <p>首先我们要知道Redux和React之间没有血缘关系。不然你会问他们的结合岂不是成了乱*。Redux 还支持 Vue、Angular、Ember、jQuery 甚至纯 JavaScript。当你在用React的时候，要明白为什么要用redux，不明白就没有用的意义。由于React只做为view视图层，如果你要完成一套完整的方案，就需拼装许多其他的包，redux就可以说是为管理数据流而生的包。除Redux，其实还有一个更简洁的库，叫mobX，可以自行GitHub。<br></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/12/05/理解总结Redux与React的结合/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-  
-
-
-      <! -- end 添加捐赠图标 -->
 
       
 
@@ -498,21 +736,40 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
-      
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
@@ -520,13 +777,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/" itemprop="url">
-                  Docker常用命令和技巧总结
-                </a>
+                
+                <a href="/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/" class="post-title-link" itemprop="url">Docker常用命令和技巧总结</a>
               
             
           </h1>
@@ -534,61 +787,86 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-18T16:17:18+08:00" content="2016-11-18">
-              2016-11-18
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-11-18 16:17:18" itemprop="dateCreated datePublished" datetime="2016-11-18T16:17:18+08:00">2016-11-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-11-21 16:57:58" itemprop="dateModified" datetime="2016-11-21T16:57:58+08:00">2016-11-21</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="Docker常用命令和技巧总结" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <!--不蒜子计算器 每页计算-->
-
           
 
           
+
+          
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -596,31 +874,39 @@
 
       
         
-          <p>Docker &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6253;&#x5305;&#x4ED6;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x4EE5;&#x53CA;&#x4F9D;&#x8D56;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x5E03;&#x5230;&#x4EFB;&#x4F55;&#x6D41;&#x884C;&#x7684; Linux &#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x5316;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E86;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x547D;&#x4EE4;&#x548C;&#x6280;&#x5DE7;&#xFF0C;&#x6BD4;&#x5982;&#x6279;&#x91CF;&#x5220;&#x9664;images&#x548C;containers&#x7B49;&#x3002;<br></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。这里我总结了常用的一些命令和技巧，比如批量删除images和containers等。<br></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/11/18/Docker常用命令和技巧总结/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-  
-
-
-      <! -- end 添加捐赠图标 -->
 
       
 
@@ -629,21 +915,40 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
-      
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
@@ -651,13 +956,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/" itemprop="url">
-                  SSH走443端口访问github
-                </a>
+                
+                <a href="/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/" class="post-title-link" itemprop="url">SSH走443端口访问github</a>
               
             
           </h1>
@@ -665,61 +966,74 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-07T16:36:22+08:00" content="2016-11-07">
-              2016-11-07
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-11-07 16:36:22 / 修改时间：17:14:57" itemprop="dateCreated datePublished" datetime="2016-11-07T16:36:22+08:00">2016-11-07</time>
+            
+
+            
+              
+
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="SSH走443端口访问github" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <!--不蒜子计算器 每页计算-->
-
           
 
           
+
+          
+
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -727,31 +1041,39 @@
 
       
         
-          <p>&#x6700;&#x8FD1;&#x535A;&#x5BA2;&#x4E00;&#x76F4;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#xFF0C;&#x7136;&#x800C;&#x4ECA;&#x5929;&#x5728;&#x516C;&#x53F8;&#x5185;&#x7F51;&#x4ECE;Github&#x5206;&#x652F;&#x62C9;&#x53D6;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x603B;&#x662F;&#x62A5;&#x9519;&#x8BEF;&#xFF0C;&#x5728;Github&#x5B98;&#x7F51;&#x627E;&#x5230;&#x4E86;&#x4E00;&#x79CD;&#x529E;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;https&#x534F;&#x8BAE;&#x5EFA;&#x7ACB;SSH&#x8FDE;&#x63A5;&#xFF0C;&#x5373;&#x8BA9;SSH&#x8D70;443&#x7AEF;&#x53E3;&#x3002;&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#xFF0C;&#x516C;&#x53F8;&#x7684;&#x9632;&#x706B;&#x5899;&#x5E76;&#x6CA1;&#x6709;&#x5C01;443&#x7AEF;&#x53E3;&#xFF08;&#x57FA;&#x672C;&#x4E0D;&#x53EF;&#x80FD;&#x5C01;&#xFF09;&#x3002;<br></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          <p>最近博客一直没有更新，然而今天在公司内网从Github分支拉取代码的时候总是报错误，在Github官网找到了一种办法，通过https协议建立SSH连接，即让SSH走443端口。经过测试，公司的防火墙并没有封443端口（基本不可能封）。<br></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/11/07/SSH走443端口访问github/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-  
-
-
-      <! -- end 添加捐赠图标 -->
 
       
 
@@ -760,25 +1082,46 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
-      
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-quote " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-quote" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/10/21/snippets/360再见我要去NAS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -787,29 +1130,33 @@
       
         
           
-            <p></p><h2>360&#x518D;&#x89C1;&#x6211;&#x8981;&#x53BB;NAS<h2><p></p>
-<blockquote><br><br><div style="text-align:left"><br>360&#x4E91;&#x76D8;&#x53D1;&#x5E03;&#x516C;&#x544A;&#xFF0C;&#x51B3;&#x5B9A;&#x505C;&#x6B62;&#x4E2A;&#x4EBA;&#x4E91;&#x76D8;&#x670D;&#x52A1;&#xFF0C;2017&#x5E74;2&#x6708;1&#x65E5;&#x8D77;&#x5173;&#x95ED;&#x6240;&#x6709;&#x7684;&#x4E91;&#x76D8;&#x8D26;&#x53F7;&#x5E76;&#x6E05;&#x7A7A;&#x6570;&#x636E;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;2016&#x5E74;11&#x6708;1&#x65E5;&#x8D77;&#x505C;&#x6B62;&#x4E91;&#x76D8;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#xFF0C;&#x5373;&#x65E5;&#x8D77;&#x81F3;2017&#x5E74;2&#x6708;1&#x65E5;&#xFF0C;&#x65E0;&#x8BBA;&#x5269;&#x4F59;&#x591A;&#x5C11;&#x5929;&#x4F1A;&#x5458;&#xFF0C;&#x5747;&#x5168;&#x989D;&#x9000;&#x6B3E;&#x3002;<br>360&#x4E91;&#x76D8;&#x5173;&#x95ED;&#x4E4B;&#x540E;&#xFF0C;&#x80FD;&#x7528;&#x7684;&#x4E3B;&#x8981;&#x7F51;&#x76D8;&#x53EA;&#x5269;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x548C;&#x817E;&#x8BAF;&#x5FAE;&#x4E91;&#x4E86;&#xFF0C;&#x4F46;&#x6211;&#x4F30;&#x8BA1;&#x8FD9;&#x4E24;&#x5BB6;&#x7F51;&#x76D8;&#x7684;&#x5173;&#x95ED;&#x4E5F;&#x662F;&#x8FDF;&#x65E9;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x8D2D;&#x4E70;&#x4E00;&#x4E2A;NAS&#xFF08;&#x6216;&#x8005;&#x81EA;&#x5DF1;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;NAS&#xFF09;&#x624D;&#x662F;&#x7EC8;&#x6781;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;<br>360&#x522B;&#x4E86; &#x250C;( &#xCA0;_&#xCA0;)&#x2518;<br></div><br></blockquote>
+            <p></p><h2>360再见我要去NAS<h2><p></p>
+<blockquote><br><br><div style="text-align:left"><br>360云盘发布公告，决定停止个人云盘服务，2017年2月1日起关闭所有的云盘账号并清空数据。具体来说，2016年11月1日起停止云盘上传服务，即日起至2017年2月1日，无论剩余多少天会员，均全额退款。<br>360云盘关闭之后，能用的主要网盘只剩百度网盘和腾讯微云了，但我估计这两家网盘的关闭也是迟早的事情，购买一个NAS（或者自己搭建一个NAS）才是终极解决方案。<br>360别了 ┌( ಠ_ಠ)┘<br></div><br></blockquote>
 </h2></h2>
           
         
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-  
-
-
-      <! -- end 添加捐赠图标 -->
 
       
 
@@ -818,6 +1165,733 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/10/21/I-am-fucking-Mac-Pro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jacks/zh-Hans/2016/10/21/I-am-fucking-Mac-Pro/" class="post-title-link" itemprop="url">I'am fucking Mac Pro</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-10-21 17:30:32" itemprop="dateCreated datePublished" datetime="2016-10-21T17:30:32+08:00">2016-10-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-04 18:39:50" itemprop="dateModified" datetime="2019-06-04T18:39:50+08:00">2019-06-04</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/优雅地去生活/" itemprop="url" rel="index"><span itemprop="name">优雅地去生活</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/优雅地去生活/技巧修炼/" itemprop="url" rel="index"><span itemprop="name">技巧修炼</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <img src="https://www.51201314.me/OSS/blog/img/macpro.jpg" itemprop="contentUrl">
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        
+          <p>上图为19年最新皮肤！（某宝100软妹币自己动手贴的）<br>Yep! I am fucking Mac pro! so apple is not integral！<br>国庆回家，去了姐姐家，姐夫是java程序员，以前也在上海，他们回成都完婚的适合，姐夫的换了成都的工作，原本他自己有一台Mac Pro，成都的公司又给他配了一台一模一样的，所以他在12年买的那台就一直没怎么用，每次去他们家，他都会给我安利，他想卖掉这台Mac，我现在用的第一台Mac就是从他这里买的。算是8.9层新吧。如今我已经fuck了它两周了，已经很有快感了。<br></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/10/21/I-am-fucking-Mac-Pro/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-quote" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/09/28/snippets/Jack代码世界/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p></p><h2>Jack代码世界<h2><p></p>
+<blockquote><br><br><img src="https://raw.githubusercontent.com/jingxinxin/myMindMap/master/imgs/Jack%E4%BB%A3%E7%A0%81%E4%B8%96%E7%95%8C.png" alt><br></blockquote>
+</h2></h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-quote" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/09/28/snippets/JQuery样式选择的几个区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2>JQuery样式选择的几个区别</h2>
+
+<blockquote><br><br><div style="text-align:left"><br>交集选择：   $(“.a.b”)–选择同时包含a和b的元素。<br>并集选择：   $(“.a,.b”)–选择包含a或者包含b的元素。<br>子集选择：   $(“.a .b”)–选择a下包含b的元素。<br></div><br></blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/09/02/koa/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jacks/zh-Hans/2016/09/02/koa/" class="post-title-link" itemprop="url">koa</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-09-02 17:05:12" itemprop="dateCreated datePublished" datetime="2016-09-02T17:05:12+08:00">2016-09-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-10-13 12:07:12" itemprop="dateModified" datetime="2016-10-13T12:07:12+08:00">2016-10-13</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          Koa -- 基于 Node.js 平台的下一代 web 开发框架
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/09/02/koa/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/" class="post-title-link" itemprop="url">React+Node+ES6+Babel</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-08-26 10:49:15" itemprop="dateCreated datePublished" datetime="2016-08-26T10:49:15+08:00">2016-08-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-10-13 12:07:12" itemprop="dateModified" datetime="2016-10-13T12:07:12+08:00">2016-10-13</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          搭建React可以使用es6的babel环境
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -826,20 +1900,17 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/jacks/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/jacks/page/8/">8</a><a class="extend next" rel="next" href="/jacks/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/jacks/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/jacks/page/4/">4</a><a class="extend next" rel="next" href="/jacks/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
 
+          </div>
+          
+
         </div>
         
-
-
-        
-
-      </div>
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -856,208 +1927,327 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/jacks/images/avatar.png"
-               alt="Jack·S" />
-          <p class="site-author-name" itemprop="name">Jack·S</p>
-          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/jacks/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/jacks/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/jacks/tags">
-                <span class="site-state-item-count">71</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
+
           
 
-        </nav>
+          
 
-        
-          <div class="feed-link motion-element">
-            <a href="/jacks/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+          
+          
 
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jingxinxin" target="_blank">
-                  
-                    <i class="fa fa-github"></i> GitHub
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/jxandcxy" target="_blank">
-                  
-                    <i class="fa fa-weibo"></i> Weibo
-                  
-                </a>
-              </span>
-            
           
+          
+
         </div>
+      </div>
 
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        <div class="links-of-blogroll motion-element">
-          
-            <div class="links-of-blogroll-title">友情链接</div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://51201314.me/" target="_blank">博主</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://" target="_blank">暂缺</a>
-                </li>
-              
-            </ul>
-          
-        </div>
-
-      </section>
+      
 
       
 
     </div>
   </aside>
-
-
-      
-    </div>
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="copyright">
   
-  &copy;
-  
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jack·S</span>
-    <!--简体繁体转换-->
-  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题
-  -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-<!--简体繁体转换-->
-<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
-<script type="text/javascript">
-  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
-  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
-  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
-  var translateButtonId = "translateLink"; //默认互换id
-  translateInitilization();
-</script>
-
-<!--不蒜子计算器-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<br>
-本Blog总访问量
-<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
-&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
-<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
-
-
-
-    </div>
-  </footer>
-
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-</div>
-
-
-
-
 
   
 
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-<script type="text/javascript">
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
 </script>
 
 
-  <script type="text/javascript" src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/jacks/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fancybox/source/jquery.fancybox.pack.js"></script>
-
-
-
-
-
-  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
-
-  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
 
 
 
@@ -1069,184 +2259,97 @@
 
 
 
-  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/jacks/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/jacks/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
+
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
 
 
 
 
   
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"Jacks"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
-      <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js"></script>
-      <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
+
+
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
   
 
 
 
 
+  
 
+  
 
+  
 
+  
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/jacks/" + search_path;
-    // monitor main search box;
+  
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
+  
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+  
 
-    });
+  
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  
 
+  
 
+  
 
-
-
-
-
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
+  
 
 </body>
 </html>

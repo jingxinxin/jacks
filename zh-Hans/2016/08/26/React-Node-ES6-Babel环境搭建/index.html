@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
   
 
 
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,45 +32,78 @@
 
 
 
-  <link href="/jacks/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-<link href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/jacks/css/main.css?v=0.5.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="React,Babel,ES6,环境搭建," />
-
-
-
-
-
-  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/jacks/favicon.ico?v=0.5.1" />
 
 
 
 
 
 
-<meta name="description" content="搭建React可以使用es6的babel环境">
+
+
+
+
+
+
+<link rel="stylesheet" href="/jacks/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/jacks/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/jacks/',
+    scheme: 'Mist',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="搭建React可以使用es6的babel环境">
 <meta name="keywords" content="React,Babel,ES6,环境搭建">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React+Node+ES6+Babel">
-<meta property="og:url" content="http://51201314.me/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/index.html">
-<meta property="og:site_name" content="Jack·S">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
 <meta property="og:description" content="搭建React可以使用es6的babel环境">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-10-13T04:07:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React+Node+ES6+Babel">
@@ -73,195 +111,328 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"right","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6265421695675270000,
-      author: '地主╮(╯▽╰)╭'
-    }
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
   };
 </script>
 
-
-
-
-
-  <title> React+Node+ES6+Babel | Jack·S </title>
+  <title>React+Node+ES6+Babel | Jack·S Blog</title>
   
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
 
-<div class="container one-collumn sidebar-position-right page-post-detail ">
-  <div class="headband"></div>
- 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
 
-
-<span id="forkongithub"><a href="https://github.com/jingxinxin">Fork me on GitHub</a></span>
-
-
-  
-
-
-  <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/jacks/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Jack·S</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+      
+    
+    
   </div>
-  <p class="site-subtitle">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
+
 
 <nav class="site-nav">
-  
-
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/jacks/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/jacks/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/jacks/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/jacks/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-study">
-          <a href="/jacks/study" rel="section">
-            
-              <i class="menu-item-icon fa fa-graduation-cap fa-fw"></i> <br />
-            
-            读书
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/jacks/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-new">
-          <a href="/jacks/new" rel="section">
-            
-              <i class="menu-item-icon fa fa-ellipsis-v fa-fw"></i> <br />
-            
-            更新
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">71</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">40</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
       
     </ul>
   
 
   
+    
+
+  
+
+  
 </nav>
 
- </div>
-  </header>
 
-  <main id="main" class="main">
-    <div class="main-inner">
-      <div class="content-wrap">
-        <div id="content" class="content">
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
           
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
-    
+
+  
 
   
   
-
-  
-  
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                React+Node+ES6+Babel
+          <h1 class="post-title" itemprop="name headline">React+Node+ES6+Babel
+
               
             
           </h1>
@@ -269,64 +440,88 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-26T10:49:15+08:00" content="2016-08-26">
-              2016-08-26
-            </time>
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-08-26 10:49:15" itemprop="dateCreated datePublished" datetime="2016-08-26T10:49:15+08:00">2016-08-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-10-13 12:07:12" itemprop="dateModified" datetime="2016-10-13T12:07:12+08:00">2016-10-13</time>
+              
+            
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/jacks/categories/代码技术/" itemprop="url" rel="index">
-                    <span itemprop="name">代码技术</span>
-                  </a>
-                </span>
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="React+Node+ES6+Babel" itemprop="commentsCount"></span>
-                </a>
-              </span>
             
           
 
-          <!--不蒜子计算器 每页计算-->
           
-          <span>&nbsp; | &nbsp;
-          <span id="busuanzi_value_page_pv" ></span>次阅读</span>
           
-          <!--不蒜子计算器 每页计算-->
+
+          
 
           
 
           
+            <div class="post-description">搭建React可以使用es6的babel环境</div>
           
 
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -334,130 +529,92 @@
 
       
         <a id="more"></a>
-<p>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;<br>&#x9700;&#x8981;node&#x73AF;&#x5883;&#x53BB;&#x5B98;&#x7F51;&#x81EA;&#x884C;&#x5B89;&#x88C5;<br>&#x9996;&#x5148;&#x751F;&#x6210;<code>package.json</code>&#x6587;&#x4EF6;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure></p>
-<h1 id="&#x7B2C;&#x4E00;&#x6B65;-&#x914D;&#x7F6E;&#x6587;&#x4EF6;-babelrc"><a href="#&#x7B2C;&#x4E00;&#x6B65;-&#x914D;&#x7F6E;&#x6587;&#x4EF6;-babelrc" class="headerlink" title="&#x7B2C;&#x4E00;&#x6B65; &#x914D;&#x7F6E;&#x6587;&#x4EF6;.babelrc"></a>&#x7B2C;&#x4E00;&#x6B65; &#x914D;&#x7F6E;&#x6587;&#x4EF6;.babelrc</h1><p>&#x4F7F;&#x7528;Babel&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x5C31;&#x662F;&#x914D;&#x7F6E;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;Babel&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;<code>.babelrc</code>&#xFF0C;&#x5B58;&#x653E;&#x5728;&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x3002;<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  <span class="attr">&quot;presets&quot;</span>: [],</div><div class="line">  <span class="attr">&quot;plugins&quot;</span>: []</div><div class="line">}</div></pre></td></tr></table></figure></p>
-<p><code>presets</code>&#x5B57;&#x6BB5;&#x8BBE;&#x5B9A;&#x8F6C;&#x7801;&#x89C4;&#x5219;&#xFF0C;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x7684;&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># ES2015&#x8F6C;&#x7801;&#x89C4;&#x5219;</span></div><div class="line">$ npm install --save-dev babel-preset-es2015</div><div class="line"></div><div class="line"><span class="comment"># react&#x8F6C;&#x7801;&#x89C4;&#x5219;</span></div><div class="line">$ npm install --save-dev babel-preset-react</div><div class="line"></div><div class="line"><span class="comment"># ES7&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#x8BED;&#x6CD5;&#x63D0;&#x6848;&#x7684;&#x8F6C;&#x7801;&#x89C4;&#x5219;&#xFF08;&#x5171;&#x6709;4&#x4E2A;&#x9636;&#x6BB5;&#xFF09;&#xFF0C;&#x9009;&#x88C5;&#x4E00;&#x4E2A;</span></div><div class="line">$ npm install --save-dev babel-preset-stage-0</div><div class="line">$ npm install --save-dev babel-preset-stage-1</div><div class="line">$ npm install --save-dev babel-preset-stage-2</div><div class="line">$ npm install --save-dev babel-preset-stage-3</div></pre></td></tr></table></figure></p>
-<p>&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x89C4;&#x5219;&#x52A0;&#x5165;<code>.babelrc</code>&#x3002;<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  <span class="attr">&quot;presets&quot;</span>: [</div><div class="line">    <span class="string">&quot;es2015&quot;</span>,</div><div class="line">    <span class="string">&quot;react&quot;</span>,</div><div class="line">    <span class="string">&quot;stage-3&quot;</span></div><div class="line">  ],</div><div class="line">  <span class="attr">&quot;plugins&quot;</span>: []</div><div class="line">}</div></pre></td></tr></table></figure></p>
-<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x9700;&#x8981;React&#xFF0C;&#x6216;&#x8005;stage&#xFF0C;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x53BB;&#x6389;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x3002;</p>
-<h1 id="&#x7B2C;&#x4E8C;&#x6B65;-&#x9009;&#x62E9;&#x4F60;&#x7684;babel&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;"><a href="#&#x7B2C;&#x4E8C;&#x6B65;-&#x9009;&#x62E9;&#x4F60;&#x7684;babel&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x6B65; &#x9009;&#x62E9;&#x4F60;&#x7684;babel&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;"></a>&#x7B2C;&#x4E8C;&#x6B65; &#x9009;&#x62E9;&#x4F60;&#x7684;babel&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;</h1><p>babel&#x7684;&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;&#x6709;&#x591A;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;gulp&#x4E2D;&#xFF0C;webpack&#x4E2D;&#x4E0B;&#x8F7D;&#x76F8;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x7528;babel&#x547D;&#x4EE4;&#x6216;&#x8005;babel&#x81EA;&#x8EAB;&#x63D0;&#x4F9B;&#x7684;API&#x8FDB;&#x884C;&#x8F6C;&#x7801;&#x3002;</p>
-<h2 id="&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x7801;babel-cli"><a href="#&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x7801;babel-cli" class="headerlink" title="&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x7801;babel-cli"></a>&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x7801;babel-cli</h2><p>Babel&#x63D0;&#x4F9B;babel-cli&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x4E8E;&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x7801;&#x3002;<br>&#x5B89;&#x88C5;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install --save-dev babel-cli</div></pre></td></tr></table></figure></p>
-<p>&#x7528;&#x6CD5;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># &#x8F6C;&#x7801;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;</span></div><div class="line">$ babel example.js</div><div class="line"></div><div class="line"><span class="comment"># &#x8F6C;&#x7801;&#x7ED3;&#x679C;&#x5199;&#x5165;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</span></div><div class="line"><span class="comment"># --out-file &#x6216; -o &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;</span></div><div class="line">$ babel example.js --out-file compiled.js</div><div class="line"><span class="comment"># &#x6216;&#x8005;</span></div><div class="line">$ babel example.js -o compiled.js</div><div class="line"></div><div class="line"><span class="comment"># &#x6574;&#x4E2A;&#x76EE;&#x5F55;&#x8F6C;&#x7801;</span></div><div class="line"><span class="comment"># --out-dir &#x6216; -d &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x76EE;&#x5F55;</span></div><div class="line">$ babel src --out-dir lib</div><div class="line"><span class="comment"># &#x6216;&#x8005;</span></div><div class="line">$ babel src <span class="_">-d</span> lib</div><div class="line"></div><div class="line"><span class="comment"># -s &#x53C2;&#x6570;&#x751F;&#x6210;source map&#x6587;&#x4EF6;</span></div><div class="line">$ babel src <span class="_">-d</span> lib <span class="_">-s</span></div></pre></td></tr></table></figure></p>
-<h2 id="babel-node"><a href="#babel-node" class="headerlink" title="babel-node"></a>babel-node</h2><p><code>babel-cli</code>&#x5DE5;&#x5177;&#x81EA;&#x5E26;&#x4E00;&#x4E2A;<code>babel-node</code>&#x547D;&#x4EE4;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x652F;&#x6301;ES6&#x7684;REPL&#x73AF;&#x5883;&#x3002;&#x5B83;&#x652F;&#x6301;Node&#x7684;REPL&#x73AF;&#x5883;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;ES6&#x4EE3;&#x7801;&#x3002;<br>&#x5B83;&#x4E0D;&#x7528;&#x5355;&#x72EC;&#x5B89;&#x88C5;&#xFF0C;&#x800C;&#x662F;&#x968F;<code>babel-cli</code>&#x4E00;&#x8D77;&#x5B89;&#x88C5;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6267;&#x884C;<code>babel-node</code>&#x5C31;&#x8FDB;&#x5165;PEPL&#x73AF;&#x5883;&#x3002;<br><code>babel-node</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;ES6&#x811A;&#x672C;&#x3002;&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5165;&#x811A;&#x672C;&#x6587;&#x4EF6;es6.js&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x3002;<br>&#x7136;&#x540E;&#xFF0C;&#x6539;&#x5199;<code>package.json</code>&#x3002;<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  <span class="attr">&quot;scripts&quot;</span>: {</div><div class="line">    <span class="attr">&quot;script-name&quot;</span>: <span class="string">&quot;babel-node script.js&quot;</span></div><div class="line">  }</div><div class="line">}</div></pre></td></tr></table></figure></p>
-<p>&#x4F7F;&#x7528;babel-node&#x66FF;&#x4EE3;node&#xFF0C;&#x8FD9;&#x6837;script.js&#x672C;&#x8EAB;&#x5C31;&#x4E0D;&#x7528;&#x505A;&#x4EFB;&#x4F55;&#x8F6C;&#x7801;&#x5904;&#x7406;&#x3002;</p>
-<h2 id="babel-register"><a href="#babel-register" class="headerlink" title="babel-register"></a>babel-register</h2><p><code>babel-register</code>&#x6A21;&#x5757;&#x6539;&#x5199;require&#x547D;&#x4EE4;&#xFF0C;&#x4E3A;&#x5B83;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x94A9;&#x5B50;&#x3002;&#x6B64;&#x540E;&#xFF0C;&#x6BCF;&#x5F53;&#x4F7F;&#x7528;<code>require</code>&#x52A0;&#x8F7D;<code>.js</code>&#x3001;<code>.jsx</code>&#x3001;<code>.es</code>&#x548C;<code>.es6</code>&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x4F1A;&#x5148;&#x7528;<code>Babel</code>&#x8FDB;&#x884C;&#x8F6C;&#x7801;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install --save-dev babel-register</div></pre></td></tr></table></figure></p>
-<p>&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x52A0;&#x8F7D;<code>babel-register</code>&#x3002;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">&quot;babel-register&quot;</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">&quot;./index.js&quot;</span>);</div></pre></td></tr></table></figure></p>
-<p>&#x6B64;&#x8FC7;&#x7A0B;&#x4E4B;&#x540E;&#x7684;require&#x6587;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x7528;es6&#x6765;&#x5199;&#x4E86;&#xFF0C;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5BF9;index.js&#x8F6C;&#x7801;&#x4E86;&#x3002;<br>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>babel-register</code>&#x53EA;&#x4F1A;&#x5BF9;require&#x547D;&#x4EE4;&#x52A0;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x8F6C;&#x7801;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5BF9;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x8F6C;&#x7801;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x5B83;&#x662F;&#x5B9E;&#x65F6;&#x8F6C;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x9002;&#x5408;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#x3002;</p>
-<h2 id="babel-core"><a href="#babel-core" class="headerlink" title="babel-core"></a>babel-core</h2><p>&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x8C03;&#x7528;Babel&#x7684;API&#x8FDB;&#x884C;&#x8F6C;&#x7801;&#xFF0C;&#x5C31;&#x8981;&#x4F7F;&#x7528;<code>babel-core</code>&#x6A21;&#x5757;&#x3002;<br>&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install babel-core --save</div></pre></td></tr></table></figure></p>
-<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x8C03;&#x7528;<code>babel-core</code>&#x3002;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> babel = <span class="built_in">require</span>(<span class="string">&apos;babel-core&apos;</span>);</div><div class="line"></div><div class="line"><span class="comment">// &#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x7801;</span></div><div class="line">babel.transform(<span class="string">&apos;code();&apos;</span>, options);</div><div class="line"><span class="comment">// =&gt; { code, map, ast }</span></div><div class="line"></div><div class="line"><span class="comment">// &#x6587;&#x4EF6;&#x8F6C;&#x7801;&#xFF08;&#x5F02;&#x6B65;&#xFF09;</span></div><div class="line">babel.transformFile(<span class="string">&apos;filename.js&apos;</span>, options, <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>{</div><div class="line">  result; <span class="comment">// =&gt; { code, map, ast }</span></div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// &#x6587;&#x4EF6;&#x8F6C;&#x7801;&#xFF08;&#x540C;&#x6B65;&#xFF09;</span></div><div class="line">babel.transformFileSync(<span class="string">&apos;filename.js&apos;</span>, options);</div><div class="line"><span class="comment">// =&gt; { code, map, ast }</span></div><div class="line"></div><div class="line"><span class="comment">// Babel AST&#x8F6C;&#x7801;</span></div><div class="line">babel.transformFromAst(ast, code, options);</div><div class="line"><span class="comment">// =&gt; { code, map, ast }</span></div></pre></td></tr></table></figure></p>
-<p>&#x914D;&#x7F6E;&#x5BF9;&#x8C61;options&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;<a href="http://babeljs.io/docs/usage/options/&#x3002;" target="_blank" rel="external">http://babeljs.io/docs/usage/options/&#x3002;</a></p>
-<h2 id="babel-polyfill"><a href="#babel-polyfill" class="headerlink" title="babel-polyfill"></a>babel-polyfill</h2><p>Babel&#x9ED8;&#x8BA4;&#x53EA;&#x8F6C;&#x6362;&#x65B0;&#x7684;JavaScript&#x53E5;&#x6CD5;&#xFF08;syntax&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x8F6C;&#x6362;&#x65B0;&#x7684;API&#xFF0C;&#x6BD4;&#x5982;Iterator&#x3001;Generator&#x3001;Set&#x3001;Maps&#x3001;Proxy&#x3001;Reflect&#x3001;Symbol&#x3001;Promise&#x7B49;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x5B9A;&#x4E49;&#x5728;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x6BD4;&#x5982;<code>Object.assign</code>&#xFF09;&#x90FD;&#x4E0D;&#x4F1A;&#x8F6C;&#x7801;&#x3002;<br>&#x6BD4;&#x5982;ES6&#x5728;Array&#x5BF9;&#x8C61;&#x4E0A;&#x65B0;&#x589E;&#x4E86;Array.from&#x65B9;&#x6CD5;&#x3002;Babel&#x5C31;&#x4E0D;&#x4F1A;&#x8F6C;&#x7801;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD0;&#x884C;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>babel-polyfill</code>&#xFF0C;&#x4E3A;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x8865;&#x5145;&#x3002;<br>&#x5B89;&#x88C5;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install --save babel-polyfill</div></pre></td></tr></table></figure></p>
-<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x811A;&#x672C;&#x5934;&#x90E8;&#xFF0C;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x3002;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> <span class="string">&apos;babel-polyfill&apos;</span>;</div><div class="line"><span class="comment">// &#x6216;&#x8005;</span></div><div class="line"><span class="built_in">require</span>(<span class="string">&apos;babel-polyfill&apos;</span>);</div></pre></td></tr></table></figure></p>
-<p>Babel&#x9ED8;&#x8BA4;&#x4E0D;&#x8F6C;&#x7801;&#x7684;API&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x8BE6;&#x7EC6;&#x6E05;&#x5355;&#x53EF;&#x4EE5;&#x67E5;&#x770B;babel-plugin-transform-runtime&#x6A21;&#x5757;&#x7684;<a href="https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/definitions.js" target="_blank" rel="external">definitions.js</a>&#x6587;&#x4EF6;&#x3002;</p>
-<h2 id="&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;"><a href="#&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;" class="headerlink" title="&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;"></a>&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;</h2><p>&#x4E0D;&#x505A;&#x4ECB;&#x7ECD;</p>
-<h2 id="&#x5728;&#x7EBF;&#x8F6C;&#x6362;"><a href="#&#x5728;&#x7EBF;&#x8F6C;&#x6362;" class="headerlink" title="&#x5728;&#x7EBF;&#x8F6C;&#x6362;"></a>&#x5728;&#x7EBF;&#x8F6C;&#x6362;</h2><p>Babel&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<a href="https://babeljs.io/repl/" target="_blank" rel="external">REPL&#x5728;&#x7EBF;&#x7F16;&#x8BD1;&#x5668;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x3002;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x63D2;&#x5165;&#x7F51;&#x9875;&#x8FD0;&#x884C;&#x3002;</p>
-<h1 id="&#x5B89;&#x88C5;React"><a href="#&#x5B89;&#x88C5;React" class="headerlink" title="&#x5B89;&#x88C5;React"></a>&#x5B89;&#x88C5;React</h1><p>&#x505A;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x4F60;&#x9879;&#x76EE;&#x4E0B;&#x7684;node&#x73AF;&#x5883;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;es6&#x6587;&#x4EF6;&#x4E86;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node es6.js</div></pre></td></tr></table></figure></p>
-<p>&#x5B89;&#x88C5;react<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i react react-dom --save <span class="_">-d</span></div></pre></td></tr></table></figure></p>
-<p>&#x65B0;&#x5EFA;index.js&#x6587;&#x4EF6;<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&apos;react&apos;</span>;</div><div class="line"><span class="keyword">import</span> { Component } <span class="keyword">from</span> <span class="string">&apos;react&apos;</span>;</div><div class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">&apos;react-dom&apos;</span></div><div class="line"></div><div class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</div><div class="line">    <span class="built_in">console</span>.log(a);</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">index</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>{</div><div class="line"></div><div class="line">}</div></pre></td></tr></table></figure></p>
-<p>&#x547D;&#x4EE4;&#x884C;&#x8FD0;&#x884C;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node index.js</div><div class="line">&gt;1</div></pre></td></tr></table></figure></p>
-<p>&#x8FD0;&#x884C;&#x6210;&#x529F;</p>
-<h1 id="&#x53C2;&#x8003;"><a href="#&#x53C2;&#x8003;" class="headerlink" title="&#x53C2;&#x8003;"></a>&#x53C2;&#x8003;</h1><p><a href="http://www.ruanyifeng.com/blog/2015/03/react" target="_blank" rel="external">React &#x5165;&#x95E8;&#x5B9E;&#x4F8B;&#x6559;&#x7A0B;</a><br><a href="https://facebook.github.io/react/docs/package-management.html" target="_blank" rel="external">React&#x5B98;&#x65B9;&#x6587;&#x6863; Using React from npm</a><br><a href="http://www.ruanyifeng.com/blog/2015/03/react" target="_blank" rel="external">&#x962E;&#x4E00;&#x5CF0; React &#x5165;&#x95E8;&#x5B9E;&#x4F8B;&#x6559;&#x7A0B;</a></p>
-<pre><code>&#x8C22;&#x8C22;&#x60A8;&#x767E;&#x5FD9;&#x4E2D;&#xFF0C;&#x9605;&#x8BFB;&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#xFF1B;&#x82E5;&#x89C9;&#x5F97;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x5206;&#x4EAB;&#x7ED9;&#x66F4;&#x591A;&#x7684;&#x670B;&#x53CB;
-&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x81EA;&#x7531;&#x8F6C;&#x8F7D;-&#x975E;&#x5546;&#x7528;-&#x975E;&#x884D;&#x751F;-&#x4FDD;&#x6301;&#x7F72;&#x540D;
+<p>准备工作<br>需要node环境去官网自行安装<br>首先生成<code>package.json</code>文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure></p>
+<h1 id="第一步-配置文件-babelrc"><a href="#第一步-配置文件-babelrc" class="headerlink" title="第一步 配置文件.babelrc"></a>第一步 配置文件.babelrc</h1><p>使用Babel的第一步，就是配置这个文件。Babel的配置文件是<code>.babelrc</code>，存放在项目的根目录下。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>presets</code>字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ES2015转码规则</span></span><br><span class="line">$ npm install --save-dev babel-preset-es2015</span><br><span class="line"></span><br><span class="line"><span class="comment"># react转码规则</span></span><br><span class="line">$ npm install --save-dev babel-preset-react</span><br><span class="line"></span><br><span class="line"><span class="comment"># ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个</span></span><br><span class="line">$ npm install --save-dev babel-preset-stage-0</span><br><span class="line">$ npm install --save-dev babel-preset-stage-1</span><br><span class="line">$ npm install --save-dev babel-preset-stage-2</span><br><span class="line">$ npm install --save-dev babel-preset-stage-3</span><br></pre></td></tr></table></figure></p>
+<p>然后，将这些规则加入<code>.babelrc</code>。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    <span class="string">"es2015"</span>,</span><br><span class="line">    <span class="string">"react"</span>,</span><br><span class="line">    <span class="string">"stage-3"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果你不需要React，或者stage，当然可以去掉你不需要的。</p>
+<h1 id="第二步-选择你的babel编译方式"><a href="#第二步-选择你的babel编译方式" class="headerlink" title="第二步 选择你的babel编译方式"></a>第二步 选择你的babel编译方式</h1><p>babel的编译方式有多中，你可以在gulp中，webpack中下载相应的插件文件编译，也可以单独用babel命令或者babel自身提供的API进行转码。</p>
+<h2 id="命令行转码babel-cli"><a href="#命令行转码babel-cli" class="headerlink" title="命令行转码babel-cli"></a>命令行转码babel-cli</h2><p>Babel提供babel-cli工具，用于命令行转码。<br>安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save-dev babel-cli</span><br></pre></td></tr></table></figure></p>
+<p>用法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 转码结果输出到标准输出</span></span><br><span class="line">$ babel example.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 转码结果写入一个文件</span></span><br><span class="line"><span class="comment"># --out-file 或 -o 参数指定输出文件</span></span><br><span class="line">$ babel example.js --out-file compiled.js</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ babel example.js -o compiled.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 整个目录转码</span></span><br><span class="line"><span class="comment"># --out-dir 或 -d 参数指定输出目录</span></span><br><span class="line">$ babel src --out-dir lib</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ babel src -d lib</span><br><span class="line"></span><br><span class="line"><span class="comment"># -s 参数生成source map文件</span></span><br><span class="line">$ babel src -d lib -s</span><br></pre></td></tr></table></figure></p>
+<h2 id="babel-node"><a href="#babel-node" class="headerlink" title="babel-node"></a>babel-node</h2><p><code>babel-cli</code>工具自带一个<code>babel-node</code>命令，提供一个支持ES6的REPL环境。它支持Node的REPL环境的所有功能，而且可以直接运行ES6代码。<br>它不用单独安装，而是随<code>babel-cli</code>一起安装。然后，执行<code>babel-node</code>就进入PEPL环境。<br><code>babel-node</code>命令可以直接运行ES6脚本。将上面的代码放入脚本文件es6.js，然后直接运行。<br>然后，改写<code>package.json</code>。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"script-name"</span>: <span class="string">"babel-node script.js"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>使用babel-node替代node，这样script.js本身就不用做任何转码处理。</p>
+<h2 id="babel-register"><a href="#babel-register" class="headerlink" title="babel-register"></a>babel-register</h2><p><code>babel-register</code>模块改写require命令，为它加上一个钩子。此后，每当使用<code>require</code>加载<code>.js</code>、<code>.jsx</code>、<code>.es</code>和<code>.es6</code>后缀名的文件，就会先用<code>Babel</code>进行转码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save-dev babel-register</span><br></pre></td></tr></table></figure></p>
+<p>使用时，必须首先加载<code>babel-register</code>。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">"babel-register"</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">"./index.js"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>此过程之后的require文件都可以用es6来写了，并不需要手动对index.js转码了。<br>需要注意的是，<code>babel-register</code>只会对require命令加载的文件转码，而不会对当前文件转码。另外，由于它是实时转码，所以只适合在开发环境使用。</p>
+<h2 id="babel-core"><a href="#babel-core" class="headerlink" title="babel-core"></a>babel-core</h2><p>如果某些代码需要调用Babel的API进行转码，就要使用<code>babel-core</code>模块。<br>安装命令如下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install babel-core --save</span><br></pre></td></tr></table></figure></p>
+<p>然后，在项目中调用<code>babel-core</code>。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> babel = <span class="built_in">require</span>(<span class="string">'babel-core'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 字符串转码</span></span><br><span class="line">babel.transform(<span class="string">'code();'</span>, options);</span><br><span class="line"><span class="comment">// =&gt; &#123; code, map, ast &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 文件转码（异步）</span></span><br><span class="line">babel.transformFile(<span class="string">'filename.js'</span>, options, <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">  result; <span class="comment">// =&gt; &#123; code, map, ast &#125;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 文件转码（同步）</span></span><br><span class="line">babel.transformFileSync(<span class="string">'filename.js'</span>, options);</span><br><span class="line"><span class="comment">// =&gt; &#123; code, map, ast &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Babel AST转码</span></span><br><span class="line">babel.transformFromAst(ast, code, options);</span><br><span class="line"><span class="comment">// =&gt; &#123; code, map, ast &#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>配置对象options，可以参看官方文档<a href="http://babeljs.io/docs/usage/options/。" target="_blank" rel="noopener">http://babeljs.io/docs/usage/options/。</a></p>
+<h2 id="babel-polyfill"><a href="#babel-polyfill" class="headerlink" title="babel-polyfill"></a>babel-polyfill</h2><p>Babel默认只转换新的JavaScript句法（syntax），而不转换新的API，比如Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等全局对象，以及一些定义在全局对象上的方法（比如<code>Object.assign</code>）都不会转码。<br>比如ES6在Array对象上新增了Array.from方法。Babel就不会转码这个方法。如果想让这个方法运行，必须使用<code>babel-polyfill</code>，为当前环境提供一个扩展补充。<br>安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save babel-polyfill</span><br></pre></td></tr></table></figure></p>
+<p>然后，在脚本头部，加入如下一行代码。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'babel-polyfill'</span>;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'babel-polyfill'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>Babel默认不转码的API非常多，详细清单可以查看babel-plugin-transform-runtime模块的<a href="https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-runtime/src/definitions.js" target="_blank" rel="noopener">definitions.js</a>文件。</p>
+<h2 id="浏览器环境"><a href="#浏览器环境" class="headerlink" title="浏览器环境"></a>浏览器环境</h2><p>不做介绍</p>
+<h2 id="在线转换"><a href="#在线转换" class="headerlink" title="在线转换"></a>在线转换</h2><p>Babel提供一个<a href="https://babeljs.io/repl/" target="_blank" rel="noopener">REPL在线编译器</a>，可以在线将ES6代码转为ES5代码。转换后的代码，可以直接作为ES5代码插入网页运行。</p>
+<h1 id="安装React"><a href="#安装React" class="headerlink" title="安装React"></a>安装React</h1><p>做到这里，你项目下的node环境就可以直接运行es6文件了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node es6.js</span><br></pre></td></tr></table></figure></p>
+<p>安装react<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i react react-dom --save -d</span><br></pre></td></tr></table></figure></p>
+<p>新建index.js文件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">index</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>命令行运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node index.js</span><br><span class="line">&gt;1</span><br></pre></td></tr></table></figure></p>
+<p>运行成功</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.ruanyifeng.com/blog/2015/03/react" target="_blank" rel="noopener">React 入门实例教程</a><br><a href="https://facebook.github.io/react/docs/package-management.html" target="_blank" rel="noopener">React官方文档 Using React from npm</a><br><a href="http://www.ruanyifeng.com/blog/2015/03/react" target="_blank" rel="noopener">阮一峰 React 入门实例教程</a></p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名
 </code></pre>
       
     </div>
 
-    <div>
+    
+
+    
+    
+    
+
+    
+
+    
       
-        
-      
-    </div>
+    
+    
+
+    
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/jacks/tags/React/" rel="tag">#React</a>
+            <a href="/jacks/tags/React/" rel="tag"># React</a>
           
-            <a href="/jacks/tags/Babel/" rel="tag">#Babel</a>
+            <a href="/jacks/tags/Babel/" rel="tag"># Babel</a>
           
-            <a href="/jacks/tags/ES6/" rel="tag">#ES6</a>
+            <a href="/jacks/tags/ES6/" rel="tag"># ES6</a>
           
-            <a href="/jacks/tags/环境搭建/" rel="tag">#环境搭建</a>
+            <a href="/jacks/tags/环境搭建/" rel="tag"># 环境搭建</a>
           
         </div>
       
 
-      <! -- 添加捐赠图标 -->
       
-
-  
-    
-    
-
-    <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-                 &uarr;<br>
-          
-            Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！支付宝为众筹方式，金额和微信都是各位看官老爷随意！
-          
-              </span>
-        <br>
-      </div>
-
-      <div id="donate_guide" class="donate_bar center hidden">
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg" title="支付宝土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2Falipay.jpg"  height="164px" width="164px">
-              <br>
-              <span>支付宝土豪打赏</span>
-            </a>
-          </div>
-        
-
-        
-          <div style="display:inline-block">
-            <a href="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg" title="微信土豪打赏" class="fancybox" rel="article0">
-              <img src="http://7xs9s7.com1.z0.glb.clouddn.com/image%2FpayForMe%2F%7Fwx.jpg"  height="164px" width="164px">
-              <br>
-              <span>微信土豪打赏</span>
-            </a>
-          </div>
-
-        
-
-      </div>
-
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-
-  
-
-
-      <! -- end 添加捐赠图标 -->
+      
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/09/02/koa/" rel="next" title="koa">
-                <i class="fa fa-chevron-left"></i> koa
+              <a href="/jacks/zh-Hans/2016/08/22/爆笑虫子之冰淇淋/" rel="next" title="爆笑虫子之冰淇淋">
+                <i class="fa fa-chevron-left"></i> 爆笑虫子之冰淇淋
               </a>
             
           </div>
 
+          <span class="post-nav-divider"></span>
+
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/jacks/zh-Hans/2016/08/22/爆笑虫子之冰淇淋/" rel="prev" title="爆笑虫子之冰淇淋">
-                爆笑虫子之冰淇淋 <i class="fa fa-chevron-right"></i>
+              <a href="/jacks/zh-Hans/2016/09/02/koa/" rel="prev" title="koa">
+                koa <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -467,67 +624,26 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat"
-  data-thread-key="React+Node+ES6+Babel"
-  data-title="React+Node+ES6+Babel"
-  data-images=""
-  data-content=""
-  data-url="http://51201314.me/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/index.html">
-  <div class="ds-share-inline">
-    <ul class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more">
-        <a class="ds-more" href="javascript:void(0);">分享到：</a>
-      </li>
-      <li>
-        <a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a>
-      </li>
-      <li>
-        <a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a>
-      </li>
-      <li>
-        <a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a>
-      </li>
-      <li>
-        <a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a>
-      </li>
-
-    </ul>
-    <div class="ds-share-icons-more"></div>
   </div>
-</div>
 
-      
-    </div>
-  </div>
+
+          </div>
+          
+
+  
+
 
 
         </div>
         
-
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="monthly" data-num-items="4"></div>
-
-
-        
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="React+Node+ES6+Babel"
-           data-title="React+Node+ES6+Babel" data-url="http://51201314.me/jacks/zh-Hans/2016/08/26/React-Node-ES6-Babel环境搭建/index.html">
-      </div>
-    
-  </div>
-
-
-      </div>
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -544,234 +660,370 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
             站点概览
           </li>
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/jacks/images/avatar.png"
-               alt="Jack·S" />
-          <p class="site-author-name" itemprop="name">Jack·S</p>
-          <p class="site-description motion-element" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/jacks/archives">
-              <span class="site-state-item-count">40</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/jacks/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/jacks/tags">
-                <span class="site-state-item-count">71</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
+
           
 
-        </nav>
+          
 
-        
-          <div class="feed-link motion-element">
-            <a href="/jacks/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+          
+          
 
-        <div class="links-of-author motion-element">
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jingxinxin" target="_blank">
-                  
-                    <i class="fa fa-github"></i> GitHub
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/jxandcxy" target="_blank">
-                  
-                    <i class="fa fa-weibo"></i> Weibo
-                  
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/jacks/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        <div class="links-of-blogroll motion-element">
-          
-            <div class="links-of-blogroll-title">友情链接</div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://51201314.me/" target="_blank">博主</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://" target="_blank">暂缺</a>
-                </li>
-              
-            </ul>
-          
-        </div>
-
-      </section>
+      </div>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
-              
             
+            
+            
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一步-配置文件-babelrc"><span class="nav-number">1.</span> <span class="nav-text">第一步 配置文件.babelrc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二步-选择你的babel编译方式"><span class="nav-number">2.</span> <span class="nav-text">第二步 选择你的babel编译方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行转码babel-cli"><span class="nav-number">2.1.</span> <span class="nav-text">命令行转码babel-cli</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel-node"><span class="nav-number">2.2.</span> <span class="nav-text">babel-node</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel-register"><span class="nav-number">2.3.</span> <span class="nav-text">babel-register</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel-core"><span class="nav-number">2.4.</span> <span class="nav-text">babel-core</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel-polyfill"><span class="nav-number">2.5.</span> <span class="nav-text">babel-polyfill</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器环境"><span class="nav-number">2.6.</span> <span class="nav-text">浏览器环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线转换"><span class="nav-number">2.7.</span> <span class="nav-text">在线转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装React"><span class="nav-number">3.</span> <span class="nav-text">安装React</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
+
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
-        </section>
+        </div>
+      <!--/noindex-->
+      
+
       
 
     </div>
   </aside>
-
-
-      
-    </div>
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="copyright">
   
-  &copy;
-  
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jack·S</span>
-    <!--简体繁体转换-->
-  　<a id="translateLink" href="javascript:translatePage();">繁体</a>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题
-  -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-<!--简体繁体转换-->
-<script type="text/javascript" src="http://7xs9s7.com1.z0.glb.clouddn.com/js%2Fcommon%2Ftw_cn.js"></script>
-<script type="text/javascript">
-  var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
-  var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-  var cookieDomain = "http://www.51201314.me/jacks"; //Cookie地址, 一定要设定, 通常为你的网址
-  var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
-  var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
-  var translateButtonId = "translateLink"; //默认互换id
-  translateInitilization();
-</script>
-
-<!--不蒜子计算器-->
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<br>
-本Blog总访问量
-<span id="busuanzi_value_site_pv" style="color:forestgreen"></span>
-&nbsp&nbsp&nbsp 您是第<span id="busuanzi_value_site_uv" style="color:forestgreen"></span>个来到的博友
-<br>感谢Hexo，感谢图片云储存七牛，感谢每一位来到我世界的朋友,欢迎常来留言学习交流
-
-
-
-    </div>
-  </footer>
-
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-  </div>
-</div>
-
-
-
-
 
   
 
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-<script type="text/javascript">
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
 </script>
 
 
-  <script type="text/javascript" src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  <script type="text/javascript" src="/jacks/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/jacks/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
 
 
 
-  <script type="text/javascript" src="/jacks/js/src/utils.js?v=0.5.1"></script>
 
-  <script type="text/javascript" src="/jacks/js/src/motion.js?v=0.5.1"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -780,348 +1032,89 @@
 
 
   
-<script type="text/javascript" src="/jacks/js/src/scrollspy.js?v=0.5.1"></script>
+  <script src="/jacks/lib/jquery/index.js?v=2.1.3"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
+  
+  <script src="/jacks/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  
+  <script src="/jacks/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
+  
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
 
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
 
 
 
+  
+  
 
 
-
-  <script type="text/javascript" src="/jacks/js/src/bootstrap.js?v=0.5.1"></script>
-
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
 
 
 
 
   
-    
-  
+  <script src="/jacks/js/scrollspy.js?v=7.1.2"></script>
+<script src="/jacks/js/post-details.js?v=7.1.2"></script>
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"Jacks"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
-  
-    
-    <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
-      <script src="/jacks/lib/ua-parser-js/dist/ua-parser.min.js"></script>
-      <script src="/jacks/js/src/hook-duoshuo.js"></script>
-    
+
   
 
 
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
 
 
 
 
+  
 
+  
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/jacks/" + search_path;
-    // monitor main search box;
+  
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
+  
 
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+  
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
+  
 
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+  
 
-    });
+  
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
-</script>
-
+  
 
 </body>
 </html>
