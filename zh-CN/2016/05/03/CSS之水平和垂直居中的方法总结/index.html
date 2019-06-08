@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css">
+
+
+
+
+
+
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="Y06s0MH8Ck">
+
+
+
+  
+  
+    
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/jacks/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jacks/images/apple-touch-icon.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/jacks/images/favicon-32x32.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/jacks/images/favicon-16x16.png?v=7.1.2">
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/jacks/',
+    scheme: 'Mist',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: true,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+<meta name="keywords" content="CSS,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS之水平和垂直居中的方法总结">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
+<meta property="og:description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2016-08-03T06:45:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS之水平和垂直居中的方法总结">
+<meta name="twitter:description" content="做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。">
+
+
+
+  <link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.51201314.me/jacks/zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>CSS之水平和垂直居中的方法总结 | Jack·S Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">10</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">76</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">42</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-study">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/study/" rel="section"><i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br>study</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-new">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/new/" rel="section"><i class="menu-item-icon fa fa-fw fa-ellipsis-v"></i> <br>new</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbmd4aW54aW4=" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></span>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/jacks/zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="image" content="/jacks/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">CSS之水平和垂直居中的方法总结
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-05-03 17:41:06" itemprop="dateCreated datePublished" datetime="2016-05-03T17:41:06+08:00">2016-05-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-08-03 14:45:06" itemprop="dateModified" datetime="2016-08-03T14:45:06+08:00">2016-08-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/jacks/categories/代码技术/" itemprop="url" rel="index"><span itemprop="name">代码技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">6.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">6 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>做为一个前端，一个专业的前端，基础是决定你打造自己帝国大厦的根基。本篇系统总结一下CSS水平和垂直居中的方法。在页面样式开发过程中会经常遇到。</p>
+<a id="more"></a>
+<p>你可以首先了解一下<code>块级元素</code>（block element）和<code>内联元素</code>（inline element）。<a href="../../05/CSS之块级元素和内联元素总结/">传送门</a></p>
+<h1 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h1><p>常用的方法大约有以下4种</p>
+<h2 id="使用-text-aligh-center"><a href="#使用-text-aligh-center" class="headerlink" title="使用 text-aligh:center"></a>使用 text-aligh:center</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"text-align: center"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> &gt;</span></span><br><span class="line">		gg</span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">	    fsdf</span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>不管是<code>块级元素</code>（block element）还是<code>内联元素</code>（inline element），只要父标签有<code>text-align: center</code>样式，会自动居中。</p>
+</blockquote>
+<h2 id="使用-margin-0-auto-与-width-0px"><a href="#使用-margin-0-auto-与-width-0px" class="headerlink" title="使用 margin: 0 auto 与 width: 0px"></a>使用 margin: 0 auto 与 width: 0px</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin: 0 auto;width: 1px"</span>&gt;</span></span><br><span class="line">    		JX</span><br><span class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"margin: 0 auto;width: 70px;display: block"</span>&gt;</span></span><br><span class="line">    		JX</span><br><span class="line">    		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>我分别在<code>块级元素</code>和<code>内联元素</code>上都加了这样的样式，只要在内联元素上加上display:block,就和块级元素是等同的效果。我这里设置了<code>不同的宽度</code>，看有什么影响。第一个div宽度只有1px，那么在div里面不同的元素内容超过这个，就会自动换行，可以实现<code>同块级居中内联元素换行</code>；第二种只要span宽度足够宽，里面的<code>内联元素</code>内容不超过这个宽度，就按顺序排列不会换行，可以实现<code>同块级居中内联元素不换行</code>，是不是挺好玩的。</p>
+</blockquote>
+<p><strong>上面两种方法看似效果一样，其实差别是很大的，第一种 <code>text-aligh:center</code>是div占据一行的空间是不会改变的，而是<code>内容居中</code>了，可能有点类似于padding：50%；第二种是div宽度变成了1px，两外边<code>边缘距离</code>（margin）自适应了，<code>标签居中</code>了，内容按顺序排列。所以你是想标签居中，还是标签的内容居中，是可以做出不同选择的。</strong></p>
+<h2 id="使用相对定位与边距调整"><a href="#使用相对定位与边距调整" class="headerlink" title="使用相对定位与边距调整"></a>使用相对定位与边距调整</h2><p>这种方法，一般需要程序员事先做好相对位置计算，进行细微调整即可。当然你也可以使用<code>position:absolute;</code>绝对定位，它是相对页面窗口，相对来多比较死板，不够灵活，如果你需要的效果就是定死在窗口某个地方，也可以使用该属性，为了更灵活满足页面的交互性，推荐使用相对定位来实现。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position: relative;left: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position: relative;right: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>left:百分比需要一个相对参照物，直接使用，没有任何效果，所以给div一个<code>position: relative;</code>的属性。参照物是父元素。有人说用left：50%;是不是也可以用right：50%。如果你的元素的正常起始位置是在最右边，就是可以的。怎么解释呢？<br><code>position: relative;</code>也可以理解为目前元素<code>不加任何样式初始位置</code>做出相对位置改变,我们知道页面排版都是从最左边依次向右边排列，从上外下换行；那么第一个元素就是网页最左上角，相对位置的right：50%就到屏幕的左外面去了，就看不到了；当然一个元素的位置会受到<code>父元素样式</code>影响调整，所以为什么又说是相对父元素。被父元素调整到右上角，right：50%就对了。另外补充一句，left和right的移动，并不是像前面的<code>调整内容位置</code>和<code>填充内外边距</code>，而是移动了‘画布’位置。具体讲解可以参考<span class="exturl" data-url="aHR0cDovL3d3dy5jbmJsb2dzLmNvbS9seGJsb2cvcC8zMTUyODk3Lmh0bWw=" title="http://www.cnblogs.com/lxblog/p/3152897.html">CSS之position位置总结<i class="fa fa-external-link"></i></span></p>
+</blockquote>
+<p><strong>以上的方法已经完全可以兼容所有浏览器了，也不存在CSS hack问题。</strong>（<span class="exturl" data-url="aHR0cDovL3d3dy5rd3N0dS5jb20vQWRtaW4vVmlld0FydGljbGUvMjAxNDA5MDExNjA0Mjc3MzMw" title="http://www.kwstu.com/Admin/ViewArticle/201409011604277330">传送门<i class="fa fa-external-link"></i></span>）</p>
+<h2 id="自适应居中"><a href="#自适应居中" class="headerlink" title="自适应居中"></a>自适应居中</h2><p>这里只讲到居中自适应，因为自适应的内容不只是居中，对不同大小的屏幕，自适应的排版这里不做详细说明。<br>思路是做一个弹性布局，当一个元素处于一个容器中时我们只想让它居中并不设定一个具体的宽度。这样的设计可以使用元素属性margin来设置的，实际中是改变了父元素内的容器大小，相当于空间被压缩了（外边距）；padding属性也是可以实现的，实际中是改变了容器内元素距离父元素距离（内边距），相当与把元素排斥（或者推向）靠内。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"padding: 0px 10%;text-align: center"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>我们只要<code>padding：0px 50%</code>就可以把容器内元素左右排斥到中间，有趣的是超过50%会把容器撑大，能想像到吧。但是在实际排版时候，容器包裹着内容，我们把内容居中即可，当窗口大小变动的时候，容器大小会按比例自适应，然后内容再居中在变化后的容器中间。</p>
+</blockquote>
+<p><strong>注意理解<code>内容居中</code>和<code>标签容器居中</code>的概念</strong></p>
+<h1 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h1><p>这里总结出6种方法，根据实际情况筛选</p>
+<h2 id="使用line-height"><a href="#使用line-height" class="headerlink" title="使用line-height"></a>使用line-height</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"line-height: 100px"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>我会受影响<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>body中每个子节点，都会获取上下高度为100px的属性，内容再垂直居中，这里注意的是<code>span是内联元素，长宽只会受到内容多少的影响，并不会被width或者height属性影响</code>。最后建议加上<code>overflow: hidden;</code>属性</p>
+</blockquote>
+<p>优点是：</p>
+<ol>
+<li>对内联元素和块级元素都适用</li>
+<li>兼容所有第五代的浏览器，兼容高</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>会影响所有单独一行的块级元素（从上面例子可以看出）</li>
+<li>内容有限只能一行垂直居中</li>
+<li>对非文字，例如图片和对象，支持太不友好</li>
+</ol>
+<h2 id="使用padding-24px-0"><a href="#使用padding-24px-0" class="headerlink" title="使用padding: 24px 0"></a>使用padding: 24px 0</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"padding: 24px 0"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>有一定基础的人会知道<code>padding：24px 0</code>其实是和<code>padding：24px 0 24px 0</code>等价的，就是上下两个内边距离24px。犹豫是调整的容器边距去垂直居中，就不会存在，内容只限制一行这种局限了。</p>
+</blockquote>
+<p>优点是：</p>
+<ol>
+<li>对内联元素和块级元素都适用</li>
+<li>兼容所有第五代的浏览器，兼容高</li>
+<li>对多行内容友好支持，例如图片垂直居中</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>当设置高度的时候，容器是居中了，但是容器中的内容依然会在在容器的左上角，所以可能需要去掉这个高度，让其自适应内容的高度。</li>
+</ol>
+<h2 id="模拟表布局容器固定高度"><a href="#模拟表布局容器固定高度" class="headerlink" title="模拟表布局容器固定高度"></a>模拟表布局容器固定高度</h2><p>有三个核心属性代码<code>display: table-cell;vertical-align: middle;height:  num px</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"display: table-cell;vertical-align: middle;height: 100px"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>容器高度需要超过内容高度，超过的部分，即为上下偏离居中的距离。</strong></p>
+</blockquote>
+<p>优点是：</p>
+<ol>
+<li>能很完美的呈现垂直居中</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>它只适用于ie7以上（不包括ie7）浏览器的最新版本,如Mozilla，Firefox，Netscape 8，Opera和Safari和Chrome</li>
+</ol>
+<h1 id="利用vertical-align-middle"><a href="#利用vertical-align-middle" class="headerlink" title="利用vertical-align:middle"></a>利用vertical-align:middle</h1><p>可以实现一行多列，不同高度元素自动居中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    ul&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">display</span><span class="selector-pseudo">:table</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">padding</span><span class="selector-pseudo">:0</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">list-style-type</span><span class="selector-pseudo">:none</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    li&#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">display</span><span class="selector-pseudo">:table-cell</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">vertical-align</span><span class="selector-pseudo">:middle</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"a"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"</span></span></span><br><span class="line"><span class="tag"><span class="string">                width:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                height:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -webkit-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -moz-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                background-color: #3d98e9;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>        </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"</span></span></span><br><span class="line"><span class="tag"><span class="string">                width:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                height:20px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -webkit-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                -moz-border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                border-radius: 50px;</span></span></span><br><span class="line"><span class="tag"><span class="string">                background-color: #3d98e9;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>121<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>1212<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>以上还可以利用多个ul可以实现多行多列</p>
+<h2 id="使用相对定位"><a href="#使用相对定位" class="headerlink" title="使用相对定位"></a>使用相对定位</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;top: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:relative;top: 50%;display: block"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>使用相对位置，和我们之前讲过的水平居中的原理是一样的，<strong>同样不推荐使用绝对定位。同样记住内联元素需要转块级元素</strong></p>
+</blockquote>
+<h2 id="使用绝对定位"><a href="#使用绝对定位" class="headerlink" title="使用绝对定位"></a>使用绝对定位</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"position:relative;left:50%"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 50%"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 50%;display: block"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果硬要使用绝对定位，为了尽可能避免布局混乱，在其父元素上加上<code>position:relative;</code>,这是因为<strong>绝对定位会去寻找父元素是否为相对定位，若是那么绝对定位是会跟随其父元素的位置的</strong>。如上，很简单就同时实现了水平和垂直居中。值得注意的是<strong>绝对定位会覆盖</strong>，所以div和span 内容重合了。</p>
+</blockquote>
+<p>以上两种皆有以下优缺点。<br>优点是：</p>
+<ol>
+<li>灵活易用</li>
+</ol>
+<p>缺点是：</p>
+<ol>
+<li>在ie环境下有兼容问题，不能单独依靠相对位置来实现，有些ie版本可以，有些不支持，还有些只支持一部分，不多说了微软都放弃ie了</li>
+</ol>
+<h2 id="浮动“幽灵”填充法"><a href="#浮动“幽灵”填充法" class="headerlink" title="浮动“幽灵”填充法"></a>浮动“幽灵”填充法</h2><p><strong>多一个div填充物，来把你需要的内容推倒居中位置</strong>，也适用与水平居中（不觉得太麻烦和多余吗），这种做会多用一个div，无意义的透明填充物，数量多了后，会多多少少影响我的整体布局，你甚至会觉得没有结构化，而且需要你去计算内容的高度，操作不当，甚至会毁了你的原有布局，毕竟它是浮动的“幽灵”。建议少用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> &gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left;height: 50%;width: 100%;margin-bottom: -40px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"clear: both;"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"clear: both;"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>关键有两点，第一点是</strong>浮动填充<strong>，第二点是</strong>margin-bottom: -Num px;<strong>，当透明填充物，下边界在居中位置时候，我们只需要把后面的内容缩进浮动块边缘上就居中了。</strong></p>
+</blockquote>
+<p>优点是</p>
+<ol>
+<li>非常灵活，你可以随意调整</li>
+</ol>
+<p>缺点是</p>
+<ol>
+<li>需要计数内容高度</li>
+<li>浮动布局，容易影响页面</li>
+</ol>
+<h2 id="自适应压缩法"><a href="#自适应压缩法" class="headerlink" title="自适应压缩法"></a>自适应压缩法</h2><p>这是一种很经典的方法，利用了<code>margin：auto</code>属性的特点，<code>内联元素</code>和<code>块级元素</code>都适用。很适合用来做广告，活动，甚至图片等，显示在<strong>屏幕正中间的弹出层</strong>。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"position:relative;"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"position:absolute;top: 0;bottom: 0;left: 0;right: 0;width: 0;height: 0;margin: auto"</span>&gt;</span></span><br><span class="line">		JX</span><br><span class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>jacks<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>从代码中我们可以看到，我们设定了一个<strong>屏幕边界容积</strong>，<strong>它会根据<code>width</code>和<code>height</code>的大小来自动压缩容器大小。当然为0，内容起始位置就是屏幕的正中间。如有长宽，就是居中容器的左上角。</strong>这一点文中有多次，强调到。</p>
+</blockquote>
+<p>当你看完这里，再加以融汇贯通，基本上可以应对所有的居中情况了。</p>
+<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
+版权声明：自由转载-非商用-非衍生-保持署名</code></pre>
+      
+    </div>
+
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/05/05/CSS之块级元素和内联元素总结/" rel="bookmark">CSS之块级元素和内联元素总结</a></div>
+      
+        <div class="popular-posts-excerpt"><p></p><p>在HTML页面中，被大量的标签结构，这些标签元素，主要分两种：块级元素（block element）和内联元素（inline element）。它们都有不同的特点和作用，这里做一个总结和分类。当然它们有诸多的同义中文翻译，这里不深究，博主更喜欢直译的叫法。</p><p></p></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/06/20/CSS常用的基础知识手册/" rel="bookmark">CSS常用的基础知识手册</a></div>
+      
+        <div class="popular-posts-excerpt"><p><span style="color:red;">【持续更新】</span>总结css和css3的基础知识点和常见的用法</p></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+        <div class="popular-posts-img"><img src="https://www.51201314.me/OSS/blog/img/float-1.png"></div>
+      
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/06/02/CSS之清除浮动总结/" rel="bookmark">CSS之清除浮动总结</a></div>
+      
+        <div class="popular-posts-excerpt"><p></p><p>　　当我们在前端做排版的时候，经常会用到CSS中float这个浮动效果，但在使用的时候值得注意的一点是浮动会有那些影响？为什么要清除浮动？</p><p></p></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/06/16/前端基础优化记录手册/" rel="bookmark">前端基础优化记录手册</a></div>
+      
+        <div class="popular-posts-excerpt"><p><span style="color:red;">【持续更新】</span>前端基础优化记录手册</p></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/06/16/JavaScript常用的基础知识点手册/" rel="bookmark">JavaScript常用的基础知识点手册</a></div>
+      
+        <div class="popular-posts-excerpt"><p><span style="color:red;">【持续更新】</span>对js基础知识点的总结</p></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="https://www.51201314.me/OSS/blog/img/wxpay.jpg" alt="Jack·S 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="https://www.51201314.me/OSS/blog/img/alipay.jpg" alt="Jack·S 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jack·S</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://www.51201314.me/jacks/zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/" title="CSS之水平和垂直居中的方法总结">https://www.51201314.me/jacks/zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/jacks/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+            <a href="/jacks/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/jacks/zh-CN/2016/04/30/我的圆周率故事/" rel="next" title="我的圆周率故事">
+                <i class="fa fa-chevron-left"></i> 我的圆周率故事
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/jacks/zh-CN/2016/05/05/CSS之块级元素和内联元素总结/" rel="prev" title="CSS之块级元素和内联元素总结">
+                CSS之块级元素和内联元素总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDU5My8yMTEyMg=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/jacks/images/avatar.png" alt="Jack·S">
+            
+              <p class="site-author-name" itemprop="name">Jack·S</p>
+              <div class="site-description motion-element" itemprop="description">记录Jack生活成长的博客网站</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/jacks/archives/">
+                
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/jacks/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/jacks/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">76</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/jacks/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="bWFpbHRvOjE5MTEwMDQ3OUBxcS5jb20=" title="E-Mail &rarr; mailto:191100479@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbmd4aW54aW4=" title="GitHub &rarr; https://github.com/jingxinxin"><i class="fa fa-fw fa-github"></i>GitHub</span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cDovL3dlaWJvLmNvbS9qeGFuZGN4eQ==" title="Weibo &rarr; http://weibo.com/jxandcxy"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><img src="/jacks/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.51201314.me" title="https://www.51201314.me">博主</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly9mZW5ndGUuZnVu" title="https://fengte.fun">丰特房</span>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFuZ3podXF1YW4uY29t" title="https://www.bangzhuquan.com">帮助圈</span>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVhbnlpZmVuZy5jb20vYmxvZw==" title="https://www.ruanyifeng.com/blog">阮一峰</span>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2g=" title="https://search">暂缺</span>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#水平居中"><span class="nav-number">1.</span> <span class="nav-text">水平居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-text-aligh-center"><span class="nav-number">1.1.</span> <span class="nav-text">使用 text-aligh:center</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-margin-0-auto-与-width-0px"><span class="nav-number">1.2.</span> <span class="nav-text">使用 margin: 0 auto 与 width: 0px</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用相对定位与边距调整"><span class="nav-number">1.3.</span> <span class="nav-text">使用相对定位与边距调整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自适应居中"><span class="nav-number">1.4.</span> <span class="nav-text">自适应居中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#垂直居中"><span class="nav-number">2.</span> <span class="nav-text">垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用line-height"><span class="nav-number">2.1.</span> <span class="nav-text">使用line-height</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用padding-24px-0"><span class="nav-number">2.2.</span> <span class="nav-text">使用padding: 24px 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模拟表布局容器固定高度"><span class="nav-number">2.3.</span> <span class="nav-text">模拟表布局容器固定高度</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#利用vertical-align-middle"><span class="nav-number">3.</span> <span class="nav-text">利用vertical-align:middle</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用相对定位"><span class="nav-number">3.1.</span> <span class="nav-text">使用相对定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用绝对定位"><span class="nav-number">3.2.</span> <span class="nav-text">使用绝对定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动“幽灵”填充法"><span class="nav-number">3.3.</span> <span class="nav-text">浮动“幽灵”填充法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自适应压缩法"><span class="nav-number">3.4.</span> <span class="nav-text">自适应压缩法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jack·S</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">77k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:10</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.1.2</div>
+
+
+
+  <div class="footer-custom">Hosted by <a href="https://github.com" class="theme-link" rel="noopener" target="_blank">Github Pages</a>,<a id="translateLink" href="javascript:translatePage();">繁体</a></div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js"></script>
+
+
+  
+
+
+  <script src="/jacks/js/utils.js?v=7.1.2"></script>
+
+  <script src="/jacks/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/jacks/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/jacks/js/scrollspy.js?v=7.1.2"></script>
+<script src="/jacks/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/jacks/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+  <script src="/jacks/js/js.cookie.js?v=7.1.2"></script>
+  <script src="/jacks/js/scroll-cookie.js?v=7.1.2"></script>
+
+
+  
+  <script src="/jacks/js/exturl.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+
+  
+    <script>
+  window.livereOptions = {
+    refer: 'zh-CN/2016/05/03/CSS之水平和垂直居中的方法总结/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/jacks/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+    
+    
+      flOptions = {};
+      
+        flOptions.iconStyle = "default";
+      
+        flOptions.boxForm = "vertical";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Linkedin,Twitter,Facebook,RenRen,Mailto";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script>
+  <script>
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      const selection = document.getSelection();
+      const selected = selection.rangeCount > 0 ? selection.getRangeAt(0) : false;
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+      if (selected) {
+        selection.removeAllRanges();
+        selection.addRange(selected);
+      }
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
