@@ -584,7 +584,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">6.7k</span>
+                <span title="本文字数">6.6k</span>
               
 
               
@@ -727,8 +727,7 @@
 <h2 id="重新鞭策你的记录（找回丢失的commit）"><a href="#重新鞭策你的记录（找回丢失的commit）" class="headerlink" title="重新鞭策你的记录（找回丢失的commit）"></a>重新鞭策你的记录（找回丢失的commit）</h2><p><code>Git reflog</code> 可以查看所有分支的所有操作记录,包括已经被删除的commit记录，git log则不能察看已经删除了的commit记录<br>具体一个例子，假设有三个commit<br>commit3: add test3.c<br>commit2: add test2.c<br>commit1: add test1.c<br>如果执行git reset –hard HEAD<del>1则 删除了commit3，如果发现删除错误了，需要恢复commit3，或者rebase遇到冲突误操作的时候,就可以使用git reflog找到之前的操作记录<br> HEAD@{0}: HEAD</del>1: updating HEAD<br> 5201314 HEAD@{1}: commit: test3:q<br> 红色加粗的即是被删除了的 commit3，运行git log则没有这一行记录<br> 可以使用<code>git reset --hard 5201314</code>将红色记录删除，则恢复了cmmit3，运行git log后可以看到：<br> commit3: add test3.c<br> commit2: add test2.c<br> commit1: add test1.c<br> 这里也可以使用另外一种方法来实现：git cherry-pick 5201314</p>
 <h1 id="其实学习园区"><a href="#其实学习园区" class="headerlink" title="其实学习园区"></a>其实学习园区</h1><p><span class="exturl" data-url="aHR0cDovL2dpdGJvb2subGl1aHVpOTk4LmNvbS9pbmRleC5odG1s" title="http://gitbook.liuhui998.com/index.html">Git Community Book 中文版<i class="fa fa-external-link"></i></span></p>
 <p><span class="exturl" data-url="aHR0cDovL3d3dy5vc2NoaW5hLm5ldC90cmFuc2xhdGUvdXNlZnVsLWxpbnV4LWNvbW1hbmRzLWZvci1uZXdiaWVz" title="http://www.oschina.net/translate/useful-linux-commands-for-newbies">对 Linux 新手非常有用的 20 个命令<i class="fa fa-external-link"></i></span></p>
-<pre><code>谢谢您百忙中，阅读本篇文章；若觉得对你有帮助，请分享给更多的朋友
-版权声明：自由转载-非商用-非衍生-保持署名</code></pre>
+
       
     </div>
 
@@ -1306,7 +1305,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">77k</span>
+    <span title="站点总字数">75k</span>
   
 
   
@@ -1317,7 +1316,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:10</span>
+    <span title="站点阅读时长">1:08</span>
   
 </div>
 
@@ -1334,7 +1333,7 @@
 
 
 
-  <div class="footer-custom">Hosted by <a href="https://github.com" class="theme-link" rel="noopener" target="_blank">Github Pages</a>,<a id="translateLink" href="javascript:translatePage();">繁体</a></div>
+  <div class="footer-custom">Hosted by <a href="https://github.com" class="theme-link" rel="noopener" target="_blank">Github Pages</a></div>
 
 
         
