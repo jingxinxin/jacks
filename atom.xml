@@ -6,7 +6,7 @@
   <link href="/jacks/atom.xml" rel="self"/>
   
   <link href="https://www.51201314.me/jacks/"/>
-  <updated>2019-06-08T19:49:18.941Z</updated>
+  <updated>2019-06-16T09:39:12.116Z</updated>
   <id>https://www.51201314.me/jacks/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>六一小玩具之Raspberry Pi Zero W(树莓派)</title>
+    <link href="https://www.51201314.me/jacks/zh-CN/2019/06/09/%E5%85%AD%E4%B8%80%E5%B0%8F%E7%8E%A9%E5%85%B7%E4%B9%8BRaspberry-Pi-Zero-W-%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    <id>https://www.51201314.me/jacks/zh-CN/2019/06/09/六一小玩具之Raspberry-Pi-Zero-W-树莓派/</id>
+    <published>2019-06-09T09:20:48.000Z</published>
+    <updated>2019-06-16T09:39:12.116Z</updated>
+    
+    <content type="html"><![CDATA[<p>无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlOTElRTglOEUlOTMlRTYlQjQlQkUvODA0Mjc/ZnI9YWxhZGRpbg==" title="https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin">树莓派<i class="fa fa-external-link"></i></span>，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。</p><a id="more"></a><p><span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnLw==" title="https://www.raspberrypi.org/">官网开道<i class="fa fa-external-link"></i></span><br>今天就主要记录一下基本的知识和自我理解和使用方法。<br>以下是Zero W的配置：<br><img src="https://www.51201314.me/OSS/blog/img/shumeipaipz.jpg" alt="配置"><br>zero的尺寸可以说是非常小巧了：<code>65mm x 30mm x 5mm</code></p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>1 raspberry系统<span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnL2Rvd25sb2Fkcy8=" title="https://www.raspberrypi.org/downloads/">官方下载<i class="fa fa-external-link"></i></span><br>2 Etcher烤制软件（当然也可以用其他方法格式化SD卡再通过命令，这个是非常简单的方式）<br>3 Raspberry Pi Zero W<br>4 最好8G以上的SD卡<br>5 microUSB To U线<br>6 读卡器</p><h1 id="装系统"><a href="#装系统" class="headerlink" title="装系统"></a>装系统</h1><p>我用的是官网推荐的<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="https://www.balena.io/etcher/">Etcher<i class="fa fa-external-link"></i></span>来写入系统，网上也有一些教程使用Win32 Disk Imager，都可以。<br><img src="https://www.51201314.me/OSS/blog/img/Etcher.jpg" alt="Etcher"></p><h1 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h1><p>一般的树莓派都可以通过有线或者USB转换接头连接，如果买的是带W（WIFI）的还可以通过无线来访问。</p><h2 id="无线"><a href="#无线" class="headerlink" title="无线"></a>无线</h2><p>在SD卡中新建文件，命名为wpa_supplicant.conf，输入如下内容并保存。可以让树莓派自动连接自家局域网wifi。</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">country</span>=CN</span><br><span class="line"><span class="attribute">ctrl_interface</span>=DIR=/var/run/wpa_supplicant <span class="attribute">GROUP</span>=netdev</span><br><span class="line"><span class="attribute">update_config</span>=1</span><br><span class="line"></span><br><span class="line">network=&#123;</span><br><span class="line">  <span class="attribute">ssid</span>=<span class="string">"WIFI名字"</span></span><br><span class="line">  <span class="attribute">psk</span>=<span class="string">"密码"</span></span><br><span class="line">  <span class="attribute">key_mgmt</span>=WPA-PSK</span><br><span class="line">  <span class="attribute">priority</span>=1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>接着在SD卡根目录新建ssh文件，内容为空。<code>touch ssh</code> 以便我们在同一局域网中通过<code>ssh pi@树莓派ip</code>的方式来访问我们的小玩具。<br>至于ip通过访问路由器可以很方便查到，这里就一笔带过。当然也可以直接<code>ssh pi@raspberrypi.local</code>确保wifi连接成功，不用查ip也行。<br>登陆成功后会提示请修改默认密码，默认密码是”raspberry”（可在raspi-config中修改）。树莓派的Raspbian系统root用户默认是禁用状态，且没有密码，所以要先设置个密码，然后开启才能正常使用。<br>使用pi账户进行登陆命令行，执行命令：<code>sudo passwd root</code>设置root用户密码，然后在执行<code>sudo passwd --unlock root</code>开启root账户，在使用<code>su root</code>是否生效。<br>重新锁定root账户可执行命令：<code>sudo passwd --lock root</code></p><p><img src="https://www.51201314.me/OSS/blog/img/pi-shell.jpg" alt="pi-shell"></p><h2 id="有线"><a href="#有线" class="headerlink" title="有线"></a>有线</h2><p><img src="https://www.51201314.me/OSS/blog/img/shumeipzero.jpg" alt><br>如图所示我们可以通过数据线连接<code>Micro USB Data Port</code>来进行供电和数据的访问，而<code>Micro USB 5V Power Input</code>主要是用来供电的。</p><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>可以通过<code>raspi-config</code>命令在shell下修改，也可以等远程连接桌面图形交互修改。</p><ul><li>容量扩展</li><li>更改系统时区</li><li>更改系统密码</li><li>换源</li></ul><p><code>sudo passwd root</code>设置root用户密码</p><p>如果你的版本是。。。。就可以通过VNC远程桌面连接，现在的版本预装了<span class="exturl" data-url="aHR0cHM6Ly93d3cucmVhbHZuYy5jb20v" title="https://www.realvnc.com/">realVNC<i class="fa fa-external-link"></i></span>服务端如果需要加入图形界面，则可以通过raspi-config命令在<code>Interfacing OptionsC &gt; VNC &gt; Yes</code>中开启VNC连接，再直接下载Viewer端连接即可。<br>输入密码<br><img src="https://www.51201314.me/OSS/blog/img/vnc.jpg" alt="VNC连接树莓派"></p><p>编辑<code>/etc/apt/sources.list</code>文件。用以下内容取代更换软件源：</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb <span class="symbol">http:</span>/<span class="regexp">/mirrors.ustc.edu.cn/raspbian</span><span class="regexp">/raspbian/</span> stretch main non-free contrib</span><br><span class="line">deb-src <span class="symbol">http:</span>/<span class="regexp">/mirrors.ustc.edu.cn/raspbian</span><span class="regexp">/raspbian/</span> stretch main non-free contrib</span><br></pre></td></tr></table></figure><p>编辑<code>/etc/apt/sources.list.d/raspi.list</code>文件。用以下内容取代更换系统源：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http:<span class="regexp">//mi</span>rrors.ustc.edu.cn<span class="regexp">/archive.raspberrypi.org/</span>debian<span class="regexp">/ stretch main ui</span></span><br></pre></td></tr></table></figure><p>如果权限不够可以先<code>sudo bash</code>提权<br>编辑此文件后，请使用<code>sudo apt-get update</code>命令，更新软件列表。</p><p>最后一张桌面图结尾<br><img src="https://www.51201314.me/OSS/blog/img/desk-pi.jpg" alt="桌面"></p><p><span class="exturl" data-url="aHR0cDovL2Rvd25sb2Fkcy5yYXNwYmVycnlwaS5vcmcvcmFzcGJpYW5fbGl0ZS9pbWFnZXMv" title="http://downloads.raspberrypi.org/raspbian_lite/images/">树莓派历史版本镜像<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cDovL2Rvd25sb2Fkcy5yYXNwYmVycnlwaS5vcmcvcmFzcGJpYW5fbGl0ZS9pbWFnZXMvcmFzcGJpYW5fbGl0ZS0yMDE3LTA3LTA1Lw==" title="http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2017-07-05/">raspbian-jessie最后的版本<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cDovL3NodW1laXBhaS5ueGV6LmNvbQ==" title="http://shumeipai.nxez.com">中文社区学习站点——树莓派实验室<i class="fa fa-external-link"></i></span></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称&lt;a href=&quot;https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;树莓派&lt;/a&gt;，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="代码技术" scheme="https://www.51201314.me/jacks/categories/%E4%BB%A3%E7%A0%81%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Raspberry" scheme="https://www.51201314.me/jacks/tags/Raspberry/"/>
+    
+      <category term="树莓派" scheme="https://www.51201314.me/jacks/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>维度的演变</title>
@@ -739,7 +763,7 @@
     <link href="https://www.51201314.me/jacks/zh-CN/2016/05/05/%E8%AE%B0%E5%BF%86%E6%96%B9%E6%B3%95/"/>
     <id>https://www.51201314.me/jacks/zh-CN/2016/05/05/记忆方法/</id>
     <published>2016-05-04T19:53:45.000Z</published>
-    <updated>2019-06-08T19:49:18.973Z</updated>
+    <updated>2019-06-09T15:32:48.497Z</updated>
     
     <content type="html"><![CDATA[<p>记忆是学习生活中最基础和根本的能力，要想有好成绩就一定要提高记忆力，形成自己的知识库。记忆宫殿法的使用可上溯至古罗马时期，因此可以说这是经过时间和实践证明的高效记忆方法，在帮助记忆上有重大的作用。其中，记忆宫殿的6大方法分别是：1、谐音法；2、替代法；3、编码法；4、串联法；5、定桩法；6、关键字法。</p><a id="more"></a><p>记忆力差怎么可能学得好？</p><p>一、谐音法</p><p>谐音，就是通过声音相似相近的办法，把抽象枯燥的词汇转化成图像，以便于记忆。比如我就拿谐音这个词来说，通过改变声调就可以读成“鞋印”，从而形成一个图像再进行记忆。这样做是不是就好记多了。谐音法的另一个技巧则是变韵，最常见的就是“同学”变成“童鞋”，作为一个常见的网络用语，我想绝大多数人是了解的。这样记忆起来是不是既简单又有效，还不容易忘记呢？</p><p>二、代替法</p><p>非声音的转化，一般是在无法用到谐音法时再使用的一种方法。例如“代替”二字，可以把“代替”拆成“亻弋”、“夫夫曰”。于是就可以联想成一个人拿着系有绳子的箭（弋的解释），逼两个夫人，替他站在日头上。再比如“巾”字，就好比一个人围着围巾一样。</p><p>三、编码法</p><p>把一些符号、数字、词固定对应一个图像的处理方式就叫做编码，简单来讲就是把抽象的信息转换成图像。而且在运用的过程中，可以将一些常用的词汇固定下来，比如“生产力”=“铁铲”，“经济”=“金鸡”等等。有些编码，甚至可以是多个图像的。比如数字1，可以是大树，也可以是火柴；字母A可以是人字梯，也可以是尖帽子。对于编码法，你可以尽情发挥自己的想象力，只要自己能够记住就可以。</p><p>四、串联法</p><p>串联法就是将要记忆的东西根据各自的特征和相互联系穿起来记忆。</p><p>例如要记忆金属活动顺序表：钾、钙、钠、镁、铝、锌、铁、锡、铅、氢、铜、汞、银、铂、金</p><p>我常教孩子们这样记：嫁给那美女，身体细纤轻，统共一百斤，有趣又简单。</p><p>需要注意的是，串联法切记不能使用“变成，像，做成”这几个词汇。</p><p>五、定桩法</p><p>定桩法包含了空间地点桩，人体桩，物品桩等等，其中空间地点桩古人叫记忆宫殿。那么应该如何建立记忆宫殿呢？</p><p>1、在家里、去学校的路上、校园、公园、超市等地方，按照顺序建立你自己的记忆宫殿。</p><p>2、每10个地点为一个空间，你想建立多少个空间，就任由发挥。</p><p>3、建立自己的记忆宫殿时，一定要记录下来，条件许可的情况下，用手机拍下来，方便管理。</p><p>六、关键字法</p><p>关键字法不仅是提取句子的关键词组，最重要的是对文章结构的分析作用。说到关键字法，相信很多人会误会，误认为就是一句话的关键词语，只要提取关键字就可以了。其实并不是这样，最简单的表述就是把作者表达的重点词汇抓出来，去掉枝叶，以便记忆。</p>]]></content>
     
@@ -749,7 +773,7 @@
     
     </summary>
     
-      <category term="技能修炼" scheme="https://www.51201314.me/jacks/categories/%E6%8A%80%E8%83%BD%E4%BF%AE%E7%82%BC/"/>
+      <category term="技巧修炼" scheme="https://www.51201314.me/jacks/categories/%E6%8A%80%E5%B7%A7%E4%BF%AE%E7%82%BC/"/>
     
     
       <category term="记忆力" scheme="https://www.51201314.me/jacks/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/"/>
