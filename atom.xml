@@ -6,7 +6,7 @@
   <link href="/jacks/atom.xml" rel="self"/>
   
   <link href="https://www.51201314.me/jacks/"/>
-  <updated>2019-06-16T09:39:12.116Z</updated>
+  <updated>2019-06-27T00:26:09.067Z</updated>
   <id>https://www.51201314.me/jacks/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Adobe Premiere去除字幕和logo的方法</title>
+    <link href="https://www.51201314.me/jacks/zh-CN/2019/06/27/Adobe-PR%E5%8E%BB%E9%99%A4%E5%AD%97%E5%B9%95%E5%92%8Clogo%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://www.51201314.me/jacks/zh-CN/2019/06/27/Adobe-PR去除字幕和logo的方法/</id>
+    <published>2019-06-26T22:55:38.000Z</published>
+    <updated>2019-06-27T00:26:09.067Z</updated>
+    
+    <content type="html"><![CDATA[<p>对视频的剪辑我一般都使用PR来做，比如加一些字幕或者logo。在剪完后，我习惯性的会删除一些使用完的素材，比如最初的视频。<br>时间久了想重新剪一些新视频，发现只有使用后来导出带有字幕或者logo图片的素材。<br>如果遇到这个情况我们还是有办法补救的。<br>基本的思路就是<code>蒙蔽+中间值</code>。</p><a id="more"></a><p>基于以上思路除了PR中可以实现，有类似的效果参数比如AE中都是可以做到的。<br>以下主要说一下PR，RP作为一款专业的剪辑软件，除了常用的剪辑能力，还提供了大量的视频效果函数，我们只需要双击或者拖拽到目标视频就可以直接使用。</p><h2 id="第一步-叠加素材"><a href="#第一步-叠加素材" class="headerlink" title="第一步 叠加素材"></a>第一步 叠加素材</h2><p>把需要处理的素材（视频或者图片都可以）在V1和V2轨道分别拖拽一次。并暂时关闭轨道V1的输出（划掉小眼睛）。<br><img src="https://www.51201314.me/OSS/blog/img/pr-2019-06-27_073502.png" alt></p><h2 id="第二步-添加效果"><a href="#第二步-添加效果" class="headerlink" title="第二步 添加效果"></a>第二步 添加效果</h2><p>主要添加以下两个效果</p><h3 id="裁剪"><a href="#裁剪" class="headerlink" title="裁剪"></a>裁剪</h3><p>选择<code>效果-视频效果-变换-裁剪</code>对V2轨道上的素材进行裁剪，只保留等会需要去除的部分。<br>可以适当根据素材情况调整<code>羽化边缘</code>参数。<br><img src="https://www.51201314.me/OSS/blog/img/pr-2019-06-27_073639.png" alt></p><h3 id="中间值"><a href="#中间值" class="headerlink" title="中间值"></a>中间值</h3><p>选择<code>效果-视频效果-杂色与颗粒-中间值</code>同样对V2轨道上的素材进行调整影响的半径范围。<br>在这里选择<code>效果-视频效果-杂色与颗粒-蒙尘与划痕</code>也可以达到需要的效果。如果知道两者具体的区别可以在下方留言给我。<br><img src="https://www.51201314.me/OSS/blog/img/pr-2019-06-27_075224.png" alt></p><h2 id="第三步-调整参数"><a href="#第三步-调整参数" class="headerlink" title="第三步 调整参数"></a>第三步 调整参数</h2><p>根据实际情况调整两个效果的参数值，达到自己想要的效果。<br>以下是前后加效果的区别。<br><img src="https://raw.githubusercontent.com/jingxinxin/OSS/master/blog/img/pro-GIF.gif" alt><br>最后可以再补上其他的文字或者图片，以最大化处理细微差异。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对视频的剪辑我一般都使用PR来做，比如加一些字幕或者logo。在剪完后，我习惯性的会删除一些使用完的素材，比如最初的视频。&lt;br&gt;时间久了想重新剪一些新视频，发现只有使用后来导出带有字幕或者logo图片的素材。&lt;br&gt;如果遇到这个情况我们还是有办法补救的。&lt;br&gt;基本的思路就是&lt;code&gt;蒙蔽+中间值&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="江山设计" scheme="https://www.51201314.me/jacks/categories/%E6%B1%9F%E5%B1%B1%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="Adobe" scheme="https://www.51201314.me/jacks/tags/Adobe/"/>
+    
+      <category term="剪辑" scheme="https://www.51201314.me/jacks/tags/%E5%89%AA%E8%BE%91/"/>
+    
+  </entry>
   
   <entry>
     <title>六一小玩具之Raspberry Pi Zero W(树莓派)</title>
@@ -409,7 +433,7 @@
     <link href="https://www.51201314.me/jacks/zh-CN/2016/08/16/%E8%AF%97%E9%9B%86/"/>
     <id>https://www.51201314.me/jacks/zh-CN/2016/08/16/诗集/</id>
     <published>2016-08-16T11:14:16.000Z</published>
-    <updated>2019-06-08T20:33:54.960Z</updated>
+    <updated>2019-06-26T23:00:28.785Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a><h1 id="写于-2013-8-3-02-40-异乡夜"><a href="#写于-2013-8-3-02-40-异乡夜" class="headerlink" title="写于 2013-8-3 02:40 异乡夜"></a>写于 2013-8-3 02:40 异乡夜</h1><div style="    font-family: 楷体;    font-size: 18px;    text-align:center;    font-weight:bolder;">异乡夜异乡人，孤夜通，夏蒸月藏宫，魔都城，独楼空，几多愁事在眉中；敢问君，汉子心，怎可犹如冰，念身旁，远天堂，恰同织女思牛郎。</div><blockquote><p>来自异乡的人，孤单一人在这炎热的夏日夜里通宵达旦，透过朦胧的夜雾望着月亮，仿佛月亮上藏着宫殿。联想着这么大的魔都之城中，却独自一人守在这空荡的房子里，许多忧愁的事情都让人皱起眉头了；真想问问您，明明有一个炽热的内心，现在却怎么可以对我如此冷淡呢，多么思念你在身边啊，却又离开我如同分割两个世界里，您可知道我有多么的想你吗<del>~</del></p></blockquote><h1 id="写于-2016-8-11-20-36-无题"><a href="#写于-2016-8-11-20-36-无题" class="headerlink" title="写于 2016-8-11 20:36 无题"></a>写于 2016-8-11 20:36 无题</h1><div style="    font-family: 楷体;    font-size: 18px;    text-align:center;    font-weight:bolder;">不羡一生贵多金踏碎浮尘归始心江山千古旧如画灯红酒绿把天熏勾心斗角陷七情何不驾云乘风去定可山水遇知音醉卧九天畅汝心</div>]]></content>
     
@@ -419,7 +443,7 @@
     
     </summary>
     
-      <category term="诗" scheme="https://www.51201314.me/jacks/categories/%E8%AF%97/"/>
+      <category term="诗意人生" scheme="https://www.51201314.me/jacks/categories/%E8%AF%97%E6%84%8F%E4%BA%BA%E7%94%9F/"/>
     
     
       <category term="诗集" scheme="https://www.51201314.me/jacks/tags/%E8%AF%97%E9%9B%86/"/>

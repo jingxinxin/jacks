@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Adobe Premiere去除字幕和logo的方法]]></title>
+    <url>%2Fjacks%2Fzh-CN%2F2019%2F06%2F27%2FAdobe-PR%E5%8E%BB%E9%99%A4%E5%AD%97%E5%B9%95%E5%92%8Clogo%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[对视频的剪辑我一般都使用PR来做，比如加一些字幕或者logo。在剪完后，我习惯性的会删除一些使用完的素材，比如最初的视频。时间久了想重新剪一些新视频，发现只有使用后来导出带有字幕或者logo图片的素材。如果遇到这个情况我们还是有办法补救的。基本的思路就是蒙蔽+中间值。 基于以上思路除了PR中可以实现，有类似的效果参数比如AE中都是可以做到的。以下主要说一下PR，RP作为一款专业的剪辑软件，除了常用的剪辑能力，还提供了大量的视频效果函数，我们只需要双击或者拖拽到目标视频就可以直接使用。 第一步 叠加素材把需要处理的素材（视频或者图片都可以）在V1和V2轨道分别拖拽一次。并暂时关闭轨道V1的输出（划掉小眼睛）。 第二步 添加效果主要添加以下两个效果 裁剪选择效果-视频效果-变换-裁剪对V2轨道上的素材进行裁剪，只保留等会需要去除的部分。可以适当根据素材情况调整羽化边缘参数。 中间值选择效果-视频效果-杂色与颗粒-中间值同样对V2轨道上的素材进行调整影响的半径范围。在这里选择效果-视频效果-杂色与颗粒-蒙尘与划痕也可以达到需要的效果。如果知道两者具体的区别可以在下方留言给我。 第三步 调整参数根据实际情况调整两个效果的参数值，达到自己想要的效果。以下是前后加效果的区别。最后可以再补上其他的文字或者图片，以最大化处理细微差异。]]></content>
+      <categories>
+        <category>江山设计</category>
+      </categories>
+      <tags>
+        <tag>Adobe</tag>
+        <tag>剪辑</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[六一小玩具之Raspberry Pi Zero W(树莓派)]]></title>
     <url>%2Fjacks%2Fzh-CN%2F2019%2F06%2F09%2F%E5%85%AD%E4%B8%80%E5%B0%8F%E7%8E%A9%E5%85%B7%E4%B9%8BRaspberry-Pi-Zero-W-%E6%A0%91%E8%8E%93%E6%B4%BE%2F</url>
     <content type="text"><![CDATA[无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称树莓派，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。 官网开道今天就主要记录一下基本的知识和自我理解和使用方法。以下是Zero W的配置：zero的尺寸可以说是非常小巧了：65mm x 30mm x 5mm 准备1 raspberry系统官方下载2 Etcher烤制软件（当然也可以用其他方法格式化SD卡再通过命令，这个是非常简单的方式）3 Raspberry Pi Zero W4 最好8G以上的SD卡5 microUSB To U线6 读卡器 装系统我用的是官网推荐的Etcher来写入系统，网上也有一些教程使用Win32 Disk Imager，都可以。 连接一般的树莓派都可以通过有线或者USB转换接头连接，如果买的是带W（WIFI）的还可以通过无线来访问。 无线在SD卡中新建文件，命名为wpa_supplicant.conf，输入如下内容并保存。可以让树莓派自动连接自家局域网wifi。 12345678910country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network=&#123; ssid="WIFI名字" psk="密码" key_mgmt=WPA-PSK priority=1&#125; 接着在SD卡根目录新建ssh文件，内容为空。touch ssh 以便我们在同一局域网中通过ssh pi@树莓派ip的方式来访问我们的小玩具。至于ip通过访问路由器可以很方便查到，这里就一笔带过。当然也可以直接ssh pi@raspberrypi.local确保wifi连接成功，不用查ip也行。登陆成功后会提示请修改默认密码，默认密码是”raspberry”（可在raspi-config中修改）。树莓派的Raspbian系统root用户默认是禁用状态，且没有密码，所以要先设置个密码，然后开启才能正常使用。使用pi账户进行登陆命令行，执行命令：sudo passwd root设置root用户密码，然后在执行sudo passwd --unlock root开启root账户，在使用su root是否生效。重新锁定root账户可执行命令：sudo passwd --lock root 有线如图所示我们可以通过数据线连接Micro USB Data Port来进行供电和数据的访问，而Micro USB 5V Power Input主要是用来供电的。 配置可以通过raspi-config命令在shell下修改，也可以等远程连接桌面图形交互修改。 容量扩展 更改系统时区 更改系统密码 换源 sudo passwd root设置root用户密码 如果你的版本是。。。。就可以通过VNC远程桌面连接，现在的版本预装了realVNC服务端如果需要加入图形界面，则可以通过raspi-config命令在Interfacing OptionsC &gt; VNC &gt; Yes中开启VNC连接，再直接下载Viewer端连接即可。输入密码 编辑/etc/apt/sources.list文件。用以下内容取代更换软件源： 12deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main non-free contribdeb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main non-free contrib 编辑/etc/apt/sources.list.d/raspi.list文件。用以下内容取代更换系统源： 1deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui 如果权限不够可以先sudo bash提权编辑此文件后，请使用sudo apt-get update命令，更新软件列表。 最后一张桌面图结尾 树莓派历史版本镜像raspbian-jessie最后的版本中文社区学习站点——树莓派实验室]]></content>
@@ -186,7 +198,7 @@
     <url>%2Fjacks%2Fzh-CN%2F2016%2F08%2F16%2F%E8%AF%97%E9%9B%86%2F</url>
     <content type="text"><![CDATA[写于 2013-8-3 02:40 异乡夜 异乡夜 异乡人，孤夜通，夏蒸月藏宫，魔都城，独楼空，几多愁事在眉中； 敢问君，汉子心，怎可犹如冰，念身旁，远天堂，恰同织女思牛郎。 来自异乡的人，孤单一人在这炎热的夏日夜里通宵达旦，透过朦胧的夜雾望着月亮，仿佛月亮上藏着宫殿。联想着这么大的魔都之城中，却独自一人守在这空荡的房子里，许多忧愁的事情都让人皱起眉头了；真想问问您，明明有一个炽热的内心，现在却怎么可以对我如此冷淡呢，多么思念你在身边啊，却又离开我如同分割两个世界里，您可知道我有多么的想你吗~ 写于 2016-8-11 20:36 无题 不羡一生贵多金 踏碎浮尘归始心 江山千古旧如画 灯红酒绿把天熏 勾心斗角陷七情 何不驾云乘风去 定可山水遇知音 醉卧九天畅汝心]]></content>
       <categories>
-        <category>诗</category>
+        <category>诗意人生</category>
       </categories>
       <tags>
         <tag>诗集</tag>
