@@ -1,1 +1,177 @@
-$(document).ready(function(){function i(i){this.el=$(i.el),this.status=$.extend({},{init:{width:"100%",opacity:1,left:0,rotateZ:0,top:0}},i.status)}NexT.motion={};var t={lines:[],push:function(i){this.lines.push(i)},init:function(){this.lines.forEach(function(i){i.init()})},arrow:function(){this.lines.forEach(function(i){i.arrow()})},close:function(){this.lines.forEach(function(i){i.close()})}};i.prototype.init=function(){this.transform("init")},i.prototype.arrow=function(){this.transform("arrow")},i.prototype.close=function(){this.transform("close")},i.prototype.transform=function(i){this.el.velocity("stop").velocity(this.status[i])};var e=new i({el:".sidebar-toggle-line-first",status:{arrow:{width:"50%",rotateZ:"-45deg",top:"2px"},close:{width:"100%",rotateZ:"-45deg",top:"5px"}}}),o=new i({el:".sidebar-toggle-line-middle",status:{arrow:{width:"90%"},close:{opacity:0}}}),n=new i({el:".sidebar-toggle-line-last",status:{arrow:{width:"50%",rotateZ:"45deg",top:"-2px"},close:{width:"100%",rotateZ:"45deg",top:"-5px"}}});t.push(e),t.push(o),t.push(n);var s,r,a=CONFIG.sidebar.width?CONFIG.sidebar.width:"320px";({toggleEl:$(".sidebar-toggle"),dimmerEl:$("#sidebar-dimmer"),sidebarEl:$(".sidebar"),isSidebarVisible:!1,init:function(){this.toggleEl.on("click",this.clickHandler.bind(this)),this.dimmerEl.on("click",this.clickHandler.bind(this)),this.toggleEl.on("mouseenter",this.mouseEnterHandler.bind(this)),this.toggleEl.on("mouseleave",this.mouseLeaveHandler.bind(this)),this.sidebarEl.on("touchstart",this.touchstartHandler.bind(this)),this.sidebarEl.on("touchend",this.touchendHandler.bind(this)),this.sidebarEl.on("touchmove",function(i){i.preventDefault()}),$(document).on("sidebar.isShowing",function(){NexT.utils.isDesktop()&&$("body").velocity("stop").velocity({paddingRight:a},200)}).on("sidebar.isHiding",function(){})},clickHandler:function(){this.isSidebarVisible?this.hideSidebar():this.showSidebar(),this.isSidebarVisible=!this.isSidebarVisible},mouseEnterHandler:function(){this.isSidebarVisible||t.arrow()},mouseLeaveHandler:function(){this.isSidebarVisible||t.init()},touchstartHandler:function(i){s=i.originalEvent.touches[0].clientX,r=i.originalEvent.touches[0].clientY},touchendHandler:function(i){var t=i.originalEvent.changedTouches[0].clientX,e=i.originalEvent.changedTouches[0].clientY;t-s>30&&Math.abs(e-r)<20&&this.clickHandler()},showSidebar:function(){var i=this;t.close(),this.sidebarEl.velocity("stop").velocity({width:a},{display:"block",duration:200,begin:function(){$(".sidebar .motion-element").not(".site-state").velocity("transition.slideRightIn",{stagger:50,drag:!0,complete:function(){i.sidebarEl.trigger("sidebar.motion.complete")}}),$(".site-state").velocity("transition.slideRightIn",{stagger:50,drag:!0,display:"flex"})},complete:function(){i.sidebarEl.addClass("sidebar-active"),i.sidebarEl.trigger("sidebar.didShow")}}),this.sidebarEl.trigger("sidebar.isShowing")},hideSidebar:function(){NexT.utils.isDesktop()&&$("body").velocity("stop").velocity({paddingRight:0}),this.sidebarEl.find(".motion-element").velocity("stop").css("display","none"),this.sidebarEl.velocity("stop").velocity({width:0},{display:"none"}),t.init(),this.sidebarEl.removeClass("sidebar-active"),this.sidebarEl.trigger("sidebar.isHiding"),$(".post-toc-wrap")&&("block"===$(".site-overview-wrap").css("display")?$(".post-toc-wrap").removeClass("motion-element"):$(".post-toc-wrap").addClass("motion-element"))}}).init(),NexT.motion.integrator={queue:[],cursor:-1,add:function(i){return this.queue.push(i),this},next:function(){this.cursor++;var i=this.queue[this.cursor];$.isFunction(i)&&i(NexT.motion.integrator)},bootstrap:function(){this.next()}},NexT.motion.middleWares={logo:function(i){function t(i){return i=Array.isArray(i)?i:[i],i.every(function(i){return i.length>0})}function e(i,t){return{e:$(i),p:{translateX:t},o:{duration:500,sequenceQueue:!1}}}function o(){n.push({e:r,p:{opacity:1,top:0},o:{duration:200}})}var n=[],s=$(".brand"),r=$(".custom-logo-image"),a=$(".site-title"),l=$(".site-subtitle"),c=$(".logo-line-before i"),d=$(".logo-line-after i");s.length>0&&n.push({e:s,p:{opacity:1},o:{duration:200}}),NexT.utils.isMist()&&t([c,d])&&n.push(e(c,"100%"),e(d,"-100%")),NexT.utils.isMuse()&&t(r)&&o(),t(a)&&n.push({e:a,p:{opacity:1,top:0},o:{duration:200}}),t(l)&&n.push({e:l,p:{opacity:1,top:0},o:{duration:200}}),(NexT.utils.isPisces()||NexT.utils.isGemini())&&t(r)&&o(),CONFIG.motion.async&&i.next(),n.length>0?(n[n.length-1].o.complete=function(){i.next()},$.Velocity.RunSequence(n)):i.next()},menu:function(i){CONFIG.motion.async&&i.next(),$(".menu-item").velocity("transition.slideDownIn",{display:null,duration:200,complete:function(){i.next()}})},postList:function(i){var t=$(".post-block, .pagination, .comments"),e=CONFIG.motion.transition.post_block,o=$(".post-header"),n=CONFIG.motion.transition.post_header,s=$(".post-body"),r=CONFIG.motion.transition.post_body,a=$(".collection-title, .archive-year"),l=CONFIG.motion.transition.coll_header,c=$(".sidebar-inner"),d=CONFIG.motion.transition.sidebar;t.length>0?function(){var u=window.postMotionOptions||{stagger:100,drag:!0};u.complete=function(){CONFIG.motion.transition.sidebar&&(NexT.utils.isPisces()||NexT.utils.isGemini())&&c.css({transform:"initial"}),i.next()},CONFIG.motion.transition.post_block&&t.velocity("transition."+e,u),CONFIG.motion.transition.post_header&&o.velocity("transition."+n,u),CONFIG.motion.transition.post_body&&s.velocity("transition."+r,u),CONFIG.motion.transition.coll_header&&a.velocity("transition."+l,u),CONFIG.motion.transition.sidebar&&(NexT.utils.isPisces()||NexT.utils.isGemini())&&c.velocity("transition."+d,u)}():i.next(),CONFIG.motion.async&&i.next()},sidebar:function(i){"always"===CONFIG.sidebar.display&&NexT.utils.displaySidebar(),i.next()}}});
+/* global NexT, CONFIG, Velocity */
+
+if (window.$ && window.$.Velocity) window.Velocity = window.$.Velocity;
+
+NexT.motion = {};
+
+NexT.motion.integrator = {
+  queue : [],
+  cursor: -1,
+  init  : function() {
+    this.queue = [];
+    this.cursor = -1;
+    return this;
+  },
+  add: function(fn) {
+    this.queue.push(fn);
+    return this;
+  },
+  next: function() {
+    this.cursor++;
+    var fn = this.queue[this.cursor];
+    typeof fn === 'function' && fn(NexT.motion.integrator);
+  },
+  bootstrap: function() {
+    this.next();
+  }
+};
+
+NexT.motion.middleWares = {
+  logo: function(integrator) {
+    var sequence = [];
+    var brand = document.querySelector('.brand');
+    var image = document.querySelector('.custom-logo-image');
+    var title = document.querySelector('.site-title');
+    var subtitle = document.querySelector('.site-subtitle');
+    var logoLineTop = document.querySelector('.logo-line-before i');
+    var logoLineBottom = document.querySelector('.logo-line-after i');
+
+    brand && sequence.push({
+      e: brand,
+      p: {opacity: 1},
+      o: {duration: 200}
+    });
+
+    function getMistLineSettings(element, translateX) {
+      return {
+        e: element,
+        p: {translateX},
+        o: {
+          duration     : 500,
+          sequenceQueue: false
+        }
+      };
+    }
+
+    function pushImageToSequence() {
+      sequence.push({
+        e: image,
+        p: {opacity: 1, top: 0},
+        o: {duration: 200}
+      });
+    }
+
+    CONFIG.scheme === 'Mist' && logoLineTop && logoLineBottom
+    && sequence.push(
+      getMistLineSettings(logoLineTop, '100%'),
+      getMistLineSettings(logoLineBottom, '-100%')
+    );
+
+    CONFIG.scheme === 'Muse' && image && pushImageToSequence();
+
+    title && sequence.push({
+      e: title,
+      p: {opacity: 1, top: 0},
+      o: {duration: 200}
+    });
+
+    subtitle && sequence.push({
+      e: subtitle,
+      p: {opacity: 1, top: 0},
+      o: {duration: 200}
+    });
+
+    (CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini') && image && pushImageToSequence();
+
+    if (sequence.length > 0) {
+      sequence[sequence.length - 1].o.complete = function() {
+        integrator.next();
+      };
+      Velocity.RunSequence(sequence);
+    } else {
+      integrator.next();
+    }
+
+    if (CONFIG.motion.async) {
+      integrator.next();
+    }
+  },
+
+  menu: function(integrator) {
+    Velocity(document.querySelectorAll('.menu-item'), 'transition.slideDownIn', {
+      display : null,
+      duration: 200,
+      complete: function() {
+        integrator.next();
+      }
+    });
+
+    if (CONFIG.motion.async) {
+      integrator.next();
+    }
+  },
+
+  subMenu: function(integrator) {
+    var subMenuItem = document.querySelectorAll('.sub-menu .menu-item');
+    if (subMenuItem.length > 0) {
+      subMenuItem.forEach(element => {
+        element.style.opacity = 1;
+      });
+    }
+    integrator.next();
+  },
+
+  postList: function(integrator) {
+    var postBlock = document.querySelectorAll('.post-block, .pagination, .comments');
+    var postBlockTransition = CONFIG.motion.transition.post_block;
+    var postHeader = document.querySelectorAll('.post-header');
+    var postHeaderTransition = CONFIG.motion.transition.post_header;
+    var postBody = document.querySelectorAll('.post-body');
+    var postBodyTransition = CONFIG.motion.transition.post_body;
+    var collHeader = document.querySelectorAll('.collection-header');
+    var collHeaderTransition = CONFIG.motion.transition.coll_header;
+
+    if (postBlock.length > 0) {
+      var postMotionOptions = window.postMotionOptions || {
+        stagger : 100,
+        drag    : true,
+        complete: function() {
+          integrator.next();
+        }
+      };
+
+      if (CONFIG.motion.transition.post_block) {
+        Velocity(postBlock, 'transition.' + postBlockTransition, postMotionOptions);
+      }
+      if (CONFIG.motion.transition.post_header) {
+        Velocity(postHeader, 'transition.' + postHeaderTransition, postMotionOptions);
+      }
+      if (CONFIG.motion.transition.post_body) {
+        Velocity(postBody, 'transition.' + postBodyTransition, postMotionOptions);
+      }
+      if (CONFIG.motion.transition.coll_header) {
+        Velocity(collHeader, 'transition.' + collHeaderTransition, postMotionOptions);
+      }
+    }
+    if (CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini') {
+      integrator.next();
+    }
+  },
+
+  sidebar: function(integrator) {
+    var sidebarAffix = document.querySelector('.sidebar-inner');
+    var sidebarAffixTransition = CONFIG.motion.transition.sidebar;
+    // Only for Pisces | Gemini.
+    if (sidebarAffixTransition && (CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini')) {
+      Velocity(sidebarAffix, 'transition.' + sidebarAffixTransition, {
+        display : null,
+        duration: 200,
+        complete: function() {
+          // After motion complete need to remove transform from sidebar to let affix work on Pisces | Gemini.
+          sidebarAffix.style.transform = 'initial';
+        }
+      });
+    }
+    integrator.next();
+  }
+};
