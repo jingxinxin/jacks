@@ -28,7 +28,7 @@
     scheme: 'Mist',
     version: '7.7.1',
     exturl: true,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
@@ -58,8 +58,14 @@
 <meta property="og:description" content="无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称树莓派，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.51201314.me/OSS/blog/img/raspberry.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/shumeipaipz.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/Etcher.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/pi-shell.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/shumeipzero.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/vnc.jpg">
+<meta property="og:image" content="https://www.51201314.me/OSS/blog/img/desk-pi.jpg">
 <meta property="article:published_time" content="2019-06-09T09:20:48.000Z">
-<meta property="article:modified_time" content="2019-07-14T11:15:42.250Z">
+<meta property="article:modified_time" content="2020-02-01T21:20:37.325Z">
 <meta property="article:author" content="Jack·S">
 <meta property="article:tag" content="Raspberry">
 <meta property="article:tag" content="树莓派">
@@ -151,7 +157,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">46</span></a>
+    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -269,7 +275,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-07-14 19:15:42" itemprop="dateModified" datetime="2019-07-14T19:15:42+08:00">2019-07-14</time>
+                <time title="修改时间：2020-02-02 05:20:37" itemprop="dateModified" datetime="2020-02-02T05:20:37+08:00">2020-02-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -315,10 +321,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <img src="https://www.51201314.me/OSS/blog/img/raspberry.jpg" itemprop="contentUrl">
-        </div>
-        <p>无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlOTElRTglOEUlOTMlRTYlQjQlQkUvODA0Mjc/ZnI9YWxhZGRpbg==" title="https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin">树莓派<i class="fa fa-external-link"></i></span>，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。</p>
+        <p><img data-src="https://www.51201314.me/OSS/blog/img/raspberry.jpg" alt=""><br>无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlOTElRTglOEUlOTMlRTYlQjQlQkUvODA0Mjc/ZnI9YWxhZGRpbg==" title="https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin">树莓派<i class="fa fa-external-link"></i></span>，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。</p>
 <a id="more"></a>
 <p><span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnLw==" title="https://www.raspberrypi.org/">官网开道<i class="fa fa-external-link"></i></span><br>今天就主要记录一下基本的知识和自我理解和使用方法。<br>以下是Zero W的配置：<br><img data-src="https://www.51201314.me/OSS/blog/img/shumeipaipz.jpg" alt="配置"><br>zero的尺寸可以说是非常小巧了：<code>65mm x 30mm x 5mm</code></p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>1 raspberry系统<span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnL2Rvd25sb2Fkcy8=" title="https://www.raspberrypi.org/downloads/">官方下载<i class="fa fa-external-link"></i></span><br>2 Etcher烤制软件（当然也可以用其他方法格式化SD卡再通过命令，这个是非常简单的方式）<br>3 Raspberry Pi Zero W<br>4 最好8G以上的SD卡<br>5 microUSB To U线<br>6 读卡器</p>
@@ -492,7 +495,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/jacks/archives/">
         
-          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -536,7 +539,7 @@
           <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">博主</a>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9mZW5ndGUuZnVu" title="https:&#x2F;&#x2F;fengte.fun">丰特房</span>
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https:&#x2F;&#x2F;www.fengte.fun">丰特房</span>
         </li>
         <li class="links-of-blogroll-item">
           <span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFuZ3podXF1YW4uY29t" title="https:&#x2F;&#x2F;www.bangzhuquan.com">帮助圈</span>
@@ -577,7 +580,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">73k</span>
+    <span title="站点总字数">74k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>第二份事业-集成房屋</title>
+    <url>/jacks/zh-CN/2020/02/04/%E7%AC%AC%E4%BA%8C%E4%BB%BD%E4%BA%8B%E4%B8%9A/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https://www.fengte.fun">丰特集成房屋<i class="fa fa-external-link"></i></span></p>
+<iframe style="max-width:100%" width="640" height="320" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=f06265zmh61&tiny=0&auto=0" allowFullScreen="true"></iframe>
+
+<p>了解定购<br>官方网站：<span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https://www.fengte.fun">https://www.fengte.fun<i class="fa fa-external-link"></i></span></p>
+]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>最近武汉疫情在家办公的我</title>
+    <url>/jacks/zh-CN/2020/02/03/%E6%9C%80%E8%BF%91%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85%E5%9C%A8%E5%AE%B6%E5%8A%9E%E5%85%AC%E7%9A%84%E6%88%91/</url>
+    <content><![CDATA[<a id="more"></a>
+<iframe style="max-width:100%" width="640" height="320" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=a3060ky6g5s&tiny=0&auto=0" allowFullScreen="true"></iframe>
+]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Adobe Premiere去除字幕和logo的方法</title>
     <url>/jacks/zh-CN/2019/06/27/Adobe-PR%E5%8E%BB%E9%99%A4%E5%AD%97%E5%B9%95%E5%92%8Clogo%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>对视频的剪辑我一般都使用PR来做，比如加一些字幕或者logo。在剪完后，我习惯性的会删除一些使用完的素材，比如最初的视频。<br>时间久了想重新剪一些新视频，发现只有使用后来导出带有字幕或者logo图片的素材。<br>如果遇到这个情况我们还是有办法补救的。<br>基本的思路就是<code>蒙蔽+中间值</code>。</p>
@@ -24,7 +48,7 @@
   <entry>
     <title>六一小玩具之Raspberry Pi Zero W(树莓派)</title>
     <url>/jacks/zh-CN/2019/06/09/%E5%85%AD%E4%B8%80%E5%B0%8F%E7%8E%A9%E5%85%B7%E4%B9%8BRaspberry-Pi-Zero-W-%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
-    <content><![CDATA[<p>无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlOTElRTglOEUlOTMlRTYlQjQlQkUvODA0Mjc/ZnI9YWxhZGRpbg==" title="https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin">树莓派<i class="fa fa-external-link"></i></span>，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/raspberry.jpg" alt=""><br>无论岁月在何时，人们心中永远会住着一个小时候的自己。爱玩乃是人之天性，这不六一我就从某宝淘了一个小玩具人称<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlOTElRTglOEUlOTMlRTYlQjQlQkUvODA0Mjc/ZnI9YWxhZGRpbg==" title="https://baike.baidu.com/item/%E6%A0%91%E8%8E%93%E6%B4%BE/80427?fr=aladdin">树莓派<i class="fa fa-external-link"></i></span>，不知道的人，第一次听起来一定会想成一类美食。菠萝派啊，香蕉派啊，苹果派啊。。。而这里的树莓派是为学习计算机编程教育而设计的微型卡片电脑，其系统基于Linux。</p>
 <a id="more"></a>
 <p><span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnLw==" title="https://www.raspberrypi.org/">官网开道<i class="fa fa-external-link"></i></span><br>今天就主要记录一下基本的知识和自我理解和使用方法。<br>以下是Zero W的配置：<br><img data-src="https://www.51201314.me/OSS/blog/img/shumeipaipz.jpg" alt="配置"><br>zero的尺寸可以说是非常小巧了：<code>65mm x 30mm x 5mm</code></p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>1 raspberry系统<span class="exturl" data-url="aHR0cHM6Ly93d3cucmFzcGJlcnJ5cGkub3JnL2Rvd25sb2Fkcy8=" title="https://www.raspberrypi.org/downloads/">官方下载<i class="fa fa-external-link"></i></span><br>2 Etcher烤制软件（当然也可以用其他方法格式化SD卡再通过命令，这个是非常简单的方式）<br>3 Raspberry Pi Zero W<br>4 最好8G以上的SD卡<br>5 microUSB To U线<br>6 读卡器</p>
@@ -64,7 +88,7 @@
   <entry>
     <title>维度的演变</title>
     <url>/jacks/zh-CN/2017/01/17/%E7%BB%B4%E5%BA%A6%E7%9A%84%E6%BC%94%E5%8F%98/</url>
-    <content><![CDATA[<p>在网上看过很多关于维度的解释和演示，也看过很多书籍，电视纪录片等，从一维到三维固然好理解，但是到了更高的维度就让人很难去理解，当我们慢慢对一些定理概念，发生更高更客观的认识的时候，才发现很多事就变得更好理解。很多时候我们所认为不可理解的事，大多数情况可能都是我们之前所奉承的理论出了问题，随着物质的演绎推进，我们不得不改变或者进化之前的认知，这是一种思维进化的过程。人的肉体可能目前只能局限于三维之中，但思维也许可以理解和进化到更高的层次。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/%E7%BB%B4%E5%BA%A6.jpeg" alt=""><br>在网上看过很多关于维度的解释和演示，也看过很多书籍，电视纪录片等，从一维到三维固然好理解，但是到了更高的维度就让人很难去理解，当我们慢慢对一些定理概念，发生更高更客观的认识的时候，才发现很多事就变得更好理解。很多时候我们所认为不可理解的事，大多数情况可能都是我们之前所奉承的理论出了问题，随着物质的演绎推进，我们不得不改变或者进化之前的认知，这是一种思维进化的过程。人的肉体可能目前只能局限于三维之中，但思维也许可以理解和进化到更高的层次。</p>
 <a id="more"></a>
 <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><p>时间：时间是什么，时间应该是任何物质演变的过程<br>单体：维度中存在的任意一个物体，每个维度的单体，都可以向任意的角度方位状态进行演变，它们演变的过程集合轨迹，将形成下一维度的单体；如果单体有感知能力的话，高维单体可以感知低维和自身维度单体的存在，但不能感知高于自己的维度；单体是构成维度空间的基本单位<br>维度：由无数个单体发生演变组成的空间<br>演变：世界没有绝对的静止，所谓静止都是相对的，所有物体都是自始自终不停不断的演变，或泯灭或发生<br>维度状态：维度空间中所有单体状态演变的过程，从三维中理解就是，任意一个人的任意一个动作，都发生了维度动态，其他维度自行脑补<br>演变过程：演变过程是所有单体拥有的，任何阶段，前一个状态和后一个状态不一致，都发生了演变过程，比如从黑点，变成了红点，从一个坐标点移动到了另一个坐标点</p>
 <h1 id="一维"><a href="#一维" class="headerlink" title="一维"></a>一维</h1><p>一维单体就是一个点，那么一维空间就是由无数个点组建成的空间，当然这一切都是静止的，这些无数的单体会进行演变，向任意一个方向演变。取其一个单体，开始模拟演变，从一个状态到另一个状态，比如移动，它的轨迹，可能是直线，可能是曲线，这个过程就形成了，二维的单体。<br>另外所有二维单体的集合投影，就是一个一维空间。</p>
@@ -85,7 +109,7 @@
   <entry>
     <title>钱为何物</title>
     <url>/jacks/zh-CN/2017/01/11/%E9%92%B1%E4%B8%BA%E4%BD%95%E7%89%A9/</url>
-    <content><![CDATA[<p>本身”花花绿绿的纸”没有价值，只有使用价值，货币流通才产生的价值，而决定是否能流通是社会市场所决定的，就好比人民币只能中国用，美元美国用，乐高黑市用，如果你不知道哪个平台可以流通，有乐高也没用，就好比在中国有再多美元，银行不兑换，就没有用。<br>就好比人民币没有价值，只有使用价值，你要知道怎么流通才能兑换成价值。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/%E8%B4%A7%E5%B8%81.jpg" alt=""><br>本身”花花绿绿的纸”没有价值，只有使用价值，货币流通才产生的价值，而决定是否能流通是社会市场所决定的，就好比人民币只能中国用，美元美国用，乐高黑市用，如果你不知道哪个平台可以流通，有乐高也没用，就好比在中国有再多美元，银行不兑换，就没有用。<br>就好比人民币没有价值，只有使用价值，你要知道怎么流通才能兑换成价值。</p>
 <a id="more"></a>
 
 <p>一切物品都可以成为货币，在古代没有一般等价物的时候，物品只能和物品交换产生交易，比如一头猪换十只鸡，两只鸡换一抹布，等等，当时间久了就有人发现这样换来换去，很麻烦啊，还要算来算去，何不干脆约定一个特定的东西作为一般等价交换物，这样不就好换算了，这就是钱的前世，整个历史中，石头，纸，银子，金子，铜，等都当做过流通的货币。<br>其实每一个有交易的地方都是一个货币流通市场。比如一家开衣服店的，其实衣服就可以当做货币，进行交易，客人可以用其他任何物品来换，只要你同意这个，就会产生交易，古时候的铜钱，银两，现在中国的人民币，美国的美元等。</p>
@@ -104,7 +128,7 @@
   <entry>
     <title>理解总结Redux</title>
     <url>/jacks/zh-CN/2016/12/05/%E7%90%86%E8%A7%A3%E6%80%BB%E7%BB%93Redux%E4%B8%8EReact%E7%9A%84%E7%BB%93%E5%90%88/</url>
-    <content><![CDATA[<p>首先我们要知道Redux和React之间没有血缘关系。不然你会问他们的结合岂不是成了乱*。Redux 还支持 Vue、Angular、Ember、jQuery 甚至纯 JavaScript。当你在用React的时候，要明白为什么要用redux，不明白就没有用的意义。由于React只做为view视图层，如果你要完成一套完整的方案，就需拼装许多其他的包，redux就可以说是为管理数据流而生的包。除Redux，其实还有一个更简洁的库，叫mobX，可以自行GitHub。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/redux.png" alt=""><br>首先我们要知道Redux和React之间没有血缘关系。不然你会问他们的结合岂不是成了乱*。Redux 还支持 Vue、Angular、Ember、jQuery 甚至纯 JavaScript。当你在用React的时候，要明白为什么要用redux，不明白就没有用的意义。由于React只做为view视图层，如果你要完成一套完整的方案，就需拼装许多其他的包，redux就可以说是为管理数据流而生的包。除Redux，其实还有一个更简洁的库，叫mobX，可以自行GitHub。</p>
 <a id="more"></a>
 <h1 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h1><p>Redux 主要的几个交流部分，分别是action，reducer，component三部分。</p>
 <h2 id="action"><a href="#action" class="headerlink" title="action"></a>action</h2><h2 id="reducer"><a href="#reducer" class="headerlink" title="reducer"></a>reducer</h2><h2 id="component"><a href="#component" class="headerlink" title="component"></a>component</h2><p>组件，这里就不详细说是什么了，但在redux，把它分成了容器组件和展示组件</p>
@@ -123,7 +147,7 @@
   <entry>
     <title>Docker常用命令和技巧总结</title>
     <url>/jacks/zh-CN/2016/11/18/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%92%8C%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。这里我总结了常用的一些命令和技巧，比如批量删除images和containers等。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/docker.png" alt=""><br>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。这里我总结了常用的一些命令和技巧，比如批量删除images和containers等。</p>
 <a id="more"></a>
 <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p><code>docker -h</code> 列出帮助<br><code>docker [COMMAND] -h</code> 列出这个命令的帮助</p>
 <h1 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h1><h2 id="批量删除"><a href="#批量删除" class="headerlink" title="批量删除"></a>批量删除</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Remove all stopped containers.(-a是全部，-q是获取id那一项)</span></span><br><span class="line"></span><br><span class="line">$ docker rm $(docker ps -aq)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Remove all untagged images（这里我用的ag去查询,木有的可以用grep）</span></span><br><span class="line"></span><br><span class="line">$ docker rmi $(docker images -a | ag <span class="string">'^&lt;none&gt;'</span> | awk <span class="string">'&#123;print $3&#125;'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 批量删除字符串包含Jack的容器（-f参数主要用来强制关闭，为了避免误删出正在运行的容器，</span></span><br><span class="line"><span class="comment"># docker会默认拒绝提交的命令，你可以先docker stop再rm，当然我们可以直接加-f参数）</span></span><br><span class="line"></span><br><span class="line">$ docker rm -f $(docker ps -a | ag <span class="string">'Jack'</span> | awk <span class="string">'&#123;print $1&#125;'</span>)</span><br></pre></td></tr></table></figure>
@@ -200,7 +224,7 @@
   <entry>
     <title>I&#39;am fucking Mac Pro</title>
     <url>/jacks/zh-CN/2016/10/21/I-am-fucking-Mac-Pro/</url>
-    <content><![CDATA[<p>上图为19年最新皮肤！（某宝100软妹币自己动手贴的）<br>Yep! I am fucking Mac pro! so apple is not integral！<br>国庆回家，去了姐姐家，姐夫是java程序员，以前也在上海，他们回成都完婚的适合，姐夫的换了成都的工作，原本他自己有一台Mac Pro，成都的公司又给他配了一台一模一样的，所以他在12年买的那台就一直没怎么用，每次去他们家，他都会给我安利，他想卖掉这台Mac，我现在用的第一台Mac就是从他这里买的。算是8.9层新吧。如今我已经fuck了它两周了，已经很有快感了。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/macpro.jpg" alt=""><br>上图为19年最新皮肤！（某宝100软妹币自己动手贴的）<br>Yep! I am fucking Mac pro! so apple is not integral！<br>国庆回家，去了姐姐家，姐夫是java程序员，以前也在上海，他们回成都完婚的适合，姐夫的换了成都的工作，原本他自己有一台Mac Pro，成都的公司又给他配了一台一模一样的，所以他在12年买的那台就一直没怎么用，每次去他们家，他都会给我安利，他想卖掉这台Mac，我现在用的第一台Mac就是从他这里买的。算是8.9层新吧。如今我已经fuck了它两周了，已经很有快感了。</p>
 <a id="more"></a>
 
 <h1 id="I-want-u"><a href="#I-want-u" class="headerlink" title="I want u"></a>I want u</h1><p>其实一开始他一直都说他买成1.5W，自己又没怎么用，从去年还是前年说1W出手，我觉得是贵了，而且当时一直用的<code>窗口s</code>开发，并没有太多意愿，也觉得没有必要性使用Mac，也就没有心动。从去年下半年开始就有些不太一样了，我已经开始完全转到前端开发了，对<code>窗口s</code>的使用，已经相当的熟悉了，特别是win10，配合<code>Wox</code>，一样可以做到Spotlight的功能，再加上ubuntu on windows的出现，我有那么一瞬间觉得，win开发足矣。但是，为了寻求能力和见识的提升，及时做出改变是必须的，再加上身边的同事，php和前端，对还有产品，几乎清一色的使用Mac，咋们入乡随俗显得格外的迫切，另外还有一点是因为不同系统上总有些奇怪的差异，会导致项目文件出问题，包括插件版本的差异等待，走向统一化，也是简化问题的方式，比如一些IDE编辑文件后的结束分割符在不同系统是不一样的</p>
@@ -348,7 +372,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>爆笑虫子之冰淇淋</title>
     <url>/jacks/zh-CN/2016/08/22/%E7%88%86%E7%AC%91%E8%99%AB%E5%AD%90%E4%B9%8B%E5%86%B0%E6%B7%87%E6%B7%8B/</url>
-    <content><![CDATA[<iframe style="max-width:100%" frameborder="0" width="640" height="250" src="http://v.qq.com/iframe/player.html?vid=v0016wy2d3h&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
+    <content><![CDATA[<iframe style="max-width:100%" frameborder="0" width="640" height="320" src="http://v.qq.com/iframe/player.html?vid=v0016wy2d3h&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
       <categories>
         <category>视频</category>
       </categories>
@@ -375,9 +399,9 @@ CPU这样   2.3 GHz Intel Core i7
       </tags>
   </entry>
   <entry>
-    <title>诗集</title>
-    <url>/jacks/zh-CN/2016/08/16/%E8%AF%97%E9%9B%86/</url>
-    <content><![CDATA[<p>记录自己多年来有感而发写的诗集，以下皆为原创。</p>
+    <title>原创诗集</title>
+    <url>/jacks/zh-CN/2016/08/16/%E5%8E%9F%E5%88%9B%E8%AF%97%E9%9B%86/</url>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/poems.jpg" alt=""><br>记录自己多年来有感而发写的诗集，以下皆为原创。</p>
 <a id="more"></a>
 
 <div class="note info">
@@ -389,7 +413,7 @@ CPU这样   2.3 GHz Intel Core i7
           </div>
 
 <div class="note info">
-            <blockquote class="blockquote-center"><h1 id="轮回"><a href="#轮回" class="headerlink" title="轮回"></a>轮回</h1><p>人过黄昏老   生出宇宙闹<br>泪随岁月少   命回自然妙<br>待到天地万变时 有无轮回旧时处<br>敢问何人    天地已答<br>几人哭 几人笑 无人哭 无人笑<br>写于 大约2006-2009间</p></blockquote>
+            <blockquote class="blockquote-center"><h1 id="轮回"><a href="#轮回" class="headerlink" title="轮回"></a>轮回</h1><p>人过黄昏老   生出宇宙闹<br>泪随岁月少   命回自然妙<br>待到天地万变时 有无轮回旧时处<br>敢问何人    天地已答<br>几人哭 几人笑<br>写于 大约2006-2009间</p></blockquote>
           </div>
 
 <div class="note info">
@@ -415,8 +439,7 @@ CPU这样   2.3 GHz Intel Core i7
 
 <div class="note info">
             <blockquote class="blockquote-center"><h1 id="乡"><a href="#乡" class="headerlink" title="乡"></a>乡</h1><p>我们走很多地方<br>去过很多远方<br>寻找过很多方向<br>终究远方成了新的故乡<br>夕阳吻霞光<br>那脸庞依稀在天上</p></blockquote>
-          </div>
-]]></content>
+          </div>]]></content>
       <categories>
         <category>诗意人生</category>
       </categories>
@@ -953,9 +976,9 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>当我用了站坐两用升降工作台</title>
     <url>/jacks/zh-CN/2016/06/02/%E5%BD%93%E6%88%91%E7%94%A8%E4%BA%86%E7%AB%99%E5%9D%90%E4%B8%A4%E7%94%A8%E5%8D%87%E9%99%8D%E5%B7%A5%E4%BD%9C%E5%8F%B0/</url>
-    <content><![CDATA[<p>　　期待已久，终于入手。上班一族中有一群电脑族，电脑族中有一群程序猿族。他们日夜为公司的发展鞠躬尽瘁，长时间对着显示器无休止的操劳。黑眼圈，近视眼……这些都是他们的特征，然而最要命的还属于久坐后的颈椎病。在一段时间内，深受困扰，在加强健身锻炼后，博主已经毫发无损，所以说生命在于运动还是有道理的，现在为了预防颈椎毛病，就入手了“神器”久坐终结者。用了几天，轻松自在多了。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/zls.png" alt=""><br>　　上图拍摄于上海，当时我在一家金融教育公司任职前端开发。<br>　　期待已久，终于入手。上班一族中有一群电脑族，电脑族中有一群程序猿族。他们日夜为公司的发展鞠躬尽瘁，长时间对着显示器无休止的操劳。黑眼圈，近视眼……这些都是他们的特征，然而最要命的还属于久坐后的颈椎病。在一段时间内，深受困扰，在加强健身锻炼后，我已开始毫发无损，所以说生命在于运动还是有道理的，现在为了预防颈椎毛病，就入手了“神器”久坐终结者。用了几天，轻松自在多了。</p>
 <a id="more"></a>
-<p>　　俗话说“物极必反”，久坐，久卧，久站，都会对身体健康产生影响。一段时间内交替的进行，会有一个缓解的作用。博主大约以一个番茄时间（番茄工作法）作为一次站坐交替。</p>
+<p>　　俗话说“物极必反”，久坐，久卧，久站，都会对身体健康产生影响。一段时间内交替的进行，会有一个缓解的作用。我建议可以大约以一个番茄时间（番茄工作法）作为一次站坐交替，当然也可以自己灵活调整。</p>
 <blockquote>
 <p>番茄工作法是简单易行的时间管理方法，是由弗朗西斯科·西里洛于1992年创立的一种相对于GTD更微观的时间管理方法。<br>使用番茄工作法，选择一个待完成的任务，将番茄时间设为25分钟，专注工作，中途不允许做任何与该任务无关的事，直到番茄时钟响起，然后在纸上画一个X短暂休息一下（5分钟就行），每4个番茄时段多休息一会儿。<br>番茄工作法极大地提高了工作的效率，还会有意想不到的成就感。</p>
 </blockquote>
@@ -973,7 +996,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>CSS之清除浮动总结</title>
     <url>/jacks/zh-CN/2016/06/02/CSS%E4%B9%8B%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>　　当我们在前端做排版的时候，经常会用到CSS中float这个浮动效果，但在使用的时候值得注意的一点是浮动会有那些影响？为什么要清除浮动？</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/float_head.png" alt=""><br>　　当我们在前端做排版的时候，经常会用到CSS中float这个浮动效果，但在使用的时候值得注意的一点是浮动会有那些影响？为什么要清除浮动？</p>
 <a id="more"></a>
 
 <h1 id="CSS基础"><a href="#CSS基础" class="headerlink" title="CSS基础"></a>CSS基础</h1><p>首先让我们了解两个属性：</p>
@@ -1317,7 +1340,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>我的圆周率故事</title>
     <url>/jacks/zh-CN/2016/04/30/%E6%88%91%E7%9A%84%E5%9C%86%E5%91%A8%E7%8E%87%E6%95%85%E4%BA%8B/</url>
-    <content><![CDATA[<p>　　用了<strong>第一人称梦境法</strong>来记忆圆周率，日本的近70岁<strong>原口证</strong>大爷，应该就是运用了这类方法，能背诵到十万位。他是怎么做到的呢？他大量的运用了自己的想像力，对数字进行了图像编码，再加以链接，串联成一部长篇小说。因为我们的大脑对图像的存储和提取是非常高效而准确的，所以只要我们这些故事进行回忆，再解析出相应的数字，就可以成功无误的记忆大量的数字，并且长时间不会忘记。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/%CF%80.jpg" alt=""><br>　　用了<strong>第一人称梦境法</strong>来记忆圆周率，日本的近70岁<strong>原口证</strong>大爷，应该就是运用了这类方法，能背诵到十万位。他是怎么做到的呢？他大量的运用了自己的想像力，对数字进行了图像编码，再加以链接，串联成一部长篇小说。因为我们的大脑对图像的存储和提取是非常高效而准确的，所以只要我们这些故事进行回忆，再解析出相应的数字，就可以成功无误的记忆大量的数字，并且长时间不会忘记。</p>
 <a id="more"></a>
 <h1 id="梦境故事编码"><a href="#梦境故事编码" class="headerlink" title="梦境故事编码"></a>梦境故事编码</h1><p>　　以下是我编写的圆周率故事，故事可能会毫无头绪，没有主线，没有章法，甚至会不切实际，完全只存在我的想像力。可参考我的<a href="../../29/我的数字图像编码整理/">图像编码表</a></p>
 <hr>
@@ -1343,8 +1366,8 @@ CPU这样   2.3 GHz Intel Core i7
         <category>技巧修炼</category>
       </categories>
       <tags>
-        <tag>记忆力</tag>
         <tag>圆周率</tag>
+        <tag>记忆力</tag>
       </tags>
   </entry>
   <entry>
@@ -1385,7 +1408,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>何为三原色</title>
     <url>/jacks/zh-CN/2016/04/17/%E4%BD%95%E4%B8%BA%E4%B8%89%E5%8E%9F%E8%89%B2/</url>
-    <content><![CDATA[<p>　　色彩中不能再分解的基本色称之为原色，原色可以合成其他的颜色。三原色到底是RGB（红绿蓝）还是RYB（红黄蓝），对初学者来说经常是不易理解和迷惑的问题，博主思考一番后，阐述其中的科学知识，供大家一起学习参考讨论。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/roundness.jpg" alt=""><br>　　色彩中不能再分解的基本色称之为原色，原色可以合成其他的颜色。三原色到底是RGB（红绿蓝）还是RYB（红黄蓝），对初学者来说经常是不易理解和迷惑的问题，博主思考一番后，阐述其中的科学知识，供大家一起学习参考讨论。</p>
 <a id="more"></a>
 <h1 id="颜色从何而来"><a href="#颜色从何而来" class="headerlink" title="颜色从何而来"></a>颜色从何而来</h1><p>　　博主认为<strong>颜色的来源取决于光。</strong>自然光中蕴藏着许多能量，从爱因斯坦的质能方程E=mc²和光子的能量方程E=HV，我们可以知道一束光也是一股强大的能量。</p>
 <p style="color:red">为什么说颜色的来源取决于光呢？</p>
@@ -1411,7 +1434,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>JavaScript闭包总结</title>
     <url>/jacks/zh-CN/2016/04/17/JavaScript%E9%97%AD%E5%8C%85%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>　　闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚<strong>匿名函数</strong>和<strong>闭包</strong>这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/closure.png" alt=""><br>　　闭包可以说在JavaScript的函数表达式方面是一个很重要的知识点。有不少初学者总搞不清楚<strong>匿名函数</strong>和<strong>闭包</strong>这两个概念，这里都一一做一个总结，巩固自己，希望对初学者有帮助。</p>
 <a id="more"></a>
 <h1 id="闭包的概念"><a href="#闭包的概念" class="headerlink" title="闭包的概念"></a>闭包的概念</h1><p>　　<strong>闭包是指有权去访问另一个函数作用域中的变量的函数。</strong>这句话很好理解，首先它是一个函数，其次是有权访问另一个函数作用域中的变量。我们知道局部方法可以访问外部父类方法的属性。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> firstValue = <span class="string">'JX'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(firstValue);</span><br><span class="line">&#125;</span><br><span class="line">f1();</span><br></pre></td></tr></table></figure>
@@ -1554,7 +1577,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>人过半百，何去何从</title>
     <url>/jacks/zh-CN/2016/03/28/%E4%BA%BA%E8%BF%87%E5%8D%8A%E7%99%BE%EF%BC%8C%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E/</url>
-    <content><![CDATA[<p>　　人过半百知天命，缘来一生破人情；何苦念念旧不忘，不如凡间逍遥行。问君何去何从，只见两袖清风。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/chuan.jpg" alt=""><br>　　人过半百知天命，缘来一生破人情；何苦念念旧不忘，不如凡间逍遥行。问君何去何从，只见两袖清风。</p>
 <a id="more"></a>
 <p>　　人一生，匆匆几十年，一晃而过，一念昙花，一叶菩提，一语今生。酸甜苦辣，人间冷暖，是否你还在为生活体验而烦恼，而纠结，而悲喜，时而欣喜若狂，时而悲惨人生，昨天还是三十而立，如今已经望眼古稀之年。人过半百知天命，今生后世铭心前。半百之人，抑或纵享天伦之乐，抑或悲天悯人之恼，又抑或潇洒无为无作。<br>　　人过半百，必是经历过人生仇情忠义，尝遍人生苦甜，这一味，是何味，定有回味！人过半百，我想你若还是纠缠江湖之忧愁，必将庸人自扰，怨天尤人，你若还是纠缠过往之惜悔，必将自欺欺人，自寻烦恼。我觉应当放下心中怨念，审视半生之缘，问自心应当何去何从。<br>　　回望今生往年，有喜有悲，岁月不饶人，既有人来，便有人去，天命如此，人为何苦。不如两袖清风，化做逍遥与自在，忘却今夕是何年，岂不也爽哉！你若放不下，又怎拿得起，心中不悦，自是自扰，心若快乐，哪有悲苦。<br><img data-src="https://www.51201314.me/OSS/blog/img/oldman.jpg" alt=""><br>　　五十岁的人的想法和心境，也许不是我这二十多岁人应该去思考和想像，但是我却似乎能理解几十年后的我是何种心态，至少我不会后悔曾经，也不怕以往后来。当你知天命的时候，也许你会被生命的脆弱抨击，会人世沧桑的寒冷所冻伤，又或许你的问心无愧被他人的狼心狗肺，等等这一切你看不惯，想不通，摸不着的人生也许并不是你的人生，而是别人的人生，你不应该让自己活在别人的世界，甚至是你不喜欢的人的世界，也许是你待的太久，就没了原本真正属于自己的人生。人应当自己为自己而活，自求己心，自然海阔天空，万里无云。<br>　　天命自有定数，我们不必把来自于人间最美好的时光，都拿去浪费时间去想通天命为何数，想通了也无济于事，也改变不了，我们何不应当把握当下，健康积极的享乐晚年，家人是唯一的血脉，亲情是生命的骨肉，这些无价之宝，不可被世俗物欲金钱所迷惑，得不偿失，当你的精神世界崩塌，物质世界只是堆满废铁的工厂，创造不出美丽耀眼的花朵，物质的富裕更加是精神贫穷的表现，反过来也成立，最好五五开。万事万物，自我生长，不应被他人左右你的心灵，不当被世俗左右你的价值，更不应该被过去的黑暗，渲染了你光明的未来。过去早已经过去，未来的还未来到，你所拥有的现在，它也能成为一个奇迹，而这一切仅仅的是你自己是否认为这是一个奇迹。<br>　　一叶一菩提，一花一世界！你拥有的已经够多了，不是吗。</p>
 ]]></content>
@@ -1570,7 +1593,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>MarkDown的使用和总结</title>
     <url>/jacks/zh-CN/2016/03/27/MarkDown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>　　Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如<strong>简书</strong>和一些各种博客，国外可能过的比较多的，例如<strong>Github</strong>，主要是技术类的网站，甚至是可以编写wiki等的网页，都不同程度的支持和拥抱MarkDown。</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/MD.jpg" alt=""><br>　　Markdown 语法的目标是：成为一种适用于网络的书写语言，实现「易读易写」。你可以不必像专业编程人士一样要通过编写HTML网页，去排版才能写出有样式的文章，通过MarkDown你也可以写出排版优雅的文档。由于他的方便性和简单易写性，已经在各种网络环境得到支持和优化，国内比较常见的，例如<strong>简书</strong>和一些各种博客，国外可能过的比较多的，例如<strong>Github</strong>，主要是技术类的网站，甚至是可以编写wiki等的网页，都不同程度的支持和拥抱MarkDown。</p>
 <a id="more"></a>
 
 <p><a id="head"></a></p>
@@ -1692,7 +1715,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>最强大脑，探索思维的潜力</title>
     <url>/jacks/zh-CN/2016/03/27/%E6%9C%80%E5%BC%BA%E5%A4%A7%E8%84%91%EF%BC%8C%E6%8E%A2%E7%B4%A2%E6%80%9D%E7%BB%B4%E7%9A%84%E6%BD%9C%E5%8A%9B/</url>
-    <content><![CDATA[<p>　　人属于高等思维动物，全部的能动性，大脑占据了主导作用，因为人类的大脑，才有如今高度发展的社会，因为大脑，我才有了探索和发现的能力，因为大脑，人类才得以延续的更好，如果你具有一颗最强大脑，不仅仅是自己，也将会是人类的财富，欢迎和博主一同探索大脑潜力</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/theBrain.jpg" alt=""><br>　　人属于高等思维动物，全部的能动性，大脑占据了主导作用，因为人类的大脑，才有如今高度发展的社会，因为大脑，我才有了探索和发现的能力，因为大脑，人类才得以延续的更好，如果你具有一颗最强大脑，不仅仅是自己，也将会是人类的财富，欢迎和博主一同探索大脑潜力</p>
 <a id="more"></a>
 <p>　　最近国内有一档科学类综艺界面，名叫“最强大脑”，在网络上可以说是刮起一股“让科学流行起来的”风，受到了大批脑力爱好者的关注和追捧。</p>
 <blockquote>
@@ -1711,7 +1734,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>Simple talk about English</title>
     <url>/jacks/en/2016/03/24/talk-english/</url>
-    <content><![CDATA[<p>Don’t cram, should be flexible to use!</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/vocabulary.jpg" alt=""><br>Don’t cram, should be flexible to use!</p>
 <a id="more"></a>
 <p>My hometown is English education relatively late compared with big cities,when we were began to learn the alphabet letters in grade one in junior high school.Also coupled with my ability to learn English is not strong,it’s conceivable that my English level has been low.But even so,however,I still think I should learn English well,at least you can use it in your life.<br>How to learn English well is the thing I’ve been looking for,maybe related to memory,perhaps related to practice methods.But the only thing I can be sure is that you have the perseverance to use it.Either today or tomorrow,but one day,perhaps similar to people like me can also learn English well successfully.<br><img data-src="https://www.51201314.me/OSS/blog/img/speak_english.jpg" alt=""><br>Speak!Don’t cram,we should be flexible to use it</p>
 <p>Note:The above pictures from Google,thanks</p>
@@ -1726,7 +1749,7 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>Hello Hexo</title>
     <url>/jacks/zh-CN/2016/03/24/hello-Hexo/</url>
-    <content><![CDATA[<p>　　这是第一篇博文，起因是博主准备手动搭建一个静态页面的博客，选择了Hexo</p>
+    <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/hexo.jpg" alt=""><br>　　这是第一篇博文，起因是博主准备手动搭建一个静态页面的博客，选择了Hexo</p>
 <a id="more"></a>
 <h1 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h1><p>　　在博主看来选择永远都可以成为一个话题，每一次选择就会决定你之后的体验和成长的方向，是伴随人一生的权利。所以每一次选择都应该认真的思考面对。<br>　　大家好，这是第一篇博文，比较有纪念意义，整个博客是用Hexo搭建和生成的比较简单强大，选择Hexo也是我进过一整对比后的选择。目前在前端比较流行的选择可能就是<span class="exturl" data-url="aHR0cHM6Ly9qZWt5bGxyYi5jb20v" title="https://jekyllrb.com/">Jekyll<i class="fa fa-external-link"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==" title="https://hexo.io/">Hexo<i class="fa fa-external-link"></i></span>，其他的可以用来搭建博客的还有WordPress、Octopress、Joomla等等，这里不做一一介绍，有兴趣的博友，可以上Google、百度等搜索引擎查阅。<br>　　我选择Hexo的原因主要有两个，一个Jekyll是用Ruby写的，而Hexo是基于Nodejs，也就是说他们的运行环境对我来讲，Hexo会更加熟悉一些，当然有博友说JeKyll的博文渲染生成速度相对来说比较慢，对于大博主来说后期可能就比较吃力，Hexo用JavaScript来跑，速度还是杠杆的。第二个就是文档，对于现目前的博主我来说看英文文档相比中文文档还是有点慢的，看一会儿可能就要查阅一个单词，真是英语不强的宝宝，说多了都是泪。Hexo是一个台湾同胞写的，毕竟要支持国产货嘛。其次再加上一些跟风心理的作用，国内用Hexo的工程师朋友还是大有人在，观看了他们的博客最下面都是by Hexo，博主就心动了。<br>　　后来我发现还有个<span class="exturl" data-url="aHR0cHM6Ly9nb2h1Z28uaW8=" title="https://gohugo.io">Hugo<i class="fa fa-external-link"></i></span>,号称是全世界构建最快的框架。主要是喜欢hexo的<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="https://github.com/theme-next/hexo-theme-next">nexT<i class="fa fa-external-link"></i></span>主题和懒得再折腾了，可能我也心动的换了，不过还没搭建过的小伙伴，倒是可以试试。</p>
 <h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>　　接下来博主说说安装Hexo过程遇到的问题。<br>　　Hexo需要的环境是<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuLw==" title="https://nodejs.org/en/">Nodejs<i class="fa fa-external-link"></i></span>，所有你首先需要下载这个，博主是Windows8.1 64X的系统，之前有安装V4.2.4LTS的版本，Windows上面安装很简单，与桌面应用软件安装一样，万能的下一步、下一步就可以搞定，安装完成你需要用命令行来完成Hexo的下载和安装，以管理员的权利运行DOS命令框，博主用的是Atom编辑器，自己下载了一个快捷打开DOS命令的插件，Atom还是挺炫的，感兴趣的朋友也可以玩玩。我们要用到<a href="www.npmjs.com/">npm</a>，一个JavaScript的包管理工具，很好用。我就需要用这管理工具来下载Hexo。</p>
@@ -1820,9 +1843,10 @@ CPU这样   2.3 GHz Intel Core i7
   <entry>
     <title>樱花和雪花</title>
     <url>/jacks/zh-CN/2011/04/09/%E6%A8%B1%E8%8A%B1%E5%92%8C%E9%9B%AA%E8%8A%B1/</url>
-    <content><![CDATA[<a id="more"></a>
-<p>很久没写东西了，离开自己的“家”都很远了，是不是该回去看一下了呢.</p>
+    <content><![CDATA[<p>很久没写东西了，离开自己的“家”都很远了，是不是该回去看一下了呢.</p>
 <p>每天都在这颠簸现实的世界里遨游，似乎忘一些内心原本保留下来的纯真，现实是强大的，它的引力强大的拉着每个人类不得不深刻的面对它，然而我们不仅都交叉生活在这同一的现实世界里，我们每一个人也都还生活在另一个自己虚幻的世界里——内心世界，这个世界也是强大的，但却是很能交叉的，我敢说一对哪怕亲密无比的恋人，都从来没有把对方的内心读懂过，因为那是一个除了自己别人都去不了的世界，有时候这世界强大的连我们自己都不能完全明了，它让我们自己看自己都是模糊不清的，我们都不知道自己在想什么，到底要要什么。它依然有着白昼和黑夜……这个世界就像只住了半个自己的家！</p>
+<a id="more"></a>
+
 <p>然而我却清晰的知道，每一个内心世界最初太阳升起的那一刻都是美丽的，迷人的。就像最初的天使那洁白的翅膀上的羽毛一样，很温暖.我常常：想天上的雪花是每个折翅的男天使背上凋零的羽毛，地上的樱花是每个折翅的女天使背上凋零的羽毛，至于为什么会凋零，也许只要天使们自己才知道。樱花是温暖的春季才会降临人间的，而雪花要到寒风的冬天才会来到，可以说他们是永远不会交汇在一起的……</p>
 <p>然而那个世界里，雪花和樱花正在同时的随风飘落着……真的好美啊！！今天一个人走在树林间，一阵风过，树叶都随风缓缓飘零了我一身，突然有一整莫名的触动，真是的！</p>
 ]]></content>
