@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.51201314.me/jacks/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.51201314.me/jacks/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.51201314.me/jacks/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/jacks/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="baidu-site-verification" content="Y06s0MH8Ck">
+
+<link rel="stylesheet" href="/jacks/css/main.css">
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://www.51201314.me/jacks').hostname,
+    root: '/jacks/',
+    scheme: 'Mist',
+    version: '7.7.1',
+    exturl: true,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="联想的图像基础是名词（避免太抽象的名词），链接的关系是动词在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的数字图像编码整理">
+<meta property="og:url" content="https://www.51201314.me/jacks/zh-CN/2016/04/29/%E6%88%91%E7%9A%84%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/index.html">
+<meta property="og:site_name" content="Jack·S Blog">
+<meta property="og:description" content="联想的图像基础是名词（避免太抽象的名词），链接的关系是动词在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-04-29T14:38:20.000Z">
+<meta property="article:modified_time" content="2016-04-30T17:15:00.000Z">
+<meta property="article:author" content="Jack·S">
+<meta property="article:tag" content="记忆力">
+<meta property="article:tag" content="数字图像编码">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.51201314.me/jacks/zh-CN/2016/04/29/%E6%88%91%E7%9A%84%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>我的数字图像编码整理 | Jack·S Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/jacks/atom.xml" title="Jack·S Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/jacks/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jack·S Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">任何事情都应该去尝试一下  因为你无法知道什么样的事或者什么样的人将会改变你的一生</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/jacks/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">48</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/jacks/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">10</span></a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/jacks/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">82</span></a>
+
+  </li>
+        <li class="menu-item menu-item-读书">
+
+    <a href="/jacks/study/" rel="section"><i class="fa fa-fw fa-graduation-cap"></i>读书</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/jacks/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-更新">
+
+    <a href="/jacks/new/" rel="section"><i class="fa fa-fw fa-ellipsis-v"></i>更新</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/jacks/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbmd4aW54aW4=" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.51201314.me/jacks/zh-CN/2016/04/29/%E6%88%91%E7%9A%84%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.51201314.me/jacks/images/avatar.png">
+      <meta itemprop="name" content="Jack·S">
+      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jack·S Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          我的数字图像编码整理
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-04-29 22:38:20" itemprop="dateCreated datePublished" datetime="2016-04-29T22:38:20+08:00">2016-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2016-05-01 01:15:00" itemprop="dateModified" datetime="2016-05-01T01:15:00+08:00">2016-05-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/jacks/categories/%E6%8A%80%E5%B7%A7%E4%BF%AE%E7%82%BC/" itemprop="url" rel="index">
+                    <span itemprop="name">技巧修炼</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>联想的图像基础是名词（避免太抽象的名词），链接的关系是动词<br>在联系形容词的时候，尽量夸张，异与常态去想像，便于区别和加深印象</p>
+<a id="more"></a>
+<p>【】内为备选<br>00：双筒望远镜<br>01：一圈土地上长了一颗树【灵药】<br>02：铃儿<br>03：灵山<br>04：零食<br>05：灵虎<br>06：灵牛<br>07：灵鸡<br>08：灵蛙<br>09：灵狗<br>10：衣领【棒子和球、（蔡）依林】<br>11：光棍【十亿、筷子】<br>12：婴儿<br>13：医生【药山】<br>14：医师【钥匙】<br>15：鹦鹉【妖虎、药物】<br>16：衣钮<br>17：仪器【有妖气（漫画）】<br>18：尾巴【篱笆】<br>19：泥鳅【药酒、饮酒】<br>20：鹅鳞（毛）【鹅蛋、投降（英雄联盟）】<br>21：鳄鱼<br>22：两只情侣鹅<br>23：峨（眉）山<br>24：耳屎【耳饰】<br>25：饿虎【二胡】<br>26：饿牛<br>27：饿鸡【耳机】<br>28：饿蛙【恶霸】<br>29：饿狗【恶狗】<br>30：森林【山林、三菱（电梯）】<br>31：鲨鱼<br>32：扇儿【傻鹅、沙俄】<br>33：仙山<br>34：绅士<br>35：山虎【珊瑚】<br>36：山牛【山路，三鹿（奶粉）】<br>37：山鸡【三七（中草药）】<br>38：三八（妇女）【三爸】<br>39：999（感冒药）<br>40：司令<br>41：司仪<br>42：死鹅（柿儿、食饵）<br>43：死神<br>44：石狮【死士】<br>45：石虎<br>46：石牛【石榴】<br>47：石鸡【司机】<br>48：石蛙【丝瓜、死蛙】<br>49：石狗【狮鹫】<br>50：吴（鹏）琳【五灵（金木水火土）】      注：武林太抽象，不建议使用<br>51：狐狸【劳动人民】<br>52：木耳【吾儿】<br>53：虎山【五（指）山】<br>54：武士【巫师、护士】<br>55：木屋【污物（自行脑补）、古墓】<br>56：蜗牛【56个名族】<br>57：母鸡【乌鸡】<br>58：苦瓜【吾爸、古巴】<br>59：苦酒【吾狗】<br>60：硫磷<br>61：（六一）儿童（节）<br>62：牛耳<br>63：刘禅<br>64：牛屎<br>65：路虎（汽车）<br>66：溜溜（球）<br>67：楼梯<br>68：牛蛙<br>69：牛角【69式】<br>70：麒麟<br>71：鸡翼（鸡翅膀）【机翼、蜥蜴】<br>72：企鹅【妻儿】<br>73：鸡伞（印满鸡图案的伞）<br>74：骑士<br>75：奇虎（360）【积木】<br>76：犀牛【七牛（云存储）】<br>77：七喜（饮料）【七夕（7月7）、猩猩】<br>78：西瓜【jiba】<br>79：气球<br>80：百灵<br>81：白蚁【蚂蚁、华裔】<br>82：花儿<br>83：花山【花生、华生、华山】<br>84：巴士<br>85：白虎<br>86：吧友<br>87：白棋【白旗】<br>88：（阿里）巴巴<br>89：白酒<br>90：90后<br>91：球衣【囚衣】<br>92：球儿<br>93：球伞【印满球的伞】<br>94：教师【教室】<br>95：酒壶【救护（车）】<br>96：酒楼<br>97：枸杞【酒席】<br>98：酒吧<br>99：舅舅</p>
+<p>0：棒球<br>1：棒<br>2：鹅<br>3：伞<br>4：屎<br>5：虎<br>6：牛<br>7：鸡<br>8：蛙<br>9：狗【酒】</p>
+<p>以上是我自己的一套图像记忆编码，这些是记忆编码的基础，可以用<br><strong>联想故事串接方法<br>记忆宫殿法<br>第一人称梦境法</strong>（比如：96970254 翻译过来就是，我去了一家<strong>酒楼</strong>，我参加了<strong>酒席</strong>，我碰了一下座位边的<strong>铃儿</strong>响起，我就看见一群<strong>武士</strong>就把这里包围了起来。所有的动作都是一个人的五感去完成的，有别与联想法。）<br>可以去记忆圆周率（<a href="../../30/我的圆周率故事/">传送门</a>），电话号码，财务报表，扑克牌，麻将，骰子等等与数字相关的事物<br>持续整理</p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+        <div class="popular-posts-img"><img src="https://www.51201314.me/OSS/blog/img/%CF%80.jpg"></div>
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/04/30/我的圆周率故事/" rel="bookmark">我的圆周率故事</a></div>
+        <div class="popular-posts-excerpt"><p><p><img src="https://www.51201314.me/OSS/blog/img/%CF%80.jpg" alt=""><br>　　用了<strong>第一人称梦境法</strong>来记忆圆周率，日本的近70岁<strong>原口证</strong>大爷，应该就是运用了这类方法，能背诵到十万位。他是怎么做到的呢？他大量的运用了自己的想像力，对数字进行了图像编码，再加以链接，串联成一部长篇小说。因为我们的大脑对图像的存储和提取是非常高效而准确的，所以只要我们这些故事进行回忆，再解析出相应的数字，就可以成功无误的记忆大量的数字，并且长时间不会忘记。</p></p></div>
+    </li>
+    <li class="popular-posts-item">
+        <div class="popular-posts-img"><img src="https://www.51201314.me/OSS/blog/img/theBrain.jpg"></div>
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/03/27/最强大脑，探索思维的潜力/" rel="bookmark">最强大脑，探索思维的潜力</a></div>
+        <div class="popular-posts-excerpt"><p><p><img src="https://www.51201314.me/OSS/blog/img/theBrain.jpg" alt=""><br>　　人属于高等思维动物，全部的能动性，大脑占据了主导作用，因为人类的大脑，才有如今高度发展的社会，因为大脑，我才有了探索和发现的能力，因为大脑，人类才得以延续的更好，如果你具有一颗最强大脑，不仅仅是自己，也将会是人类的财富，欢迎和博主一同探索大脑潜力</p></p></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/05/05/记忆方法/" rel="bookmark">记忆方法</a></div>
+        <div class="popular-posts-excerpt"><p><p>记忆是学习生活中最基础和根本的能力，要想有好成绩就一定要提高记忆力，形成自己的知识库。记忆宫殿法的使用可上溯至古罗马时期，因此可以说这是经过时间和实践证明的高效记忆方法，在帮助记忆上有重大的作用。其中，记忆宫殿的6大方法分别是：1、谐音法；2、替代法；3、编码法；4、串联法；5、定桩法；6、关键字法。</p></p></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://www.51201314.me/OSS/blog/img/wxpay.jpg" alt="Jack·S 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://www.51201314.me/OSS/blog/img/alipay.jpg" alt="Jack·S 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jack·S
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.51201314.me/jacks/zh-CN/2016/04/29/%E6%88%91%E7%9A%84%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E6%95%B4%E7%90%86/" title="我的数字图像编码整理">https://www.51201314.me/jacks/zh-CN/2016/04/29/我的数字图像编码整理/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/jacks/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/" rel="tag"><i class="fa fa-tag"></i> 记忆力</a>
+              <a href="/jacks/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81/" rel="tag"><i class="fa fa-tag"></i> 数字图像编码</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/jacks/zh-CN/2016/04/19/%E3%80%8A%E5%A5%87%E5%B9%BB%E6%A3%AE%E6%9E%97%E3%80%8B%E8%A7%82%E5%90%8E%E6%84%9F/" rel="prev" title="《奇幻森林》观后感">
+      <i class="fa fa-chevron-left"></i> 《奇幻森林》观后感
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/jacks/zh-CN/2016/04/30/%E6%88%91%E7%9A%84%E5%9C%86%E5%91%A8%E7%8E%87%E6%95%85%E4%BA%8B/" rel="next" title="我的圆周率故事">
+      我的圆周率故事 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NDU5My8yMTEyMg=="></div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jack·S"
+      src="https://www.51201314.me/jacks/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jack·S</p>
+  <div class="site-description" itemprop="description">记录Jack生活成长的博客网站</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/jacks/archives/">
+        
+          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/jacks/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/jacks/tags/">
+          
+        <span class="site-state-item-count">82</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOjE5MTEwMDQ3OUBxcS5jb20=" title="E-Mail → mailto:191100479@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbmd4aW54aW4=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jingxinxin"><i class="fa fa-fw fa-github"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cDovL3dlaWJvLmNvbS9qeGFuZGN4eQ==" title="Weibo → http:&#x2F;&#x2F;weibo.com&#x2F;jxandcxy"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><img src="/jacks/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">博主</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https:&#x2F;&#x2F;www.fengte.fun">丰特房</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFuZ3podXF1YW4uY29t" title="https:&#x2F;&#x2F;www.bangzhuquan.com">帮助圈</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVhbnlpZmVuZy5jb20vYmxvZw==" title="https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog">阮一峰</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2g=" title="https:&#x2F;&#x2F;search">暂缺</span>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jack·S</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">74k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:07</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9taXN0LnRoZW1lLW5leHQub3Jn">NexT.Mist</span> v7.7.1
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/jacks/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/jacks/js/utils.js"></script>
+
+<script src="/jacks/js/motion.js"></script>
+
+
+<script src="/jacks/js/schemes/muse.js"></script>
+
+
+<script src="/jacks/js/next-boot.js"></script>
+
+<script src="/jacks/js/bookmark.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/jacks/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
+</body>
+</html>
