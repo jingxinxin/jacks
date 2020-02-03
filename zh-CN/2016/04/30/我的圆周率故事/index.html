@@ -61,8 +61,8 @@
 <meta property="article:published_time" content="2016-04-29T19:06:01.000Z">
 <meta property="article:modified_time" content="2020-02-03T14:55:47.439Z">
 <meta property="article:author" content="Jack·S">
-<meta property="article:tag" content="圆周率">
 <meta property="article:tag" content="记忆力">
+<meta property="article:tag" content="圆周率">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.51201314.me/OSS/blog/img/%CF%80.jpg">
 
@@ -244,7 +244,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://www.51201314.me/jacks/images/avatar.png">
       <meta itemprop="name" content="Jack·S">
-      <meta itemprop="description" content="记录Jack生活成长的博客网站">
+      <meta itemprop="description" content="记录Jack Stark生活成长的博客网站">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -359,7 +359,8 @@
         <div class="popular-posts-excerpt"><p><p>记忆是学习生活中最基础和根本的能力，要想有好成绩就一定要提高记忆力，形成自己的知识库。记忆宫殿法的使用可上溯至古罗马时期，因此可以说这是经过时间和实践证明的高效记忆方法，在帮助记忆上有重大的作用。其中，记忆宫殿的6大方法分别是：1、谐音法；2、替代法；3、编码法；4、串联法；5、定桩法；6、关键字法。</p></p></div>
     </li>
   </ul>
-
+此刻赠尔一诗词：<span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         <div class="reward-container">
   <div></div>
   <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
@@ -401,8 +402,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/jacks/tags/%E5%9C%86%E5%91%A8%E7%8E%87/" rel="tag"><i class="fa fa-tag"></i> 圆周率</a>
               <a href="/jacks/tags/%E8%AE%B0%E5%BF%86%E5%8A%9B/" rel="tag"><i class="fa fa-tag"></i> 记忆力</a>
+              <a href="/jacks/tags/%E5%9C%86%E5%91%A8%E7%8E%87/" rel="tag"><i class="fa fa-tag"></i> 圆周率</a>
           </div>
 
         
@@ -491,7 +492,7 @@
     <img class="site-author-image" itemprop="image" alt="Jack·S"
       src="https://www.51201314.me/jacks/images/avatar.png">
   <p class="site-author-name" itemprop="name">Jack·S</p>
-  <div class="site-description" itemprop="description">记录Jack生活成长的博客网站</div>
+  <div class="site-description" itemprop="description">记录Jack Stark生活成长的博客网站</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -526,6 +527,9 @@
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cDovL3dlaWJvLmNvbS9qeGFuZGN4eQ==" title="Weibo → http:&#x2F;&#x2F;weibo.com&#x2F;jxandcxy"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
       </span>
+      <span class="links-of-author-item">
+        <a href="/jacks/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
     <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><img src="/jacks/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
@@ -539,7 +543,7 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">博主</a>
+          <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">Jacks</a>
         </li>
         <li class="links-of-blogroll-item">
           <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https:&#x2F;&#x2F;www.fengte.fun">丰特房</span>
@@ -551,10 +555,23 @@
           <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVhbnlpZmVuZy5jb20vYmxvZw==" title="https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog">阮一峰</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2g=" title="https:&#x2F;&#x2F;search">暂缺</span>
+          <span class="exturl" data-url="bWFpbHRvOjE5MTEwMDQ3OUBxcS5jb20gfHwgZW52ZWxvcGU=" title="mailto:191100479@qq.com || envelope">向我推荐</span>
         </li>
     </ul>
   </div>
+<div style="border-top: solid 1px #111;margin-bottom: 4px"></div>
+<button id="translateLink" onclick="translatePage()">繁体</button>
+
+<script type="text/javascript" src="https://www.51201314.me/OSS/blog/js/tw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2;
+  var translateDelay = 0;
+  var cookieDomain = "http://www.51201314.me/jacks";
+  var msgToTraditionalChinese = "繁体";
+  var msgToSimplifiedChinese = "简体";
+  var translateButtonId = "translateLink";
+  translateInitilization();
+</script>
 
       </div>
 
@@ -702,6 +719,7 @@ NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   })(document, 'script');
 });
 </script>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5x1iogbdm3p&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
 
 </body>
 </html>
