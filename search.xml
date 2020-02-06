@@ -86,6 +86,39 @@
       </tags>
   </entry>
   <entry>
+    <title>内网穿透搭建外网可以访问本地服务器</title>
+    <url>/jacks/zh-CN/2019/06/09/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%90%AD%E5%BB%BA%E5%A4%96%E7%BD%91%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<p>相应的工具和技术，网络上比比皆是。我目前用的比较多是开源项目<code>localtunnel</code>。也可以试试<span class="exturl" data-url="aHR0cHM6Ly9uZ3Jvay5jb20v" title="https://ngrok.com/">ngrok<i class="fa fa-external-link"></i></span></p>
+<a id="more"></a>
+<h2 id="PLAY模式"><a href="#PLAY模式" class="headerlink" title="PLAY模式"></a>PLAY模式</h2><p>聊内网穿透到外网之前，先来说说程序员在开发过程中的几种模式。</p>
+<ul>
+<li>单机模式：如同单机游戏一样，整个环境的搭建，代码书写、测试，到运行都仅仅在自己的电脑上完成，相关代码都仅仅储存在本地。</li>
+<li>单机联网模式：有时候我们可能要外出，电脑又是台式机，不方便随身携带，如果是笔记本电脑，也可能存在没有携带，突然损坏等等导致程序员离了这台电脑就不能开发的问题。为了避免出现这样的问题，通常都会把代码上传到一块公共外网可以访问的空间中，无论是电脑掉海里了，还是被抢劫了，也不会影响我们继续开发写代码。相关的代码管理问题这里就不多说了，<code>GIT</code>相信程序员都不会陌生。</li>
+<li>多人模式：在同一个局域网下，小伙伴们是可以手拉手一起开发的，通过局域网IP访问这些电脑，加端口访问相应的本地服务应用。</li>
+<li>多人远程模式：这种模式普片存在如今的办公环境中，通过公网相互访问。</li>
+</ul>
+<p>模式一般不会单一出现，对于程序员来说这些模式都会穿插在整个生涯中。</p>
+<h2 id="为啥要穿透"><a href="#为啥要穿透" class="headerlink" title="为啥要穿透"></a>为啥要穿透</h2><p>说了这么多模式，我们知道程序开发一般流程是本地搭建相应程序服务器，安装开发相关依赖。对于单机（个人本地）开发来说，程序员的开发只在自己电脑上书写代码进行本地开发和测试。当我们在家开发好了一个新功能，又办法上传到测试服务器上，供大家在外网访问和测试怎么办？</p>
+<p>我们能让别人直接在外网访问我本地localhost服务应用吗？当然是可以的，访问流程如此：<code>外网-局域网-个人电脑</code>。一般基于安全问题，网外是不能直访问类似192.168.0.1这样的IP地址的。但是我们可以做映射，做穿透，间接来访问。</p>
+<h2 id="穿透工具"><a href="#穿透工具" class="headerlink" title="穿透工具"></a>穿透工具</h2><p>相应的工具和技术，网络上比比皆是。我目前用的比较多是开源项目<code>localtunnel</code>。也可以试试<span class="exturl" data-url="aHR0cHM6Ly9uZ3Jvay5jb20v" title="https://ngrok.com/">ngrok<i class="fa fa-external-link"></i></span></p>
+<p>网站地址：<span class="exturl" data-url="aHR0cHM6Ly9sb2NhbHR1bm5lbC5tZQ==" title="https://localtunnel.me">https://localtunnel.me<i class="fa fa-external-link"></i></span></p>
+<p>代码地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xvY2FsdHVubmVsL2xvY2FsdHVubmVs" title="https://github.com/localtunnel/localtunnel">https://github.com/localtunnel/localtunnel<i class="fa fa-external-link"></i></span></p>
+<h3 id="localtunnel"><a href="#localtunnel" class="headerlink" title="localtunnel"></a>localtunnel</h3><p>localtunnel将您的localhost公开给全世界，以便于测试和共享！无需搞砸DNS或进行部署即可让其他人测试您的更改。</p>
+<p>非常适合与浏览器测试工具（例如浏览器）或外部api回调服务（例如twilio）一起使用，后者需要使用公共URL进行回调。</p>
+<h4 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h4><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npx localtunnel <span class="comment">--port 8000</span></span><br></pre></td></tr></table></figure>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="全局"><a href="#全局" class="headerlink" title="全局"></a>全局</h5><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g localtunnel</span><br></pre></td></tr></table></figure>
+<h5 id="作为项目的依赖"><a href="#作为项目的依赖" class="headerlink" title="作为项目的依赖"></a>作为项目的依赖</h5><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">npm install localtunnel</span><br><span class="line"><span class="comment">#or</span></span><br><span class="line">yarn <span class="keyword">add</span><span class="bash"> localtunnel</span></span><br></pre></td></tr></table></figure>
+<h4 id="命令行用法"><a href="#命令行用法" class="headerlink" title="命令行用法"></a>命令行用法</h4><p>全局安装localtunnel时，只需使用<code>lt</code>命令即可启动隧道。</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">lt <span class="comment">--port 8000</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>代码技术</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>内网穿透</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>维度的演变</title>
     <url>/jacks/zh-CN/2017/01/17/%E7%BB%B4%E5%BA%A6%E7%9A%84%E6%BC%94%E5%8F%98/</url>
     <content><![CDATA[<p><img data-src="https://www.51201314.me/OSS/blog/img/%E7%BB%B4%E5%BA%A6.jpeg" alt=""><br>在网上看过很多关于维度的解释和演示，也看过很多书籍，电视纪录片等，从一维到三维固然好理解，但是到了更高的维度就让人很难去理解，当我们慢慢对一些定理概念，发生更高更客观的认识的时候，才发现很多事就变得更好理解。很多时候我们所认为不可理解的事，大多数情况可能都是我们之前所奉承的理论出了问题，随着物质的演绎推进，我们不得不改变或者进化之前的认知，这是一种思维进化的过程。人的肉体可能目前只能局限于三维之中，但思维也许可以理解和进化到更高的层次。</p>
@@ -1366,8 +1399,8 @@ CPU这样   2.3 GHz Intel Core i7
         <category>技巧修炼</category>
       </categories>
       <tags>
-        <tag>记忆力</tag>
         <tag>圆周率</tag>
+        <tag>记忆力</tag>
       </tags>
   </entry>
   <entry>
