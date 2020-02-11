@@ -19,36 +19,10 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-
 <script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://www.51201314.me/jacks').hostname,
-    root: '/jacks/',
-    scheme: 'Mist',
-    version: '7.7.1',
-    exturl: true,
-    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},
-    copycode: {"enable":true,"show_result":true,"style":"flat"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":true,"color":"#222","save":"auto"},
-    fancybox: true,
-    mediumzoom: false,
-    lazyload: true,
-    pangu: true,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.51201314.me","root":"/jacks/","scheme":"Mist","version":"7.7.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"path":"search.xml","motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
   <meta name="description" content="JQuery样式选择的几个区别     交集选择：   $(&quot;.a.b&quot;)--选择同时包含a和b的元素。 并集选择：   $(&quot;.a,.b&quot;)--选择包含a或者包含b的元素。 子集选择：   $(&quot;.a .b&quot;)--选择a下包含b的元素。">
 <meta property="og:type" content="article">
@@ -151,7 +125,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">49</span></a>
+    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">51</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -198,9 +172,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
            placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -335,11 +309,11 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-        <div class="popular-posts-img"><img src="https://raw.githubusercontent.com/jingxinxin/myMindMap/master/imgs/Jack%E4%BB%A3%E7%A0%81%E4%B8%96%E7%95%8C.png"></div>
-      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/09/28/snippets/Jack代码世界/" rel="bookmark">Jack代码世界</a></div>
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/10/21/snippets/360再见我要去NAS/" rel="bookmark">360再见我要去NAS</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/10/21/snippets/360再见我要去NAS/" rel="bookmark">360再见我要去NAS</a></div>
+        <div class="popular-posts-img"><img src="https://raw.githubusercontent.com/jingxinxin/myMindMap/master/imgs/Jack%E4%BB%A3%E7%A0%81%E4%B8%96%E7%95%8C.png"></div>
+      <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/09/28/snippets/Jack代码世界/" rel="bookmark">Jack代码世界</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/jacks/zh-CN/2016/05/05/CSS之块级元素和内联元素总结/" rel="bookmark">CSS之块级元素和内联元素总结</a></div>
@@ -496,7 +470,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/jacks/archives/">
         
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

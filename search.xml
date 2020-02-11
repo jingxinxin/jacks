@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VR 3D模型场景的实现</title>
+    <url>/jacks/zh-CN/2020/02/11/VR-3D%E6%A8%A1%E5%9E%8B%E5%9C%BA%E6%99%AF%E7%9A%84%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<p>以下场景来自四川丰特集成房有限公司设计的一居室酒店落地项目，sketchUP建模，lumion渲染，VR3D模型场景。</p>
+<p>可以沉浸式观看体验，切换场景。</p>
+<iframe style="max-width:100%" width="640" height="320" frameborder="0" src="http://test.bangzhuquan.com:8090/viewer/examples/pzgy/tour.html" allowFullScreen="true"></iframe>
+]]></content>
+      <tags>
+        <tag>VR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VR 3D视频的实现</title>
+    <url>/jacks/zh-CN/2020/02/11/VR-3D%E8%A7%86%E9%A2%91%E7%9A%84%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<p>视频可以360度无死角滑动，也可以开启VR沉浸式模式</p>
+<iframe style="max-width:100%" width="640" height="320" frameborder="0" src="http://test.bangzhuquan.com:8090/viewer/examples/testVideoVR/tour.html" allowFullScreen="true"></iframe>]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>VR</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第二份事业-集成房屋</title>
     <url>/jacks/zh-CN/2020/02/04/%E7%AC%AC%E4%BA%8C%E4%BB%BD%E4%BA%8B%E4%B8%9A/</url>
     <content><![CDATA[<a id="more"></a>

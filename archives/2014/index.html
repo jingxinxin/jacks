@@ -19,43 +19,17 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-
 <script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://www.51201314.me/jacks').hostname,
-    root: '/jacks/',
-    scheme: 'Mist',
-    version: '7.7.1',
-    exturl: true,
-    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},
-    copycode: {"enable":true,"show_result":true,"style":"flat"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":true,"color":"#222","save":"auto"},
-    fancybox: true,
-    mediumzoom: false,
-    lazyload: true,
-    pangu: true,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.51201314.me","root":"/jacks/","scheme":"Mist","version":"7.7.1","exturl":true,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"path":"search.xml","motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-  <meta name="description" content="记录Jack生活成长的博客网站">
+  <meta name="description" content="记录Jack Stark生活成长的博客网站">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jack·S Blog">
 <meta property="og:url" content="https://www.51201314.me/jacks/archives/2014/index.html">
 <meta property="og:site_name" content="Jack·S Blog">
-<meta property="og:description" content="记录Jack生活成长的博客网站">
+<meta property="og:description" content="记录Jack Stark生活成长的博客网站">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Jack·S">
 <meta name="twitter:card" content="summary">
@@ -145,7 +119,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">49</span></a>
+    <a href="/jacks/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">51</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -192,9 +166,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
            placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+           type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -235,7 +209,7 @@
     <div class="posts-collapse">
       <div class="collection-title">
         
-        <span class="collection-header">还行! 目前共计 49 篇日志。 继续努力。</span>
+        <span class="collection-header">不错! 目前共计 51 篇日志。 继续努力。</span>
       </div>
 
       
@@ -330,14 +304,14 @@
     <img class="site-author-image" itemprop="image" alt="Jack·S"
       src="https://www.51201314.me/jacks/images/avatar.png">
   <p class="site-author-name" itemprop="name">Jack·S</p>
-  <div class="site-description" itemprop="description">记录Jack生活成长的博客网站</div>
+  <div class="site-description" itemprop="description">记录Jack Stark生活成长的博客网站</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/jacks/archives/">
         
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -365,6 +339,9 @@
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cDovL3dlaWJvLmNvbS9qeGFuZGN4eQ==" title="Weibo → http:&#x2F;&#x2F;weibo.com&#x2F;jxandcxy"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
       </span>
+      <span class="links-of-author-item">
+        <a href="/jacks/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
     <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLW5kLzQuMC9kZWVkLnpo"><img src="/jacks/images/cc-by-nc-nd.svg" alt="Creative Commons"></span>
@@ -378,7 +355,7 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">博主</a>
+          <a href="https://www.51201314.me/" title="https:&#x2F;&#x2F;www.51201314.me">Jacks</a>
         </li>
         <li class="links-of-blogroll-item">
           <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https:&#x2F;&#x2F;www.fengte.fun">丰特房</span>
@@ -390,10 +367,23 @@
           <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVhbnlpZmVuZy5jb20vYmxvZw==" title="https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog">阮一峰</span>
         </li>
         <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2g=" title="https:&#x2F;&#x2F;search">暂缺</span>
+          <span class="exturl" data-url="bWFpbHRvOjE5MTEwMDQ3OUBxcS5jb20gfHwgZW52ZWxvcGU=" title="mailto:191100479@qq.com || envelope">向我推荐</span>
         </li>
     </ul>
   </div>
+<div style="border-top: solid 1px #111;margin-bottom: 4px"></div>
+<button id="translateLink" onclick="translatePage()">繁体</button>
+
+<script type="text/javascript" src="https://www.51201314.me/OSS/blog/js/tw_cn.js"></script>
+<script type="text/javascript">
+  var defaultEncoding = 2;
+  var translateDelay = 0;
+  var cookieDomain = "http://www.51201314.me/jacks";
+  var msgToTraditionalChinese = "繁体";
+  var msgToSimplifiedChinese = "简体";
+  var translateButtonId = "translateLink";
+  translateInitilization();
+</script>
 
       </div>
 
@@ -526,6 +516,7 @@
 
   
 
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5x1iogbdm3p&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
   <link href="/jacks/atom.xml" rel="self"/>
   
   <link href="https://www.51201314.me/jacks/"/>
-  <updated>2020-02-03T16:11:35.339Z</updated>
+  <updated>2020-02-11T12:43:15.316Z</updated>
   <id>https://www.51201314.me/jacks/</id>
   
   <author>
@@ -17,11 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>VR 3D模型场景的实现</title>
+    <link href="https://www.51201314.me/jacks/zh-CN/2020/02/11/VR-3D%E6%A8%A1%E5%9E%8B%E5%9C%BA%E6%99%AF%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://www.51201314.me/jacks/zh-CN/2020/02/11/VR-3D%E6%A8%A1%E5%9E%8B%E5%9C%BA%E6%99%AF%E7%9A%84%E5%AE%9E%E7%8E%B0/</id>
+    <published>2020-02-11T12:38:00.000Z</published>
+    <updated>2020-02-11T12:43:15.316Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p>以下场景来自四川丰特集成房有限公司设计的一居室酒店落地项目，sketchUP建模，lumion渲染，VR3D模型场景。</p><p>可以沉浸式观看体验，切换场景。</p><iframe style="max-width:100%" width="640" height="320" frameborder="0" src="http://test.bangzhuquan.com:8090/viewer/examples/pzgy/tour.html" allowFullScreen="true"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;以下场景来自四川丰特集成房有限公司设计的一居室酒店落地项目，sketchUP建模，lumion渲染，VR3D模型场景。&lt;/p&gt;
+&lt;p&gt;可以沉浸式观看体验，切换场景。&lt;/p&gt;
+&lt;iframe style=&quot;max-width:100%&quot; 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="VR" scheme="https://www.51201314.me/jacks/tags/VR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VR 3D视频的实现</title>
+    <link href="https://www.51201314.me/jacks/zh-CN/2020/02/11/VR-3D%E8%A7%86%E9%A2%91%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://www.51201314.me/jacks/zh-CN/2020/02/11/VR-3D%E8%A7%86%E9%A2%91%E7%9A%84%E5%AE%9E%E7%8E%B0/</id>
+    <published>2020-02-11T12:29:00.000Z</published>
+    <updated>2020-02-11T12:34:50.548Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p>视频可以360度无死角滑动，也可以开启VR沉浸式模式</p><iframe style="max-width:100%" width="640" height="320" frameborder="0" src="http://test.bangzhuquan.com:8090/viewer/examples/testVideoVR/tour.html" allowFullScreen="true"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;视频可以360度无死角滑动，也可以开启VR沉浸式模式&lt;/p&gt;
+&lt;iframe style=&quot;max-width:100%&quot; width=&quot;640&quot; height=&quot;320&quot; frameborder=&quot;0&quot; src=&quot;http://tes
+      
+    
+    </summary>
+    
+    
+      <category term="视频" scheme="https://www.51201314.me/jacks/categories/%E8%A7%86%E9%A2%91/"/>
+    
+    
+      <category term="VR" scheme="https://www.51201314.me/jacks/tags/VR/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第二份事业-集成房屋</title>
     <link href="https://www.51201314.me/jacks/zh-CN/2020/02/04/%E7%AC%AC%E4%BA%8C%E4%BB%BD%E4%BA%8B%E4%B8%9A/"/>
     <id>https://www.51201314.me/jacks/zh-CN/2020/02/04/%E7%AC%AC%E4%BA%8C%E4%BB%BD%E4%BA%8B%E4%B8%9A/</id>
     <published>2020-02-03T16:00:00.000Z</published>
-    <updated>2020-02-03T16:11:35.339Z</updated>
+    <updated>2020-02-11T12:28:57.054Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https://www.fengte.fun">丰特集成房屋<i class="fa fa-external-link"></i></span></p><iframe style="max-width:100%" width="640" height="320" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=f06265zmh61&tiny=0&auto=0" allowFullScreen="true"></iframe><p>了解定购<br>官方网站：<span class="exturl" data-url="aHR0cHM6Ly93d3cuZmVuZ3RlLmZ1bg==" title="https://www.fengte.fun">https://www.fengte.fun<i class="fa fa-external-link"></i></span></p>]]></content>
     
